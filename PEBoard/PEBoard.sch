@@ -193,10 +193,6 @@ F 3 "" H 1800 5450 50  0000 C CNN
 $EndComp
 Text Notes 2350 5200 2    60   ~ 0
 HVD Interlock Connector
-Text Label 1600 5400 2    60   ~ 0
-AIRS_OUT_LEFT
-Text Label 1600 5500 2    60   ~ 0
-AIRS_OUT
 Text Notes 5450 750  2    60   ~ 0
 LV      HV
 Text Notes 5450 4400 2    60   ~ 0
@@ -204,23 +200,23 @@ LV      HV
 Text Notes 5450 7700 2    60   ~ 0
 LV      HV
 $Comp
-L CONN_01X03 P1
+L CONN_01X03 C8
 U 1 1 588AD541
-P 1800 6200
-F 0 "P1" H 1800 6400 50  0000 C CNN
-F 1 "CONN_01X03" V 1900 6200 50  0000 C CNN
-F 2 "" H 1800 6200 50  0001 C CNN
-F 3 "" H 1800 6200 50  0000 C CNN
-	1    1800 6200
+P 3550 7300
+F 0 "C8" H 3550 7500 50  0000 C CNN
+F 1 "CONN_01X03" V 3650 7300 50  0000 C CNN
+F 2 "" H 3550 7300 50  0001 C CNN
+F 3 "" H 3550 7300 50  0000 C CNN
+	1    3550 7300
 	1    0    0    -1  
 $EndComp
-Text Notes 2250 5950 2    60   ~ 0
+Text Notes 4000 7050 2    60   ~ 0
 Brake Light Connector
-Text Label 1600 6100 2    60   ~ 0
+Text Label 3350 7200 2    60   ~ 0
 12V
-Text Label 1600 6200 2    60   ~ 0
+Text Label 3350 7300 2    60   ~ 0
 BRAKE_SIG
-Text Label 1600 6300 2    60   ~ 0
+Text Label 3350 7400 2    60   ~ 0
 GND
 Wire Notes Line
 	5250 550  5250 7800
@@ -445,4 +441,38 @@ Text Notes 10500 5250 2    60   ~ 0
 Energy Meter HV+ Connector
 Text Label 9650 5500 2    60   ~ 0
 HV+
+Wire Wire Line
+	1600 4750 1600 5400
+$Comp
+L CONN_01X02 P?
+U 1 1 5893B780
+P 1800 6250
+F 0 "P?" H 1800 6400 50  0000 C CNN
+F 1 "CONN_01X02" V 1900 6250 50  0000 C CNN
+F 2 "" H 1800 6250 50  0000 C CNN
+F 3 "" H 1800 6250 50  0000 C CNN
+	1    1800 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 5893B7ED
+P 1800 7100
+F 0 "P?" H 1800 7250 50  0000 C CNN
+F 1 "CONN_01X02" V 1900 7100 50  0000 C CNN
+F 2 "" H 1800 7100 50  0000 C CNN
+F 3 "" H 1800 7100 50  0000 C CNN
+	1    1800 7100
+	1    0    0    -1  
+$EndComp
+Text Notes 950  5950 0    60   ~ 0
+Left Three-Phase Connector Interlock
+Text Notes 950  6800 0    60   ~ 0
+Right Three-Phase Connector Interlock
+Text Label 1600 7150 2    60   ~ 0
+AIRS_OUT
+Wire Wire Line
+	1600 5500 1600 6200
+Wire Wire Line
+	1600 6300 1600 7050
 $EndSCHEMATC
