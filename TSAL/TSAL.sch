@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:FS FINAL
 LIBS:TSAL-rescue
 LIBS:power
 LIBS:device
@@ -29,7 +30,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:FS FINAL
+LIBS:TSAL-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -44,17 +45,6 @@ Comment2 "Thimann Laboratories 372"
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L LM555N U302
-U 1 1 571D8B4C
-P 4700 1700
-F 0 "U302" H 4700 1700 70  0000 C CNN
-F 1 "LM555N" H 4700 1800 70  0000 C CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm" H 4700 1700 60  0001 C CNN
-F 3 "" H 4700 1700 60  0000 C CNN
-	1    4700 1700
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4000 1700
 $Comp
 L R R302
@@ -104,18 +94,7 @@ Text HLabel 2200 2300 0    60   Input ~ 0
 GND
 Text Notes 3500 850  0    60   ~ 0
 TSAL - Oscillator
-$Comp
-L CONN_02_B2B P301
-U 1 1 570D7D07
-P 1200 1750
-F 0 "P301" H 1200 1900 50  0000 C CNN
-F 1 "CONN_01X02" V 1300 1750 50  0000 C CNN
-F 2 "Molex MiniFit Jr:Molex_39-28-8020" H 1200 1750 60  0001 C CNN
-F 3 "" H 1200 1750 60  0000 C CNN
-	1    1200 1750
-	-1   0    0    -1  
-$EndComp
-Text HLabel 1400 1800 2    60   Input ~ 0
+Text HLabel 1650 1800 2    60   Input ~ 0
 GND
 Text Label 7500 1400 0    60   ~ 0
 OSC
@@ -572,17 +551,6 @@ F 1 "SN754410" H 6900 1650 60  0000 C CNN
 F 2 "Housings_DIP:DIP-16_W7.62mm" H 7100 1100 60  0001 C CNN
 F 3 "" H 7100 1100 60  0000 C CNN
 	1    6900 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L PQ05RR12 U301
-U 1 1 570AF345
-P 2400 1300
-F 0 "U301" H 2400 1300 60  0000 C CNN
-F 1 "PQ05RR12" H 2400 1400 60  0000 C CNN
-F 2 "FS FINAL:4 pin reg" H 2400 1300 60  0001 C CNN
-F 3 "" H 2400 1300 60  0000 C CNN
-	1    2400 1300
 	1    0    0    -1  
 $EndComp
 NoConn ~ 6300 1500
@@ -1043,6 +1011,12 @@ F 3 "" H 3100 2150 60  0000 C CNN
 	1    3100 2150
 	1    0    0    -1  
 $EndComp
+Text Label 6800 1100 0    60   ~ 0
+5V
+Text HLabel 1650 1700 2    60   Input ~ 0
+12V
+Text HLabel 7100 1100 2    60   Input ~ 0
+12V
 Wire Wire Line
 	4000 1400 3900 1400
 Wire Wire Line
@@ -1257,23 +1231,49 @@ Connection ~ 5800 2300
 Connection ~ 6900 2300
 Connection ~ 7000 2300
 Connection ~ 7100 2300
-Wire Wire Line
-	2400 2300 2400 1800
 Connection ~ 3100 2300
-Connection ~ 2400 2300
-NoConn ~ 1900 1500
-Text Label 6800 1100 0    60   ~ 0
-5V
 Wire Wire Line
-	1400 1700 1200 1700
+	1650 1700 1450 1700
 Wire Wire Line
-	1200 1800 1400 1800
-Text HLabel 1400 1700 2    60   Input ~ 0
-12V
-Text HLabel 1900 1100 0    60   Input ~ 0
-12V
-Text HLabel 7100 1100 2    60   Input ~ 0
-12V
+	1450 1800 1650 1800
 Wire Wire Line
 	7000 1100 7100 1100
+$Comp
+L LM555N U?
+U 1 1 5897EDA1
+P 4700 1700
+F 0 "U?" H 4700 1700 70  0000 C CNN
+F 1 "LM555N" H 4700 1800 70  0000 C CNN
+F 2 "" H 4700 1700 60  0000 C CNN
+F 3 "" H 4700 1700 60  0000 C CNN
+	1    4700 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 5897EFA7
+P 1250 1750
+F 0 "P?" H 1250 1900 50  0000 C CNN
+F 1 "CONN_01X02" V 1350 1750 50  0000 C CNN
+F 2 "" H 1250 1750 50  0000 C CNN
+F 3 "" H 1250 1750 50  0000 C CNN
+	1    1250 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L L78S05CV-DG U?
+U 1 1 5897F17E
+P 2500 1150
+F 0 "U?" H 2300 1350 50  0000 C CNN
+F 1 "L78S05CV-DG" H 2500 1350 50  0000 L CNN
+F 2 "TO-220" H 2500 800 50  0001 C CIN
+F 3 "" H 2500 1150 50  0000 C CNN
+	1    2500 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1400 2500 2300
+Connection ~ 2500 2300
+Text HLabel 2100 1100 0    60   Input ~ 0
+12V
 $EndSCHEMATC

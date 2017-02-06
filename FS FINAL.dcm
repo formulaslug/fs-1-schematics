@@ -1,7 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP L78S05CV-DG
+D Positive 2A 35V Linear Regulator, Fixed Output 5V, TO-220
+$ENDCMP
+#
 $CMP MCP2515-I/ST
-D Stand-Alone CAN Controller with SPI Interface, TSSOP-20, Extended temperature range
+D Stand-Alone CAN Controller with SPI Interface, Industrial temperature range
 K CAN Controller SPI
 F http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf
 $ENDCMP
