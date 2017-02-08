@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
-LIBS:ECU-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -143,8 +142,6 @@ Text Label 2400 4450 0    60   ~ 0
 12V
 Text Label 2400 4350 0    60   ~ 0
 12V_LVMS
-Text Label 2400 4250 0    60   ~ 0
-LED_BSPD
 Text Label 2400 4150 0    60   ~ 0
 LED_IMD
 Text Label 2400 4050 0    60   ~ 0
@@ -234,9 +231,9 @@ Text Label 2400 8050 0    60   ~ 0
 Text Label 2400 7850 0    60   ~ 0
 12V
 Text Label 2400 7750 0    60   ~ 0
-BMS_FLT
+BMS_FLT_LED
 Text Label 2400 7650 0    60   ~ 0
-IMD_FLT
+IMD_FLT_LED
 Text Label 2400 7550 0    60   ~ 0
 CAN_H
 Text Label 2400 7450 0    60   ~ 0
@@ -502,4 +499,5 @@ F 3 "" H 12200 1750 60  0000 C CNN
 	1    12250 1750
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2400 4250
 $EndSCHEMATC
