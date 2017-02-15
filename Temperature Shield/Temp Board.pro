@@ -1,6 +1,6 @@
-update=Tuesday, February 14, 2017 'PMt' 07:18:40 PM
+update=2/9/2017 8:05:04 AM
 version=1
-last_client=eeschema
+last_client=kicad
 [pcbnew]
 version=1
 LastNetListRead=
@@ -27,9 +27,9 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../fs-1-schematics
+LibDir=
 [eeschema/libraries]
-LibName1=FS FINAL
+LibName1=C:/Users/Sam/Google Drive/EV R&D/FS FINAL/FS FINAL
 LibName2=power
 LibName3=device
 LibName4=transistors
@@ -59,4 +59,3 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=arduino

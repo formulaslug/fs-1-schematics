@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
+LIBS:ECU-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -152,8 +153,6 @@ Text Label 2400 3850 0    60   ~ 0
 CAN_L
 Text Label 2400 3750 0    60   ~ 0
 DRIVE_BUTTON
-Text Label 2400 3450 0    60   ~ 0
-AIRS_IN_DASH
 Text Label 2400 3350 0    60   ~ 0
 GND
 NoConn ~ 2400 3650
@@ -219,7 +218,7 @@ CAN_RX
 Text Label 2400 5600 0    60   ~ 0
 AIRS_IN_BOTS
 Text Label 2400 5500 0    60   ~ 0
-AIRS_IN_PE
+AIRS_OUT_PE
 Text Label 2400 5400 0    60   ~ 0
 AIRS_DISCH
 Text Label 2400 5300 0    60   ~ 0
@@ -241,9 +240,9 @@ CAN_L
 Text Label 2400 7350 0    60   ~ 0
 AIRS_DISCH
 Text Label 2400 7250 0    60   ~ 0
-AIRS_IN_PE
+AIRS_OUT_PE
 Text Label 2400 7150 0    60   ~ 0
-AIRS_SRC
+12V_SRC
 Text Label 2400 7050 0    60   ~ 0
 SIG_BRAKE
 Text Label 2400 6950 0    60   ~ 0
@@ -500,4 +499,24 @@ F 3 "" H 12200 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2400 4250
+Text Label 2400 3450 0    60   ~ 0
+AIRS_IN_DASH
+Wire Wire Line
+	2400 3450 3100 3450
+Wire Wire Line
+	3100 3450 3100 2750
+Wire Wire Line
+	3100 2750 2400 2750
+Wire Wire Line
+	2400 1650 3300 1650
+Wire Wire Line
+	3300 1650 3300 5600
+Wire Wire Line
+	3300 5600 2400 5600
+Wire Wire Line
+	2400 5500 3150 5500
+Wire Wire Line
+	3150 5500 3150 7250
+Wire Wire Line
+	3150 7250 2400 7250
 $EndSCHEMATC
