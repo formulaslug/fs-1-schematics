@@ -1,4 +1,4 @@
-update=2/14/2017 8:00:06 PM
+update=2/19/2017 1:34:16 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,11 +23,13 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../fs-1-schematics
 [eeschema/libraries]
-LibName1=C:/Users/Sam/Google Drive/EV R&D/FS FINAL/FS FINAL
+LibName1=FS FINAL
 LibName2=power
 LibName3=device
 LibName4=transistors
@@ -57,5 +59,3 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-[general]
-version=1
