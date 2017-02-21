@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
+LIBS:AccumulatorBoard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -681,4 +682,139 @@ Wire Notes Line
 	14750 7750 15250 7750
 Text Label 14550 7750 3    60   ~ 0
 AIRS_OUT
+$Comp
+L MCP6004 U?
+U 2 1 58AAA5F6
+P 9800 2650
+F 0 "U?" H 9850 2850 60  0000 C CNN
+F 1 "MCP6004" H 9950 2450 50  0000 C CNN
+F 2 "" H 9800 2650 60  0000 C CNN
+F 3 "" H 9800 2650 60  0000 C CNN
+	2    9800 2650
+	1    0    0    -1  
+$EndComp
+Text Label 9300 2550 2    60   ~ 0
+SIG_CURRENT
+Text Label 9700 3050 3    60   ~ 0
+GND
+Text Label 9700 2250 1    60   ~ 0
+5V
+$Comp
+L R R?
+U 1 1 58AB8BE9
+P 9150 2750
+F 0 "R?" V 9230 2750 50  0000 C CNN
+F 1 "4.8kR" V 9150 2750 50  0000 C CNN
+F 2 "" V 9080 2750 50  0000 C CNN
+F 3 "" H 9150 2750 50  0000 C CNN
+	1    9150 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58AB8D3E
+P 9300 2900
+F 0 "R?" V 9380 2900 50  0000 C CNN
+F 1 "5.2kR" V 9300 2900 50  0000 C CNN
+F 2 "" V 9230 2900 50  0000 C CNN
+F 3 "" H 9300 2900 50  0000 C CNN
+	1    9300 2900
+	1    0    0    -1  
+$EndComp
+Text Label 9000 2750 2    60   ~ 0
+5V
+Text Notes 9150 2100 0    60   ~ 0
+Current Signal Comparator:\nIf Current Signal > 2.6V
+$Comp
+L MCP6004 U?
+U 1 1 58AB9F3C
+P 9800 4250
+F 0 "U?" H 9850 4450 60  0000 C CNN
+F 1 "MCP6004" H 9950 4050 50  0000 C CNN
+F 2 "" H 9800 4250 60  0000 C CNN
+F 3 "" H 9800 4250 60  0000 C CNN
+	1    9800 4250
+	1    0    0    -1  
+$EndComp
+Text Label 10300 2650 0    60   ~ 0
+BSPD_CURRENT
+Wire Wire Line
+	9300 3050 9700 3050
+Text Label 9700 3850 1    60   ~ 0
+5V
+Text Label 9700 4650 3    60   ~ 0
+GND
+$Comp
+L POT RV?
+U 1 1 58ABAC3C
+P 8350 4350
+F 0 "RV?" V 8175 4350 50  0000 C CNN
+F 1 "POT" V 8250 4350 50  0000 C CNN
+F 2 "" H 8350 4350 50  0000 C CNN
+F 3 "" H 8350 4350 50  0000 C CNN
+	1    8350 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58ABB187
+P 8800 4350
+F 0 "R?" V 8880 4350 50  0000 C CNN
+F 1 "R" V 8800 4350 50  0000 C CNN
+F 2 "" V 8730 4350 50  0000 C CNN
+F 3 "" H 8800 4350 50  0000 C CNN
+	1    8800 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 4200 8800 4200
+Wire Wire Line
+	8500 4350 8500 4500
+Wire Wire Line
+	8500 4500 9300 4500
+Text Notes 7200 4150 0    60   ~ 0
+Brake Signal Comparator:\nIf brake signal > 'hard braking' set value\nPot for tuning, fixed resistances for\nonce tuned value found.
+Text Label 8350 4500 3    60   ~ 0
+GND
+Wire Wire Line
+	9300 4500 9300 4350
+Connection ~ 8800 4500
+Text Label 9300 4150 1    60   ~ 0
+SIG_BRAKE
+Text Label 10300 4250 0    60   ~ 0
+BSPD_BRAKE
+$Comp
+L CD4081B U?
+U 2 1 58ABC640
+P 10800 3400
+F 0 "U?" H 10950 3650 60  0000 C CNN
+F 1 "CD4081B" H 11025 3125 60  0000 C CNN
+F 2 "" H 10800 3400 60  0000 C CNN
+F 3 "" H 10800 3400 60  0000 C CNN
+	2    10800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 3300 10300 2650
+Wire Wire Line
+	10300 4250 10300 3500
+Text Label 10700 3800 3    60   ~ 0
+GND
+Text Label 10700 3000 0    60   ~ 0
+5V
+Text Label 11400 3400 0    60   ~ 0
+BSPD_SIG
+$Comp
+L R R?
+U 1 1 58ABD37E
+P 8800 4650
+F 0 "R?" V 8880 4650 50  0000 C CNN
+F 1 "R" V 8800 4650 50  0000 C CNN
+F 2 "" V 8730 4650 50  0000 C CNN
+F 3 "" H 8800 4650 50  0000 C CNN
+	1    8800 4650
+	1    0    0    -1  
+$EndComp
+Text Label 8800 4800 3    60   ~ 0
+GND
 $EndSCHEMATC
