@@ -34,4 +34,8 @@ K CAN Controller SPI
 F http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf
 $ENDCMP
 #
+$CMP V110C12E100BL
+D Vicor 110V Nominal Input 12V Output Isolated Voltage Regulator
+$ENDCMP
+#
 #End Doc Library
