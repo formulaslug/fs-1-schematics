@@ -1,0 +1,666 @@
+EESchema Schematic File Version 2
+LIBS:FS FINAL
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino
+LIBS:AccumulatorElectronics-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 4150 850  2    60   ~ 0
+12V
+Text Label 4150 1050 2    60   ~ 0
+V_L
+Text Label 4150 1150 2    60   ~ 0
+BMS_FLT_LED
+Text Label 4150 1250 2    60   ~ 0
+IMD_FLT_LED
+Text Label 4150 1350 2    60   ~ 0
+CAN_H
+Text Label 4150 1450 2    60   ~ 0
+CAN_L
+Text Label 4150 1550 2    60   ~ 0
+AIRS_DISCH
+Text Label 4150 1650 2    60   ~ 0
+AIRS_IN_PE
+Text Label 4150 1750 2    60   ~ 0
+12V_SRC
+Text Label 4150 1850 2    60   ~ 0
+SIG_BRAKE
+Text Label 4150 1950 2    60   ~ 0
+GND
+$Comp
+L CONN_01X12 P2
+U 1 1 58997F0E
+P 4350 1400
+F 0 "P2" H 4350 2050 50  0000 C CNN
+F 1 "Battery Box Input" V 4450 1400 50  0000 C CNN
+F 2 "" H 4350 1400 50  0001 C CNN
+F 3 "" H 4350 1400 50  0000 C CNN
+	1    4350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P11
+U 1 1 589D2B01
+P 5250 1450
+F 0 "P11" H 5250 1600 50  0000 C CNN
+F 1 "HV (Switched)" V 5350 1450 50  0000 C CNN
+F 2 "" H 5250 1450 50  0001 C CNN
+F 3 "" H 5250 1450 50  0000 C CNN
+	1    5250 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 589D2D5E
+P 5250 900
+F 0 "P1" H 5250 1050 50  0000 C CNN
+F 1 "Batt Voltage" V 5350 900 50  0000 C CNN
+F 2 "" H 5250 900 50  0001 C CNN
+F 3 "" H 5250 900 50  0000 C CNN
+	1    5250 900 
+	-1   0    0    -1  
+$EndComp
+Text Label 5450 1400 0    60   ~ 0
+HV+
+Text Label 5450 1500 0    60   ~ 0
+HV-
+$Comp
+L CONN_01X02 P12
+U 1 1 589D311D
+P 5250 4200
+F 0 "P12" H 5250 4350 50  0000 C CNN
+F 1 "IMD HV" V 5350 4200 50  0000 C CNN
+F 2 "" H 5250 4200 50  0001 C CNN
+F 3 "" H 5250 4200 50  0000 C CNN
+	1    5250 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P6
+U 1 1 58A3ED25
+P 4350 5550
+F 0 "P6" H 4350 5700 50  0000 C CNN
+F 1 "BSPD Reset" V 4450 5550 50  0000 C CNN
+F 2 "" H 4350 5550 50  0001 C CNN
+F 3 "" H 4350 5550 50  0000 C CNN
+	1    4350 5550
+	1    0    0    -1  
+$EndComp
+Text Label 4150 5500 2    60   ~ 0
+12V
+Text Label 4150 950  2    60   ~ 0
+V_S
+$Comp
+L CONN_01X04 P3
+U 1 1 58AC6391
+P 4350 4050
+F 0 "P3" H 4350 4300 50  0000 C CNN
+F 1 "BMS Connector 1" V 4450 4050 50  0000 C CNN
+F 2 "" H 4350 4050 50  0001 C CNN
+F 3 "" H 4350 4050 50  0000 C CNN
+	1    4350 4050
+	1    0    0    -1  
+$EndComp
+Text Label 4150 3900 2    60   ~ 0
+BMS_FLT
+Text Label 4150 4000 2    60   ~ 0
+V_L
+Text Label 4150 4100 2    60   ~ 0
+V_S
+Text Label 4150 4200 2    60   ~ 0
+GND
+Text Label 4150 3100 2    60   ~ 0
+GND
+Text Label 4150 2400 2    60   ~ 0
+5V_BMS
+Text Label 4150 2500 2    60   ~ 0
+CUR_SIG
+Text Label 4150 2600 2    60   ~ 0
+GND
+Text Label 4150 2700 2    60   ~ 0
+CAN_H
+Text Label 4150 3000 2    60   ~ 0
+CAN_L
+$Comp
+L CONN_01X02 P5
+U 1 1 58ACA694
+P 4350 4700
+F 0 "P5" H 4350 4850 50  0000 C CNN
+F 1 "BMS Reset" V 4450 4700 50  0000 C CNN
+F 2 "" H 4350 4700 50  0001 C CNN
+F 3 "" H 4350 4700 50  0000 C CNN
+	1    4350 4700
+	1    0    0    -1  
+$EndComp
+Text Label 4150 6000 2    60   ~ 0
+IMD_RESET
+$Comp
+L CONN_01X02 P7
+U 1 1 58ACAABB
+P 4350 5950
+F 0 "P7" H 4350 6100 50  0000 C CNN
+F 1 "IMD Reset" V 4450 5950 50  0000 C CNN
+F 2 "" H 4350 5950 50  0001 C CNN
+F 3 "" H 4350 5950 50  0000 C CNN
+	1    4350 5950
+	1    0    0    -1  
+$EndComp
+Text Label 4150 4750 2    60   ~ 0
+BMS_RESET
+Text Label 4150 5600 2    60   ~ 0
+BSPD_RESET
+Text Label 4150 4650 2    60   ~ 0
+12V
+Text Label 4150 5900 2    60   ~ 0
+12V
+$Comp
+L CONN_01X02 P8
+U 1 1 58ACF01F
+P 5250 3100
+F 0 "P8" H 5250 3250 50  0000 C CNN
+F 1 "Contactor 1" V 5350 3100 50  0000 C CNN
+F 2 "" H 5250 3100 50  0001 C CNN
+F 3 "" H 5250 3100 50  0000 C CNN
+	1    5250 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P9
+U 1 1 58ACF5F5
+P 5250 3600
+F 0 "P9" H 5250 3750 50  0000 C CNN
+F 1 "Contactor 2" V 5350 3600 50  0000 C CNN
+F 2 "" H 5250 3600 50  0001 C CNN
+F 3 "" H 5250 3600 50  0000 C CNN
+	1    5250 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P13
+U 1 1 58AD4758
+P 5250 2300
+F 0 "P13" H 5250 2450 50  0000 C CNN
+F 1 "HV -> LV Regulator Jumper" V 5350 2300 50  0000 C CNN
+F 2 "" H 5250 2300 50  0001 C CNN
+F 3 "" H 5250 2300 50  0000 C CNN
+	1    5250 2300
+	-1   0    0    -1  
+$EndComp
+Text Label 5450 3150 0    60   ~ 0
+GND
+Text Label 5450 3650 0    60   ~ 0
+GND
+Text Label 5450 3050 0    60   ~ 0
+AIRS_DISCH
+Text Label 5450 3550 0    60   ~ 0
+AIRS_DISCH
+$Comp
+L CONN_01X02 P10
+U 1 1 58B07294
+P 5250 6250
+F 0 "P10" H 5250 6400 50  0000 C CNN
+F 1 "TSAL" V 5350 6250 50  0000 C CNN
+F 2 "" H 5250 6250 50  0000 C CNN
+F 3 "" H 5250 6250 50  0000 C CNN
+	1    5250 6250
+	-1   0    0    -1  
+$EndComp
+Text Label 5450 6200 0    60   ~ 0
+12V_TSAL
+Text Label 5450 6300 0    60   ~ 0
+GND
+$Comp
+L CONN_01X02 P?
+U 1 1 58B07EC2
+P 5250 5800
+F 0 "P?" H 5250 5950 50  0000 C CNN
+F 1 "Acc LED" V 5350 5800 50  0000 C CNN
+F 2 "" H 5250 5800 50  0000 C CNN
+F 3 "" H 5250 5800 50  0000 C CNN
+	1    5250 5800
+	-1   0    0    -1  
+$EndComp
+Text Label 5450 5850 0    60   ~ 0
+ACC_LED
+Text Label 5450 5750 0    60   ~ 0
+GND
+Text Label 5450 950  0    60   ~ 0
+BATT-
+Text Label 5450 850  0    60   ~ 0
+BATT+
+$Comp
+L IR155-3204 U?
+U 1 1 58B7113C
+P 7700 4050
+F 0 "U?" H 7700 4000 60  0000 C CNN
+F 1 "IR155-3204" H 7700 4100 60  0000 C CNN
+F 2 "" H 7700 4050 120 0000 C CNN
+F 3 "" H 7700 4050 120 0000 C CNN
+	1    7700 4050
+	1    0    0    -1  
+$EndComp
+Text Label 2100 850  0    60   ~ 0
+12V
+Text Label 2100 1050 0    60   ~ 0
+V_L
+Text Label 2100 1150 0    60   ~ 0
+BMS_FLT_LED
+Text Label 2100 1250 0    60   ~ 0
+IMD_FLT_LED
+Text Label 2100 1350 0    60   ~ 0
+CAN_H
+Text Label 2100 1450 0    60   ~ 0
+CAN_L
+Text Label 2100 1550 0    60   ~ 0
+AIRS_DISCH
+Text Label 2100 1650 0    60   ~ 0
+AIRS_IN_PE
+Text Label 2100 1750 0    60   ~ 0
+12V_SRC
+Text Label 2100 1850 0    60   ~ 0
+SIG_BRAKE
+Text Label 2100 1950 0    60   ~ 0
+GND
+$Comp
+L CONN_01X12 P?
+U 1 1 58B72021
+P 1900 1400
+F 0 "P?" H 1900 2050 50  0000 C CNN
+F 1 "Battery Box Input" V 2000 1400 50  0000 C CNN
+F 2 "" H 1900 1400 50  0001 C CNN
+F 3 "" H 1900 1400 50  0000 C CNN
+	1    1900 1400
+	-1   0    0    -1  
+$EndComp
+Text Label 2100 950  0    60   ~ 0
+V_S
+$Comp
+L 2CN0002E U?
+U 1 1 58B727DB
+P 1200 2250
+F 0 "U?" H 1350 -800 60  0000 C CNN
+F 1 "2CN0002E" V 1350 -1200 60  0000 C CNN
+F 2 "" H 1950 -2600 60  0000 C CNN
+F 3 "" H 1950 -2600 60  0000 C CNN
+	1    1200 2250
+	1    0    0    -1  
+$EndComp
+Text Label 4150 3300 2    60   ~ 0
+GND
+Text Label 4150 3200 2    60   ~ 0
+GND
+$Comp
+L CONN_01X02 P?
+U 1 1 58B76155
+P 6650 6250
+F 0 "P?" H 6650 6400 50  0000 C CNN
+F 1 "TSAL_EXT" V 6750 6250 50  0000 C CNN
+F 2 "" H 6650 6250 50  0000 C CNN
+F 3 "" H 6650 6250 50  0000 C CNN
+	1    6650 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 58B76387
+P 6400 5750
+F 0 "D?" H 6400 5850 50  0000 C CNN
+F 1 "LED" H 6400 5650 50  0000 C CNN
+F 2 "" H 6400 5750 50  0000 C CNN
+F 3 "" H 6400 5750 50  0000 C CNN
+	1    6400 5750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X12 P?
+U 1 1 58B776E0
+P 4350 2950
+F 0 "P?" H 4350 3600 50  0000 C CNN
+F 1 "CONN_01X12" V 4450 2950 50  0000 C CNN
+F 2 "" H 4350 2950 50  0000 C CNN
+F 3 "" H 4350 2950 50  0000 C CNN
+	1    4350 2950
+	1    0    0    -1  
+$EndComp
+Text Label 1000 5350 2    60   ~ 0
+GND
+Text Label 1000 5150 2    60   ~ 0
+BMS_TX
+Text Label 1000 5250 2    60   ~ 0
+BMS_RX
+Text Label 4150 3400 2    60   ~ 0
+BMS_TX
+Text Label 4150 3500 2    60   ~ 0
+BMS_RX
+$Comp
+L CONN_01X02 P?
+U 1 1 58B7891F
+P 7500 6250
+F 0 "P?" H 7500 6400 50  0000 C CNN
+F 1 "TSAL Connector" V 7600 6250 50  0000 C CNN
+F 2 "" H 7500 6250 50  0000 C CNN
+F 3 "" H 7500 6250 50  0000 C CNN
+	1    7500 6250
+	-1   0    0    -1  
+$EndComp
+Text Label 7700 6200 0    60   ~ 0
+12V_TSAL
+Text Label 7700 6300 0    60   ~ 0
+GND
+$Comp
+L CONN_01X06 P?
+U 1 1 58B78D42
+P 5250 4900
+F 0 "P?" H 5250 5250 50  0000 C CNN
+F 1 "IMD LV" V 5350 4900 50  0000 C CNN
+F 2 "" H 5250 4900 50  0000 C CNN
+F 3 "" H 5250 4900 50  0000 C CNN
+	1    5250 4900
+	-1   0    0    -1  
+$EndComp
+Text Notes 7100 3550 0    60   ~ 0
+IMD
+$Comp
+L GX11S U?
+U 1 1 58B7A2A5
+P 7200 2250
+F 0 "U?" H 7100 2075 60  0000 C CNN
+F 1 "GX11S" H 7200 2450 60  0000 C CNN
+F 2 "" H 7200 2250 60  0000 C CNN
+F 3 "" H 7200 2250 60  0000 C CNN
+	1    7200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GX11S U?
+U 1 1 58B7A331
+P 7200 2950
+F 0 "U?" H 7100 2775 60  0000 C CNN
+F 1 "GX11S" H 7200 3150 60  0000 C CNN
+F 2 "" H 7200 2950 60  0000 C CNN
+F 3 "" H 7200 2950 60  0000 C CNN
+	1    7200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2250 5450 2100
+Wire Wire Line
+	5450 2100 5900 2100
+Wire Wire Line
+	5450 2350 5450 2500
+Wire Wire Line
+	5450 2500 5900 2500
+Wire Wire Line
+	2100 850  4150 850 
+Wire Wire Line
+	2100 950  4150 950 
+Wire Wire Line
+	4150 1050 2100 1050
+Wire Wire Line
+	2100 1150 4150 1150
+Wire Wire Line
+	4150 1250 2100 1250
+Wire Wire Line
+	2100 1350 4150 1350
+Wire Wire Line
+	4150 1450 2100 1450
+Wire Wire Line
+	2100 1550 4150 1550
+Wire Wire Line
+	4150 1650 2100 1650
+Wire Wire Line
+	2100 1750 4150 1750
+Wire Wire Line
+	4150 1850 2100 1850
+Wire Wire Line
+	2100 1950 4150 1950
+Wire Wire Line
+	2250 3050 2100 3050
+Wire Wire Line
+	3700 2450 2100 2450
+Wire Wire Line
+	4150 2500 2250 2500
+Wire Wire Line
+	2250 2500 2250 3050
+Wire Wire Line
+	4150 2400 2350 2400
+Wire Wire Line
+	2350 2400 2350 3150
+Wire Wire Line
+	2350 3150 2100 3150
+Wire Wire Line
+	4150 2600 2450 2600
+Wire Wire Line
+	2450 2600 2450 3250
+Wire Wire Line
+	2450 3250 2100 3250
+Wire Wire Line
+	4150 2700 2550 2700
+Wire Wire Line
+	2550 2700 2550 3850
+Wire Wire Line
+	2550 3850 2100 3850
+Wire Wire Line
+	2100 3950 2650 3950
+Wire Wire Line
+	2650 3950 2650 2800
+Wire Wire Line
+	2650 2800 4150 2800
+Wire Wire Line
+	4150 2900 2750 2900
+Wire Wire Line
+	2750 2900 2750 4050
+Wire Wire Line
+	2750 4050 2100 4050
+Wire Wire Line
+	2100 4150 2850 4150
+Wire Wire Line
+	2850 4150 2850 3000
+Wire Wire Line
+	2850 3000 4150 3000
+Wire Wire Line
+	5450 6200 6450 6200
+Wire Wire Line
+	6450 6300 5450 6300
+Wire Wire Line
+	5450 5750 5700 5750
+Wire Wire Line
+	5700 5750 5700 5600
+Wire Wire Line
+	5700 5600 6400 5600
+Wire Wire Line
+	5450 5850 5450 5900
+Wire Wire Line
+	5450 5900 6400 5900
+Wire Wire Line
+	3700 2450 3700 3200
+Wire Wire Line
+	3700 3200 4150 3200
+Wire Wire Line
+	4150 3100 2950 3100
+Wire Wire Line
+	2950 3100 2950 4250
+Wire Wire Line
+	2950 4250 2100 4250
+Wire Wire Line
+	2100 4450 3050 4450
+Wire Wire Line
+	3050 4450 3050 3900
+Wire Wire Line
+	3050 3900 4150 3900
+Wire Wire Line
+	4150 4000 3150 4000
+Wire Wire Line
+	3150 4000 3150 5050
+Wire Wire Line
+	3150 5050 2100 5050
+Wire Wire Line
+	2100 4950 3250 4950
+Wire Wire Line
+	3250 4950 3250 4100
+Wire Wire Line
+	3250 4100 4150 4100
+Wire Wire Line
+	2100 5450 3350 5450
+Wire Wire Line
+	3350 5450 3350 4200
+Wire Wire Line
+	3350 4200 4150 4200
+Wire Wire Line
+	5450 4150 6300 4150
+Wire Wire Line
+	6300 4150 6300 3750
+Wire Wire Line
+	5450 4250 6300 4250
+Wire Wire Line
+	6300 4250 6300 4350
+Wire Wire Line
+	6300 4350 7000 4350
+Wire Wire Line
+	6300 3750 7000 3750
+Wire Wire Line
+	6650 6200 7500 6200
+Wire Wire Line
+	6650 6300 7500 6300
+Wire Wire Line
+	5450 5050 7800 5050
+Wire Wire Line
+	7800 5050 7800 4650
+Wire Wire Line
+	7700 4950 5450 4950
+Wire Wire Line
+	7700 4650 7700 4950
+Wire Wire Line
+	5450 4850 7600 4850
+Wire Wire Line
+	7600 4850 7600 4650
+Wire Wire Line
+	5450 4650 8650 4650
+Wire Wire Line
+	8650 4650 8650 3450
+Wire Wire Line
+	5450 4750 8550 4750
+Wire Wire Line
+	8550 4750 8550 4150
+Wire Wire Line
+	8550 4150 8400 4150
+Wire Wire Line
+	8650 3450 7700 3450
+Wire Wire Line
+	5450 3050 6100 3050
+Wire Wire Line
+	6100 3050 6100 2050
+Wire Wire Line
+	6100 2050 6700 2050
+Wire Wire Line
+	5450 3150 6200 3150
+Wire Wire Line
+	6200 3150 6200 2450
+Wire Wire Line
+	6200 2450 6700 2450
+Wire Wire Line
+	5450 3550 6300 3550
+Wire Wire Line
+	6300 3550 6300 2750
+Wire Wire Line
+	6300 2750 6700 2750
+Wire Wire Line
+	5450 3650 6400 3650
+Wire Wire Line
+	6400 3650 6400 3150
+Wire Wire Line
+	6400 3150 6700 3150
+$Comp
+L Battery HVBatt
+U 1 1 58B7D15D
+P 8350 2350
+F 0 "HVBatt" H 8450 2450 50  0000 L CNN
+F 1 "Battery" H 8450 2350 50  0000 L CNN
+F 2 "" V 8350 2410 50  0000 C CNN
+F 3 "" V 8350 2410 50  0000 C CNN
+	1    8350 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2150 8350 2050
+Wire Wire Line
+	8350 2050 7700 2050
+Wire Wire Line
+	8350 2550 8350 2750
+Wire Wire Line
+	8350 2750 7700 2750
+Text Label 8350 2050 0    60   ~ 0
+BATT+
+Text Label 8350 2750 0    60   ~ 0
+BATT-
+Text Label 7700 2450 0    60   ~ 0
+HV+
+Text Label 7700 3150 0    60   ~ 0
+HV-
+$Comp
+L CONN_01X02 P?
+U 1 1 58B7D9E2
+P 9100 2050
+F 0 "P?" H 9100 2200 50  0000 C CNN
+F 1 "Board 1 TX" V 9200 2050 50  0000 C CNN
+F 2 "" H 9100 2050 50  0000 C CNN
+F 3 "" H 9100 2050 50  0000 C CNN
+	1    9100 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 58B7DAD4
+P 9100 2600
+F 0 "P?" H 9100 2750 50  0000 C CNN
+F 1 "Board 28 RX" V 9200 2600 50  0000 C CNN
+F 2 "" H 9100 2600 50  0000 C CNN
+F 3 "" H 9100 2600 50  0000 C CNN
+	1    9100 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2500 5900 2100
+Connection ~ 5900 2100
+Connection ~ 5900 2500
+$EndSCHEMATC
