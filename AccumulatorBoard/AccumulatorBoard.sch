@@ -47,27 +47,27 @@ Comment4 ""
 $EndDescr
 Text Label 4250 1750 3    60   ~ 0
 GND
-Text Label 1600 700  0    60   ~ 0
+Text Label 1000 700  0    60   ~ 0
 12V
-Text Label 1600 900  0    60   ~ 0
+Text Label 1000 900  0    60   ~ 0
 V_L
-Text Label 1600 1000 0    60   ~ 0
+Text Label 1000 1000 0    60   ~ 0
 BMS_FLT_LED
-Text Label 1600 1100 0    60   ~ 0
+Text Label 1000 1100 0    60   ~ 0
 IMD_FLT_LED
-Text Label 1600 1200 0    60   ~ 0
+Text Label 1000 1200 0    60   ~ 0
 CAN_H
-Text Label 1600 1300 0    60   ~ 0
+Text Label 1000 1300 0    60   ~ 0
 CAN_L
-Text Label 1600 1400 0    60   ~ 0
+Text Label 1000 1400 0    60   ~ 0
 AIRS_DISCH
-Text Label 1600 1500 0    60   ~ 0
+Text Label 1000 1500 0    60   ~ 0
 AIRS_IN_PE
-Text Label 1600 1600 0    60   ~ 0
+Text Label 1000 1600 0    60   ~ 0
 12V_SRC
-Text Label 1600 1700 0    60   ~ 0
+Text Label 1000 1700 0    60   ~ 0
 SIG_BRAKE
-Text Label 1600 1800 0    60   ~ 0
+Text Label 1000 1800 0    60   ~ 0
 GND
 $Comp
 L LD1117V33 U3
@@ -83,12 +83,12 @@ $EndComp
 $Comp
 L CONN_01X12 P3
 U 1 1 58997F0E
-P 1400 1250
-F 0 "P3" H 1400 1900 50  0000 C CNN
-F 1 "Battery Box Input" V 1500 1250 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x06x2.50mm_Straight" H 1400 1250 50  0001 C CNN
-F 3 "" H 1400 1250 50  0000 C CNN
-	1    1400 1250
+P 800 1250
+F 0 "P3" H 800 1900 50  0000 C CNN
+F 1 "Battery Box Input" V 900 1250 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x06x2.50mm_Straight" H 800 1250 50  0001 C CNN
+F 3 "" H 800 1250 50  0000 C CNN
+	1    800  1250
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -298,12 +298,12 @@ BSPD_RESET
 $Comp
 L CONN_01X02 P9
 U 1 1 58A3ED25
-P 1400 5500
-F 0 "P9" H 1400 5650 50  0000 C CNN
-F 1 "BSPD Reset" V 1500 5500 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1400 5500 50  0001 C CNN
-F 3 "" H 1400 5500 50  0000 C CNN
-	1    1400 5500
+P 800 5500
+F 0 "P9" H 800 5650 50  0000 C CNN
+F 1 "BSPD Reset" V 900 5500 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 800 5500 50  0001 C CNN
+F 3 "" H 800 5500 50  0000 C CNN
+	1    800  5500
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -344,7 +344,7 @@ Wire Wire Line
 	5900 7050 5900 7450
 Wire Wire Line
 	5900 7450 6000 7450
-Text Label 1600 5450 0    60   ~ 0
+Text Label 1000 5450 0    60   ~ 0
 12V
 Wire Wire Line
 	5550 7150 5800 7150
@@ -468,93 +468,93 @@ F 3 "" H 4250 2250 50  0000 C CNN
 $EndComp
 Text Label 4250 2500 3    60   ~ 0
 GND
-Text Label 1600 800  0    60   ~ 0
+Text Label 1000 800  0    60   ~ 0
 V_S
 Text Label 4050 4900 0    60   ~ 0
 3.3V
 $Comp
 L CONN_01X04 P4
 U 1 1 58AC6391
-P 1400 2350
-F 0 "P4" H 1400 2600 50  0000 C CNN
-F 1 "BMS Connector 1" V 1500 2350 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Angled" H 1400 2350 50  0001 C CNN
-F 3 "" H 1400 2350 50  0000 C CNN
-	1    1400 2350
+P 800 2350
+F 0 "P4" H 800 2600 50  0000 C CNN
+F 1 "BMS Connector 1" V 900 2350 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Angled" H 800 2350 50  0001 C CNN
+F 3 "" H 800 2350 50  0000 C CNN
+	1    800  2350
 	-1   0    0    -1  
 $EndComp
-Text Label 1600 2200 0    60   ~ 0
+Text Label 1000 2200 0    60   ~ 0
 BMS_FLT
-Text Label 1600 2300 0    60   ~ 0
+Text Label 1000 2300 0    60   ~ 0
 V_L
-Text Label 1600 2400 0    60   ~ 0
+Text Label 1000 2400 0    60   ~ 0
 V_S
-Text Label 1600 2500 0    60   ~ 0
+Text Label 1000 2500 0    60   ~ 0
 GND
-Text Label 1600 3450 0    60   ~ 0
+Text Label 1000 3450 0    60   ~ 0
 GND
-Text Label 1600 2750 0    60   ~ 0
+Text Label 1000 2750 0    60   ~ 0
 5V_BMS
-Text Label 1600 2850 0    60   ~ 0
+Text Label 1000 2850 0    60   ~ 0
 CUR_SIG
-Text Label 1600 2950 0    60   ~ 0
+Text Label 1000 2950 0    60   ~ 0
 GND
-Text Label 1600 3050 0    60   ~ 0
+Text Label 1000 3050 0    60   ~ 0
 CAN_H
-Text Label 1600 3350 0    60   ~ 0
+Text Label 1000 3350 0    60   ~ 0
 CAN_L
 $Comp
 L CONN_01X02 P8
 U 1 1 58ACA694
-P 1400 4950
-F 0 "P8" H 1400 5100 50  0000 C CNN
-F 1 "BMS Reset" V 1500 4950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1400 4950 50  0001 C CNN
-F 3 "" H 1400 4950 50  0000 C CNN
-	1    1400 4950
+P 800 4950
+F 0 "P8" H 800 5100 50  0000 C CNN
+F 1 "BMS Reset" V 900 4950 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 800 4950 50  0001 C CNN
+F 3 "" H 800 4950 50  0000 C CNN
+	1    800  4950
 	-1   0    0    -1  
 $EndComp
-Text Label 1600 6000 0    60   ~ 0
+Text Label 1000 6000 0    60   ~ 0
 IMD_RESET
 $Comp
 L CONN_01X02 P10
 U 1 1 58ACAABB
-P 1400 5950
-F 0 "P10" H 1400 6100 50  0000 C CNN
-F 1 "IMD Reset" V 1500 5950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1400 5950 50  0001 C CNN
-F 3 "" H 1400 5950 50  0000 C CNN
-	1    1400 5950
+P 800 5950
+F 0 "P10" H 800 6100 50  0000 C CNN
+F 1 "IMD Reset" V 900 5950 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 800 5950 50  0001 C CNN
+F 3 "" H 800 5950 50  0000 C CNN
+	1    800  5950
 	-1   0    0    -1  
 $EndComp
-Text Label 1600 5000 0    60   ~ 0
+Text Label 1000 5000 0    60   ~ 0
 BMS_RESET
-Text Label 1600 5550 0    60   ~ 0
+Text Label 1000 5550 0    60   ~ 0
 BSPD_RESET
-Text Label 1600 4900 0    60   ~ 0
+Text Label 1000 4900 0    60   ~ 0
 12V
-Text Label 1600 5900 0    60   ~ 0
+Text Label 1000 5900 0    60   ~ 0
 12V
 $Comp
 L CONN_01X02 P11
 U 1 1 58ACF01F
-P 1400 6450
-F 0 "P11" H 1400 6600 50  0000 C CNN
-F 1 "Contactor 1" V 1500 6450 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1400 6450 50  0001 C CNN
-F 3 "" H 1400 6450 50  0000 C CNN
-	1    1400 6450
+P 800 6950
+F 0 "P11" H 800 7100 50  0000 C CNN
+F 1 "Contactor 1" V 900 6950 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 800 6950 50  0001 C CNN
+F 3 "" H 800 6950 50  0000 C CNN
+	1    800  6950
 	-1   0    0    -1  
 $EndComp
 $Comp
 L CONN_01X02 P12
 U 1 1 58ACF5F5
-P 1400 6950
-F 0 "P12" H 1400 7100 50  0000 C CNN
-F 1 "Contactor 2" V 1500 6950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1400 6950 50  0001 C CNN
-F 3 "" H 1400 6950 50  0000 C CNN
-	1    1400 6950
+P 800 7450
+F 0 "P12" H 800 7600 50  0000 C CNN
+F 1 "Contactor 2" V 900 7450 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 800 7450 50  0001 C CNN
+F 3 "" H 800 7450 50  0000 C CNN
+	1    800  7450
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -574,20 +574,20 @@ U 1 1 58AD4758
 P 2300 9400
 F 0 "P17" H 2300 9550 50  0000 C CNN
 F 1 "HV -> LV Regulator Jumper" V 2400 9400 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 2300 9400 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 2300 9400 50  0001 C CNN
 F 3 "" H 2300 9400 50  0000 C CNN
 	1    2300 9400
 	0    -1   -1   0   
 $EndComp
 Text Label 2350 9900 3    60   ~ 0
 BATT-
-Text Label 1600 6500 0    60   ~ 0
+Text Label 1000 7000 0    60   ~ 0
 GND
-Text Label 1600 7000 0    60   ~ 0
+Text Label 1000 7500 0    60   ~ 0
 GND
-Text Label 1600 6400 0    60   ~ 0
+Text Label 1000 6900 0    60   ~ 0
 AIRS_DISCH
-Text Label 1600 6900 0    60   ~ 0
+Text Label 1000 7400 0    60   ~ 0
 AIRS_DISCH
 Wire Wire Line
 	2350 9900 3050 9900
@@ -666,32 +666,32 @@ BATT-
 $Comp
 L CONN_01X02 P13
 U 1 1 58B07294
-P 1400 7400
-F 0 "P13" H 1400 7550 50  0000 C CNN
-F 1 "TSAL" V 1500 7400 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1400 7400 50  0001 C CNN
-F 3 "" H 1400 7400 50  0000 C CNN
-	1    1400 7400
+P 1900 7400
+F 0 "P13" H 1900 7550 50  0000 C CNN
+F 1 "TSAL" V 2000 7400 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1900 7400 50  0001 C CNN
+F 3 "" H 1900 7400 50  0000 C CNN
+	1    1900 7400
 	-1   0    0    -1  
 $EndComp
-Text Label 1600 7350 0    60   ~ 0
+Text Label 2100 7350 0    60   ~ 0
 12V_TSAL
-Text Label 1600 7450 0    60   ~ 0
+Text Label 2100 7450 0    60   ~ 0
 GND
 $Comp
 L CONN_01X02 P14
 U 1 1 58B07EC2
-P 1400 7850
-F 0 "P14" H 1400 8000 50  0000 C CNN
-F 1 "Acc LED 1" V 1500 7850 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1400 7850 50  0001 C CNN
-F 3 "" H 1400 7850 50  0000 C CNN
-	1    1400 7850
+P 1900 7850
+F 0 "P14" H 1900 8000 50  0000 C CNN
+F 1 "Acc LED 1" V 2000 7850 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1900 7850 50  0001 C CNN
+F 3 "" H 1900 7850 50  0000 C CNN
+	1    1900 7850
 	-1   0    0    -1  
 $EndComp
-Text Label 1600 7800 0    60   ~ 0
+Text Label 2100 7800 0    60   ~ 0
 12V_TSAL
-Text Label 1600 7900 0    60   ~ 0
+Text Label 2100 7900 0    60   ~ 0
 GND
 Wire Wire Line
 	15250 4150 15250 4600
@@ -707,29 +707,29 @@ F 3 "" H 15250 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 1800 2400 1800
+	1000 1800 1800 1800
 $Comp
 L GND #PWR2
 U 1 1 58B233B8
-P 2400 1800
-F 0 "#PWR2" H 2400 1550 50  0001 C CNN
-F 1 "GND" H 2400 1650 50  0000 C CNN
-F 2 "" H 2400 1800 50  0000 C CNN
-F 3 "" H 2400 1800 50  0000 C CNN
-	1    2400 1800
+P 1800 1800
+F 0 "#PWR2" H 1800 1550 50  0001 C CNN
+F 1 "GND" H 1800 1650 50  0000 C CNN
+F 2 "" H 1800 1800 50  0000 C CNN
+F 3 "" H 1800 1800 50  0000 C CNN
+	1    1800 1800
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 700  2400 700 
+	1000 700  1800 700 
 $Comp
 L +12V #PWR1
 U 1 1 58B234ED
-P 2400 700
-F 0 "#PWR1" H 2400 550 50  0001 C CNN
-F 1 "+12V" H 2400 840 50  0000 C CNN
-F 2 "" H 2400 700 50  0000 C CNN
-F 3 "" H 2400 700 50  0000 C CNN
-	1    2400 700 
+P 1800 700
+F 0 "#PWR1" H 1800 550 50  0001 C CNN
+F 1 "+12V" H 1800 840 50  0000 C CNN
+F 2 "" H 1800 700 50  0000 C CNN
+F 3 "" H 1800 700 50  0000 C CNN
+	1    1800 700 
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1540,81 +1540,81 @@ Wire Wire Line
 	2650 11050 2550 11050
 Wire Wire Line
 	3050 9100 2900 9100
-Text Label 1600 3650 0    60   ~ 0
+Text Label 1000 3650 0    60   ~ 0
 GND
-Text Label 1600 3550 0    60   ~ 0
+Text Label 1000 3550 0    60   ~ 0
 GND
 Wire Wire Line
-	1600 3150 1600 3250
-Text Notes 1650 3200 0    60   ~ 0
+	1000 3150 1000 3250
+Text Notes 1050 3200 0    60   ~ 0
 BMS CAN Termination
 $Comp
 L CONN_01X12 P5
 U 1 1 58B7B94A
-P 1400 3300
-F 0 "P5" H 1400 3950 50  0000 C CNN
-F 1 "BMS Connector 2" V 1500 3300 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x06x2.50mm_Straight" H 1400 3300 50  0001 C CNN
-F 3 "" H 1400 3300 50  0000 C CNN
-	1    1400 3300
+P 800 3300
+F 0 "P5" H 800 3950 50  0000 C CNN
+F 1 "BMS Connector 2" V 900 3300 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x06x2.50mm_Straight" H 800 3300 50  0001 C CNN
+F 3 "" H 800 3300 50  0000 C CNN
+	1    800  3300
 	-1   0    0    -1  
 $EndComp
-Text Label 1600 3750 0    60   ~ 0
+Text Label 1000 3750 0    60   ~ 0
 BMS_TX
-Text Label 1600 3850 0    60   ~ 0
+Text Label 1000 3850 0    60   ~ 0
 BMS_RX
 $Comp
 L CONN_01X02 P6
 U 1 1 58B7C6A2
-P 1400 4150
-F 0 "P6" H 1400 4300 50  0000 C CNN
-F 1 "BMS TX" V 1500 4150 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1400 4150 50  0001 C CNN
-F 3 "" H 1400 4150 50  0000 C CNN
-	1    1400 4150
+P 800 4150
+F 0 "P6" H 800 4300 50  0000 C CNN
+F 1 "BMS TX" V 900 4150 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 800 4150 50  0001 C CNN
+F 3 "" H 800 4150 50  0000 C CNN
+	1    800  4150
 	-1   0    0    -1  
 $EndComp
 $Comp
 L CONN_01X02 P7
 U 1 1 58B7C7A0
-P 1400 4500
-F 0 "P7" H 1400 4650 50  0000 C CNN
-F 1 "BMS RX" V 1500 4500 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1400 4500 50  0001 C CNN
-F 3 "" H 1400 4500 50  0000 C CNN
-	1    1400 4500
+P 800 4500
+F 0 "P7" H 800 4650 50  0000 C CNN
+F 1 "BMS RX" V 900 4500 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 800 4500 50  0001 C CNN
+F 3 "" H 800 4500 50  0000 C CNN
+	1    800  4500
 	-1   0    0    -1  
 $EndComp
-Text Label 1600 4100 0    60   ~ 0
+Text Label 1000 4100 0    60   ~ 0
 BMS_TX
-Text Label 1600 4200 0    60   ~ 0
+Text Label 1000 4200 0    60   ~ 0
 GND
-Text Label 1600 4450 0    60   ~ 0
+Text Label 1000 4450 0    60   ~ 0
 BMS_RX
-Text Label 1600 4550 0    60   ~ 0
+Text Label 1000 4550 0    60   ~ 0
 GND
 $Comp
 L CONN_01X06 P15
 U 1 1 58B80A68
-P 1400 8500
-F 0 "P15" H 1400 8850 50  0000 C CNN
-F 1 "IMD LV" V 1500 8500 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Angled" H 1400 8500 50  0001 C CNN
-F 3 "" H 1400 8500 50  0000 C CNN
-	1    1400 8500
+P 800 8100
+F 0 "P15" H 800 8450 50  0000 C CNN
+F 1 "IMD LV" V 900 8100 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Angled" H 800 8100 50  0001 C CNN
+F 3 "" H 800 8100 50  0000 C CNN
+	1    800  8100
 	-1   0    0    -1  
 $EndComp
-Text Label 1600 8250 0    60   ~ 0
+Text Label 1000 7850 0    60   ~ 0
 12V
-Text Label 1600 8350 0    60   ~ 0
+Text Label 1000 7950 0    60   ~ 0
 IMD_FLT
-Text Label 1600 8450 0    60   ~ 0
+Text Label 1000 8050 0    60   ~ 0
 GND
-Text Label 1600 8550 0    60   ~ 0
+Text Label 1000 8150 0    60   ~ 0
 GND
-Text Label 1600 8650 0    60   ~ 0
+Text Label 1000 8250 0    60   ~ 0
 GND
-NoConn ~ 1600 8750
+NoConn ~ 1000 8350
 Wire Wire Line
 	3850 10300 3850 10200
 Wire Wire Line
@@ -1936,17 +1936,17 @@ Connection ~ 2650 10750
 $Comp
 L CONN_01X02 P18
 U 1 1 58B9D04E
-P 2350 7850
-F 0 "P18" H 2350 8000 50  0000 C CNN
-F 1 "Acc LED 2" V 2450 7850 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 2350 7850 50  0001 C CNN
-F 3 "" H 2350 7850 50  0000 C CNN
-	1    2350 7850
+P 1900 8300
+F 0 "P18" H 1900 8450 50  0000 C CNN
+F 1 "Acc LED 2" V 2000 8300 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1900 8300 50  0001 C CNN
+F 3 "" H 1900 8300 50  0000 C CNN
+	1    1900 8300
 	-1   0    0    -1  
 $EndComp
-Text Label 2550 7800 0    60   ~ 0
+Text Label 2100 8250 0    60   ~ 0
 12V_TSAL
-Text Label 2550 7900 0    60   ~ 0
+Text Label 2100 8350 0    60   ~ 0
 GND
 $Comp
 L 4071 U?
@@ -1981,4 +1981,41 @@ F 3 "" H 4550 3300 50  0000 C CNN
 	1    4550 3300
 	0    1    1    0   
 $EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 58BAAFD7
+P 800 6450
+F 0 "P?" H 800 6600 50  0000 C CNN
+F 1 "Temp Reset" V 900 6450 50  0000 C CNN
+F 2 "" H 800 6450 50  0000 C CNN
+F 3 "" H 800 6450 50  0000 C CNN
+	1    800  6450
+	-1   0    0    -1  
+$EndComp
+Text Label 1000 6400 0    60   ~ 0
+12V
+Text Label 1000 6500 0    60   ~ 0
+TEMP_RESET
+$Comp
+L CONN_01X06 P?
+U 1 1 58BB3BC2
+P 2400 1000
+F 0 "P?" H 2400 1350 50  0000 C CNN
+F 1 "Temperature Board" V 2500 1000 50  0000 C CNN
+F 2 "" H 2400 1000 50  0000 C CNN
+F 3 "" H 2400 1000 50  0000 C CNN
+	1    2400 1000
+	-1   0    0    -1  
+$EndComp
+Text Label 2600 750  0    60   ~ 0
+5V
+Text Label 2600 850  0    60   ~ 0
+GND
+Text Label 2600 950  0    60   ~ 0
+CAN_H
+Text Label 2600 1050 0    60   ~ 0
+CAN_L
+Text Label 2600 1150 0    60   ~ 0
+TEMP_FLT
+NoConn ~ 2600 1250
 $EndSCHEMATC
