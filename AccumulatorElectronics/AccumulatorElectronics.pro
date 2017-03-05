@@ -1,4 +1,4 @@
-update=Tuesday, February 21, 2017 'PMt' 05:41:04 PM
+update=3/5/2017 12:07:37 AM
 version=1
 last_client=eeschema
 [pcbnew]
@@ -60,3 +60,13 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=arduino
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
