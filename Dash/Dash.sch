@@ -1,0 +1,304 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:FS FINAL
+LIBS:Dash-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X12 P?
+U 1 1 58BC7004
+P 1000 1400
+F 0 "P?" H 1000 2050 50  0000 C CNN
+F 1 "Input from ECU" V 1100 1400 50  0000 C CNN
+F 2 "" H 1000 1400 50  0000 C CNN
+F 3 "" H 1000 1400 50  0000 C CNN
+	1    1000 1400
+	-1   0    0    -1  
+$EndComp
+Text Label 1200 850  0    60   ~ 0
+12V
+Text Label 1200 950  0    60   ~ 0
+12V_LVMS
+Text Label 1200 1150 0    60   ~ 0
+IMD_FLT_LED
+Text Label 1200 1250 0    60   ~ 0
+BMS_FLT_LED
+Text Label 1200 1350 0    60   ~ 0
+CAN_H
+Text Label 1200 1450 0    60   ~ 0
+CAN_L
+Text Label 1200 1550 0    60   ~ 0
+BUTTON_DRIVE
+Text Label 1200 1850 0    60   ~ 0
+AIRS_DASH_OUT
+Text Label 1200 1950 0    60   ~ 0
+GND
+$Comp
+L +12V #PWR?
+U 1 1 58BC7D3A
+P 1200 850
+F 0 "#PWR?" H 1200 700 50  0001 C CNN
+F 1 "+12V" H 1200 990 50  0000 C CNN
+F 2 "" H 1200 850 50  0000 C CNN
+F 3 "" H 1200 850 50  0000 C CNN
+	1    1200 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58BC7D99
+P 1200 1950
+F 0 "#PWR?" H 1200 1700 50  0001 C CNN
+F 1 "GND" H 1200 1800 50  0000 C CNN
+F 2 "" H 1200 1950 50  0000 C CNN
+F 3 "" H 1200 1950 50  0000 C CNN
+	1    1200 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1350 2500 1350
+Wire Wire Line
+	2500 1350 2500 1200
+Wire Wire Line
+	2500 1200 3500 1200
+$Comp
+L CD-7L_30-5503 U?
+U 1 1 58BC8129
+P 4100 1650
+F 0 "U?" H 4100 1850 60  0000 C CNN
+F 1 "CD-7L_30-5503" H 4100 1750 60  0000 C CNN
+F 2 "" H 4100 1650 60  0001 C CNN
+F 3 "" H 4100 1650 60  0001 C CNN
+	1    4100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1450 2600 1450
+Wire Wire Line
+	2600 1450 2600 1400
+Wire Wire Line
+	2600 1400 3500 1400
+$Comp
+L +12V #PWR?
+U 1 1 58BC835D
+P 4100 850
+F 0 "#PWR?" H 4100 700 50  0001 C CNN
+F 1 "+12V" H 4100 990 50  0000 C CNN
+F 2 "" H 4100 850 50  0000 C CNN
+F 3 "" H 4100 850 50  0000 C CNN
+	1    4100 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58BC86FE
+P 4100 2250
+F 0 "#PWR?" H 4100 2000 50  0001 C CNN
+F 1 "GND" H 4100 2100 50  0000 C CNN
+F 2 "" H 4100 2250 50  0000 C CNN
+F 3 "" H 4100 2250 50  0000 C CNN
+	1    4100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 58BC8760
+P 4550 3750
+F 0 "SW?" H 4550 3850 50  0000 C CNN
+F 1 "SPST" H 4550 3650 50  0000 C CNN
+F 2 "" H 4550 3750 60  0000 C CNN
+F 3 "" H 4550 3750 60  0000 C CNN
+	1    4550 3750
+	1    0    0    -1  
+$EndComp
+Text Label 4350 3750 2    60   ~ 0
+12V_LVMS
+$Comp
+L +12V #PWR?
+U 1 1 58BC8A9E
+P 4750 3750
+F 0 "#PWR?" H 4750 3600 50  0001 C CNN
+F 1 "+12V" H 4750 3890 50  0000 C CNN
+F 2 "" H 4750 3750 50  0000 C CNN
+F 3 "" H 4750 3750 50  0000 C CNN
+	1    4750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 58BC8B8A
+P 4750 3900
+F 0 "D?" H 4750 4000 50  0000 C CNN
+F 1 "LED" H 4750 3800 50  0000 C CNN
+F 2 "" H 4750 3900 50  0000 C CNN
+F 3 "" H 4750 3900 50  0000 C CNN
+	1    4750 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58BC8C1D
+P 4750 4050
+F 0 "#PWR?" H 4750 3800 50  0001 C CNN
+F 1 "GND" H 4750 3900 50  0000 C CNN
+F 2 "" H 4750 4050 50  0000 C CNN
+F 3 "" H 4750 4050 50  0000 C CNN
+	1    4750 4050
+	1    0    0    -1  
+$EndComp
+Text Notes 3800 3500 0    60   ~ 0
+Driver Facing LV Master Switch
+$Comp
+L SPST SW?
+U 1 1 58BC8F06
+P 3900 3050
+F 0 "SW?" H 3900 3150 50  0000 C CNN
+F 1 "Crash Sensor" H 3900 2950 50  0000 C CNN
+F 2 "" H 3900 3050 60  0000 C CNN
+F 3 "" H 3900 3050 60  0000 C CNN
+	1    3900 3050
+	1    0    0    -1  
+$EndComp
+Text Label 5100 3050 0    60   ~ 0
+AIRS_OUT_DASH
+$Comp
+L +12V #PWR?
+U 1 1 58BC91D2
+P 3700 3050
+F 0 "#PWR?" H 3700 2900 50  0001 C CNN
+F 1 "+12V" H 3700 3190 50  0000 C CNN
+F 2 "" H 3700 3050 50  0000 C CNN
+F 3 "" H 3700 3050 50  0000 C CNN
+	1    3700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 58BC943E
+P 4900 3050
+F 0 "SW?" H 4900 3150 50  0000 C CNN
+F 1 "Driver Facing E-Stop" H 4900 2950 50  0000 C CNN
+F 2 "" H 4900 3050 60  0000 C CNN
+F 3 "" H 4900 3050 60  0000 C CNN
+	1    4900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3050 4700 3050
+$Comp
+L SPST SW?
+U 1 1 58BC9F6B
+P 1400 2600
+F 0 "SW?" H 1400 2700 50  0000 C CNN
+F 1 "Drive Mode Button" H 1400 2500 50  0000 C CNN
+F 2 "" H 1400 2600 60  0000 C CNN
+F 3 "" H 1400 2600 60  0000 C CNN
+	1    1400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 58BC9FAC
+P 1400 3200
+F 0 "SW?" H 1400 3300 50  0000 C CNN
+F 1 "Neutral Mode Button" H 1400 3100 50  0000 C CNN
+F 2 "" H 1400 3200 60  0000 C CNN
+F 3 "" H 1400 3200 60  0000 C CNN
+	1    1400 3200
+	1    0    0    -1  
+$EndComp
+Text Label 1200 1650 0    60   ~ 0
+BUTTON_STOP
+$Comp
+L GND #PWR?
+U 1 1 58BCA2E2
+P 1600 2600
+F 0 "#PWR?" H 1600 2350 50  0001 C CNN
+F 1 "GND" H 1600 2450 50  0000 C CNN
+F 2 "" H 1600 2600 50  0000 C CNN
+F 3 "" H 1600 2600 50  0000 C CNN
+	1    1600 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58BCA31E
+P 1600 3200
+F 0 "#PWR?" H 1600 2950 50  0001 C CNN
+F 1 "GND" H 1600 3050 50  0000 C CNN
+F 2 "" H 1600 3200 50  0000 C CNN
+F 3 "" H 1600 3200 50  0000 C CNN
+	1    1600 3200
+	0    -1   -1   0   
+$EndComp
+Text Label 1200 2600 2    60   ~ 0
+BUTTON_DRIVE
+Text Label 1200 3200 2    60   ~ 0
+BUTTON_STOP
+Text Label 1200 1750 0    60   ~ 0
+BUTTON_3
+$Comp
+L SPST SW?
+U 1 1 58BCA5DB
+P 1400 3650
+F 0 "SW?" H 1400 3750 50  0000 C CNN
+F 1 "Third Button" H 1400 3550 50  0000 C CNN
+F 2 "" H 1400 3650 60  0000 C CNN
+F 3 "" H 1400 3650 60  0000 C CNN
+	1    1400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58BCA5E1
+P 1600 3650
+F 0 "#PWR?" H 1600 3400 50  0001 C CNN
+F 1 "GND" H 1600 3500 50  0000 C CNN
+F 2 "" H 1600 3650 50  0000 C CNN
+F 3 "" H 1600 3650 50  0000 C CNN
+	1    1600 3650
+	0    -1   -1   0   
+$EndComp
+Text Label 1200 3650 2    60   ~ 0
+BUTTON_3
+$EndSCHEMATC
