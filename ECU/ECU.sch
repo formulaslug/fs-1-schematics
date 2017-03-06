@@ -146,11 +146,9 @@ CAN_H
 Text Label 1700 3450 0    60   ~ 0
 CAN_L
 Text Label 1700 3550 0    60   ~ 0
-DRIVE_BUTTON
+BUTTON_DRIVE
 Text Label 1700 3950 0    60   ~ 0
 GND
-NoConn ~ 1700 3650
-NoConn ~ 1700 3750
 Text Label 4850 4850 0    60   ~ 0
 3.3V
 Text Label 1700 1650 0    60   ~ 0
@@ -528,4 +526,14 @@ Wire Wire Line
 	1700 1150 2800 1150
 Wire Wire Line
 	2800 1150 2800 5400
+Text Label 1700 3650 0    60   ~ 0
+BUTTON_NETURAL
+Text Label 1700 3750 0    60   ~ 0
+BUTTON_3
+Text Label 3550 4050 2    60   ~ 0
+BUTTON_DRIVE
+Text Label 3550 4150 2    60   ~ 0
+BUTTON_NEUTRAL
+Text Label 3550 4250 2    60   ~ 0
+BUTTON_3
 $EndSCHEMATC
