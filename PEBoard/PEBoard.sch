@@ -701,7 +701,7 @@ Wire Wire Line
 	3850 3350 3850 3450
 Text Label 2650 3350 2    60   ~ 0
 TSAL_SIG
-Text Label 3850 3350 0    60   ~ 0
+Text Label 4250 3350 1    60   ~ 0
 TSAL_OUT
 $Comp
 L CONN_01X02 P?
@@ -724,4 +724,17 @@ Connection ~ 3350 4250
 Connection ~ 3450 4250
 Text Label 3250 4250 3    60   ~ 0
 GND
+$Comp
+L Fuse F?
+U 1 1 58C61CCE
+P 4000 3350
+F 0 "F?" V 4080 3350 50  0000 C CNN
+F 1 "Fuse" V 3925 3350 50  0000 C CNN
+F 2 "" V 3930 3350 50  0000 C CNN
+F 3 "" H 4000 3350 50  0000 C CNN
+	1    4000 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 3350 4250 3350
 $EndSCHEMATC
