@@ -213,10 +213,10 @@ F 3 "" H 2650 10900 50  0000 C CNN
 $EndComp
 Text Label 2550 11050 2    60   ~ 0
 HV-
-Text Label 2150 10450 2    60   ~ 0
+Text Label 1850 10450 2    60   ~ 0
 HV+
 Text Label 3850 11100 0    60   ~ 0
-12V_TSAL
+12V_INDICATOR
 $Comp
 L LM555N U9
 U 1 1 58A3C028
@@ -664,21 +664,6 @@ BATT+
 Text Label 1800 10000 2    60   ~ 0
 BATT-
 $Comp
-L CONN_01X02 P13
-U 1 1 58B07294
-P 1900 7400
-F 0 "P13" H 1900 7550 50  0000 C CNN
-F 1 "TSAL" V 2000 7400 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 1900 7400 50  0001 C CNN
-F 3 "" H 1900 7400 50  0000 C CNN
-	1    1900 7400
-	-1   0    0    -1  
-$EndComp
-Text Label 2100 7350 0    60   ~ 0
-12V_TSAL
-Text Label 2100 7450 0    60   ~ 0
-GND
-$Comp
 L CONN_01X02 P14
 U 1 1 58B07EC2
 P 1900 7850
@@ -690,7 +675,7 @@ F 3 "" H 1900 7850 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 2100 7800 0    60   ~ 0
-12V_TSAL
+12V_INDICATOR
 Text Label 2100 7900 0    60   ~ 0
 GND
 Wire Wire Line
@@ -1941,7 +1926,7 @@ F 3 "" H 1900 8300 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 2100 8250 0    60   ~ 0
-12V_TSAL
+12V_INDICATOR
 Text Label 2100 8350 0    60   ~ 0
 GND
 $Comp
@@ -2027,4 +2012,15 @@ F 3 "" H 4200 9400 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	4350 10200 4350 9400
+$Comp
+L Fuse F?
+U 1 1 58C4B2C9
+P 2000 10450
+F 0 "F?" V 2080 10450 50  0000 C CNN
+F 1 "Fuse" V 1925 10450 50  0000 C CNN
+F 2 "" V 1930 10450 50  0000 C CNN
+F 3 "" H 2000 10450 50  0000 C CNN
+	1    2000 10450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
