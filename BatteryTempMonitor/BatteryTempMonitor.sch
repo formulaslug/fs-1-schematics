@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:FS FINAL
 LIBS:BatteryTempMonitor-rescue
 LIBS:power
 LIBS:device
@@ -29,7 +30,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:FS FINAL
 LIBS:arduino
 LIBS:BatteryTempMonitor-cache
 EELAYER 25 0
