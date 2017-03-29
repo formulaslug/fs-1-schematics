@@ -90,18 +90,12 @@ F 3 "" H 3500 2150 60  0000 C CNN
 	1    3500 2150
 	1    0    0    -1  
 $EndComp
-Text HLabel 2200 2300 0    60   Input ~ 0
-GND
 Text Notes 3500 850  0    60   ~ 0
 TSAL - Oscillator
-Text HLabel 1650 1800 2    60   Input ~ 0
-GND
 Text Label 7500 1400 0    60   ~ 0
 OSC
 Text Label 900  2800 1    60   ~ 0
 OSC
-Text HLabel 2400 2800 1    60   Input ~ 0
-GND
 $Comp
 L LED_Small D301
 U 1 1 570A5E4D
@@ -553,11 +547,9 @@ F 3 "" H 7100 1100 60  0000 C CNN
 	1    6900 1700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6300 1500
 NoConn ~ 6300 1600
 NoConn ~ 6300 1700
 NoConn ~ 6300 2000
-NoConn ~ 7500 1500
 NoConn ~ 7500 1600
 NoConn ~ 7500 1700
 $Comp
@@ -1013,10 +1005,6 @@ F 3 "" H 3100 2150 60  0000 C CNN
 $EndComp
 Text Label 6800 1100 0    60   ~ 0
 5V
-Text HLabel 1650 1700 2    60   Input ~ 0
-12V
-Text HLabel 7100 1100 2    60   Input ~ 0
-12V
 Wire Wire Line
 	4000 1400 3900 1400
 Wire Wire Line
@@ -1135,8 +1123,6 @@ Connection ~ 2400 4900
 Wire Wire Line
 	5400 1400 6300 1400
 Wire Wire Line
-	6300 1900 6200 1900
-Wire Wire Line
 	1200 5500 1100 5500
 Wire Wire Line
 	1800 5500 1700 5500
@@ -1217,13 +1203,8 @@ Connection ~ 2400 7300
 Connection ~ 2400 5200
 Connection ~ 900  5200
 Wire Wire Line
-	2400 2800 2400 7600
-Wire Wire Line
 	900  2800 900  7600
 Connection ~ 5800 1100
-Wire Wire Line
-	6200 1900 6200 1100
-Connection ~ 6200 1100
 Wire Wire Line
 	3100 2000 3100 1100
 Connection ~ 3100 1100
@@ -1232,12 +1213,6 @@ Connection ~ 6900 2300
 Connection ~ 7000 2300
 Connection ~ 7100 2300
 Connection ~ 3100 2300
-Wire Wire Line
-	1650 1700 1450 1700
-Wire Wire Line
-	1450 1800 1650 1800
-Wire Wire Line
-	7000 1100 7100 1100
 $Comp
 L LM555N U?
 U 1 1 5897EDA1
@@ -1248,17 +1223,6 @@ F 2 "" H 4700 1700 60  0000 C CNN
 F 3 "" H 4700 1700 60  0000 C CNN
 	1    4700 1700
 	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X02 P?
-U 1 1 5897EFA7
-P 1250 1750
-F 0 "P?" H 1250 1900 50  0000 C CNN
-F 1 "CONN_01X02" V 1350 1750 50  0000 C CNN
-F 2 "" H 1250 1750 50  0000 C CNN
-F 3 "" H 1250 1750 50  0000 C CNN
-	1    1250 1750
-	-1   0    0    1   
 $EndComp
 $Comp
 L L78S05CV-DG U?
@@ -1274,6 +1238,120 @@ $EndComp
 Wire Wire Line
 	2500 1400 2500 2300
 Connection ~ 2500 2300
-Text HLabel 2100 1100 0    60   Input ~ 0
-12V
+Wire Wire Line
+	6300 1400 6300 1500
+Wire Wire Line
+	7500 1500 7500 1400
+$Comp
+L CONN_01X04 J?
+U 1 1 58D93057
+P 1250 1850
+F 0 "J?" H 1250 2100 50  0000 C CNN
+F 1 "CONN_01X04" V 1350 1850 50  0000 C CNN
+F 2 "" H 1250 1850 50  0001 C CNN
+F 3 "" H 1250 1850 50  0001 C CNN
+	1    1250 1850
+	-1   0    0    -1  
+$EndComp
+Text Label 1450 1800 0    60   ~ 0
+TSAL_SIG
+Text Label 1450 1900 0    60   ~ 0
+RTDS_OUT
+Text Label 6150 1900 1    60   ~ 0
+TSAL_SIG
+Wire Wire Line
+	6150 1900 6300 1900
+$Comp
+L +12V #PWR?
+U 1 1 58D9EAB3
+P 1450 1700
+F 0 "#PWR?" H 1450 1550 50  0001 C CNN
+F 1 "+12V" H 1450 1840 50  0000 C CNN
+F 2 "" H 1450 1700 50  0001 C CNN
+F 3 "" H 1450 1700 50  0001 C CNN
+	1    1450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58D9ED99
+P 1450 2000
+F 0 "#PWR?" H 1450 1750 50  0001 C CNN
+F 1 "GND" H 1450 1850 50  0000 C CNN
+F 2 "" H 1450 2000 50  0001 C CNN
+F 3 "" H 1450 2000 50  0001 C CNN
+	1    1450 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58D9F028
+P 2200 2300
+F 0 "#PWR?" H 2200 2050 50  0001 C CNN
+F 1 "GND" H 2200 2150 50  0000 C CNN
+F 2 "" H 2200 2300 50  0001 C CNN
+F 3 "" H 2200 2300 50  0001 C CNN
+	1    2200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 58D9F0EE
+P 2100 1100
+F 0 "#PWR?" H 2100 950 50  0001 C CNN
+F 1 "+12V" H 2100 1240 50  0000 C CNN
+F 2 "" H 2100 1100 50  0001 C CNN
+F 3 "" H 2100 1100 50  0001 C CNN
+	1    2100 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 58D9F1B4
+P 7000 1100
+F 0 "#PWR?" H 7000 950 50  0001 C CNN
+F 1 "+12V" H 7000 1240 50  0000 C CNN
+F 2 "" H 7000 1100 50  0001 C CNN
+F 3 "" H 7000 1100 50  0001 C CNN
+	1    7000 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58DA0D98
+P 2400 7800
+F 0 "#PWR?" H 2400 7550 50  0001 C CNN
+F 1 "GND" H 2400 7650 50  0000 C CNN
+F 2 "" H 2400 7800 50  0001 C CNN
+F 3 "" H 2400 7800 50  0001 C CNN
+	1    2400 7800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 7600
+Wire Wire Line
+	2400 3100 2400 7800
+$Comp
+L Speaker LS?
+U 1 1 58DA5C2D
+P 4300 3150
+F 0 "LS?" H 4350 3375 50  0000 R CNN
+F 1 "RTDS Piezo" H 4350 3300 50  0000 R CNN
+F 2 "" H 4300 2950 50  0001 C CNN
+F 3 "" H 4290 3100 50  0001 C CNN
+	1    4300 3150
+	1    0    0    -1  
+$EndComp
+Text Label 4100 3150 2    60   ~ 0
+RTDS_SIG
+$Comp
+L GND #PWR?
+U 1 1 58DA5F1E
+P 4100 3250
+F 0 "#PWR?" H 4100 3000 50  0001 C CNN
+F 1 "GND" H 4100 3100 50  0000 C CNN
+F 2 "" H 4100 3250 50  0001 C CNN
+F 3 "" H 4100 3250 50  0001 C CNN
+	1    4100 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

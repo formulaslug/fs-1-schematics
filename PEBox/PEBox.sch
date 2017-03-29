@@ -29,7 +29,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:FS FINAL
-LIBS:PEBox-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -605,4 +604,33 @@ CAN_L_DEBUG
 Text Label 10200 7550 0    60   ~ 0
 HV-
 NoConn ~ 10200 7450
+$Comp
+L CONN_01X04 J?
+U 1 1 58DA195D
+P 1600 8000
+F 0 "J?" H 1600 8250 50  0000 C CNN
+F 1 "TSAL" V 1700 8000 50  0000 C CNN
+F 2 "" H 1600 8000 50  0001 C CNN
+F 3 "" H 1600 8000 50  0001 C CNN
+	1    1600 8000
+	-1   0    0    -1  
+$EndComp
+Text Label 1800 7850 0    60   ~ 0
+12V
+Text Label 1800 7950 0    60   ~ 0
+TSAL_SIG
+Text Label 1800 8050 0    60   ~ 0
+RTDS_OUT
+Text Label 1800 8150 0    60   ~ 0
+GND
+Wire Notes Line
+	1100 7450 1100 8600
+Wire Notes Line
+	1100 8600 2900 8600
+Wire Notes Line
+	2900 8600 2900 7450
+Wire Notes Line
+	2900 7450 1100 7450
+Text Notes 1600 7650 0    60   ~ 0
+To TSAL
 $EndSCHEMATC
