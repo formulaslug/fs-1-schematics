@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:AccumulatorBoard-rescue
 LIBS:FS FINAL
 LIBS:power
 LIBS:device
@@ -411,8 +412,6 @@ F 3 "" H 14300 9300 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	14850 9500 14350 9500
-Wire Wire Line
-	15250 6750 15250 7200
 $Comp
 L GND #PWR60
 U 1 1 58B22F24
@@ -501,10 +500,6 @@ F 3 "" H 5500 3250 50  0000 C CNN
 	1    5500 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14750 6850 14750 6750
-Wire Wire Line
-	14750 6750 15250 6750
 $Comp
 L GND #PWR49
 U 1 1 58B29EE6
@@ -716,8 +711,6 @@ F 3 "" H 6400 1850 50  0000 C CNN
 	1    6400 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14750 5150 14750 5100
 $Comp
 L GND #PWR59
 U 1 1 58B36233
@@ -729,10 +722,6 @@ F 3 "" H 15250 5800 50  0000 C CNN
 	1    15250 5800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14750 5100 15250 5100
-Wire Wire Line
-	15250 5100 15250 5500
 $Comp
 L DK1A1B-12V U17
 U 1 1 58B4EA32
@@ -744,12 +733,6 @@ F 3 "" H 15750 1900 60  0000 C CNN
 	1    15750 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14750 1400 14750 1350
-Wire Wire Line
-	14750 1350 15250 1350
-Wire Wire Line
-	15250 1350 15250 1750
 $Comp
 L GND #PWR57
 U 1 1 58B4F7B9
@@ -780,8 +763,6 @@ Text Label 14500 4550 2    60   ~ 0
 TEMP_FLT_H
 Text Label 15750 1000 1    60   ~ 0
 AIRS_IN
-Wire Wire Line
-	14750 3450 14750 3400
 $Comp
 L GND #PWR58
 U 1 1 58B52B9B
@@ -793,10 +774,6 @@ F 3 "" H 15250 4100 50  0000 C CNN
 	1    15250 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14750 3400 15250 3400
-Wire Wire Line
-	15250 3400 15250 3800
 Wire Wire Line
 	15750 4250 15750 5350
 $Comp
@@ -1277,9 +1254,9 @@ IMD_FLT_5
 Text Label 10550 5900 2    60   ~ 0
 IMD_FLT_5
 Wire Wire Line
-	14500 6250 14750 6250
+	14500 6250 14950 6250
 Wire Wire Line
-	14750 4550 14500 4550
+	14500 4550 14950 4550
 Wire Wire Line
 	10550 6300 10550 6400
 Wire Wire Line
@@ -1296,9 +1273,9 @@ F 3 "" H 10350 6400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14750 7950 14500 7950
+	14500 7950 14950 7950
 Wire Wire Line
-	14750 2500 14500 2500
+	14500 2500 14950 2500
 Text Label 13950 3700 2    60   ~ 0
 TEMP_FLT_H
 Text Label 13950 5400 2    60   ~ 0
@@ -1840,17 +1817,6 @@ F 3 "" H 4150 9700 50  0001 C CNN
 	1    4150 9700
 	1    0    0    -1  
 $EndComp
-$Comp
-L G5RL-K1A-E U?
-U 1 1 593384F9
-P 14700 1950
-F 0 "U?" H 14850 1550 60  0000 C CNN
-F 1 "G5RL-K1A-E" V 15100 1950 60  0000 C CNN
-F 2 "" H 14950 1950 60  0000 C CNN
-F 3 "" H 14950 1950 60  0000 C CNN
-	1    14700 1950
-	1    0    0    -1  
-$EndComp
 Text Label 8800 5300 0    60   ~ 0
 TIMER
 Text Label 10550 6100 2    60   ~ 0
@@ -1860,7 +1826,7 @@ TIMER_H
 Text Label 13950 1950 2    60   ~ 0
 TIMER_H
 $Comp
-L G5RL-K1A-E U?
+L G5RL-K1A-E-RESCUE-AccumulatorBoard U?
 U 1 1 59342050
 P 14700 4000
 F 0 "U?" H 14850 3600 60  0000 C CNN
@@ -1873,7 +1839,7 @@ $EndComp
 Text Label 13950 4000 2    60   ~ 0
 TIMER_H
 $Comp
-L G5RL-K1A-E U?
+L G5RL-K1A-E-RESCUE-AccumulatorBoard U?
 U 1 1 59342F6D
 P 14700 5700
 F 0 "U?" H 14850 5300 60  0000 C CNN
@@ -1886,7 +1852,7 @@ $EndComp
 Text Label 13950 5700 2    60   ~ 0
 TIMER_H
 $Comp
-L G5RL-K1A-E U?
+L G5RL-K1A-E-RESCUE-AccumulatorBoard U?
 U 1 1 59343C9D
 P 14700 7400
 F 0 "U?" H 14850 7000 60  0000 C CNN
@@ -1944,4 +1910,39 @@ F 3 "" H 1000 4950 50  0000 C CNN
 	1    1000 4950
 	1    0    0    -1  
 $EndComp
+$Comp
+L G5RL-K1A-E-RESCUE-AccumulatorBoard U?
+U 1 1 59346F42
+P 14700 1950
+F 0 "U?" H 14850 1550 60  0000 C CNN
+F 1 "G5RL-K1A-E" V 15100 1950 60  0000 C CNN
+F 2 "" H 14950 1950 60  0000 C CNN
+F 3 "" H 14950 1950 60  0000 C CNN
+	1    14700 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14750 1400 15250 1400
+Connection ~ 14750 2500
+Wire Wire Line
+	15250 1400 15250 1750
+Connection ~ 14950 1400
+Connection ~ 14750 4550
+Wire Wire Line
+	14750 3450 15250 3450
+Wire Wire Line
+	15250 3450 15250 3800
+Connection ~ 14950 3450
+Wire Wire Line
+	14750 5150 15250 5150
+Wire Wire Line
+	15250 5150 15250 5500
+Connection ~ 14950 5150
+Connection ~ 14750 6250
+Wire Wire Line
+	14750 6850 15250 6850
+Wire Wire Line
+	15250 6850 15250 7200
+Connection ~ 14950 6850
+Connection ~ 14750 7950
 $EndSCHEMATC
