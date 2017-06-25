@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
+LIBS:AccumulatorElectronics-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -66,19 +67,19 @@ F 3 "" H 8800 4200 50  0000 C CNN
 	1    8800 4200
 	-1   0    0    -1  
 $EndComp
-Text Label 9000 4700 0    60   ~ 0
+Text Label 9250 4700 0    60   ~ 0
 HV+
-Text Label 9000 4800 0    60   ~ 0
+Text Label 9250 4800 0    60   ~ 0
 HV-
 $Comp
 L CONN_01X02 P12
 U 1 1 589D311D
-P 8800 7500
-F 0 "P12" H 8800 7650 50  0000 C CNN
-F 1 "IMD HV" V 8900 7500 50  0000 C CNN
-F 2 "" H 8800 7500 50  0001 C CNN
-F 3 "" H 8800 7500 50  0000 C CNN
-	1    8800 7500
+P 8800 3600
+F 0 "P12" H 8800 3750 50  0000 C CNN
+F 1 "IMD HV" V 8900 3600 50  0000 C CNN
+F 2 "" H 8800 3600 50  0001 C CNN
+F 3 "" H 8800 3600 50  0000 C CNN
+	1    8800 3600
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -92,8 +93,6 @@ F 3 "" H 7900 9450 50  0000 C CNN
 	1    7900 9450
 	1    0    0    -1  
 $EndComp
-Text Label 7700 9400 2    60   ~ 0
-12V
 $Comp
 L CONN_01X04 P3
 U 1 1 58AC6391
@@ -136,7 +135,7 @@ F 3 "" H 7900 8000 50  0000 C CNN
 	1    7900 8000
 	1    0    0    -1  
 $EndComp
-Text Label 7700 9000 2    60   ~ 0
+Text Label 7700 8900 2    60   ~ 0
 IMD_RESET
 $Comp
 L CONN_01X02 P7
@@ -149,14 +148,10 @@ F 3 "" H 7900 8950 50  0000 C CNN
 	1    7900 8950
 	1    0    0    -1  
 $EndComp
-Text Label 7700 8050 2    60   ~ 0
-BMS_RESET
-Text Label 7700 9500 2    60   ~ 0
-BSPD_RESET
 Text Label 7700 7950 2    60   ~ 0
-12V
-Text Label 7700 8900 2    60   ~ 0
-12V
+BMS_RESET
+Text Label 7700 9400 2    60   ~ 0
+BSPD_RESET
 $Comp
 L CONN_01X02 P8
 U 1 1 58ACF01F
@@ -195,23 +190,23 @@ GND
 Text Label 9000 6950 0    60   ~ 0
 GND
 Text Label 9000 6350 0    60   ~ 0
-AIRS_DISCH
+AIRS_OUTPUT_FINAL
 Text Label 9000 6850 0    60   ~ 0
-AIRS_DISCH
+AIRS_OUTPUT_FINAL
 $Comp
 L CONN_01X02 P?
 U 1 1 58B07EC2
-P 8800 9300
-F 0 "P?" H 8800 9450 50  0000 C CNN
-F 1 "Acc LED 1" V 8900 9300 50  0000 C CNN
-F 2 "" H 8800 9300 50  0000 C CNN
-F 3 "" H 8800 9300 50  0000 C CNN
-	1    8800 9300
+P 8800 1100
+F 0 "P?" H 8800 1250 50  0000 C CNN
+F 1 "Acc LED 1" V 8900 1100 50  0000 C CNN
+F 2 "" H 8800 1100 50  0000 C CNN
+F 3 "" H 8800 1100 50  0000 C CNN
+	1    8800 1100
 	-1   0    0    -1  
 $EndComp
-Text Label 9000 9350 0    60   ~ 0
+Text Label 9000 1150 0    60   ~ 0
 ACC_LED
-Text Label 9000 9250 0    60   ~ 0
+Text Label 9000 1050 0    60   ~ 0
 GND
 Text Label 9000 4250 0    60   ~ 0
 BATT-
@@ -246,12 +241,12 @@ GND
 $Comp
 L LED D?
 U 1 1 58B76387
-P 9950 9250
-F 0 "D?" H 9950 9350 50  0000 C CNN
-F 1 "LED" H 9950 9150 50  0000 C CNN
-F 2 "" H 9950 9250 50  0000 C CNN
-F 3 "" H 9950 9250 50  0000 C CNN
-	1    9950 9250
+P 9950 1050
+F 0 "D?" H 9950 1150 50  0000 C CNN
+F 1 "LED" H 9950 950 50  0000 C CNN
+F 2 "" H 9950 1050 50  0000 C CNN
+F 3 "" H 9950 1050 50  0000 C CNN
+	1    9950 1050
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -259,7 +254,7 @@ L CONN_01X12 P?
 U 1 1 58B776E0
 P 7900 6250
 F 0 "P?" H 7900 6900 50  0000 C CNN
-F 1 "CONN_01X12" V 8000 6250 50  0000 C CNN
+F 1 "BMS Connector 2" V 8000 6250 50  0000 C CNN
 F 2 "" H 7900 6250 50  0000 C CNN
 F 3 "" H 7900 6250 50  0000 C CNN
 	1    7900 6250
@@ -363,15 +358,15 @@ Wire Wire Line
 Wire Wire Line
 	6400 6300 7700 6300
 Wire Wire Line
-	9000 9250 9250 9250
+	9000 1050 9250 1050
 Wire Wire Line
-	9250 9250 9250 9100
+	9250 1050 9250 900 
 Wire Wire Line
-	9250 9100 9950 9100
+	9250 900  9950 900 
 Wire Wire Line
-	9000 9350 9000 9400
+	9000 1150 9000 1200
 Wire Wire Line
-	9000 9400 9950 9400
+	9000 1200 9950 1200
 Wire Wire Line
 	7250 5750 7250 6500
 Wire Wire Line
@@ -406,18 +401,6 @@ Wire Wire Line
 	6900 8750 6900 7500
 Wire Wire Line
 	6900 7500 7700 7500
-Wire Wire Line
-	9000 7450 9850 7450
-Wire Wire Line
-	9850 7450 9850 7050
-Wire Wire Line
-	9000 7550 9850 7550
-Wire Wire Line
-	9850 7550 9850 7650
-Wire Wire Line
-	9850 7650 10550 7650
-Wire Wire Line
-	9850 7050 10550 7050
 Wire Wire Line
 	9000 8350 11350 8350
 Wire Wire Line
@@ -525,39 +508,39 @@ NoConn ~ 11950 7050
 $Comp
 L CONN_01X02 P?
 U 1 1 58BA66B7
-P 8800 9750
-F 0 "P?" H 8800 9900 50  0000 C CNN
-F 1 "Acc LED 2" V 8900 9750 50  0000 C CNN
-F 2 "" H 8800 9750 50  0000 C CNN
-F 3 "" H 8800 9750 50  0000 C CNN
-	1    8800 9750
-	-1   0    0    -1  
+P 8800 1800
+F 0 "P?" H 8800 1950 50  0000 C CNN
+F 1 "Acc LED 2" V 8900 1800 50  0000 C CNN
+F 2 "" H 8800 1800 50  0000 C CNN
+F 3 "" H 8800 1800 50  0000 C CNN
+	1    8800 1800
+	1    0    0    -1  
 $EndComp
-Text Label 9000 9800 0    60   ~ 0
+Text Label 8600 1850 2    60   ~ 0
 ACC_LED
-Text Label 9000 9700 0    60   ~ 0
+Text Label 8600 1750 2    60   ~ 0
 GND
 $Comp
 L LED D?
 U 1 1 58BA66BF
-P 9950 9700
-F 0 "D?" H 9950 9800 50  0000 C CNN
-F 1 "LED" H 9950 9600 50  0000 C CNN
-F 2 "" H 9950 9700 50  0000 C CNN
-F 3 "" H 9950 9700 50  0000 C CNN
-	1    9950 9700
-	0    -1   -1   0   
+P 7650 1750
+F 0 "D?" H 7650 1850 50  0000 C CNN
+F 1 "LED" H 7650 1650 50  0000 C CNN
+F 2 "" H 7650 1750 50  0000 C CNN
+F 3 "" H 7650 1750 50  0000 C CNN
+	1    7650 1750
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	9000 9700 9250 9700
+	8600 1750 8350 1750
 Wire Wire Line
-	9250 9700 9250 9550
+	8350 1750 8350 1600
 Wire Wire Line
-	9250 9550 9950 9550
+	8350 1600 7650 1600
 Wire Wire Line
-	9000 9800 9000 9850
+	8600 1850 8600 1900
 Wire Wire Line
-	9000 9850 9950 9850
+	8600 1900 7650 1900
 $Comp
 L CONN_01X02 P?
 U 1 1 58BA7516
@@ -569,10 +552,8 @@ F 3 "" H 7900 8450 50  0000 C CNN
 	1    7900 8450
 	1    0    0    -1  
 $EndComp
-Text Label 7700 8500 2    60   ~ 0
-TEMP_RESET
 Text Label 7700 8400 2    60   ~ 0
-12V
+TEMP_RESET
 $Comp
 L SPST SW?
 U 1 1 58BA77A6
@@ -652,32 +633,32 @@ Wire Wire Line
 $Comp
 L CONN_01X02 P?
 U 1 1 58BB0231
-P 8800 10200
-F 0 "P?" H 8800 10350 50  0000 C CNN
-F 1 "BMS TX" V 8900 10200 50  0000 C CNN
-F 2 "" H 8800 10200 50  0000 C CNN
-F 3 "" H 8800 10200 50  0000 C CNN
-	1    8800 10200
-	-1   0    0    -1  
+P 7900 4900
+F 0 "P?" H 7900 5050 50  0000 C CNN
+F 1 "BMS TX" V 8000 4900 50  0000 C CNN
+F 2 "" H 7900 4900 50  0000 C CNN
+F 3 "" H 7900 4900 50  0000 C CNN
+	1    7900 4900
+	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_01X02 P?
 U 1 1 58BB092F
-P 8800 10600
-F 0 "P?" H 8800 10750 50  0000 C CNN
-F 1 "BMS RX" V 8900 10600 50  0000 C CNN
-F 2 "" H 8800 10600 50  0000 C CNN
-F 3 "" H 8800 10600 50  0000 C CNN
-	1    8800 10600
-	-1   0    0    -1  
+P 7900 5300
+F 0 "P?" H 7900 5450 50  0000 C CNN
+F 1 "BMS RX" V 8000 5300 50  0000 C CNN
+F 2 "" H 7900 5300 50  0000 C CNN
+F 3 "" H 7900 5300 50  0000 C CNN
+	1    7900 5300
+	1    0    0    -1  
 $EndComp
-Text Label 9000 10150 0    60   ~ 0
+Text Label 7700 4850 2    60   ~ 0
 BMS_TX
-Text Label 9000 10250 0    60   ~ 0
+Text Label 7700 4950 2    60   ~ 0
 GND
-Text Label 9000 10550 0    60   ~ 0
+Text Label 7700 5250 2    60   ~ 0
 BMS_RX
-Text Label 9000 10650 0    60   ~ 0
+Text Label 7700 5350 2    60   ~ 0
 GND
 Text Label 12850 5300 0    60   ~ 0
 BMS_TX
@@ -687,14 +668,8 @@ Text Label 12850 5850 0    60   ~ 0
 BMS_RX
 Text Label 12850 5950 0    60   ~ 0
 GND
-Wire Notes Line
-	9200 650  9200 10850
-Wire Notes Line
-	7400 10850 9200 10850
-Wire Notes Line
-	7400 650  7400 10850
-Text Notes 7500 800  0    60   ~ 0
-Accumulator Board
+Text Notes 7050 2800 0    60   ~ 0
+Accumulator Board (LV)
 $Comp
 L CONN_01X06 P?
 U 1 1 58BB2486
@@ -760,218 +735,180 @@ Wire Notes Line
 Text Notes 11750 5050 0    60   ~ 0
 Battery
 $Comp
-L CONN_01X35 J?
-U 1 1 58DA49D8
-P 4800 3500
-F 0 "J?" H 4800 5300 50  0000 C CNN
-F 1 "CONN_01X35" V 4900 3500 50  0000 C CNN
-F 2 "" H 4800 3500 50  0001 C CNN
-F 3 "" H 4800 3500 50  0001 C CNN
-	1    4800 3500
-	-1   0    0    -1  
+L CONN_01X02 P?
+U 1 1 594F1EF4
+P 9850 4750
+F 0 "P?" H 9850 4900 50  0000 C CNN
+F 1 "High Current HV" V 9950 4750 50  0000 C CNN
+F 2 "" H 9850 4750 50  0000 C CNN
+F 3 "" H 9850 4750 50  0000 C CNN
+	1    9850 4750
+	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9650 4700 9000 4700
+Wire Wire Line
+	9000 4800 9650 4800
+Text Label 7700 8050 2    60   ~ 0
+GND
+Text Label 7700 8500 2    60   ~ 0
+GND
+Text Label 7700 9000 2    60   ~ 0
+GND
+Text Label 7700 9500 2    60   ~ 0
+GND
+Wire Notes Line
+	9600 5100 10100 5100
+Wire Notes Line
+	10100 5100 10100 3500
+Wire Notes Line
+	10100 3500 9600 3500
+Wire Notes Line
+	9600 3500 9600 5100
+Text Notes 11150 3450 2    60   ~ 0
+External HV High Current Connector
 $Comp
-L CONN_01X12 J?
-U 1 1 58DA4AC1
-P 7900 4750
-F 0 "J?" H 7900 5400 50  0000 C CNN
-F 1 "35pin: Pedalbox" V 8000 4750 50  0000 C CNN
-F 2 "" H 7900 4750 50  0001 C CNN
-F 3 "" H 7900 4750 50  0001 C CNN
-	1    7900 4750
+L CONN_01X02 P?
+U 1 1 594F5E58
+P 9850 3950
+F 0 "P?" H 9850 4100 50  0000 C CNN
+F 1 "Interlock" V 9950 3950 50  0000 C CNN
+F 2 "" H 9850 3950 50  0000 C CNN
+F 3 "" H 9850 3950 50  0000 C CNN
+	1    9850 3950
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X12 J?
-U 1 1 58DA4BAB
+L CONN_01X02 P?
+U 1 1 594F665C
+P 7900 4250
+F 0 "P?" H 7900 4400 50  0000 C CNN
+F 1 "High Current Interlock" V 8000 4250 50  0000 C CNN
+F 2 "" H 7900 4250 50  0000 C CNN
+F 3 "" H 7900 4250 50  0000 C CNN
+	1    7900 4250
+	1    0    0    -1  
+$EndComp
+Text Label 9650 3900 2    60   ~ 0
+HCI+
+Text Label 9650 4000 2    60   ~ 0
+HCI-
+Text Label 7700 4200 2    60   ~ 0
+HCI+
+Text Label 7700 4300 2    60   ~ 0
+HCI-
+$Comp
+L CONN_01X02 P?
+U 1 1 594F6D2B
+P 8800 3000
+F 0 "P?" H 8800 3150 50  0000 C CNN
+F 1 "Charging Input" V 8900 3000 50  0000 C CNN
+F 2 "" H 8800 3000 50  0001 C CNN
+F 3 "" H 8800 3000 50  0000 C CNN
+	1    8800 3000
+	-1   0    0    -1  
+$EndComp
+Text Label 9000 2950 0    60   ~ 0
+C+
+Text Label 9000 3050 0    60   ~ 0
+C-
+$Comp
+L CONN_01X02 P?
+U 1 1 594F6D3B
+P 9850 3000
+F 0 "P?" H 9850 3150 50  0000 C CNN
+F 1 "Charging HV" V 9950 3000 50  0000 C CNN
+F 2 "" H 9850 3000 50  0000 C CNN
+F 3 "" H 9850 3000 50  0000 C CNN
+	1    9850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 2950 9000 2950
+Wire Wire Line
+	9000 3050 9650 3050
+Wire Notes Line
+	9600 3350 10100 3350
+Wire Notes Line
+	10100 3350 10100 1750
+Wire Notes Line
+	10100 1750 9600 1750
+Wire Notes Line
+	9600 1750 9600 3350
+Text Notes 11150 1700 2    60   ~ 0
+External HV Charging Connector
+$Comp
+L CONN_01X02 P?
+U 1 1 594F6D48
+P 9850 2200
+F 0 "P?" H 9850 2350 50  0000 C CNN
+F 1 "Interlock" V 9950 2200 50  0000 C CNN
+F 2 "" H 9850 2200 50  0000 C CNN
+F 3 "" H 9850 2200 50  0000 C CNN
+	1    9850 2200
+	1    0    0    -1  
+$EndComp
+Text Label 9650 2150 2    60   ~ 0
+CCI+
+Text Label 9650 2250 2    60   ~ 0
+CCI-
+$Comp
+L CONN_01X02 P?
+U 1 1 594F7B2F
 P 7900 3300
-F 0 "J?" H 7900 3950 50  0000 C CNN
-F 1 "35pin: Dash" V 8000 3300 50  0000 C CNN
-F 2 "" H 7900 3300 50  0001 C CNN
-F 3 "" H 7900 3300 50  0001 C CNN
+F 0 "P?" H 7900 3450 50  0000 C CNN
+F 1 "Charging Interlock" V 8000 3300 50  0000 C CNN
+F 2 "" H 7900 3300 50  0000 C CNN
+F 3 "" H 7900 3300 50  0000 C CNN
 	1    7900 3300
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X12 J?
-U 1 1 58DA4C6B
-P 7900 1800
-F 0 "J?" H 7900 2450 50  0000 C CNN
-F 1 "35pin: PE Box" V 8000 1800 50  0000 C CNN
-F 2 "" H 7900 1800 50  0001 C CNN
-F 3 "" H 7900 1800 50  0001 C CNN
-	1    7900 1800
-	1    0    0    -1  
-$EndComp
-Text Label 7700 1250 2    60   ~ 0
-12V
-Text Label 7700 1350 2    60   ~ 0
-12V_SRC
-Text Label 7700 1450 2    60   ~ 0
-12V_LVMS
-Text Label 7700 1550 2    60   ~ 0
-GND
-Text Label 7700 1650 2    60   ~ 0
-AIRS_BOTS_OUT
-Text Label 7700 1750 2    60   ~ 0
-AIRS_PE_OUT
-Text Label 7700 1850 2    60   ~ 0
-AIRS_DISCH
-Text Label 7700 1950 2    60   ~ 0
-CAN_TX
-Text Label 7700 2050 2    60   ~ 0
-CAN_RX
-Text Label 7700 2150 2    60   ~ 0
-BRAKE_LT
-Text Label 7700 2250 2    60   ~ 0
-RTDS_SIG
-Text Label 7700 2350 2    60   ~ 0
-V_L
-Text Label 7700 2750 2    60   ~ 0
-12V
-Text Label 7700 2850 2    60   ~ 0
-12V
-Text Label 7700 2950 2    60   ~ 0
-GND
-Text Label 7700 3050 2    60   ~ 0
-12V_LVMS
-Text Label 7700 3150 2    60   ~ 0
-AIRS_DASH_OUT
 Text Label 7700 3250 2    60   ~ 0
-IMD_FLT_LED
+CCI+
 Text Label 7700 3350 2    60   ~ 0
-BMS_FLT_LED
-Text Label 7700 3450 2    60   ~ 0
-CAN_H
-Text Label 7700 3550 2    60   ~ 0
-CAN_L
-Text Label 7700 3650 2    60   ~ 0
-BUTTON_DRIVE
-Text Label 7700 3750 2    60   ~ 0
-BUTTON_NEUTRAL
-Text Label 7700 3850 2    60   ~ 0
-BUTTON_3
-Text Label 7700 4200 2    60   ~ 0
-SIG_STEER
-Text Label 7700 4300 2    60   ~ 0
-3.3V
-Text Label 7700 4400 2    60   ~ 0
-GND
-Text Label 7700 4500 2    60   ~ 0
-GND
-Text Label 7700 4600 2    60   ~ 0
-GND
-Text Label 7700 5300 2    60   ~ 0
-3.3V
-Text Label 7700 5200 2    60   ~ 0
-3.3V
-Text Label 7700 4700 2    60   ~ 0
-AIRS_DASH_OUT
-Text Label 7700 4800 2    60   ~ 0
-AIRS_BOTS_OUT
-Text Label 7700 4900 2    60   ~ 0
-SIG_TORQUEA
-Text Label 7700 5000 2    60   ~ 0
-SIG_TORQUEB
-Text Label 7700 5100 2    60   ~ 0
-SIG_BRAKE
-$Comp
-L CONN_01X08 J?
-U 1 1 58DA644D
-P 8800 1600
-F 0 "J?" H 8800 2050 50  0000 C CNN
-F 1 "Charger LV" V 8900 1600 50  0000 C CNN
-F 2 "" H 8800 1600 50  0001 C CNN
-F 3 "" H 8800 1600 50  0001 C CNN
-	1    8800 1600
-	-1   0    0    -1  
-$EndComp
-Text Label 5000 1800 0    60   ~ 0
-12V
-Text Label 5000 1900 0    60   ~ 0
-12V_SRC
-Text Label 5000 2000 0    60   ~ 0
-12V_LVMS
-Text Label 5000 2100 0    60   ~ 0
-GND
-Text Label 5000 2200 0    60   ~ 0
-BUTTON_NEUTRAL
-Text Label 5000 2300 0    60   ~ 0
-BUTTON_DRIVE
-Text Label 5000 2400 0    60   ~ 0
-CAN_L
-Text Label 5000 2500 0    60   ~ 0
-CAN_H
-Text Label 5000 2600 0    60   ~ 0
-3.3V
-Text Label 5000 2700 0    60   ~ 0
-3.3V
-Text Label 5000 2800 0    60   ~ 0
-3.3V
-Text Label 5000 2900 0    60   ~ 0
-AIRS_DASH_OUT
-Text Label 5000 3000 0    60   ~ 0
-AIRS_BOTS_OUT
-Text Label 5000 3100 0    60   ~ 0
-AIRS_PE_OUT
-Text Label 5000 3200 0    60   ~ 0
-AIRS_DISCH
-Text Label 5000 3300 0    60   ~ 0
-12V_LVMS
-Text Label 5000 3400 0    60   ~ 0
-AIRS_DASH_OUT
-Text Label 5000 3500 0    60   ~ 0
-IMD_FLT_LED
-Text Label 5000 3600 0    60   ~ 0
-BMS_FLT_LED
-Text Label 5000 3700 0    60   ~ 0
-SIG_STEER
-Text Label 5000 3800 0    60   ~ 0
-SIG_BRAKE
-Text Label 5000 3900 0    60   ~ 0
-TORQUEB_SIG
-Text Label 5000 4000 0    60   ~ 0
-TORQUEA_SIG
-Text Label 5000 4100 0    60   ~ 0
-CAN_TX
-Text Label 5000 4200 0    60   ~ 0
-CAN_RX
-Text Label 5000 4300 0    60   ~ 0
-BRAKE_LT
-Text Label 5000 4400 0    60   ~ 0
-RTDS_SIG
-Text Label 5000 4500 0    60   ~ 0
-V_L
-Text Label 5000 4600 0    60   ~ 0
-12V
-Text Label 5000 4700 0    60   ~ 0
-12V
-Text Label 5000 4800 0    60   ~ 0
-GND
-Text Label 5000 4900 0    60   ~ 0
-GND
-Text Label 5000 5000 0    60   ~ 0
-GND
-Text Label 5000 5100 0    60   ~ 0
-GND
-Text Label 5000 5200 0    60   ~ 0
-AIRS_BOTS_OUT
-Text Label 9000 1250 0    60   ~ 0
-12V_SRC
-Text Label 9000 1350 0    60   ~ 0
-12V
-Text Label 9000 1450 0    60   ~ 0
-V_S
-Text Label 9000 1550 0    60   ~ 0
-AIRS_CHARGER_IN
-Text Label 9000 1650 0    60   ~ 0
-AIRS_DISCH
-Text Label 9000 1750 0    60   ~ 0
-CAN_H
-Text Label 9000 1850 0    60   ~ 0
-CAN_L
-Text Label 9000 1950 0    60   ~ 0
-GND
+CCI-
+Text Label 10550 7050 2    60   ~ 0
+IMD_HV+
+Text Label 10550 7650 2    60   ~ 0
+IMD_HV-
+Text Label 9000 3550 0    60   ~ 0
+IMD_HV+
+Text Label 9000 3650 0    60   ~ 0
+IMD_HV-
 Wire Notes Line
-	7400 650  9200 650 
+	8300 2850 8300 6100
+Wire Notes Line
+	7450 10950 7450 2850
+Wire Notes Line
+	7450 2850 8300 2850
+Wire Notes Line
+	7450 10950 9250 10950
+Wire Notes Line
+	9250 10950 9250 6100
+Wire Notes Line
+	9250 6100 8300 6100
+Wire Notes Line
+	8450 800  8450 5950
+Wire Notes Line
+	8450 5950 9100 5950
+Wire Notes Line
+	9100 800  8450 800 
+Wire Notes Line
+	9100 5950 9100 800 
+Text Notes 9250 750  2    60   ~ 0
+Accumulator HV Board
+Wire Notes Line
+	8350 550  8350 6050
+Wire Notes Line
+	8350 6050 9450 6050
+Wire Notes Line
+	9450 6050 9450 9300
+Wire Notes Line
+	9450 9300 14100 9300
+Wire Notes Line
+	14100 9300 14100 550 
+Wire Notes Line
+	14100 550  8350 550 
+Text Notes 11300 650  2    60   ~ 0
+HV Enclosure
 $EndSCHEMATC

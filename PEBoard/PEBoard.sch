@@ -66,8 +66,6 @@ Text Label 1000 1150 0    60   ~ 0
 AIRS_IN
 Text Label 1000 750  0    60   ~ 0
 12V_SRC
-Text Label 1000 850  0    60   ~ 0
-12V_LVMS
 Text Label 1000 950  0    60   ~ 0
 CAN_TX
 Text Label 1000 1050 0    60   ~ 0
@@ -106,9 +104,9 @@ F 3 "" H 800 2200 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 1000 2000 0    60   ~ 0
-12V_SRC
+12V
 Text Label 1000 2100 0    60   ~ 0
-12V_LVMS
+12V_SRC
 Text Label 1000 2200 0    60   ~ 0
 AIRS_IN
 Text Label 1000 2300 0    60   ~ 0
@@ -740,4 +738,6 @@ Wire Wire Line
 	3850 3550 3850 3650
 Wire Wire Line
 	2650 3650 2650 3550
+Text Label 1000 850  0    60   ~ 0
+V_L
 $EndSCHEMATC

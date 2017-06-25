@@ -1,5 +1,0 @@
-(fp_lib_table
-  (lib (name arduino)(type Legacy)(uri ..\arduino.mod)(options "")(descr ""))
-  (lib (name Deutsch_EEC)(type KiCad)(uri ..\Deutsch_EEC)(options "")(descr ""))
-  (lib (name fs-1-schematics)(type KiCad)(uri ..\)(options "")(descr ""))
-)
