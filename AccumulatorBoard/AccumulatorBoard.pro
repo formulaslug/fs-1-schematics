@@ -1,4 +1,4 @@
-update=Saturday, June 24, 2017 'PMt' 04:39:21 PM
+update=6/30/2017 12:00:32 PM
 version=1
 last_client=eeschema
 [pcbnew]
