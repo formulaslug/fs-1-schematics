@@ -1,4 +1,4 @@
-update=3/28/2017 12:53:36 AM
+update=3/28/2017 12:55:31 AM
 version=1
 last_client=eeschema
 [pcbnew]
@@ -59,7 +59,6 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=arduino
 [schematic_editor]
 version=1
 PageLayoutDescrFile=

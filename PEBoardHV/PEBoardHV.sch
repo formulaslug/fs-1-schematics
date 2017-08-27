@@ -54,34 +54,12 @@ F 3 "" H 5200 1350 60  0000 C CNN
 	1    5250 1350
 	1    0    0    -1  
 $EndComp
-Text Label 1000 650  0    60   ~ 0
-12V
-Text Label 1000 1450 0    60   ~ 0
-BRAKE_SIG
-Text Label 1000 1750 0    60   ~ 0
-GND
-Text Label 1000 1350 0    60   ~ 0
-AIRS_DISCH
-Text Label 1000 1150 0    60   ~ 0
-AIRS_IN
-Text Label 1000 750  0    60   ~ 0
-12V_SRC
-Text Label 1000 950  0    60   ~ 0
-CAN_TX
-Text Label 1000 1050 0    60   ~ 0
-CAN_RX
 Text Label 1000 1250 0    60   ~ 0
-AIRS_OUT
+GND
 Text Label 4350 1150 0    60   ~ 0
 CAN_RX
 Text Label 4350 1550 0    60   ~ 0
 CAN_TX
-Text Label 3000 1850 3    60   ~ 0
-GND
-Text Label 3400 1550 0    60   ~ 0
-5V_LV
-Text Label 2600 1550 2    60   ~ 0
-12V
 Text Label 5150 850  1    60   ~ 0
 5V_LV
 Text Label 5350 850  1    60   ~ 0
@@ -90,78 +68,12 @@ Text Label 5150 1850 3    60   ~ 0
 GND
 Text Label 5350 1850 3    60   ~ 0
 HV-
-Text Notes 2650 1300 0    60   ~ 0
-Voltage Regulator LV
-$Comp
-L CONN_01X05 J1
-U 1 1 588A8D83
-P 800 2200
-F 0 "J1" H 800 2500 50  0000 C CNN
-F 1 "Right Panel" V 900 2200 50  0000 C CNN
-F 2 "" H 800 2200 50  0001 C CNN
-F 3 "" H 800 2200 50  0000 C CNN
-	1    800  2200
-	-1   0    0    -1  
-$EndComp
-Text Label 1000 2000 0    60   ~ 0
-12V
-Text Label 1000 2100 0    60   ~ 0
-12V_SRC
-Text Label 1000 2200 0    60   ~ 0
-AIRS_IN
-Text Label 1000 2300 0    60   ~ 0
-AIRS_OUT_RIGHT
-Text Label 1000 2400 0    60   ~ 0
-GND
-$Comp
-L CONN_01X02 J3
-U 1 1 588AA070
-P 800 3850
-F 0 "J3" H 800 4000 50  0000 C CNN
-F 1 "Left Panel" V 900 3850 50  0000 C CNN
-F 2 "" H 800 3850 50  0001 C CNN
-F 3 "" H 800 3850 50  0000 C CNN
-	1    800  3850
-	-1   0    0    -1  
-$EndComp
-Text Label 1000 3800 0    60   ~ 0
-AIRS_OUT_RIGHT
-Text Label 1000 3900 0    60   ~ 0
-AIRS_OUT_LEFT
-$Comp
-L CONN_01X02 J4
-U 1 1 588AAB57
-P 800 4350
-F 0 "J4" H 800 4500 50  0000 C CNN
-F 1 "HVD Interlock" V 900 4350 50  0000 C CNN
-F 2 "" H 800 4350 50  0001 C CNN
-F 3 "" H 800 4350 50  0000 C CNN
-	1    800  4350
-	-1   0    0    -1  
-$EndComp
 Text Notes 5600 600  2    60   ~ 0
 LV             HV
 Text Notes 5450 5050 2    60   ~ 0
 LV      HV
 Text Notes 5450 7700 2    60   ~ 0
 LV      HV
-$Comp
-L CONN_01X03 J2
-U 1 1 588AD541
-P 800 2750
-F 0 "J2" H 800 2950 50  0000 C CNN
-F 1 "Brake Light" V 900 2750 50  0000 C CNN
-F 2 "" H 800 2750 50  0001 C CNN
-F 3 "" H 800 2750 50  0000 C CNN
-	1    800  2750
-	-1   0    0    -1  
-$EndComp
-Text Label 1000 2650 0    60   ~ 0
-12V
-Text Label 1000 2750 0    60   ~ 0
-BRAKE_OUT
-Text Label 1000 2850 0    60   ~ 0
-GND
 Text Label 5850 1150 0    60   ~ 0
 CAN_H_BOARD
 Text Label 5850 1550 0    60   ~ 0
@@ -189,9 +101,9 @@ F 3 "" H 5350 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4850 5650 2    60   ~ 0
-AIRS_DISCHARGE
+AIRS_FINAL
 Text Label 4850 6950 2    60   ~ 0
-AIRS_DISCHARGE
+AIRS_FINAL
 Text Label 4850 5950 2    60   ~ 0
 GND
 Text Label 4850 7250 2    60   ~ 0
@@ -236,13 +148,13 @@ Text Label 5450 6100 3    60   ~ 0
 HV-
 Text Label 5450 7400 3    60   ~ 0
 HV-
-Text Notes 7950 900  2    60   ~ 0
+Text Notes 8550 900  2    60   ~ 0
 Voltage Regulator HV
-Text Label 7150 1150 2    60   ~ 0
+Text Label 7750 1150 2    60   ~ 0
 CAN+
-Text Label 7950 1150 0    60   ~ 0
+Text Label 8550 1150 0    60   ~ 0
 5V_HV
-Text Label 7550 1450 3    60   ~ 0
+Text Label 8150 1450 3    60   ~ 0
 HV-
 Text Label 10500 1950 2    60   ~ 0
 HV+
@@ -301,38 +213,14 @@ HV+
 Text Label 10500 3950 3    60   ~ 0
 HV-
 $Comp
-L CONN_01X02 J6
-U 1 1 5893B780
-P 800 5150
-F 0 "J6" H 800 5300 50  0000 C CNN
-F 1 "Left 3-Phase Interlock" V 900 5150 50  0000 C CNN
-F 2 "" H 800 5150 50  0000 C CNN
-F 3 "" H 800 5150 50  0000 C CNN
-	1    800  5150
-	-1   0    0    -1  
-$EndComp
-Text Label 1000 7100 0    60   ~ 0
-AIRS_OUT
-$Comp
 L L78S05CV-DG U6
 U 1 1 5897D870
-P 7550 1200
-F 0 "U6" H 7350 1400 50  0000 C CNN
-F 1 "L78S05CV-DG" H 7550 1400 50  0000 L CNN
-F 2 "TO-220" H 7550 850 50  0001 C CIN
-F 3 "" H 7550 1200 50  0000 C CNN
-	1    7550 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L L78S05CV-DG U1
-U 1 1 5897DB6F
-P 3000 1600
-F 0 "U1" H 2800 1800 50  0000 C CNN
-F 1 "L78S05CV-DG" H 3000 1800 50  0000 L CNN
-F 2 "TO-220" H 3000 1250 50  0001 C CIN
-F 3 "" H 3000 1600 50  0000 C CNN
-	1    3000 1600
+P 8150 1200
+F 0 "U6" H 7950 1400 50  0000 C CNN
+F 1 "L78S05CV-DG" H 8150 1400 50  0000 L CNN
+F 2 "TO-220" H 8150 850 50  0001 C CIN
+F 3 "" H 8150 1200 50  0000 C CNN
+	1    8150 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -370,28 +258,6 @@ CAN_H_DEBUG
 Text Label 10500 2450 2    60   ~ 0
 CAN_L_DEBUG
 NoConn ~ 10500 1400
-$Comp
-L CONN_01X02 J7
-U 1 1 58BCD49B
-P 800 7050
-F 0 "J7" H 800 7200 50  0000 C CNN
-F 1 "Left 3-Phase Interlock" V 900 7050 50  0000 C CNN
-F 2 "" H 800 7050 50  0000 C CNN
-F 3 "" H 800 7050 50  0000 C CNN
-	1    800  7050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L CONN_01X04 J6
-U 1 1 58BCE12C
-P 800 6150
-F 0 "J6" H 800 6400 50  0000 C CNN
-F 1 "Wheel Interlocks" V 900 6150 50  0000 C CNN
-F 2 "" H 800 6150 50  0000 C CNN
-F 3 "" H 800 6150 50  0000 C CNN
-	1    800  6150
-	-1   0    0    -1  
-$EndComp
 $Comp
 L D_Zener D4
 U 1 1 58C314A3
@@ -446,16 +312,6 @@ Wire Wire Line
 	5450 6800 5450 6500
 Wire Wire Line
 	5450 5500 5450 5200
-Wire Wire Line
-	1000 3900 1000 4300
-Wire Wire Line
-	1000 4400 1000 5100
-Wire Wire Line
-	1000 5200 1000 6000
-Wire Wire Line
-	1000 6300 1000 7000
-Wire Wire Line
-	1000 6100 1000 6200
 Wire Wire Line
 	6200 2300 5850 2300
 Wire Wire Line
@@ -653,11 +509,11 @@ Text Label 4950 3200 2    60   ~ 0
 Text Label 4950 4050 2    60   ~ 0
 5V_LV
 Text Label 4950 2550 2    60   ~ 0
-TSAL_SIG
+SIG_TSAL
 Text Label 4950 3400 2    60   ~ 0
-TSAL_SIG
+SIG_TSAL
 Text Label 4950 4250 2    60   ~ 0
-TSAL_SIG
+SIG_TSAL
 Text Label 6800 2100 0    60   ~ 0
 HV+_SWITCHED_L
 Text Label 6800 2950 0    60   ~ 0
@@ -665,79 +521,24 @@ HV+_SWITCHED_R
 Text Label 6800 3800 0    60   ~ 0
 HV+
 $Comp
-L SN754410 H1
-U 1 1 58C4F300
-P 3250 3650
-F 0 "H1" H 3250 3700 60  0000 C CNN
-F 1 "SN754410" H 3250 3600 60  0000 C CNN
-F 2 "Housings_DIP:DIP-16_W7.62mm" H 3300 2750 60  0001 C CNN
-F 3 "" H 3450 3050 60  0000 C CNN
-	1    3250 3650
-	1    0    0    -1  
-$EndComp
-Text Label 3150 3050 1    60   ~ 0
-5V_LV
-Text Label 3350 3050 1    60   ~ 0
-12V
-Text Label 2650 3850 2    60   ~ 0
-5V_LV
-Text Label 1000 3350 0    60   ~ 0
-TSAL_SIG
-Text Label 1000 3550 0    60   ~ 0
-GND
-Wire Wire Line
-	3250 4250 3550 4250
-Connection ~ 3350 4250
-Connection ~ 3450 4250
-Text Label 3250 4250 3    60   ~ 0
-GND
-$Comp
 L CONN_01X12 J1
 U 1 1 58D8D93B
-P 800 1200
-F 0 "J1" H 800 1850 50  0000 C CNN
-F 1 "CONN_01X12" V 900 1200 50  0000 C CNN
-F 2 "" H 800 1200 50  0001 C CNN
-F 3 "" H 800 1200 50  0001 C CNN
-	1    800  1200
+P 800 1300
+F 0 "J1" H 800 1950 50  0000 C CNN
+F 1 "CONN_01X12" V 900 1300 50  0000 C CNN
+F 2 "" H 800 1300 50  0001 C CNN
+F 3 "" H 800 1300 50  0001 C CNN
+	1    800  1300
 	-1   0    0    -1  
 $EndComp
-Text Label 1000 1550 0    60   ~ 0
-RTDS_SIG
-Wire Wire Line
-	2650 3850 2650 3950
-Text Label 2650 3350 2    60   ~ 0
-RTDS_SIG
-Text Label 2650 3550 2    60   ~ 0
-BRAKE_SIG
-Text Label 3850 3350 0    60   ~ 0
-RTDS_OUT
-Text Label 3850 3550 0    60   ~ 0
-BRAKE_OUT
-NoConn ~ 1000 1650
-$Comp
-L CONN_01X04 J2
-U 1 1 58D918D0
-P 800 3400
-F 0 "J2" H 800 3650 50  0000 C CNN
-F 1 "TSAL" V 900 3400 50  0000 C CNN
-F 2 "" H 800 3400 50  0001 C CNN
-F 3 "" H 800 3400 50  0001 C CNN
-	1    800  3400
-	-1   0    0    -1  
-$EndComp
-Text Label 1000 3450 0    60   ~ 0
-RTDS_OUT
-Text Label 1000 3250 0    60   ~ 0
-12V
-Wire Wire Line
-	2650 3450 2650 3350
-Wire Wire Line
-	3850 3450 3850 3350
-Wire Wire Line
-	3850 3550 3850 3650
-Wire Wire Line
-	2650 3650 2650 3550
+Text Label 1000 750  0    60   ~ 0
+5V_LV
 Text Label 1000 850  0    60   ~ 0
-V_L
+SIG_TSAL
+Text Label 1000 950  0    60   ~ 0
+CAN_TX
+Text Label 1000 1150 0    60   ~ 0
+AIRS_FINAL
+Text Label 1000 1050 0    60   ~ 0
+CAN_RX
 $EndSCHEMATC
