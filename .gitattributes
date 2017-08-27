@@ -1,0 +1,9 @@
+*.pro text=auto
+*.kicad_mod text=auto
+*.sch text=auto
+*.net text=auto
+*.kicad_pcb text=auto
+*.lib text=auto
+*.dcm text=auto
+*.mod text=auto
+*.drl text=auto
