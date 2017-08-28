@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
+LIBS:AccumulatorBoardHV-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -300,9 +301,9 @@ F 3 "" H 5600 6900 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 6100 5650 0    60   ~ 0
-AIRS_CHARGER_FINAL
+AIRS_FINAL_CHARGER
 Text Label 6100 6750 0    60   ~ 0
-AIRS_CHARGER_FINAL
+AIRS_FINAL_CHARGER
 $Comp
 L GND #PWR?
 U 1 1 5959BDAF
@@ -440,7 +441,7 @@ F 3 "" H 7350 1300 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 7550 1400 0    60   ~ 0
-AIRS_CHARGER_FINAL
+AIRS_FINAL_CHARGER
 $Comp
 L C C?
 U 1 1 59A37CC7
