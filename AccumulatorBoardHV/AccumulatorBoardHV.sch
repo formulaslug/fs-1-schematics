@@ -613,4 +613,19 @@ Wire Notes Line
 	2650 4800 8150 4800
 Wire Notes Line
 	8150 4800 8150 2600
+$Comp
+L CONN_01X02 P?
+U 1 1 59A613C2
+P 3850 5450
+F 0 "P?" H 3850 5600 50  0000 C CNN
+F 1 "To Temp Board" V 3950 5450 50  0000 C CNN
+F 2 "" H 3850 5450 50  0000 C CNN
+F 3 "" H 3850 5450 50  0000 C CNN
+	1    3850 5450
+	-1   0    0    -1  
+$EndComp
+Text Label 4050 5400 0    60   ~ 0
+BATT+
+Text Label 4050 5500 0    60   ~ 0
+BATT-
 $EndSCHEMATC
