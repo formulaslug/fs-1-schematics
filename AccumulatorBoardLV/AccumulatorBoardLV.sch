@@ -60,14 +60,14 @@ BMS_RESET
 Text Label 8900 4900 2    60   ~ 0
 IMD_RESET
 $Comp
-L CONN_01X02 J16
+L Conn_01x02 J16
 U 1 1 58A9F1D8
-P 900 5800
-F 0 "J16" H 900 5950 50  0000 C CNN
-F 1 "HV Interlock" V 1000 5800 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 5800 50  0001 C CNN
-F 3 "" H 900 5800 50  0000 C CNN
-	1    900  5800
+P 900 5750
+F 0 "J16" H 900 5900 50  0000 C CNN
+F 1 "HV Interlock" V 1000 5750 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 5750 50  0001 C CNN
+F 3 "" H 900 5750 50  0000 C CNN
+	1    900  5750
 	-1   0    0    -1  
 $EndComp
 Text Label 1100 5850 0    60   ~ 0
@@ -86,14 +86,14 @@ $EndComp
 Text Label 2800 5850 3    60   ~ 0
 GND
 $Comp
-L CONN_01X04 J1
+L Conn_01x04 J1
 U 1 1 58AC6391
-P 2400 900
-F 0 "J1" H 2400 1150 50  0000 C CNN
-F 1 "BMS Connector 1" V 2500 900 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Angled" H 2400 900 50  0001 C CNN
-F 3 "" H 2400 900 50  0000 C CNN
-	1    2400 900 
+P 2350 900
+F 0 "J1" H 2350 1150 50  0000 C CNN
+F 1 "BMS Connector 1" V 2450 900 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Angled" H 2350 900 50  0001 C CNN
+F 3 "" H 2350 900 50  0000 C CNN
+	1    2350 900 
 	0    -1   -1   0   
 $EndComp
 Text Label 2250 1100 3    60   ~ 0
@@ -117,51 +117,51 @@ CAN_H
 Text Label 3400 1100 3    60   ~ 0
 CAN_L
 $Comp
-L CONN_01X02 J5
+L Conn_01x02 J5
 U 1 1 58ACA694
-P 7200 5050
-F 0 "J5" H 7200 5200 50  0000 C CNN
-F 1 "BMS Reset" V 7300 5050 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7200 5050 50  0001 C CNN
-F 3 "" H 7200 5050 50  0000 C CNN
-	1    7200 5050
+P 7200 5000
+F 0 "J5" H 7200 5150 50  0000 C CNN
+F 1 "BMS Reset" V 7300 5000 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7200 5000 50  0001 C CNN
+F 3 "" H 7200 5000 50  0000 C CNN
+	1    7200 5000
 	-1   0    0    -1  
 $EndComp
 Text Label 7400 5550 0    60   ~ 0
 IMD_RESET
 $Comp
-L CONN_01X02 J7
+L Conn_01x02 J7
 U 1 1 58ACAABB
-P 7200 5600
-F 0 "J7" H 7200 5750 50  0000 C CNN
-F 1 "IMD Reset" V 7300 5600 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7200 5600 50  0001 C CNN
-F 3 "" H 7200 5600 50  0000 C CNN
-	1    7200 5600
+P 7200 5550
+F 0 "J7" H 7200 5700 50  0000 C CNN
+F 1 "IMD Reset" V 7300 5550 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7200 5550 50  0001 C CNN
+F 3 "" H 7200 5550 50  0000 C CNN
+	1    7200 5550
 	-1   0    0    -1  
 $EndComp
 Text Label 7400 5000 0    60   ~ 0
 BMS_RESET
 $Comp
-L CONN_01X02 J9
+L Conn_01x02 J9
 U 1 1 58ACF01F
-P 900 1000
-F 0 "J9" H 900 1150 50  0000 C CNN
-F 1 "Contactor 1" V 1000 1000 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 1000 50  0001 C CNN
-F 3 "" H 900 1000 50  0000 C CNN
-	1    900  1000
+P 900 950
+F 0 "J9" H 900 1100 50  0000 C CNN
+F 1 "Contactor 1" V 1000 950 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 950 50  0001 C CNN
+F 3 "" H 900 950 50  0000 C CNN
+	1    900  950 
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 J10
+L Conn_01x02 J10
 U 1 1 58ACF5F5
-P 900 1500
-F 0 "J10" H 900 1650 50  0000 C CNN
-F 1 "Contactor 2" V 1000 1500 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 1500 50  0001 C CNN
-F 3 "" H 900 1500 50  0000 C CNN
-	1    900  1500
+P 900 1450
+F 0 "J10" H 900 1600 50  0000 C CNN
+F 1 "Contactor 2" V 1000 1450 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 1450 50  0001 C CNN
+F 3 "" H 900 1450 50  0000 C CNN
+	1    900  1450
 	-1   0    0    -1  
 $EndComp
 Text Label 1100 1050 0    60   ~ 0
@@ -173,14 +173,14 @@ AIRS_FINAL_OUT
 Text Label 1100 1450 0    60   ~ 0
 AIRS_FINAL_OUT
 $Comp
-L CONN_01X02 J19
+L Conn_01x02 J19
 U 1 1 58AFAE78
-P 10900 6150
-F 0 "J19" H 10900 6300 50  0000 C CNN
-F 1 "Lid Interlock" V 11000 6150 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10900 6150 50  0001 C CNN
-F 3 "" H 10900 6150 50  0000 C CNN
-	1    10900 6150
+P 10900 6100
+F 0 "J19" H 10900 6250 50  0000 C CNN
+F 1 "Lid Interlock" V 11000 6100 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10900 6100 50  0001 C CNN
+F 3 "" H 10900 6100 50  0000 C CNN
+	1    10900 6100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -459,14 +459,14 @@ Wire Wire Line
 Text Notes 3250 1150 3    60   ~ 0
 BMS CAN Termination
 $Comp
-L CONN_01X12 J2
+L Conn_01x12 J2
 U 1 1 58B7B94A
-P 3350 900
-F 0 "J2" H 3350 1550 50  0000 C CNN
-F 1 "BMS Connector 2" V 3450 900 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x06x2.50mm_Straight" H 3350 900 50  0001 C CNN
-F 3 "" H 3350 900 50  0000 C CNN
-	1    3350 900 
+P 3300 900
+F 0 "J2" H 3300 1550 50  0000 C CNN
+F 1 "BMS Connector 2" V 3400 900 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x06x2.50mm_Straight" H 3300 900 50  0001 C CNN
+F 3 "" H 3300 900 50  0000 C CNN
+	1    3300 900 
 	0    -1   -1   0   
 $EndComp
 Text Label 3800 1100 3    60   ~ 0
@@ -474,25 +474,25 @@ BMS_TX
 Text Label 3900 1100 3    60   ~ 0
 BMS_RX
 $Comp
-L CONN_01X02 J3
+L Conn_01x02 J3
 U 1 1 58B7C6A2
-P 4200 900
-F 0 "J3" H 4200 1050 50  0000 C CNN
-F 1 "BMS TX" V 4300 900 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 4200 900 50  0001 C CNN
-F 3 "" H 4200 900 50  0000 C CNN
-	1    4200 900 
+P 4150 900
+F 0 "J3" H 4150 1050 50  0000 C CNN
+F 1 "BMS TX" V 4250 900 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 4150 900 50  0001 C CNN
+F 3 "" H 4150 900 50  0000 C CNN
+	1    4150 900 
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X02 J4
+L Conn_01x02 J4
 U 1 1 58B7C7A0
-P 4550 900
-F 0 "J4" H 4550 1050 50  0000 C CNN
-F 1 "BMS RX" V 4650 900 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 4550 900 50  0001 C CNN
-F 3 "" H 4550 900 50  0000 C CNN
-	1    4550 900 
+P 4500 900
+F 0 "J4" H 4500 1050 50  0000 C CNN
+F 1 "BMS RX" V 4600 900 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 4500 900 50  0001 C CNN
+F 3 "" H 4500 900 50  0000 C CNN
+	1    4500 900 
 	0    -1   -1   0   
 $EndComp
 Text Label 4150 1100 3    60   ~ 0
@@ -504,14 +504,14 @@ BMS_RX
 Text Label 4600 1100 3    60   ~ 0
 GND
 $Comp
-L CONN_01X06 J11
+L Conn_01x06 J11
 U 1 1 58B80A68
-P 900 2150
-F 0 "J11" H 900 2500 50  0000 C CNN
-F 1 "IMD LV" V 1000 2150 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Angled" H 900 2150 50  0001 C CNN
-F 3 "" H 900 2150 50  0000 C CNN
-	1    900  2150
+P 900 2100
+F 0 "J11" H 900 2450 50  0000 C CNN
+F 1 "IMD LV" V 1000 2100 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Angled" H 900 2100 50  0001 C CNN
+F 3 "" H 900 2100 50  0000 C CNN
+	1    900  2100
 	-1   0    0    -1  
 $EndComp
 Text Label 1100 1900 0    60   ~ 0
@@ -559,14 +559,14 @@ BMS_FLT
 Text Label 8900 4300 2    60   ~ 0
 IMD_FLT_H
 $Comp
-L CONN_01X02 J15
+L Conn_01x02 J15
 U 1 1 58B9D04E
-P 900 5100
-F 0 "J15" H 900 5250 50  0000 C CNN
-F 1 "12V from DCDC" V 1000 5100 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 5100 50  0001 C CNN
-F 3 "" H 900 5100 50  0000 C CNN
-	1    900  5100
+P 900 5050
+F 0 "J15" H 900 5200 50  0000 C CNN
+F 1 "12V from DCDC" V 1000 5050 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 5050 50  0001 C CNN
+F 3 "" H 900 5050 50  0000 C CNN
+	1    900  5050
 	-1   0    0    -1  
 $EndComp
 Text Label 1100 5050 0    60   ~ 0
@@ -574,14 +574,14 @@ Text Label 1100 5050 0    60   ~ 0
 Text Label 1100 5150 0    60   ~ 0
 GND
 $Comp
-L CONN_01X02 J8
+L Conn_01x02 J8
 U 1 1 58BAAFD7
-P 7200 6100
-F 0 "J8" H 7200 6250 50  0000 C CNN
-F 1 "Temp Reset" V 7300 6100 50  0000 C CNN
-F 2 "" H 7200 6100 50  0001 C CNN
-F 3 "" H 7200 6100 50  0000 C CNN
-	1    7200 6100
+P 7200 6050
+F 0 "J8" H 7200 6200 50  0000 C CNN
+F 1 "Temp Reset" V 7300 6050 50  0000 C CNN
+F 2 "" H 7200 6050 50  0001 C CNN
+F 3 "" H 7200 6050 50  0000 C CNN
+	1    7200 6050
 	-1   0    0    -1  
 $EndComp
 Text Label 7400 6050 0    60   ~ 0
@@ -599,14 +599,14 @@ Fault Latching Logic
 Text Notes 9450 750  2    60   ~ 0
 Fault Latching Relays
 $Comp
-L CONN_01X08 J18
+L Conn_01x08 J18
 U 1 1 58DA5245
-P 6250 7450
-F 0 "J18" H 6250 7900 50  0000 C CNN
-F 1 "Charger LV" V 6350 7450 50  0000 C CNN
-F 2 "" H 6250 7450 50  0001 C CNN
-F 3 "" H 6250 7450 50  0001 C CNN
-	1    6250 7450
+P 6200 7450
+F 0 "J18" H 6200 7900 50  0000 C CNN
+F 1 "Charger LV" V 6300 7450 50  0000 C CNN
+F 2 "" H 6200 7450 50  0001 C CNN
+F 3 "" H 6200 7450 50  0001 C CNN
+	1    6200 7450
 	0    -1   1    0   
 $EndComp
 Text Label 5900 7250 1    60   ~ 0
@@ -626,14 +626,14 @@ AIRS_FINAL_OUT_CHARGER
 Text Label 6200 7250 1    60   ~ 0
 AIRS_CHARGER_IN
 $Comp
-L CONN_01X04 J13
+L Conn_01x04 J13
 U 1 1 58DB0ABD
-P 900 3850
-F 0 "J13" H 900 4100 50  0000 C CNN
-F 1 "Energy Meter" V 1000 3850 50  0000 C CNN
-F 2 "" H 900 3850 50  0001 C CNN
-F 3 "" H 900 3850 50  0001 C CNN
-	1    900  3850
+P 900 3800
+F 0 "J13" H 900 4050 50  0000 C CNN
+F 1 "Energy Meter" V 1000 3800 50  0000 C CNN
+F 2 "" H 900 3800 50  0001 C CNN
+F 3 "" H 900 3800 50  0001 C CNN
+	1    900  3800
 	-1   0    0    -1  
 $EndComp
 Text Label 1100 3700 0    60   ~ 0
@@ -645,14 +645,14 @@ EM_COMM+
 Text Label 1100 4000 0    60   ~ 0
 EM_COMM-
 $Comp
-L CONN_01X04 J14
+L Conn_01x04 J14
 U 1 1 58DB261A
-P 900 4450
-F 0 "J14" H 900 4700 50  0000 C CNN
-F 1 "Energy Meter" V 1000 4450 50  0000 C CNN
-F 2 "" H 900 4450 50  0001 C CNN
-F 3 "" H 900 4450 50  0001 C CNN
-	1    900  4450
+P 900 4400
+F 0 "J14" H 900 4650 50  0000 C CNN
+F 1 "Energy Meter" V 1000 4400 50  0000 C CNN
+F 2 "" H 900 4400 50  0001 C CNN
+F 3 "" H 900 4400 50  0001 C CNN
+	1    900  4400
 	-1   0    0    -1  
 $EndComp
 Text Label 1100 4300 0    60   ~ 0
@@ -762,14 +762,14 @@ Connection ~ 9700 5150
 Text Label 1100 6550 0    60   ~ 0
 AIRS_FINAL_CHARGER
 $Comp
-L CONN_01X02 J?
+L Conn_01x02 J?
 U 1 1 594F302C
-P 900 6500
-F 0 "J?" H 900 6650 50  0000 C CNN
-F 1 "Charger Interlock" V 1000 6500 50  0000 C CNN
-F 2 "" H 900 6500 50  0001 C CNN
-F 3 "" H 900 6500 50  0000 C CNN
-	1    900  6500
+P 900 6450
+F 0 "J?" H 900 6600 50  0000 C CNN
+F 1 "Charger Interlock" V 1000 6450 50  0000 C CNN
+F 2 "" H 900 6450 50  0001 C CNN
+F 3 "" H 900 6450 50  0000 C CNN
+	1    900  6450
 	-1   0    0    -1  
 $EndComp
 Text Label 4250 7250 1    60   ~ 0
@@ -950,14 +950,14 @@ AIRS_ACC_OUT
 Text Label 10700 1500 1    60   ~ 0
 AIRS_BSPD_OUT
 $Comp
-L CONN_01X14 J?
+L Conn_01x14 J?
 U 1 1 59A32AB1
-P 4800 7450
-F 0 "J?" H 4800 8200 50  0000 C CNN
-F 1 "To ECU" V 4900 7450 50  0000 C CNN
-F 2 "" H 4800 7450 50  0000 C CNN
-F 3 "" H 4800 7450 50  0000 C CNN
-	1    4800 7450
+P 4750 7450
+F 0 "J?" H 4750 8200 50  0000 C CNN
+F 1 "To ECU" V 4850 7450 50  0000 C CNN
+F 2 "" H 4750 7450 50  0000 C CNN
+F 3 "" H 4750 7450 50  0000 C CNN
+	1    4750 7450
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
@@ -1017,7 +1017,7 @@ Wire Wire Line
 Text Label 1100 6450 0    60   ~ 0
 AIRS_PE_OUT
 $Comp
-L CONN_01X03 J?
+L Conn_01x03 J?
 U 1 1 59A3D124
 P 5050 900
 F 0 "J?" H 5050 1100 50  0000 C CNN
@@ -1041,14 +1041,14 @@ TEMP_FLT
 Text Label 1100 3150 0    60   ~ 0
 IMD_FLT_5
 $Comp
-L CONN_01X08 P?
+L Conn_01x08 P?
 U 1 1 59A371CF
-P 900 3000
-F 0 "P?" H 900 3450 50  0000 C CNN
-F 1 "To Temp Board" V 1000 3000 50  0000 C CNN
-F 2 "" H 900 3000 50  0000 C CNN
-F 3 "" H 900 3000 50  0000 C CNN
-	1    900  3000
+P 900 2950
+F 0 "P?" H 900 3400 50  0000 C CNN
+F 1 "To Temp Board" V 1000 2950 50  0000 C CNN
+F 2 "" H 900 2950 50  0000 C CNN
+F 3 "" H 900 2950 50  0000 C CNN
+	1    900  2950
 	-1   0    0    -1  
 $EndComp
 Text Label 1100 3250 0    60   ~ 0

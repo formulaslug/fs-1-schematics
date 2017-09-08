@@ -1,6 +1,6 @@
 EESchema Schematic File Version 2
-LIBS:FS FINAL
 LIBS:TSAL-rescue
+LIBS:FS FINAL
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -30,7 +30,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:TSAL-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -92,8 +91,6 @@ F 3 "" H 3500 2150 60  0000 C CNN
 $EndComp
 Text Notes 3500 850  0    60   ~ 0
 TSAL - Oscillator
-Text Label 7500 1400 0    60   ~ 0
-OSC
 Text Label 900  2800 1    60   ~ 0
 OSC
 $Comp
@@ -539,19 +536,14 @@ $EndComp
 $Comp
 L SN754410 H301
 U 1 1 570AEAB1
-P 6900 1700
-F 0 "H301" H 6900 1750 60  0000 C CNN
-F 1 "SN754410" H 6900 1650 60  0000 C CNN
-F 2 "Housings_DIP:DIP-16_W7.62mm" H 7100 1100 60  0001 C CNN
-F 3 "" H 7100 1100 60  0000 C CNN
-	1    6900 1700
+P 9100 1700
+F 0 "H301" H 9100 1750 60  0000 C CNN
+F 1 "SN754410" H 9100 1650 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm" H 9300 1100 60  0001 C CNN
+F 3 "" H 9300 1100 60  0000 C CNN
+	1    9100 1700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6300 1600
-NoConn ~ 6300 1700
-NoConn ~ 6300 2000
-NoConn ~ 7500 1600
-NoConn ~ 7500 1700
 $Comp
 L LED_Small D333
 U 1 1 570B207C
@@ -1003,8 +995,6 @@ F 3 "" H 3100 2150 60  0000 C CNN
 	1    3100 2150
 	1    0    0    -1  
 $EndComp
-Text Label 6800 1100 0    60   ~ 0
-5V
 Wire Wire Line
 	4000 1400 3900 1400
 Wire Wire Line
@@ -1014,7 +1004,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 1850 5400 2000
 Wire Wire Line
-	2900 1100 6800 1100
+	2900 1100 9000 1100
 Wire Wire Line
 	4000 2000 3700 2000
 Wire Wire Line
@@ -1025,7 +1015,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 2000 5800 2000
 Wire Wire Line
-	2200 2300 7200 2300
+	2200 2300 9400 2300
 Connection ~ 4700 2300
 Wire Wire Line
 	5800 1100 5800 1400
@@ -1121,7 +1111,7 @@ Connection ~ 2400 4300
 Connection ~ 2400 4600
 Connection ~ 2400 4900
 Wire Wire Line
-	5400 1400 6300 1400
+	5400 1400 8500 1400
 Wire Wire Line
 	1200 5500 1100 5500
 Wire Wire Line
@@ -1209,9 +1199,6 @@ Wire Wire Line
 	3100 2000 3100 1100
 Connection ~ 3100 1100
 Connection ~ 5800 2300
-Connection ~ 6900 2300
-Connection ~ 7000 2300
-Connection ~ 7100 2300
 Connection ~ 3100 2300
 $Comp
 L LM555N U?
@@ -1238,29 +1225,23 @@ $EndComp
 Wire Wire Line
 	2500 1400 2500 2300
 Connection ~ 2500 2300
-Wire Wire Line
-	6300 1400 6300 1500
-Wire Wire Line
-	7500 1500 7500 1400
 $Comp
-L CONN_01X04 J?
+L Conn_01x04 J?
 U 1 1 58D93057
-P 1250 1850
-F 0 "J?" H 1250 2100 50  0000 C CNN
-F 1 "CONN_01X04" V 1350 1850 50  0000 C CNN
-F 2 "" H 1250 1850 50  0001 C CNN
-F 3 "" H 1250 1850 50  0001 C CNN
-	1    1250 1850
+P 1250 1800
+F 0 "J?" H 1250 2050 50  0000 C CNN
+F 1 "CONN_01X04" V 1350 1800 50  0000 C CNN
+F 2 "" H 1250 1800 50  0001 C CNN
+F 3 "" H 1250 1800 50  0001 C CNN
+	1    1250 1800
 	-1   0    0    -1  
 $EndComp
 Text Label 1450 1800 0    60   ~ 0
-TSAL_SIG
+SIG_TSAL
 Text Label 1450 1900 0    60   ~ 0
-RTDS_OUT
-Text Label 6150 1900 1    60   ~ 0
+SIG_RTDS
+Text Label 8500 1900 2    60   ~ 0
 TSAL_SIG
-Wire Wire Line
-	6150 1900 6300 1900
 $Comp
 L +12V #PWR?
 U 1 1 58D9EAB3
@@ -1308,12 +1289,12 @@ $EndComp
 $Comp
 L +12V #PWR?
 U 1 1 58D9F1B4
-P 7000 1100
-F 0 "#PWR?" H 7000 950 50  0001 C CNN
-F 1 "+12V" H 7000 1240 50  0000 C CNN
-F 2 "" H 7000 1100 50  0001 C CNN
-F 3 "" H 7000 1100 50  0001 C CNN
-	1    7000 1100
+P 9200 1100
+F 0 "#PWR?" H 9200 950 50  0001 C CNN
+F 1 "+12V" H 9200 1240 50  0000 C CNN
+F 2 "" H 9200 1100 50  0001 C CNN
+F 3 "" H 9200 1100 50  0001 C CNN
+	1    9200 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1342,7 +1323,7 @@ F 3 "" H 4290 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4100 3150 2    60   ~ 0
-RTDS_SIG
+RTDS_H
 $Comp
 L GND #PWR?
 U 1 1 58DA5F1E
@@ -1354,4 +1335,47 @@ F 3 "" H 4100 3250 50  0001 C CNN
 	1    4100 3250
 	1    0    0    -1  
 $EndComp
+Connection ~ 9300 2300
+Connection ~ 9200 2300
+Connection ~ 9100 2300
+Wire Wire Line
+	8500 1400 8500 1500
+$Comp
+L +5V #PWR?
+U 1 1 59B27C04
+P 8400 2100
+F 0 "#PWR?" H 8400 1950 50  0001 C CNN
+F 1 "+5V" H 8400 2240 50  0000 C CNN
+F 2 "" H 8400 2100 50  0001 C CNN
+F 3 "" H 8400 2100 50  0001 C CNN
+	1    8400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2000 8500 2100
+Wire Wire Line
+	8500 2100 8400 2100
+$Comp
+L +5V #PWR?
+U 1 1 59B28B57
+P 9000 1100
+F 0 "#PWR?" H 9000 950 50  0001 C CNN
+F 1 "+5V" H 9000 1240 50  0000 C CNN
+F 2 "" H 9000 1100 50  0001 C CNN
+F 3 "" H 9000 1100 50  0001 C CNN
+	1    9000 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1400 9700 1500
+Text Label 9700 1500 0    60   ~ 0
+OSC
+Wire Wire Line
+	8500 1600 8500 1700
+Wire Wire Line
+	9700 1700 9700 1600
+Text Label 8500 1700 2    60   ~ 0
+SIG_RTDS
+Text Label 9700 1700 0    60   ~ 0
+RTDS_H
 $EndSCHEMATC
