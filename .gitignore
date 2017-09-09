@@ -3,3 +3,4 @@
 *.DS_Store
 *.bck
 *-rescue.lib
+*-cache.lib

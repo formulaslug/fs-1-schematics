@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
-LIBS:AccumulatorBoardHV-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -46,25 +45,25 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X02 P2
+L Conn_01x02 P2
 U 1 1 589D2B01
-P 2550 2100
-F 0 "P2" H 2550 2250 50  0000 C CNN
-F 1 "HV (Switched)" V 2650 2100 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 2550 2100 50  0001 C CNN
-F 3 "" H 2550 2100 50  0000 C CNN
-	1    2550 2100
+P 2550 2050
+F 0 "P2" H 2550 2200 50  0000 C CNN
+F 1 "HV (Switched)" V 2650 2050 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 2550 2050 50  0001 C CNN
+F 3 "" H 2550 2050 50  0000 C CNN
+	1    2550 2050
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P1
+L Conn_01x02 P1
 U 1 1 589D2D5E
-P 2550 1450
-F 0 "P1" H 2550 1600 50  0000 C CNN
-F 1 "Batt Voltage" V 2650 1450 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 2550 1450 50  0001 C CNN
-F 3 "" H 2550 1450 50  0000 C CNN
-	1    2550 1450
+P 2550 1400
+F 0 "P1" H 2550 1550 50  0000 C CNN
+F 1 "Batt Voltage" V 2650 1400 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 2550 1400 50  0001 C CNN
+F 3 "" H 2550 1400 50  0000 C CNN
+	1    2550 1400
 	-1   0    0    -1  
 $EndComp
 Text Label 2750 2050 0    60   ~ 0
@@ -85,14 +84,14 @@ F 3 "" H 3700 1400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X02 P3
+L Conn_01x02 P3
 U 1 1 589D311D
-P 3800 2100
-F 0 "P3" H 3800 2250 50  0000 C CNN
-F 1 "IMD HV" V 3900 2100 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 3800 2100 50  0001 C CNN
-F 3 "" H 3800 2100 50  0000 C CNN
-	1    3800 2100
+P 3850 2100
+F 0 "P3" H 3850 2250 50  0000 C CNN
+F 1 "IMD HV" V 3950 2100 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 3850 2100 50  0001 C CNN
+F 3 "" H 3850 2100 50  0000 C CNN
+	1    3850 2100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -146,14 +145,14 @@ F 3 "" H 4300 1550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P4
+L Conn_01x02 P4
 U 1 1 58AD4758
-P 4250 1200
-F 0 "P4" H 4250 1350 50  0000 C CNN
-F 1 "HV -> LV Regulator Jumper" V 4350 1200 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 4250 1200 50  0001 C CNN
-F 3 "" H 4250 1200 50  0000 C CNN
-	1    4250 1200
+P 3150 1200
+F 0 "P4" H 3150 1350 50  0000 C CNN
+F 1 "HV -> LV Regulator Jumper" V 3250 1200 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 3150 1200 50  0001 C CNN
+F 3 "" H 3150 1200 50  0000 C CNN
+	1    3150 1200
 	0    -1   -1   0   
 $EndComp
 Text Label 4300 1700 3    60   ~ 0
@@ -196,19 +195,19 @@ $EndComp
 NoConn ~ 5000 1350
 NoConn ~ 5000 1550
 NoConn ~ 6000 1450
-Text Label 3850 1800 0    60   ~ 0
+Text Label 3850 1900 0    60   ~ 0
 BATT+
 Text Label 3750 1900 2    60   ~ 0
 BATT-
 $Comp
-L CONN_01X02 P5
+L Conn_01x02 P5
 U 1 1 58B07EC2
-P 7150 3300
-F 0 "P5" H 7150 3450 50  0000 C CNN
-F 1 "Acc LED 1" V 7250 3300 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7150 3300 50  0001 C CNN
-F 3 "" H 7150 3300 50  0000 C CNN
-	1    7150 3300
+P 7150 3250
+F 0 "P5" H 7150 3400 50  0000 C CNN
+F 1 "Acc LED 1" V 7250 3250 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7150 3250 50  0001 C CNN
+F 3 "" H 7150 3250 50  0000 C CNN
+	1    7150 3250
 	-1   0    0    -1  
 $EndComp
 Text Label 7350 3250 0    60   ~ 0
@@ -227,14 +226,14 @@ F 3 "" H 6300 1700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P6
+L Conn_01x02 P6
 U 1 1 58B9D04E
-P 7150 3750
-F 0 "P6" H 7150 3900 50  0000 C CNN
-F 1 "Acc LED 2" V 7250 3750 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7150 3750 50  0001 C CNN
-F 3 "" H 7150 3750 50  0000 C CNN
-	1    7150 3750
+P 7150 3700
+F 0 "P6" H 7150 3850 50  0000 C CNN
+F 1 "Acc LED 2" V 7250 3700 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7150 3700 50  0001 C CNN
+F 3 "" H 7150 3700 50  0000 C CNN
+	1    7150 3700
 	-1   0    0    -1  
 $EndComp
 Text Label 7350 3700 0    60   ~ 0
@@ -327,14 +326,14 @@ F 3 "" H 6100 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 J?
+L Conn_01x02 J?
 U 1 1 5959BFDF
-P 3850 6150
-F 0 "J?" H 3850 6300 50  0000 C CNN
-F 1 "Charger Current" V 3950 6150 50  0000 C CNN
-F 2 "" H 3850 6150 50  0001 C CNN
-F 3 "" H 3850 6150 50  0001 C CNN
-	1    3850 6150
+P 3850 6100
+F 0 "J?" H 3850 6250 50  0000 C CNN
+F 1 "Charger Current" V 3950 6100 50  0000 C CNN
+F 2 "" H 3850 6100 50  0001 C CNN
+F 3 "" H 3850 6100 50  0001 C CNN
+	1    3850 6100
 	-1   0    0    -1  
 $EndComp
 Text Label 4050 6100 0    60   ~ 0
@@ -344,7 +343,7 @@ CHARGER-
 Wire Wire Line
 	4300 1700 5000 1700
 Wire Wire Line
-	4300 1400 4650 1400
+	3850 1400 4650 1400
 Wire Wire Line
 	4650 1400 4650 1200
 Wire Wire Line
@@ -354,8 +353,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 900  4850 2000
 Connection ~ 5000 2000
-Wire Wire Line
-	3850 1400 4200 1400
 Wire Wire Line
 	4600 3600 4500 3600
 Wire Wire Line
@@ -380,8 +377,6 @@ Wire Wire Line
 	5000 6200 5600 6200
 Wire Wire Line
 	5600 6200 5600 6100
-Wire Wire Line
-	3550 1400 2750 1400
 Wire Wire Line
 	3850 1900 3850 1400
 Wire Wire Line
@@ -430,7 +425,7 @@ Wire Notes Line
 Text Notes 2900 2700 0    60   ~ 0
 60V Threshold Accumulator Indicators Circuit
 $Comp
-L CONN_01X03 P?
+L Conn_01x03 P?
 U 1 1 59A3703D
 P 7350 1300
 F 0 "P?" H 7350 1500 50  0000 C CNN
@@ -614,18 +609,24 @@ Wire Notes Line
 Wire Notes Line
 	8150 4800 8150 2600
 $Comp
-L CONN_01X02 P?
+L Conn_01x02 P?
 U 1 1 59A613C2
-P 3850 5450
-F 0 "P?" H 3850 5600 50  0000 C CNN
-F 1 "To Temp Board" V 3950 5450 50  0000 C CNN
-F 2 "" H 3850 5450 50  0000 C CNN
-F 3 "" H 3850 5450 50  0000 C CNN
-	1    3850 5450
+P 3850 5400
+F 0 "P?" H 3850 5550 50  0000 C CNN
+F 1 "To Temp Board" V 3950 5400 50  0000 C CNN
+F 2 "" H 3850 5400 50  0000 C CNN
+F 3 "" H 3850 5400 50  0000 C CNN
+	1    3850 5400
 	-1   0    0    -1  
 $EndComp
 Text Label 4050 5400 0    60   ~ 0
 BATT+
 Text Label 4050 5500 0    60   ~ 0
 BATT-
+Wire Wire Line
+	2750 1400 3150 1400
+Wire Wire Line
+	3250 1400 3550 1400
+Connection ~ 4300 1400
+Connection ~ 3850 1900
 $EndSCHEMATC

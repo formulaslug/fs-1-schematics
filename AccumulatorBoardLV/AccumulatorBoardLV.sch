@@ -62,15 +62,15 @@ IMD_RESET
 $Comp
 L Conn_01x02 J16
 U 1 1 58A9F1D8
-P 900 5750
-F 0 "J16" H 900 5900 50  0000 C CNN
-F 1 "HV Interlock" V 1000 5750 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 5750 50  0001 C CNN
-F 3 "" H 900 5750 50  0000 C CNN
-	1    900  5750
+P 900 4550
+F 0 "J16" H 900 4700 50  0000 C CNN
+F 1 "HV Interlock" V 1000 4550 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 4550 50  0001 C CNN
+F 3 "" H 900 4550 50  0000 C CNN
+	1    900  4550
 	-1   0    0    -1  
 $EndComp
-Text Label 1100 5850 0    60   ~ 0
+Text Label 1100 4650 0    60   ~ 0
 AIRS_FINAL_OUT
 $Comp
 L L78S05CV-DG U6
@@ -558,20 +558,9 @@ Text Label 8900 2900 2    60   ~ 0
 BMS_FLT
 Text Label 8900 4300 2    60   ~ 0
 IMD_FLT_H
-$Comp
-L Conn_01x02 J15
-U 1 1 58B9D04E
-P 900 5050
-F 0 "J15" H 900 5200 50  0000 C CNN
-F 1 "12V from DCDC" V 1000 5050 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 5050 50  0001 C CNN
-F 3 "" H 900 5050 50  0000 C CNN
-	1    900  5050
-	-1   0    0    -1  
-$EndComp
-Text Label 1100 5050 0    60   ~ 0
+Text Label 1100 3850 0    60   ~ 0
 12V_SRC
-Text Label 1100 5150 0    60   ~ 0
+Text Label 1100 3950 0    60   ~ 0
 GND
 $Comp
 L Conn_01x02 J8
@@ -586,13 +575,13 @@ F 3 "" H 7200 6050 50  0000 C CNN
 $EndComp
 Text Label 7400 6050 0    60   ~ 0
 TEMP_RESET
-Text Label 1100 2650 0    60   ~ 0
-5V
 Text Label 1100 2750 0    60   ~ 0
-GND
+5V
 Text Label 1100 2850 0    60   ~ 0
-CAN_H
+GND
 Text Label 1100 2950 0    60   ~ 0
+CAN_H
+Text Label 1100 3050 0    60   ~ 0
 CAN_L
 Text Notes 3900 2700 2    60   ~ 0
 Fault Latching Logic
@@ -625,44 +614,6 @@ Text Label 6300 7250 1    60   ~ 0
 AIRS_FINAL_OUT_CHARGER
 Text Label 6200 7250 1    60   ~ 0
 AIRS_CHARGER_IN
-$Comp
-L Conn_01x04 J13
-U 1 1 58DB0ABD
-P 900 3800
-F 0 "J13" H 900 4050 50  0000 C CNN
-F 1 "Energy Meter" V 1000 3800 50  0000 C CNN
-F 2 "" H 900 3800 50  0001 C CNN
-F 3 "" H 900 3800 50  0001 C CNN
-	1    900  3800
-	-1   0    0    -1  
-$EndComp
-Text Label 1100 3700 0    60   ~ 0
-12V
-Text Label 1100 3800 0    60   ~ 0
-GND
-Text Label 1100 3900 0    60   ~ 0
-EM_COMM+
-Text Label 1100 4000 0    60   ~ 0
-EM_COMM-
-$Comp
-L Conn_01x04 J14
-U 1 1 58DB261A
-P 900 4400
-F 0 "J14" H 900 4650 50  0000 C CNN
-F 1 "Energy Meter" V 1000 4400 50  0000 C CNN
-F 2 "" H 900 4400 50  0001 C CNN
-F 3 "" H 900 4400 50  0001 C CNN
-	1    900  4400
-	-1   0    0    -1  
-$EndComp
-Text Label 1100 4300 0    60   ~ 0
-12V
-Text Label 1100 4400 0    60   ~ 0
-GND
-Text Label 1100 4500 0    60   ~ 0
-EM_COMM+
-Text Label 1100 4600 0    60   ~ 0
-EM_COMM-
 Text Label 5000 3300 0    60   ~ 0
 TIMER
 Text Label 6400 3850 2    60   ~ 0
@@ -759,17 +710,17 @@ Wire Wire Line
 	10200 4050 10200 4400
 Connection ~ 9900 4050
 Connection ~ 9700 5150
-Text Label 1100 6550 0    60   ~ 0
+Text Label 1100 5350 0    60   ~ 0
 AIRS_FINAL_CHARGER
 $Comp
 L Conn_01x02 J?
 U 1 1 594F302C
-P 900 6450
-F 0 "J?" H 900 6600 50  0000 C CNN
-F 1 "Charger Interlock" V 1000 6450 50  0000 C CNN
-F 2 "" H 900 6450 50  0001 C CNN
-F 3 "" H 900 6450 50  0000 C CNN
-	1    900  6450
+P 900 5250
+F 0 "J?" H 900 5400 50  0000 C CNN
+F 1 "Charger Interlock" V 1000 5250 50  0000 C CNN
+F 2 "" H 900 5250 50  0001 C CNN
+F 3 "" H 900 5250 50  0000 C CNN
+	1    900  5250
 	-1   0    0    -1  
 $EndComp
 Text Label 4250 7250 1    60   ~ 0
@@ -800,7 +751,7 @@ F 3 "" H 4350 6850 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	4350 7250 4350 6850
-Text Label 1100 5750 0    60   ~ 0
+Text Label 1100 4550 0    60   ~ 0
 AIRS_PE_OUT
 $Comp
 L GND #PWR?
@@ -1014,7 +965,7 @@ Wire Notes Line
 	11100 5650 8200 5650
 Wire Wire Line
 	10700 4850 10700 6100
-Text Label 1100 6450 0    60   ~ 0
+Text Label 1100 5250 0    60   ~ 0
 AIRS_PE_OUT
 $Comp
 L Conn_01x03 J?
@@ -1036,24 +987,12 @@ Text Label 5050 1100 3    60   ~ 0
 SIG_CURRENT
 Text Label 5150 1100 3    60   ~ 0
 GND
-Text Label 1100 3050 0    60   ~ 0
-TEMP_FLT
 Text Label 1100 3150 0    60   ~ 0
-IMD_FLT_5
-$Comp
-L Conn_01x08 P?
-U 1 1 59A371CF
-P 900 2950
-F 0 "P?" H 900 3400 50  0000 C CNN
-F 1 "To Temp Board" V 1000 2950 50  0000 C CNN
-F 2 "" H 900 2950 50  0000 C CNN
-F 3 "" H 900 2950 50  0000 C CNN
-	1    900  2950
-	-1   0    0    -1  
-$EndComp
+TEMP_FLT
 Text Label 1100 3250 0    60   ~ 0
-BMS_FLT_5
-NoConn ~ 1100 3350
+IMD_FLT_LATCHED
+Text Label 1100 3350 0    60   ~ 0
+BMS_FLT_LATCHED
 NoConn ~ -1800 4150
 $Comp
 L GND #PWR?
@@ -1100,4 +1039,39 @@ Wire Wire Line
 	10800 2850 10800 2550
 Wire Wire Line
 	10800 3950 10800 4250
+Text Label 1100 3450 0    60   ~ 0
+TEMP_FLT_LATCHED
+$Comp
+L Conn_01x03 J?
+U 1 1 59B3A48A
+P 900 3950
+F 0 "J?" H 900 4150 50  0000 C CNN
+F 1 "To HV Board" V 1000 3950 50  0000 C CNN
+F 2 "" H 900 3950 50  0001 C CNN
+F 3 "" H 900 3950 50  0001 C CNN
+	1    900  3950
+	-1   0    0    -1  
+$EndComp
+Text Label 1100 4050 0    60   ~ 0
+AIRS_FINAL_CHARGER
+Entry Wire Line
+	-550 5500 -450 5600
+$Comp
+L Conn_01x10 J?
+U 1 1 59B3D6DB
+P 900 3050
+F 0 "J?" H 900 3550 50  0000 C CNN
+F 1 "To Temp Board" V 1000 3050 50  0000 C CNN
+F 2 "" H 900 3050 50  0001 C CNN
+F 3 "" H 900 3050 50  0001 C CNN
+	1    900  3050
+	-1   0    0    -1  
+$EndComp
+Text Label 1100 2650 0    60   ~ 0
+12V
+NoConn ~ 1100 3550
+Text Label 2400 5550 2    60   ~ 0
+12V
+Text Label 3200 5550 0    60   ~ 0
+5V
 $EndSCHEMATC
