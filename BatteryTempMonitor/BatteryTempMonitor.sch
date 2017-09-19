@@ -825,8 +825,6 @@ Wire Wire Line
 Wire Wire Line
 	8450 2000 8650 2000
 Wire Wire Line
-	950  2200 950  2000
-Wire Wire Line
 	5150 2700 4850 2700
 Wire Wire Line
 	4150 4000 4300 4000
@@ -900,4 +898,15 @@ Wire Notes Line
 	9700 6350 9700 550 
 Wire Notes Line
 	9700 550  5750 550 
+$Comp
+L +3.3V #PWR?
+U 1 1 59C08CED
+P 950 2200
+F 0 "#PWR?" H 950 2050 50  0001 C CNN
+F 1 "+3.3V" H 950 2340 50  0000 C CNN
+F 2 "" H 950 2200 50  0000 C CNN
+F 3 "" H 950 2200 50  0000 C CNN
+	1    950  2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
