@@ -1,4 +1,4 @@
-update=9/7/2017 11:38:43 PM
+update=9/18/2017 9:28:43 PM
 version=1
 last_client=eeschema
 [pcbnew]
@@ -39,16 +39,16 @@ LabSize=60
 version=1
 LibDir=../../fs-1-schematics
 [eeschema/libraries]
-LibName1=FS FINAL
-LibName2=power
-LibName3=device
-LibName4=transistors
-LibName5=conn
-LibName6=linear
-LibName7=regul
-LibName8=74xx
-LibName9=cmos4000
-LibName10=adc-dac
+LibName1=adc-dac
+LibName2=FS FINAL
+LibName3=power
+LibName4=device
+LibName5=transistors
+LibName6=conn
+LibName7=linear
+LibName8=regul
+LibName9=74xx
+LibName10=cmos4000
 LibName11=memory
 LibName12=xilinx
 LibName13=microcontrollers
