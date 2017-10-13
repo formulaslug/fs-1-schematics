@@ -54,14 +54,14 @@ F 3 "" H 5200 1350 60  0000 C CNN
 	1    5250 1350
 	1    0    0    -1  
 $EndComp
-Text Label 1000 1250 0    60   ~ 0
+Text Label 1000 1350 0    60   ~ 0
 GND
 Text Label 4350 1150 0    60   ~ 0
 CAN_RX
 Text Label 4350 1550 0    60   ~ 0
 CAN_TX
 Text Label 5150 850  1    60   ~ 0
-5V_LV
+3.3V_LV
 Text Label 5350 850  1    60   ~ 0
 5V_HV
 Text Label 5150 1850 3    60   ~ 0
@@ -522,13 +522,13 @@ Text Label 7100 3800 0    60   ~ 0
 HV+
 Text Label 1000 750  0    60   ~ 0
 5V_LV
-Text Label 1000 850  0    60   ~ 0
-SIG_TSAL
 Text Label 1000 950  0    60   ~ 0
-CAN_TX
-Text Label 1000 1150 0    60   ~ 0
-AIRS_FINAL
+SIG_TSAL
 Text Label 1000 1050 0    60   ~ 0
+CAN_TX
+Text Label 1000 1250 0    60   ~ 0
+AIRS_FINAL
+Text Label 1000 1150 0    60   ~ 0
 CAN_RX
 Text Notes 7700 1800 0    60   ~ 0
 Needs (Small) Heat Sink!
@@ -587,7 +587,6 @@ F 3 "" H 1000 650 50  0001 C CNN
 	1    1000 650 
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1000 1350
 $Comp
 L Conn_01x04 J?
 U 1 1 59B395E2
@@ -602,16 +601,16 @@ $EndComp
 $Comp
 L GND #PWR?
 U 1 1 59B39840
-P 1250 1250
-F 0 "#PWR?" H 1250 1000 50  0001 C CNN
-F 1 "GND" H 1250 1100 50  0000 C CNN
-F 2 "" H 1250 1250 50  0001 C CNN
-F 3 "" H 1250 1250 50  0001 C CNN
-	1    1250 1250
+P 1250 1350
+F 0 "#PWR?" H 1250 1100 50  0001 C CNN
+F 1 "GND" H 1250 1200 50  0000 C CNN
+F 2 "" H 1250 1350 50  0001 C CNN
+F 3 "" H 1250 1350 50  0001 C CNN
+	1    1250 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 1250 1000 1250
+	1250 1350 1000 1350
 $Comp
 L GND #PWR?
 U 1 1 59B39AB1
@@ -717,4 +716,6 @@ Text Label 10500 4800 2    60   ~ 0
 CAN_L_DEBUG
 Text Label 10500 4900 2    60   ~ 0
 HV-
+Text Label 1000 850  0    60   ~ 0
+3.3V_LV
 $EndSCHEMATC

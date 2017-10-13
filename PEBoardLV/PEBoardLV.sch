@@ -988,16 +988,16 @@ $EndComp
 Wire Notes Line
 	2950 4600 16050 4600
 Text Label 1050 5750 0    60   ~ 0
-5V_LV
-Text Label 1050 5850 0    60   ~ 0
-SIG_TSAL
+5V
 Text Label 1050 5950 0    60   ~ 0
-CAN_TX
+SIG_TSAL
 Text Label 1050 6050 0    60   ~ 0
-CAN_RX
+CAN_TX
 Text Label 1050 6150 0    60   ~ 0
-AIRS_FINAL
+CAN_RX
 Text Label 1050 6250 0    60   ~ 0
+AIRS_FINAL
+Text Label 1050 6350 0    60   ~ 0
 GND
 Wire Wire Line
 	1050 5750 1600 5750
@@ -1493,7 +1493,8 @@ F 3 "" H 850 5950 50  0001 C CNN
 	1    850  5950
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 1050 6350
 Text Label 6450 6000 2    60   ~ 0
 12V
+Text Label 1050 5850 0    60   ~ 0
+3.3V
 $EndSCHEMATC
