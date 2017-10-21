@@ -62,15 +62,15 @@ IMD_RESET
 $Comp
 L Conn_01x02 J16
 U 1 1 58A9F1D8
-P 900 4550
-F 0 "J16" H 900 4700 50  0000 C CNN
-F 1 "HV Interlock" V 1000 4550 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 4550 50  0001 C CNN
-F 3 "" H 900 4550 50  0000 C CNN
-	1    900  4550
+P 900 3800
+F 0 "J16" H 900 3950 50  0000 C CNN
+F 1 "HV Interlock" V 1000 3800 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 3800 50  0001 C CNN
+F 3 "" H 900 3800 50  0000 C CNN
+	1    900  3800
 	-1   0    0    -1  
 $EndComp
-Text Label 1100 4650 0    60   ~ 0
+Text Label 1100 3900 0    60   ~ 0
 AIRS_FINAL_OUT
 $Comp
 L L78S05CV-DG U6
@@ -535,9 +535,9 @@ Text Label 13750 2950 2    60   ~ 0
 BMS_FLT
 Text Label 13750 4350 2    60   ~ 0
 IMD_FLT_H
-Text Label 1100 3850 0    60   ~ 0
+Text Label 1100 2900 0    60   ~ 0
 12V_SRC
-Text Label 1100 3950 0    60   ~ 0
+Text Label 1100 3100 0    60   ~ 0
 GND
 $Comp
 L Conn_01x02 J8
@@ -552,14 +552,6 @@ F 3 "" H 8450 4600 50  0000 C CNN
 $EndComp
 Text Label 8650 4600 0    60   ~ 0
 TEMP_RESET
-Text Label 1100 2750 0    60   ~ 0
-5V
-Text Label 1100 2850 0    60   ~ 0
-GND
-Text Label 1100 2950 0    60   ~ 0
-CAN_H
-Text Label 1100 3050 0    60   ~ 0
-CAN_L
 Text Notes 8650 800  2    60   ~ 0
 Fault Latching Logic
 Text Notes 14300 800  2    60   ~ 0
@@ -669,17 +661,17 @@ F 3 "" H 8650 4700 50  0000 C CNN
 	1    8650 4700
 	1    0    0    -1  
 $EndComp
-Text Label 1100 5350 0    60   ~ 0
+Text Label 1100 4600 0    60   ~ 0
 AIRS_FINAL_CHARGER
 $Comp
 L Conn_01x02 J?
 U 1 1 594F302C
-P 900 5250
-F 0 "J?" H 900 5400 50  0000 C CNN
-F 1 "Charger Interlock" V 1000 5250 50  0000 C CNN
-F 2 "" H 900 5250 50  0001 C CNN
-F 3 "" H 900 5250 50  0000 C CNN
-	1    900  5250
+P 900 4500
+F 0 "J?" H 900 4650 50  0000 C CNN
+F 1 "Charger Interlock" V 1000 4500 50  0000 C CNN
+F 2 "" H 900 4500 50  0001 C CNN
+F 3 "" H 900 4500 50  0000 C CNN
+	1    900  4500
 	-1   0    0    -1  
 $EndComp
 Text Label 3900 4700 1    60   ~ 0
@@ -706,7 +698,7 @@ F 3 "" H 4000 4300 50  0000 C CNN
 	1    4000 4300
 	-1   0    0    1   
 $EndComp
-Text Label 1100 4550 0    60   ~ 0
+Text Label 1100 3800 0    60   ~ 0
 AIRS_PE_OUT
 $Comp
 L GND #PWR?
@@ -884,7 +876,7 @@ Text Label 4900 4700 1    60   ~ 0
 SIG_CURRENT
 Text Label 4600 4700 1    60   ~ 0
 AIRS_PE_OUT
-Text Label 1100 5250 0    60   ~ 0
+Text Label 1100 4500 0    60   ~ 0
 AIRS_PE_OUT
 $Comp
 L Conn_01x03 J?
@@ -903,12 +895,6 @@ Text Label 5650 1150 3    60   ~ 0
 SIG_CURRENT
 Text Label 5750 1150 3    60   ~ 0
 GND
-Text Label 1100 3150 0    60   ~ 0
-TEMP_FLT
-Text Label 1100 3250 0    60   ~ 0
-IMD_FLT_LATCHED
-Text Label 1100 3350 0    60   ~ 0
-BMS_FLT_LATCHED
 NoConn ~ -1800 4150
 $Comp
 L GND #PWR?
@@ -949,37 +935,10 @@ Text Label 15650 2600 2    60   ~ 0
 TEMP_FLT_LATCHED
 Text Label 15650 4000 2    60   ~ 0
 IMD_FLT_LATCHED
-Text Label 1100 3450 0    60   ~ 0
-TEMP_FLT_LATCHED
-$Comp
-L Conn_01x03 J?
-U 1 1 59B3A48A
-P 900 3950
-F 0 "J?" H 900 4150 50  0000 C CNN
-F 1 "To HV Board" V 1000 3950 50  0000 C CNN
-F 2 "" H 900 3950 50  0001 C CNN
-F 3 "" H 900 3950 50  0001 C CNN
-	1    900  3950
-	-1   0    0    -1  
-$EndComp
-Text Label 1100 4050 0    60   ~ 0
+Text Label 1100 3200 0    60   ~ 0
 AIRS_FINAL_CHARGER
 Entry Wire Line
 	-550 5500 -450 5600
-$Comp
-L Conn_01x10 J?
-U 1 1 59B3D6DB
-P 900 3050
-F 0 "J?" H 900 3550 50  0000 C CNN
-F 1 "To Temp Board" V 1000 3050 50  0000 C CNN
-F 2 "" H 900 3050 50  0001 C CNN
-F 3 "" H 900 3050 50  0001 C CNN
-	1    900  3050
-	-1   0    0    -1  
-$EndComp
-Text Label 1100 2650 0    60   ~ 0
-12V
-NoConn ~ 1100 3550
 Text Label 3350 2950 2    60   ~ 0
 12V
 Text Label 4150 2950 0    60   ~ 0
@@ -1448,4 +1407,17 @@ Text Label 7250 6550 2    60   ~ 0
 BATT-
 Text Label 7250 6250 0    60   ~ 0
 3.3V_HV
+$Comp
+L Conn_01x04 J?
+U 1 1 59EB2CF9
+P 900 3000
+F 0 "J?" H 900 3200 50  0000 C CNN
+F 1 "To HV Board" V 1000 3000 50  0000 C CNN
+F 2 "" H 900 3000 50  0001 C CNN
+F 3 "" H 900 3000 50  0001 C CNN
+	1    900  3000
+	-1   0    0    -1  
+$EndComp
+Text Label 1100 3000 0    60   ~ 0
+12V
 $EndSCHEMATC
