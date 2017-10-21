@@ -113,12 +113,12 @@ BSPD_RESET
 $Comp
 L Conn_01x02 J6
 U 1 1 58A3ED25
-P 850 6850
-F 0 "J6" H 850 7000 50  0000 C CNN
-F 1 "BSPD Reset" V 950 6850 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 850 6850 50  0001 C CNN
-F 3 "" H 850 6850 50  0000 C CNN
-	1    850  6850
+P 850 6950
+F 0 "J6" H 850 7100 50  0000 C CNN
+F 1 "BSPD Reset" V 950 6950 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 850 6950 50  0001 C CNN
+F 3 "" H 850 6950 50  0000 C CNN
+	1    850  6950
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -264,7 +264,7 @@ Text Label 6850 6300 3    60   ~ 0
 GND
 Text Label 4700 2500 0    60   ~ 0
 3.3V
-Text Label 1050 6850 0    60   ~ 0
+Text Label 1050 6950 0    60   ~ 0
 BSPD_RESET
 $Comp
 L +5V #PWR02
@@ -901,12 +901,12 @@ TIMER_H
 $Comp
 L GND #PWR054
 U 1 1 5934728B
-P 1050 6950
-F 0 "#PWR054" H 1050 6700 50  0001 C CNN
-F 1 "GND" H 1050 6800 50  0000 C CNN
-F 2 "" H 1050 6950 50  0000 C CNN
-F 3 "" H 1050 6950 50  0000 C CNN
-	1    1050 6950
+P 1050 7050
+F 0 "#PWR054" H 1050 6800 50  0001 C CNN
+F 1 "GND" H 1050 6900 50  0000 C CNN
+F 2 "" H 1050 7050 50  0000 C CNN
+F 3 "" H 1050 7050 50  0000 C CNN
+	1    1050 7050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -997,7 +997,7 @@ Text Label 1050 6150 0    60   ~ 0
 CAN_RX
 Text Label 1050 6250 0    60   ~ 0
 AIRS_FINAL
-Text Label 1050 6350 0    60   ~ 0
+Text Label 1050 6550 0    60   ~ 0
 GND
 Wire Wire Line
 	1050 5750 1600 5750
@@ -1433,41 +1433,30 @@ F 3 "" H 1050 5200 50  0001 C CNN
 	1    1050 5200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Conn_01x02 J?
-U 1 1 59B3D3DB
-P 900 2050
-F 0 "J?" H 900 2150 50  0000 C CNN
-F 1 "Beam Interlock" V 1000 2050 50  0000 C CNN
-F 2 "" H 900 2050 50  0001 C CNN
-F 3 "" H 900 2050 50  0001 C CNN
-	1    900  2050
-	-1   0    0    -1  
-$EndComp
-Text Label 1100 2050 0    60   ~ 0
+Text Label 1050 6350 0    60   ~ 0
 AIRS_ACC_OUT
-Text Label 1100 2150 0    60   ~ 0
+Text Label 1050 6450 0    60   ~ 0
 AIRS_BEAM_OUT
-Text Label 1100 2600 0    60   ~ 0
+Text Label 1100 2550 0    60   ~ 0
 AIRS_BEAM_OUT
 Wire Wire Line
-	1100 2700 1100 2800
-Text Label 1100 2900 0    60   ~ 0
+	1100 2650 1100 2750
+Text Label 1100 2850 0    60   ~ 0
 AIRS_3PHASE_OUT
 $Comp
 L Conn_01x06 J?
 U 1 1 59B40172
-P 900 2800
-F 0 "J?" H 900 3100 50  0000 C CNN
-F 1 "To HV Interlocks" V 1000 2800 50  0000 C CNN
-F 2 "" H 900 2800 50  0001 C CNN
-F 3 "" H 900 2800 50  0001 C CNN
-	1    900  2800
+P 900 2750
+F 0 "J?" H 900 3050 50  0000 C CNN
+F 1 "To HV Interlocks" V 1000 2750 50  0000 C CNN
+F 2 "" H 900 2750 50  0001 C CNN
+F 3 "" H 900 2750 50  0001 C CNN
+	1    900  2750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 2900 1100 3000
-Text Label 1100 3100 0    60   ~ 0
+	1100 2850 1100 2950
+Text Label 1100 3050 0    60   ~ 0
 AIRS_PEINTERLOCKS_OUT
 Text Label 7250 6000 0    60   ~ 0
 5V
@@ -1482,19 +1471,30 @@ F 3 "" H 1050 5650 50  0001 C CNN
 	1    1050 5650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Conn_01x08 J?
-U 1 1 59B448D0
-P 850 5950
-F 0 "J?" H 850 6350 50  0000 C CNN
-F 1 "To PE HV" V 950 5950 50  0000 C CNN
-F 2 "" H 850 5950 50  0001 C CNN
-F 3 "" H 850 5950 50  0001 C CNN
-	1    850  5950
-	-1   0    0    -1  
-$EndComp
 Text Label 6450 6000 2    60   ~ 0
 12V
 Text Label 1050 5850 0    60   ~ 0
 3.3V
+$Comp
+L Conn_01x10 J?
+U 1 1 59EAD6F5
+P 850 6050
+F 0 "J?" H 850 6550 50  0000 C CNN
+F 1 "To PE HV" V 950 6050 50  0000 C CNN
+F 2 "" H 850 6050 50  0001 C CNN
+F 3 "" H 850 6050 50  0001 C CNN
+	1    850  6050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59EB0CDD
+P 1050 6550
+F 0 "#PWR?" H 1050 6300 50  0001 C CNN
+F 1 "GND" H 1050 6400 50  0000 C CNN
+F 2 "" H 1050 6550 50  0000 C CNN
+F 3 "" H 1050 6550 50  0000 C CNN
+	1    1050 6550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
