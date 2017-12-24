@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:PEBoardLV-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -108,7 +109,7 @@ Text Label 8400 2050 2    60   ~ 0
 CLK
 Text Label 8400 1550 2    60   ~ 0
 BSPD_SIG
-Text Label 13950 2250 2    60   ~ 0
+Text Label 14800 2250 2    60   ~ 0
 BSPD_RESET
 $Comp
 L Conn_01x02 J6
@@ -531,30 +532,6 @@ F 3 "" H 6400 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DK1A1B-12V U12
-U 1 1 58B4EA32
-P 15750 1900
-F 0 "U12" H 15650 1900 60  0000 C CNN
-F 1 "DK1A1B-12V" V 16000 1900 60  0000 C CNN
-F 2 "fs-1-schematics:DK1A1B-12V" H 15750 1900 60  0001 C CNN
-F 3 "" H 15750 1900 60  0000 C CNN
-	1    15750 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR026
-U 1 1 58B4F7B9
-P 15250 2050
-F 0 "#PWR026" H 15250 1800 50  0001 C CNN
-F 1 "GND" H 15250 1900 50  0000 C CNN
-F 2 "" H 15250 2050 50  0000 C CNN
-F 3 "" H 15250 2050 50  0000 C CNN
-	1    15250 2050
-	1    0    0    -1  
-$EndComp
-Text Label 14500 2500 2    60   ~ 0
-BSPD_FLT_H
-$Comp
 L +5V #PWR041
 U 1 1 58B771ED
 P 10950 3700
@@ -662,9 +639,7 @@ F 3 "" H 8050 1850 50  0000 C CNN
 	1    8050 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14500 2500 14950 2500
-Text Label 13950 1650 2    60   ~ 0
+Text Label 14800 1550 2    60   ~ 0
 BSPD_FLT_H
 $Comp
 L Conn_01x03 P1
@@ -894,9 +869,9 @@ Wire Notes Line
 	2950 550  16050 550 
 Text Notes 3250 700  2    60   ~ 0
 BSPD
-Text Notes 14300 1250 2    60   ~ 0
+Text Notes 14950 1250 2    60   ~ 0
 Fault Latching Relay
-Text Label 13950 1950 2    60   ~ 0
+Text Label 14800 1850 2    60   ~ 0
 TIMER_H
 $Comp
 L GND #PWR054
@@ -909,23 +884,6 @@ F 3 "" H 1050 6950 50  0000 C CNN
 	1    1050 6950
 	1    0    0    -1  
 $EndComp
-$Comp
-L G5RL-K1A-E U16
-U 1 1 59346F42
-P 14700 1950
-F 0 "U16" H 14850 1550 60  0000 C CNN
-F 1 "G5RL-K1A-E" V 15100 1950 60  0000 C CNN
-F 2 "" H 14950 1950 60  0001 C CNN
-F 3 "" H 14950 1950 60  0000 C CNN
-	1    14700 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14750 1400 15250 1400
-Connection ~ 14750 2500
-Wire Wire Line
-	15250 1400 15250 1750
-Connection ~ 14950 1400
 Wire Wire Line
 	5250 6850 5850 6850
 $Comp
@@ -1001,9 +959,9 @@ Text Label 1050 6350 0    60   ~ 0
 GND
 Wire Wire Line
 	1050 5850 1750 5850
-Text Label 15750 1600 1    60   ~ 0
+Text Label 15600 1350 1    60   ~ 0
 AIRS_BOTS_OUT
-Text Label 15750 2200 3    60   ~ 0
+Text Label 15600 2450 3    60   ~ 0
 AIRS_BSPD_OUT
 Text Notes 8900 850  0    60   ~ 0
 Half-Second Timer
@@ -1029,11 +987,9 @@ CAN_H
 Text Label 1050 7900 0    60   ~ 0
 CAN_L
 Text Label 1050 8000 0    60   ~ 0
-AIRS_BOTS_OUT
+AIRS_PEINTERLOCKS_OUT
 Text Label 1050 8100 0    60   ~ 0
 AIRS_ACC_OUT
-Text Label 1050 8200 0    60   ~ 0
-AIRS_BSPD_OUT
 Text Label 1050 8300 0    60   ~ 0
 AIRS_FINAL
 Text Label 1050 8400 0    60   ~ 0
@@ -1342,25 +1298,12 @@ $EndComp
 Wire Wire Line
 	6450 6300 7250 6300
 Connection ~ 6850 6300
-$Comp
-L Conn_01x05 J?
-U 1 1 59B39C64
-P 900 4400
-F 0 "J?" H 900 4700 50  0000 C CNN
-F 1 "To Right Panel" V 1000 4400 50  0000 C CNN
-F 2 "" H 900 4400 50  0001 C CNN
-F 3 "" H 900 4400 50  0001 C CNN
-	1    900  4400
-	-1   0    0    -1  
-$EndComp
 Text Label 1100 4200 0    60   ~ 0
 12V_SRC
 Text Label 1100 4300 0    60   ~ 0
 12V_LVMS
-Text Label 1100 4400 0    60   ~ 0
-AIRS_LEFTESTOP_OUT
-Text Label 1100 4500 0    60   ~ 0
-AIRS_HVMS_OUT
+Text Label 2150 4500 0    60   ~ 0
+AIRS_TSMS_OUT
 $Comp
 L GND #PWR?
 U 1 1 59B3AAB0
@@ -1395,7 +1338,7 @@ F 3 "" H 900 3600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 1100 3600 0    60   ~ 0
-AIRS_PEINTERLOCKS_OUT
+AIRS_ACC_OUT
 Text Label 1100 3700 0    60   ~ 0
 AIRS_LEFTESTOP_OUT
 $Comp
@@ -1434,7 +1377,7 @@ F 3 "" H 900 2050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 1100 2050 0    60   ~ 0
-AIRS_ACC_OUT
+AIRS_BSPD_OUT
 Text Label 1100 2150 0    60   ~ 0
 AIRS_BEAM_OUT
 Text Label 1100 2600 0    60   ~ 0
@@ -1510,4 +1453,35 @@ F 3 "" H 1750 5850 50  0001 C CNN
 	1    1750 5850
 	1    0    0    -1  
 $EndComp
+$Comp
+L DE1A1B-L2-12V U?
+U 1 1 5A3F7EE2
+P 15550 1900
+F 0 "U?" H 15700 1500 60  0000 C CNN
+F 1 "DE1A1B-L2-12V" V 15950 1900 60  0000 C CNN
+F 2 "" H 15800 1900 60  0000 C CNN
+F 3 "" H 15800 1900 60  0000 C CNN
+	1    15550 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14800 1950 14800 1850
+Text Label 1100 4400 0    60   ~ 0
+AIRS_LEFTESTOP_OUT
+$Comp
+L Conn_01x05 J?
+U 1 1 59B39C64
+P 900 4400
+F 0 "J?" H 900 4700 50  0000 C CNN
+F 1 "To Right Panel" V 1000 4400 50  0000 C CNN
+F 2 "" H 900 4400 50  0001 C CNN
+F 3 "" H 900 4400 50  0001 C CNN
+	1    900  4400
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 1050 8200
+Text Label 1100 4500 0    60   ~ 0
+AIRS_FINAL
+Wire Wire Line
+	2150 4500 1100 4500
 $EndSCHEMATC
