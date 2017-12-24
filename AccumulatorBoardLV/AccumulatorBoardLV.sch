@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
+LIBS:AccumulatorBoardLV-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -64,7 +65,7 @@ L Conn_01x02 J16
 U 1 1 58A9F1D8
 P 900 4550
 F 0 "J16" H 900 4700 50  0000 C CNN
-F 1 "HV Interlock" V 1000 4550 50  0000 C CNN
+F 1 "TS Interlock" V 1000 4550 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 4550 50  0001 C CNN
 F 3 "" H 900 4550 50  0000 C CNN
 	1    900  4550
@@ -532,7 +533,7 @@ $EndComp
 Text Label 13750 1600 2    60   ~ 0
 TEMP_FLT_H
 Text Label 13750 2950 2    60   ~ 0
-BMS_FLT
+BMS_FLT_H
 Text Label 13750 4350 2    60   ~ 0
 IMD_FLT_H
 Text Label 1100 3850 0    60   ~ 0
@@ -909,7 +910,6 @@ Text Label 1100 3250 0    60   ~ 0
 IMD_FLT_LATCHED
 Text Label 1100 3350 0    60   ~ 0
 BMS_FLT_LATCHED
-NoConn ~ -1800 4150
 $Comp
 L GND #PWR?
 U 1 1 59A4B84E
@@ -964,8 +964,6 @@ F 3 "" H 900 3950 50  0001 C CNN
 $EndComp
 Text Label 1100 4050 0    60   ~ 0
 AIRS_FINAL_CHARGER
-Entry Wire Line
-	-550 5500 -450 5600
 $Comp
 L Conn_01x10 J?
 U 1 1 59B3D6DB
@@ -1251,7 +1249,7 @@ F 3 "" H 7700 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7500 6850 2    60   ~ 0
-3.3V_HV
+3.3V_TS
 Text Label 7500 6950 2    60   ~ 0
 BATT-
 Wire Wire Line
@@ -1358,13 +1356,13 @@ Wire Wire Line
 Wire Wire Line
 	9500 8050 9200 8050
 Text Label 9500 8050 0    60   ~ 0
-3.3V_HV
+3.3V_TS
 Text Label 9500 6550 0    60   ~ 0
-3.3V_HV
+3.3V_TS
 Text Label 11950 8100 0    60   ~ 0
-3.3V_HV
+3.3V_TS
 Text Label 11950 6550 0    60   ~ 0
-3.3V_HV
+3.3V_TS
 Text Label 9900 7250 0    60   ~ 0
 TEMP_SS_0
 Text Label 12350 7250 0    60   ~ 0
@@ -1430,9 +1428,9 @@ Wire Notes Line
 Text Notes 5900 5850 0    60   ~ 0
 Temp System
 Text Notes 5950 6000 0    60   ~ 0
-LV    HV
+GLV    TS
 Text Notes 5950 9550 0    60   ~ 0
-LV    HV
+GLV    TS
 $Comp
 L C C?
 U 1 1 59C1F291
@@ -1447,5 +1445,36 @@ $EndComp
 Text Label 7250 6550 2    60   ~ 0
 BATT-
 Text Label 7250 6250 0    60   ~ 0
-3.3V_HV
+3.3V_TS
+Text Label 11050 2650 2    60   ~ 0
+BMS_FLT
+Text Label 12250 2650 0    60   ~ 0
+BMS_FLT_H
+Text Label 10050 3400 2    60   ~ 0
+BMS_FLT
+$Comp
+L R R?
+U 1 1 5A3F1FAF
+P 10050 3150
+F 0 "R?" V 10130 3150 50  0000 C CNN
+F 1 "R" V 10050 3150 50  0000 C CNN
+F 2 "" V 9980 3150 50  0001 C CNN
+F 3 "" H 10050 3150 50  0001 C CNN
+	1    10050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5A3F20C5
+P 10050 3000
+F 0 "#PWR?" H 10050 2850 50  0001 C CNN
+F 1 "+5V" H 10050 3140 50  0000 C CNN
+F 2 "" H 10050 3000 50  0001 C CNN
+F 3 "" H 10050 3000 50  0001 C CNN
+	1    10050 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 3400 10050 3300
+Connection ~ 10050 3400
 $EndSCHEMATC

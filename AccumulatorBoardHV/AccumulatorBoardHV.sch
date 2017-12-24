@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
-LIBS:AccumulatorBoardHV-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -50,7 +49,7 @@ L Conn_01x02 P2
 U 1 1 589D2B01
 P 1600 1800
 F 0 "P2" H 1600 1950 50  0000 C CNN
-F 1 "HV (Switched)" V 1700 1800 50  0000 C CNN
+F 1 "TS (Switched)" V 1700 1800 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 1600 1800 50  0001 C CNN
 F 3 "" H 1600 1800 50  0000 C CNN
 	1    1600 1800
@@ -68,9 +67,9 @@ F 3 "" H 1600 1150 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Label 1800 1800 0    60   ~ 0
-HV+
+TS+
 Text Label 1800 1900 0    60   ~ 0
-HV-
+TS-
 Text Label 1800 1250 0    60   ~ 0
 BATT-
 $Comp
@@ -89,7 +88,7 @@ L Conn_01x02 P3
 U 1 1 589D311D
 P 2900 1850
 F 0 "P3" H 2900 2000 50  0000 C CNN
-F 1 "IMD HV" V 3000 1850 50  0000 C CNN
+F 1 "IMD TS" V 3000 1850 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 2900 1850 50  0001 C CNN
 F 3 "" H 2900 1850 50  0000 C CNN
 	1    2900 1850
@@ -129,9 +128,9 @@ F 3 "" H 3650 4100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3550 4250 2    60   ~ 0
-HV-
+TS-
 Text Label 2250 3650 2    60   ~ 0
-HV+
+TS+
 Text Label 5050 3850 0    60   ~ 0
 12V_INDICATOR
 $Comp
@@ -150,7 +149,7 @@ L Conn_01x02 P4
 U 1 1 58AD4758
 P 2200 950
 F 0 "P4" H 2200 1100 50  0000 C CNN
-F 1 "HV -> LV Regulator Jumper" V 2300 950 50  0000 C CNN
+F 1 "TS -> GLV Regulator Jumper" V 2300 950 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 2200 950 50  0001 C CNN
 F 3 "" H 2200 950 50  0000 C CNN
 	1    2200 950 
@@ -370,11 +369,11 @@ $EndComp
 Text Label 5050 3650 0    60   ~ 0
 12V_SRC
 Text Notes 4500 7700 0    60   ~ 0
-HV      LV
+TS      GLV
 Text Notes 4500 5550 0    60   ~ 0
-HV      LV
+TS      GLV
 Text Notes 4500 600  0    60   ~ 0
-HV      LV
+TS      GLV
 Text Notes 1950 3350 0    60   ~ 0
 60V Threshold Accumulator Indicators Circuit
 Text Label 6600 1250 0    60   ~ 0
@@ -539,17 +538,6 @@ Text Label 5200 2150 0    60   ~ 0
 12V
 Text Label 5200 2450 0    60   ~ 0
 GND
-$Comp
-L RDD08110S12 DC?
-U 1 1 59C0CBF2
-P 1300 2800
-F 0 "DC?" H 1000 2350 60  0000 L CNN
-F 1 "RDD08110S12" H 1000 3200 60  0000 L CNN
-F 2 "" H 1450 2750 60  0000 C CNN
-F 3 "" H 1450 2750 60  0000 C CNN
-	1    1300 2800
-	1    0    0    -1  
-$EndComp
 NoConn ~ 800  2750
 Text Label 800  3050 2    60   ~ 0
 BATT-
@@ -577,28 +565,6 @@ F 3 "" H 2500 2250 50  0001 C CNN
 $EndComp
 Text Label 2100 2400 2    60   ~ 0
 BATT-
-$Comp
-L CP C?
-U 1 1 59C0ECA6
-P 2150 2900
-F 0 "C?" H 2175 3000 50  0000 L CNN
-F 1 "CP" H 2175 2800 50  0000 L CNN
-F 2 "" H 2188 2750 50  0001 C CNN
-F 3 "" H 2150 2900 50  0001 C CNN
-	1    2150 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L LD1117V33 U?
-U 1 1 59C0ED27
-P 2550 2800
-F 0 "U?" H 2350 3000 50  0000 C CNN
-F 1 "LD1117V33" H 2550 3000 50  0000 L CNN
-F 2 "TO-220" H 2550 2450 50  0001 C CIN
-F 3 "" H 2550 2800 50  0000 C CNN
-	1    2550 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L CP C?
 U 1 1 59C0EDAC
@@ -740,8 +706,6 @@ Wire Wire Line
 	2500 2400 2100 2400
 Wire Wire Line
 	1800 3050 3800 3050
-Connection ~ 2550 3050
-Connection ~ 2150 3050
 Wire Wire Line
 	1800 2550 2150 2550
 Wire Wire Line
@@ -774,13 +738,25 @@ F 3 "" H 3300 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2950 2750 3150 2750
+	2150 2750 3150 2750
 Wire Wire Line
 	3450 2750 3800 2750
 Text Label 3450 2750 0    60   ~ 0
-3.3V_HV
+3.3V_TS
 Wire Notes Line
 	4750 7700 4750 500 
 Connection ~ 2100 2100
 Connection ~ 2500 2100
+Connection ~ 2950 2750
+$Comp
+L RDD08110S3V3 U?
+U 1 1 5A3F2C66
+P 1300 2800
+F 0 "U?" H 1000 2400 60  0000 L CNN
+F 1 "RDD08110S3V3" H 1000 3200 60  0000 L CNN
+F 2 "" H 1450 2750 60  0000 C CNN
+F 3 "" H 1450 2750 60  0000 C CNN
+	1    1300 2800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

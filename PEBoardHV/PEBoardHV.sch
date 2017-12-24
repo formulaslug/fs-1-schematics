@@ -46,37 +46,33 @@ $EndDescr
 $Comp
 L ISO1050 U2
 U 1 1 5888641B
-P 5250 1350
-F 0 "U2" H 5500 1350 60  0000 C CNN
-F 1 "ISO1050" H 5200 1350 60  0000 C CNN
-F 2 "SMD_Packages:DIP-8_SMD" H 4400 950 60  0001 C CNN
-F 3 "" H 5200 1350 60  0000 C CNN
-	1    5250 1350
+P 5250 1450
+F 0 "U2" H 5500 1450 60  0000 C CNN
+F 1 "ISO1050" H 5200 1450 60  0000 C CNN
+F 2 "SMD_Packages:DIP-8_SMD" H 4400 1050 60  0001 C CNN
+F 3 "" H 5200 1450 60  0000 C CNN
+	1    5250 1450
 	1    0    0    -1  
 $EndComp
-Text Label 1000 1250 0    60   ~ 0
+Text Label 1000 1350 0    60   ~ 0
 GND
-Text Label 4350 1150 0    60   ~ 0
+Text Label 4350 1250 0    60   ~ 0
 CAN_RX
-Text Label 4350 1550 0    60   ~ 0
+Text Label 4350 1650 0    60   ~ 0
 CAN_TX
-Text Label 5150 850  1    60   ~ 0
-5V_LV
-Text Label 5350 850  1    60   ~ 0
-5V_HV
-Text Label 5150 1850 3    60   ~ 0
+Text Label 5150 950  1    60   ~ 0
+3.3V_LV
+Text Label 5350 950  1    60   ~ 0
+5V_TS
+Text Label 5150 1950 3    60   ~ 0
 GND
-Text Label 5350 1850 3    60   ~ 0
-HV-
-Text Notes 5600 600  2    60   ~ 0
-LV             HV
-Text Notes 5450 5050 2    60   ~ 0
-LV      HV
+Text Label 5350 1950 3    60   ~ 0
+TS-
 Text Notes 5450 7700 2    60   ~ 0
-LV      HV
-Text Label 5850 1150 0    60   ~ 0
+GLV      TS
+Text Label 5850 1250 0    60   ~ 0
 CAN_H_BOARD
-Text Label 5850 1550 0    60   ~ 0
+Text Label 5850 1650 0    60   ~ 0
 CAN_L_BOARD
 $Comp
 L DK1A1B-12V U4
@@ -109,13 +105,13 @@ GND
 Text Label 4850 7250 2    60   ~ 0
 GND
 Text Label 10500 700  2    60   ~ 0
-HV+
+TS+
 Text Label 10500 900  2    60   ~ 0
 CAN+
 Text Label 10500 1100 2    60   ~ 0
 CAN_L_BOARD
 Text Label 10500 800  2    60   ~ 0
-HV+_SWITCHED_L
+TS+_SWITCHED_L
 Text Label 10500 1000 2    60   ~ 0
 CAN_H_BOARD
 $Comp
@@ -141,25 +137,25 @@ F 3 "" H 5600 6500 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 5750 5200 0    60   ~ 0
-HV+_SWITCHED_L
+TS+_SWITCHED_L
 Text Label 5750 6500 0    60   ~ 0
-HV+_SWITCHED_R
+TS+_SWITCHED_R
 Text Label 5450 6100 3    60   ~ 0
-HV-
+TS-
 Text Label 5450 7400 3    60   ~ 0
-HV-
+TS-
 Text Notes 8550 900  2    60   ~ 0
 Voltage Regulator HV
 Text Label 7750 1150 2    60   ~ 0
 CAN+
 Text Label 8550 1150 0    60   ~ 0
-5V_HV
+5V_TS
 Text Label 8150 1450 3    60   ~ 0
-HV-
+TS-
 Text Label 10500 1950 2    60   ~ 0
-HV+
+TS+
 Text Label 10500 2050 2    60   ~ 0
-HV+_SWITCHED_R
+TS+_SWITCHED_R
 $Comp
 L Conn_01x02 J10
 U 1 1 58916262
@@ -172,9 +168,9 @@ F 3 "" H 10700 3000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 10500 3000 2    60   ~ 0
-HV+
+TS+
 Text Label 10500 3100 2    60   ~ 0
-HV-
+TS-
 $Comp
 L Conn_01x02 J11
 U 1 1 5891667E
@@ -209,9 +205,9 @@ F 3 "" H 10500 3800 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 10200 3550 2    60   ~ 0
-HV+
+TS+
 Text Label 10500 3950 3    60   ~ 0
-HV-
+TS-
 $Comp
 L L78S05CV-DG U6
 U 1 1 5897D870
@@ -303,9 +299,9 @@ F 3 "" H 5700 2350 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4350 1150 4650 1150
+	4350 1250 4650 1250
 Wire Wire Line
-	4350 1550 4650 1550
+	4350 1650 4650 1650
 Wire Notes Line
 	5250 500  5250 7750
 Wire Wire Line
@@ -497,17 +493,17 @@ F 3 "" H 6350 4300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 6500 2600 0    60   ~ 0
-HV-
+TS-
 Text Label 6500 3450 0    60   ~ 0
-HV-
+TS-
 Text Label 6500 4300 0    60   ~ 0
-HV-
+TS-
 Text Label 4950 2350 2    60   ~ 0
-5V_LV
+5V_GLV
 Text Label 4950 3200 2    60   ~ 0
-5V_LV
+5V_GLV
 Text Label 4950 4050 2    60   ~ 0
-5V_LV
+5V_GLV
 Text Label 4950 2550 2    60   ~ 0
 SIG_TSAL
 Text Label 4950 3400 2    60   ~ 0
@@ -515,20 +511,20 @@ SIG_TSAL
 Text Label 4950 4250 2    60   ~ 0
 SIG_TSAL
 Text Label 7100 2100 0    60   ~ 0
-HV+_SWITCHED_L
+TS+_SWITCHED_L
 Text Label 7100 2950 0    60   ~ 0
-HV+_SWITCHED_R
+TS+_SWITCHED_R
 Text Label 7100 3800 0    60   ~ 0
-HV+
+TS+
 Text Label 1000 750  0    60   ~ 0
-5V_LV
-Text Label 1000 850  0    60   ~ 0
-SIG_TSAL
+5V_GLV
 Text Label 1000 950  0    60   ~ 0
-CAN_TX
-Text Label 1000 1150 0    60   ~ 0
-AIRS_FINAL
+SIG_TSAL
 Text Label 1000 1050 0    60   ~ 0
+CAN_TX
+Text Label 1000 1250 0    60   ~ 0
+AIRS_FINAL
+Text Label 1000 1150 0    60   ~ 0
 CAN_RX
 Text Notes 7700 1800 0    60   ~ 0
 Needs (Small) Heat Sink!
@@ -566,17 +562,6 @@ F 3 "" H 6650 2100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Conn_01x08 J?
-U 1 1 59B38655
-P 800 950
-F 0 "J?" H 800 1350 50  0000 C CNN
-F 1 "To PE LV" V 900 950 50  0000 C CNN
-F 2 "" H 800 950 50  0001 C CNN
-F 3 "" H 800 950 50  0001 C CNN
-	1    800  950 
-	-1   0    0    -1  
-$EndComp
-$Comp
 L +12V #PWR?
 U 1 1 59B389E9
 P 1000 650
@@ -587,7 +572,6 @@ F 3 "" H 1000 650 50  0001 C CNN
 	1    1000 650 
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1000 1350
 $Comp
 L Conn_01x04 J?
 U 1 1 59B395E2
@@ -602,16 +586,16 @@ $EndComp
 $Comp
 L GND #PWR?
 U 1 1 59B39840
-P 1250 1250
-F 0 "#PWR?" H 1250 1000 50  0001 C CNN
-F 1 "GND" H 1250 1100 50  0000 C CNN
-F 2 "" H 1250 1250 50  0001 C CNN
-F 3 "" H 1250 1250 50  0001 C CNN
-	1    1250 1250
+P 1250 1350
+F 0 "#PWR?" H 1250 1100 50  0001 C CNN
+F 1 "GND" H 1250 1200 50  0000 C CNN
+F 2 "" H 1250 1350 50  0001 C CNN
+F 3 "" H 1250 1350 50  0001 C CNN
+	1    1250 1350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 1250 1000 1250
+	1250 1350 1000 1350
 $Comp
 L GND #PWR?
 U 1 1 59B39AB1
@@ -716,5 +700,70 @@ CAN_H_DEBUG
 Text Label 10500 4800 2    60   ~ 0
 CAN_L_DEBUG
 Text Label 10500 4900 2    60   ~ 0
-HV-
+TS-
+Text Notes 5450 4650 2    60   ~ 0
+GLV      TS
+Text Notes 5450 600  2    60   ~ 0
+GLV      TS
+$Comp
+L Conn_01x08 J?
+U 1 1 59B38655
+P 800 950
+F 0 "J?" H 800 1350 50  0000 C CNN
+F 1 "To PE LV" V 900 950 50  0000 C CNN
+F 2 "" H 800 950 50  0001 C CNN
+F 3 "" H 800 950 50  0001 C CNN
+	1    800  950 
+	-1   0    0    -1  
+$EndComp
+Text Label 1000 850  0    60   ~ 0
+3.3V_GLV
+$Comp
+L C C?
+U 1 1 5A3F30B7
+P 2450 1000
+F 0 "C?" H 2475 1100 50  0000 L CNN
+F 1 "C" H 2475 900 50  0000 L CNN
+F 2 "" H 2488 850 50  0001 C CNN
+F 3 "" H 2450 1000 50  0001 C CNN
+	1    2450 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A3F31B6
+P 2950 1000
+F 0 "C?" H 2975 1100 50  0000 L CNN
+F 1 "C" H 2975 900 50  0000 L CNN
+F 2 "" H 2988 850 50  0001 C CNN
+F 3 "" H 2950 1000 50  0001 C CNN
+	1    2950 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A3F3240
+P 2450 1150
+F 0 "#PWR?" H 2450 900 50  0001 C CNN
+F 1 "GND" H 2450 1000 50  0000 C CNN
+F 2 "" H 2450 1150 50  0001 C CNN
+F 3 "" H 2450 1150 50  0001 C CNN
+	1    2450 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A3F32CD
+P 2950 1150
+F 0 "#PWR?" H 2950 900 50  0001 C CNN
+F 1 "GND" H 2950 1000 50  0000 C CNN
+F 2 "" H 2950 1150 50  0001 C CNN
+F 3 "" H 2950 1150 50  0001 C CNN
+	1    2950 1150
+	1    0    0    -1  
+$EndComp
+Text Label 2450 850  0    60   ~ 0
+5V_GLV
+Text Label 2950 850  0    60   ~ 0
+3.3V_GLV
 $EndSCHEMATC
