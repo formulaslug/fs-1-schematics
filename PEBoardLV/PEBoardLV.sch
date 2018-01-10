@@ -990,105 +990,79 @@ Text Label 1050 8000 0    60   ~ 0
 AIRS_PEINTERLOCKS_OUT
 Text Label 1050 8100 0    60   ~ 0
 AIRS_ACC_OUT
-Text Label 1050 8300 0    60   ~ 0
+Text Label 1050 8200 0    60   ~ 0
 AIRS_FINAL
-Text Label 1050 8400 0    60   ~ 0
+Text Label 1050 8300 0    60   ~ 0
 5V_BMS
-Text Label 1050 8500 0    60   ~ 0
+Text Label 1050 8400 0    60   ~ 0
 SIG_CURRENT
-Text Label 1050 8700 0    60   ~ 0
+Text Label 1050 8600 0    60   ~ 0
 AIRS_DASH_OUT
-Text Label 1050 8800 0    60   ~ 0
+Text Label 1050 8700 0    60   ~ 0
 AIRS_BOTS_OUT
-$Comp
-L +3.3V #PWR?
-U 1 1 59B27500
-P 1700 8900
-F 0 "#PWR?" H 1700 8750 50  0001 C CNN
-F 1 "+3.3V" H 1700 9040 50  0000 C CNN
-F 2 "" H 1700 8900 50  0001 C CNN
-F 3 "" H 1700 8900 50  0001 C CNN
-	1    1700 8900
-	0    1    1    0   
-$EndComp
-Text Label 1050 9000 0    60   ~ 0
+Text Label 1050 8900 0    60   ~ 0
 SIG_APPS_A
-Text Label 1050 9100 0    60   ~ 0
+Text Label 1050 9000 0    60   ~ 0
 GND
 $Comp
 L +3.3V #PWR?
 U 1 1 59B27836
-P 2150 9200
-F 0 "#PWR?" H 2150 9050 50  0001 C CNN
-F 1 "+3.3V" H 2150 9340 50  0000 C CNN
-F 2 "" H 2150 9200 50  0000 C CNN
-F 3 "" H 2150 9200 50  0000 C CNN
-	1    2150 9200
+P 2150 9100
+F 0 "#PWR?" H 2150 8950 50  0001 C CNN
+F 1 "+3.3V" H 2150 9240 50  0000 C CNN
+F 2 "" H 2150 9100 50  0000 C CNN
+F 3 "" H 2150 9100 50  0000 C CNN
+	1    2150 9100
 	0    1    1    0   
 $EndComp
 $Comp
 L R R?
 U 1 1 59B2783C
-P 2000 9200
-F 0 "R?" V 2080 9200 50  0000 C CNN
-F 1 "5kR" V 2000 9200 50  0000 C CNN
-F 2 "" V 1930 9200 50  0001 C CNN
-F 3 "" H 2000 9200 50  0000 C CNN
-	1    2000 9200
+P 2000 9100
+F 0 "R?" V 2080 9100 50  0000 C CNN
+F 1 "5kR" V 2000 9100 50  0000 C CNN
+F 2 "" V 1930 9100 50  0001 C CNN
+F 3 "" H 2000 9100 50  0000 C CNN
+	1    2000 9100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1050 9200 1850 9200
-Text Label 1050 9300 0    60   ~ 0
+	1050 9100 1850 9100
+Text Label 1050 9200 0    60   ~ 0
 SIG_APPS_B
-Text Label 1050 9400 0    60   ~ 0
+Text Label 1050 9300 0    60   ~ 0
 GND
-$Comp
-L +3.3V #PWR?
-U 1 1 59B27FDB
-P 1700 9500
-F 0 "#PWR?" H 1700 9350 50  0001 C CNN
-F 1 "+3.3V" H 1700 9640 50  0000 C CNN
-F 2 "" H 1700 9500 50  0001 C CNN
-F 3 "" H 1700 9500 50  0001 C CNN
-	1    1700 9500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1050 9500 1700 9500
-Wire Wire Line
-	1700 8900 1050 8900
-Text Label 1050 9600 0    60   ~ 0
+Text Label 1050 9500 0    60   ~ 0
 SIG_BSE
-Text Label 1050 9700 0    60   ~ 0
+Text Label 1050 9600 0    60   ~ 0
 GND
 Wire Notes Line
-	550  8600 2550 8600
+	550  8500 2550 8500
 Wire Notes Line
-	550  9700 2550 9700
-Text Label 1050 9800 0    60   ~ 0
+	550  9600 2550 9600
+Text Label 1050 9700 0    60   ~ 0
 12V
-Text Label 1050 9900 0    60   ~ 0
+Text Label 1050 9800 0    60   ~ 0
 12V_LVMS
-Text Label 1050 10000 0    60   ~ 0
+Text Label 1050 9900 0    60   ~ 0
 CAN_H
-Text Label 1050 10100 0    60   ~ 0
+Text Label 1050 10000 0    60   ~ 0
 CAN_L
 Text Label 3950 6350 2    60   ~ 0
 LED_AMS
 Text Label 3950 6450 2    60   ~ 0
 LED_IMD
-Text Label 1050 10200 0    60   ~ 0
+Text Label 1050 10100 0    60   ~ 0
 BUTTON_1
-Text Label 1050 10300 0    60   ~ 0
+Text Label 1050 10200 0    60   ~ 0
 BUTTON_2
-Text Label 1050 10400 0    60   ~ 0
+Text Label 1050 10300 0    60   ~ 0
 BUTTON_3
-Text Label 1050 10500 0    60   ~ 0
+Text Label 1050 10400 0    60   ~ 0
 AIRS_DASH_OUT
-Text Label 1050 10600 0    60   ~ 0
+Text Label 1050 10500 0    60   ~ 0
 LED_AMS
-Text Label 1050 10700 0    60   ~ 0
+Text Label 1050 10600 0    60   ~ 0
 LED_IMD
 Text Label 1050 10800 0    60   ~ 0
 SIG_STEER
@@ -1107,7 +1081,7 @@ F 3 "" H 1550 7600 50  0001 C CNN
 	1    1550 7600
 	0    1    1    0   
 $EndComp
-Text Label 1050 8600 0    60   ~ 0
+Text Label 1050 8500 0    60   ~ 0
 GND
 $Comp
 L SN754410 H?
@@ -1280,9 +1254,9 @@ Wire Wire Line
 	14800 4800 14800 4700
 Text Notes 1950 8500 0    60   ~ 0
 To Accumulator
-Text Notes 2100 9700 0    60   ~ 0
+Text Notes 2100 9600 0    60   ~ 0
 To Pedals
-Text Notes 2100 9800 0    60   ~ 0
+Text Notes 2100 9700 0    60   ~ 0
 To Dash
 $Comp
 L stm_nucleo_F303K8 U?
@@ -1479,9 +1453,29 @@ F 3 "" H 900 4400 50  0001 C CNN
 	1    900  4400
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 1050 8200
 Text Label 1100 4500 0    60   ~ 0
 AIRS_FINAL
 Wire Wire Line
 	2150 4500 1100 4500
+Text Label 1050 10700 0    60   ~ 0
+LED_BSPD
+Text Label 1050 8800 0    60   ~ 0
+3.3V
+Text Label 1050 9400 0    60   ~ 0
+3.3V
+Text Label 3950 6550 2    60   ~ 0
+LED_BSPD
+Text Label 15800 1350 1    60   ~ 0
+BSPD_FLT_LATCHED
+$Comp
+L GND #PWR?
+U 1 1 5A525D9A
+P 15800 2450
+F 0 "#PWR?" H 15800 2200 50  0001 C CNN
+F 1 "GND" H 15800 2300 50  0000 C CNN
+F 2 "" H 15800 2450 50  0001 C CNN
+F 3 "" H 15800 2450 50  0001 C CNN
+	1    15800 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

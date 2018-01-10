@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:DashSwitchbox-rescue
 LIBS:FS FINAL
 LIBS:power
 LIBS:device
@@ -31,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
+LIBS:DashSwitchbox-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -45,90 +45,44 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Conn_01x14 P?
-U 1 1 594F24DA
-P 800 1400
-F 0 "P?" H 800 2150 50  0000 C CNN
-F 1 "Main Input" V 900 1400 50  0000 C CNN
-F 2 "" H 800 1400 50  0000 C CNN
-F 3 "" H 800 1400 50  0000 C CNN
-	1    800  1400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L +12V #PWR?
-U 1 1 594F3245
-P 1000 800
-F 0 "#PWR?" H 1000 650 50  0001 C CNN
-F 1 "+12V" H 1000 940 50  0000 C CNN
-F 2 "" H 1000 800 50  0000 C CNN
-F 3 "" H 1000 800 50  0000 C CNN
-	1    1000 800 
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 594F3322
-P 1200 900
-F 0 "#PWR?" H 1200 650 50  0001 C CNN
-F 1 "GND" H 1200 750 50  0000 C CNN
-F 2 "" H 1200 900 50  0000 C CNN
-F 3 "" H 1200 900 50  0000 C CNN
-	1    1200 900 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1000 900  1200 900 
+Text Label 1000 1000 0    60   ~ 0
+CAN_H
 Text Label 1000 1100 0    60   ~ 0
-CAN_H
-Text Label 1000 1200 0    60   ~ 0
 CAN_L
-Text Label 1000 1300 0    60   ~ 0
-LED_AMS
-Text Label 1000 1400 0    60   ~ 0
-LED_IMD
-Text Label 1000 1500 0    60   ~ 0
-BUTTON_1
 Text Label 1000 1600 0    60   ~ 0
-BUTTON_2
+LED_AMS
 Text Label 1000 1700 0    60   ~ 0
+LED_IMD
+Text Label 1000 1200 0    60   ~ 0
+BUTTON_1
+Text Label 1000 1300 0    60   ~ 0
+BUTTON_2
+Text Label 1000 1400 0    60   ~ 0
 BUTTON_3
-Text Label 1000 1800 0    60   ~ 0
+Text Label 1000 1500 0    60   ~ 0
 AIRS_DASH_OUT
-$Comp
-L Conn_01x04 P?
-U 1 1 594F5792
-P 800 2650
-F 0 "P?" H 800 2900 50  0000 C CNN
-F 1 "Dash Connector" V 900 2650 50  0000 C CNN
-F 2 "" H 800 2650 50  0000 C CNN
-F 3 "" H 800 2650 50  0000 C CNN
-	1    800  2650
-	-1   0    0    -1  
-$EndComp
-Text Label 1000 2550 0    60   ~ 0
+Text Label 1000 2100 0    60   ~ 0
 12V
-Text Label 1000 2650 0    60   ~ 0
+Text Label 1000 2200 0    60   ~ 0
 CAN_H
-Text Label 1000 2750 0    60   ~ 0
+Text Label 1000 2300 0    60   ~ 0
 CAN_L
-Text Label 1000 2850 0    60   ~ 0
+Text Label 1000 2400 0    60   ~ 0
 GND
 $Comp
 L Conn_01x02 P?
 U 1 1 594F5A13
-P 800 3550
-F 0 "P?" H 800 3700 50  0000 C CNN
-F 1 "AIRS Connection" V 900 3550 50  0000 C CNN
-F 2 "" H 800 3550 50  0000 C CNN
-F 3 "" H 800 3550 50  0000 C CNN
-	1    800  3550
+P 1900 3550
+F 0 "P?" H 1900 3700 50  0000 C CNN
+F 1 "Estop Connector" V 2000 3550 50  0000 C CNN
+F 2 "" H 1900 3550 50  0000 C CNN
+F 3 "" H 1900 3550 50  0000 C CNN
+	1    1900 3550
 	-1   0    0    -1  
 $EndComp
-Text Label 1000 3550 0    60   ~ 0
+Text Label 1000 2800 0    60   ~ 0
 12V
-Text Label 1000 3650 0    60   ~ 0
+Text Label 2100 3650 0    60   ~ 0
 AIRS_DASH_OUT
 $Comp
 L LD1117V33 U?
@@ -178,17 +132,6 @@ Wire Wire Line
 	2800 1250 3600 1250
 Connection ~ 3200 1250
 $Comp
-L Conn_01x03 J?
-U 1 1 59B352CC
-P 3050 2150
-F 0 "J?" H 3050 2350 50  0000 C CNN
-F 1 "To Steering Sensor" H 3050 1950 50  0000 C CNN
-F 2 "" H 3050 2150 50  0001 C CNN
-F 3 "" H 3050 2150 50  0001 C CNN
-	1    3050 2150
-	-1   0    0    -1  
-$EndComp
-$Comp
 L +3.3V #PWR?
 U 1 1 59B35329
 P 3600 950
@@ -210,114 +153,273 @@ F 3 "" H 2800 950 50  0001 C CNN
 	1    2800 950 
 	1    0    0    -1  
 $EndComp
-$Comp
-L +3.3V #PWR?
-U 1 1 59B35476
-P 3250 2050
-F 0 "#PWR?" H 3250 1900 50  0001 C CNN
-F 1 "+3.3V" H 3250 2190 50  0000 C CNN
-F 2 "" H 3250 2050 50  0001 C CNN
-F 3 "" H 3250 2050 50  0001 C CNN
-	1    3250 2050
-	1    0    0    -1  
-$EndComp
-Text Label 3250 2150 0    60   ~ 0
+Text Label 1000 2600 0    60   ~ 0
 SIG_STEER
-$Comp
-L GND #PWR?
-U 1 1 59B354AE
-P 3500 2250
-F 0 "#PWR?" H 3500 2000 50  0001 C CNN
-F 1 "GND" H 3500 2100 50  0000 C CNN
-F 2 "" H 3500 2250 50  0001 C CNN
-F 3 "" H 3500 2250 50  0001 C CNN
-	1    3500 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 2250 3250 2250
 Text Label 1000 1900 0    60   ~ 0
 SIG_STEER
-Text Label 1000 1000 0    60   ~ 0
+Text Label 1000 900  0    60   ~ 0
 12V_LVMS
-NoConn ~ 1000 2100
-NoConn ~ 1000 2000
-$Comp
-L Conn_01x04 J?
-U 1 1 59B35B89
-P 800 4400
-F 0 "J?" H 800 4600 50  0000 C CNN
-F 1 "To Fault LEDs" H 800 4100 50  0000 C CNN
-F 2 "" H 800 4400 50  0001 C CNN
-F 3 "" H 800 4400 50  0001 C CNN
-	1    800  4400
-	-1   0    0    -1  
-$EndComp
 $Comp
 L R R?
 U 1 1 59B35CBD
-P 1150 4300
-F 0 "R?" V 1230 4300 50  0000 C CNN
-F 1 "60" V 1150 4300 50  0000 C CNN
-F 2 "" V 1080 4300 50  0001 C CNN
-F 3 "" H 1150 4300 50  0001 C CNN
-	1    1150 4300
+P 1150 5650
+F 0 "R?" V 1230 5650 50  0000 C CNN
+F 1 "51" V 1150 5650 50  0000 C CNN
+F 2 "" V 1080 5650 50  0001 C CNN
+F 3 "" H 1150 5650 50  0001 C CNN
+	1    1150 5650
 	0    1    1    0   
 $EndComp
-$Comp
-L R R?
-U 1 1 59B35D58
-P 1150 4500
-F 0 "R?" V 1230 4500 50  0000 C CNN
-F 1 "60" V 1150 4500 50  0000 C CNN
-F 2 "" V 1080 4500 50  0001 C CNN
-F 3 "" H 1150 4500 50  0001 C CNN
-	1    1150 4500
-	0    1    1    0   
-$EndComp
-Text Label 1300 4500 0    60   ~ 0
+Text Label 1300 5650 0    60   ~ 0
 LED_AMS
-Text Label 1300 4300 0    60   ~ 0
-LED_IMD
-$Comp
-L GND #PWR?
-U 1 1 59B35F78
-P 1750 4600
-F 0 "#PWR?" H 1750 4350 50  0001 C CNN
-F 1 "GND" H 1750 4450 50  0000 C CNN
-F 2 "" H 1750 4600 50  0001 C CNN
-F 3 "" H 1750 4600 50  0001 C CNN
-	1    1750 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 4600 1750 4600
-Wire Wire Line
-	1000 4400 1750 4400
-Wire Wire Line
-	1750 4400 1750 4600
-$Comp
-L Conn_01x02 J?
-U 1 1 59B36135
-P 3050 2900
-F 0 "J?" H 3050 3000 50  0000 C CNN
-F 1 "Dash LVMS" H 3050 2700 50  0000 C CNN
-F 2 "" H 3050 2900 50  0001 C CNN
-F 3 "" H 3050 2900 50  0001 C CNN
-	1    3050 2900
-	-1   0    0    -1  
-$EndComp
-Text Label 3250 3000 0    60   ~ 0
+Text Label 1050 3650 0    60   ~ 0
 12V_LVMS
 $Comp
 L +12V #PWR?
 U 1 1 59B36254
-P 3250 2900
-F 0 "#PWR?" H 3250 2750 50  0001 C CNN
-F 1 "+12V" H 3250 3040 50  0000 C CNN
-F 2 "" H 3250 2900 50  0001 C CNN
-F 3 "" H 3250 2900 50  0001 C CNN
-	1    3250 2900
+P 1050 3550
+F 0 "#PWR?" H 1050 3400 50  0001 C CNN
+F 1 "+12V" H 1050 3690 50  0000 C CNN
+F 2 "" H 1050 3550 50  0001 C CNN
+F 3 "" H 1050 3550 50  0001 C CNN
+	1    1050 3550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Conn_01x23 J?
+U 1 1 5A517529
+P 800 1900
+F 0 "J?" H 800 3100 50  0000 C CNN
+F 1 "Main Connector" V 900 1900 50  0000 C CNN
+F 2 "" H 800 1900 50  0001 C CNN
+F 3 "" H 800 1900 50  0001 C CNN
+	1    800  1900
+	-1   0    0    -1  
+$EndComp
+Text Label 1000 1800 0    60   ~ 0
+LED_BSPD
+$Comp
+L Conn_01x03 J?
+U 1 1 5A5187A1
+P 850 3650
+F 0 "J?" H 850 3850 50  0000 C CNN
+F 1 "Dash LVMS" V 950 3650 50  0000 C CNN
+F 2 "" H 850 3650 50  0001 C CNN
+F 3 "" H 850 3650 50  0001 C CNN
+	1    850  3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A51884D
+P 1050 3750
+F 0 "#PWR?" H 1050 3500 50  0001 C CNN
+F 1 "GND" H 1050 3600 50  0000 C CNN
+F 2 "" H 1050 3750 50  0001 C CNN
+F 3 "" H 1050 3750 50  0001 C CNN
+	1    1050 3750
+	1    0    0    -1  
+$EndComp
+Text Label 1000 2900 0    60   ~ 0
+AIRS_INERTIA_OUT
+Text Label 1000 3000 0    60   ~ 0
+FLT_INTERTIA
+Text Label 2100 3550 0    60   ~ 0
+AIRS_INERTIA_OUT
+$Comp
+L Conn_01x02 J?
+U 1 1 5A518EDC
+P 800 5650
+F 0 "J?" H 800 5750 50  0000 C CNN
+F 1 "AMS Fault LED" V 900 5650 50  0000 C CNN
+F 2 "" H 800 5650 50  0001 C CNN
+F 3 "" H 800 5650 50  0001 C CNN
+	1    800  5650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A5190C7
+P 1000 5750
+F 0 "#PWR?" H 1000 5500 50  0001 C CNN
+F 1 "GND" H 1000 5600 50  0000 C CNN
+F 2 "" H 1000 5750 50  0001 C CNN
+F 3 "" H 1000 5750 50  0001 C CNN
+	1    1000 5750
+	1    0    0    -1  
+$EndComp
+Text Label 1300 6300 0    60   ~ 0
+LED_IMD
+$Comp
+L Conn_01x02 J?
+U 1 1 5A519191
+P 800 6300
+F 0 "J?" H 800 6400 50  0000 C CNN
+F 1 "IMD Fault LED" V 900 6300 50  0000 C CNN
+F 2 "" H 800 6300 50  0001 C CNN
+F 3 "" H 800 6300 50  0001 C CNN
+	1    800  6300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A519197
+P 1000 6400
+F 0 "#PWR?" H 1000 6150 50  0001 C CNN
+F 1 "GND" H 1000 6250 50  0000 C CNN
+F 2 "" H 1000 6400 50  0001 C CNN
+F 3 "" H 1000 6400 50  0001 C CNN
+	1    1000 6400
+	1    0    0    -1  
+$EndComp
+Text Label 2650 5700 0    60   ~ 0
+LED_BSPD
+$Comp
+L Conn_01x02 J?
+U 1 1 5A5192B7
+P 2150 5700
+F 0 "J?" H 2150 5800 50  0000 C CNN
+F 1 "BSPD Fault LED" V 2250 5700 50  0000 C CNN
+F 2 "" H 2150 5700 50  0001 C CNN
+F 3 "" H 2150 5700 50  0001 C CNN
+	1    2150 5700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A5192BD
+P 2350 5800
+F 0 "#PWR?" H 2350 5550 50  0001 C CNN
+F 1 "GND" H 2350 5650 50  0000 C CNN
+F 2 "" H 2350 5800 50  0001 C CNN
+F 3 "" H 2350 5800 50  0001 C CNN
+	1    2350 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A5192C3
+P 2500 6350
+F 0 "R?" V 2580 6350 50  0000 C CNN
+F 1 "390" V 2500 6350 50  0000 C CNN
+F 2 "" V 2430 6350 50  0001 C CNN
+F 3 "" H 2500 6350 50  0001 C CNN
+	1    2500 6350
+	0    1    1    0   
+$EndComp
+Text Label 2650 6350 0    60   ~ 0
+FLT_INERTIA
+$Comp
+L Conn_01x02 J?
+U 1 1 5A5192CA
+P 2150 6350
+F 0 "J?" H 2150 6450 50  0000 C CNN
+F 1 "Inertia Fault LED" V 2250 6350 50  0000 C CNN
+F 2 "" H 2150 6350 50  0001 C CNN
+F 3 "" H 2150 6350 50  0001 C CNN
+	1    2150 6350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A5192D0
+P 2350 6450
+F 0 "#PWR?" H 2350 6200 50  0001 C CNN
+F 1 "GND" H 2350 6300 50  0000 C CNN
+F 2 "" H 2350 6450 50  0001 C CNN
+F 3 "" H 2350 6450 50  0001 C CNN
+	1    2350 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A51969F
+P 1150 6300
+F 0 "R?" V 1230 6300 50  0000 C CNN
+F 1 "51" V 1150 6300 50  0000 C CNN
+F 2 "" V 1080 6300 50  0001 C CNN
+F 3 "" H 1150 6300 50  0001 C CNN
+	1    1150 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A5196F6
+P 2500 5700
+F 0 "R?" V 2580 5700 50  0000 C CNN
+F 1 "51" V 2500 5700 50  0000 C CNN
+F 2 "" V 2430 5700 50  0001 C CNN
+F 3 "" H 2500 5700 50  0001 C CNN
+	1    2500 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x02 J?
+U 1 1 5A51A14F
+P 1700 4550
+F 0 "J?" H 1700 4650 50  0000 C CNN
+F 1 "To Drive Mode Button" V 1800 4550 50  0000 C CNN
+F 2 "" H 1700 4550 50  0001 C CNN
+F 3 "" H 1700 4550 50  0001 C CNN
+	1    1700 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03 J?
+U 1 1 5A51A1CD
+P 850 4650
+F 0 "J?" H 850 4850 50  0000 C CNN
+F 1 "To Drive Mode Switch" V 950 4650 50  0000 C CNN
+F 2 "" H 850 4650 50  0001 C CNN
+F 3 "" H 850 4650 50  0001 C CNN
+	1    850  4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A51A79F
+P 1900 4650
+F 0 "#PWR?" H 1900 4400 50  0001 C CNN
+F 1 "GND" H 1900 4500 50  0000 C CNN
+F 2 "" H 1900 4650 50  0001 C CNN
+F 3 "" H 1900 4650 50  0001 C CNN
+	1    1900 4650
+	1    0    0    -1  
+$EndComp
+Text Label 1050 4550 0    60   ~ 0
+BUTTON_1
+Text Label 1050 4750 0    60   ~ 0
+BUTTON_2
+Text Label 1900 4550 0    60   ~ 0
+BUTTON_3
+Wire Notes Line
+	550  2400 2250 2400
+Text Label 3200 1250 0    60   ~ 0
+GND
+Text Label 1000 2000 0    60   ~ 0
+GND
+Wire Notes Line
+	550  2000 2250 2000
+Wire Notes Line
+	550  2700 2250 2700
+Text Label 1000 2700 0    60   ~ 0
+GND
+Text Label 2800 950  2    60   ~ 0
+12V
+Text Label 3600 950  0    60   ~ 0
+3.3V
+Text Label 1000 2500 0    60   ~ 0
+3.3V
+Text Notes 1850 2000 0    60   ~ 0
+To PE/ECU
+Text Notes 1850 2100 0    60   ~ 0
+To AEM
+Text Notes 1850 2500 0    60   ~ 0
+To Steering Pot
+Text Notes 1850 2800 0    60   ~ 0
+To Inertia Switch
+Text Label 1000 800  0    60   ~ 0
+12V
+Text Label 1050 4650 0    60   ~ 0
+GND
 $EndSCHEMATC
