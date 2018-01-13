@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:TSAL-rescue
 LIBS:FS FINAL
 LIBS:power
 LIBS:device
@@ -1378,4 +1377,28 @@ Text Label 8500 1700 2    60   ~ 0
 SIG_RTDS
 Text Label 9700 1700 0    60   ~ 0
 RTDS_H
+$Comp
+L Speaker LS?
+U 1 1 5A59BA97
+P 5250 3150
+F 0 "LS?" H 5300 3375 50  0000 R CNN
+F 1 "RTDS Piezo" H 5300 3300 50  0000 R CNN
+F 2 "" H 5250 2950 50  0001 C CNN
+F 3 "" H 5240 3100 50  0001 C CNN
+	1    5250 3150
+	1    0    0    -1  
+$EndComp
+Text Label 5050 3150 2    60   ~ 0
+RTDS_H
+$Comp
+L GND #PWR?
+U 1 1 5A59BA9E
+P 5050 3250
+F 0 "#PWR?" H 5050 3000 50  0001 C CNN
+F 1 "GND" H 5050 3100 50  0000 C CNN
+F 2 "" H 5050 3250 50  0001 C CNN
+F 3 "" H 5050 3250 50  0001 C CNN
+	1    5050 3250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
