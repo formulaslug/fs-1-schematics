@@ -1,0 +1,1 @@
+TSAL schem and PCB created in Eagle. ~2.5 Hz LED frequency. Ready-to-drive sound NOT implemented yet.
