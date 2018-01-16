@@ -86,24 +86,13 @@ F 3 "" H 3750 3000 50  0000 C CNN
 $EndComp
 Text Label 3750 3250 3    60   ~ 0
 GND
-$Comp
-L Conn_01x04 J1
-U 1 1 58AC6391
-P 2950 950
-F 0 "J1" H 2950 1200 50  0000 C CNN
-F 1 "BMS Connector 1" V 3050 950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Angled" H 2950 950 50  0001 C CNN
-F 3 "" H 2950 950 50  0000 C CNN
-	1    2950 950 
-	0    -1   -1   0   
-$EndComp
-Text Label 2850 1150 3    60   ~ 0
+Text Label 2650 1150 3    60   ~ 0
 BMS_FLT
-Text Label 2950 1150 3    60   ~ 0
+Text Label 2750 1150 3    60   ~ 0
 V_L
-Text Label 3050 1150 3    60   ~ 0
+Text Label 2850 1150 3    60   ~ 0
 V_S
-Text Label 3150 1150 3    60   ~ 0
+Text Label 3050 1150 3    60   ~ 0
 GND
 Text Label 4100 1150 3    60   ~ 0
 GND
@@ -1359,4 +1348,18 @@ AIRS_CHARGER_OUT
 Wire Wire Line
 	14850 800  14850 700 
 NoConn ~ 4600 4700
+$Comp
+L Conn_01x06 J?
+U 1 1 5A5D2F58
+P 2850 950
+F 0 "J?" H 2850 1250 50  0000 C CNN
+F 1 "BMS Connector 1" V 2950 950 50  0000 C CNN
+F 2 "" H 2850 950 50  0001 C CNN
+F 3 "" H 2850 950 50  0001 C CNN
+	1    2850 950 
+	0    -1   -1   0   
+$EndComp
+Text Label 2950 1150 3    60   ~ 0
+CHARGE_CONTROL
+NoConn ~ 3150 1150
 $EndSCHEMATC
