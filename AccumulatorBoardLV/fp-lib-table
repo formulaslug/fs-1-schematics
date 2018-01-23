@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name FSFootprints)(type KiCad)(uri ../FSFootprints/)(options "")(descr ""))
+  (lib (name arduino)(type Legacy)(uri ../FSFootprints/arduino.mod)(options "")(descr ""))
+)
