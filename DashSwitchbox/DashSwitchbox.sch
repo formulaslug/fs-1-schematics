@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
-LIBS:DashSwitchbox-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -191,7 +190,7 @@ U 1 1 5A517529
 P 800 1900
 F 0 "J1" H 800 3100 50  0000 C CNN
 F 1 "Main Connector" V 900 1900 50  0000 C CNN
-F 2 "" H 800 1900 50  0001 C CNN
+F 2 "FSFootprints:Ampseal23" H 800 1900 50  0001 C CNN
 F 3 "" H 800 1900 50  0001 C CNN
 	1    800  1900
 	-1   0    0    -1  
@@ -223,7 +222,7 @@ $EndComp
 Text Label 1000 2900 0    60   ~ 0
 AIRS_INERTIA_OUT
 Text Label 1000 3000 0    60   ~ 0
-FLT_INTERTIA
+FLT_INERTIA
 Text Label 2100 3550 0    60   ~ 0
 AIRS_INERTIA_OUT
 $Comp
