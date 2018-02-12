@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1329)
+    (start_pass_no 1165)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -63,29 +63,8 @@
     )
     (attach off)
   )
-  (padstack "Via[0-1]_600:400_um"
-    (shape
-      (circle F.Cu 600.0 0.0 0.0)
-    )
-    (shape
-      (circle B.Cu 600.0 0.0 0.0)
-    )
-    (attach off)
-  )
   (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
-  )
-  (via 
-    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
-  )
-  (via 
-    "Via[0-1]_800:400_um-BattCurrent" "Via[0-1]_800:400_um" BattCurrent
-  )
-  (via 
-    "Via[0-1]_800:400_um-ChgCurrent" "Via[0-1]_800:400_um" ChgCurrent
-  )
-  (via 
-    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
   )
   (via 
     "Via[0-1]_1200:400_um" "Via[0-1]_1200:400_um" default
@@ -94,7 +73,7 @@
     "Via[0-1]_3200:2000_um" "Via[0-1]_3200:2000_um" default
   )
   (via 
-    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
   (via 
     "Via[0-1]_1200:400_um-kicad_default" "Via[0-1]_1200:400_um" "kicad_default"
@@ -103,7 +82,7 @@
     "Via[0-1]_3200:2000_um-kicad_default" "Via[0-1]_3200:2000_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_600:400_um-BattCurrent" "Via[0-1]_600:400_um" BattCurrent
+    "Via[0-1]_800:400_um-BattCurrent" "Via[0-1]_800:400_um" BattCurrent
   )
   (via 
     "Via[0-1]_1200:400_um-BattCurrent" "Via[0-1]_1200:400_um" BattCurrent
@@ -112,7 +91,7 @@
     "Via[0-1]_3200:2000_um-BattCurrent" "Via[0-1]_3200:2000_um" BattCurrent
   )
   (via 
-    "Via[0-1]_600:400_um-ChgCurrent" "Via[0-1]_600:400_um" ChgCurrent
+    "Via[0-1]_800:400_um-ChgCurrent" "Via[0-1]_800:400_um" ChgCurrent
   )
   (via 
     "Via[0-1]_1200:400_um-ChgCurrent" "Via[0-1]_1200:400_um" ChgCurrent
@@ -121,10 +100,10 @@
     "Via[0-1]_3200:2000_um-ChgCurrent" "Via[0-1]_3200:2000_um" ChgCurrent
   )
   (via_rule
-    default "Via[0-1]_600:400_um"
+    default "Via[0-1]_800:400_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_600:400_um-kicad_default"
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
   )
   (via_rule
     BattCurrent "Via[0-1]_1200:400_um-BattCurrent"

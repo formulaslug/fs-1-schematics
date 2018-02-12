@@ -23,9 +23,8 @@
     (boundary
       (rect pcb 40945 -85925 205359 -158565)
     )
-    (plane GND (polygon B.Cu 0  141097 -86614  205359 -86614  205359 -155956  42291 -155956
-            42291 -119888  94361 -119888  94361 -112522  140970 -112522
-            140970 -86614  141605 -86614))
+    (plane GND (polygon B.Cu 0  205359 -156718  42291 -156718  42291 -119888  94361 -119888
+            94361 -112522  140970 -112522  140970 -86614  205359 -86614))
     (keepout "" (polygon F.Cu 0  140589 -111633  93726 -111633  93726 -118872  42291 -118872
             42291 -112395  87376 -112395  87376 -105156  134112 -105156
             134112 -86360  140589 -86360))
@@ -42,42 +41,42 @@
   )
   (placement
     (component Capacitors_THT:CP_Radial_D6.3mm_P2.50mm
-      (place C1 105664 -132080 front 270 (PN 10uF))
-      (place C3 146050 -117856 front 90 (PN 10uF))
-      (place C4 133604 -141732 front 90 (PN 10uF))
-      (place C5 118110 -136652 front 270 (PN 10uF))
-      (place C6 96012 -126492 front 180 (PN C))
+      (place C1 160147 -107696 front 270 (PN 10uF))
+      (place C3 199517 -95504 front 90 (PN 10uF))
+      (place C4 142113 -138430 front 180 (PN 10uF))
+      (place C5 137033 -152400 front 0 (PN 10uF))
+      (place C6 151130 -104648 front 180 (PN C))
       (place C7 55626 -107569 front 270 (PN C))
-      (place C2 113538 -118364 front 90 (PN 0.47uF))
+      (place C2 169037 -99314 front 90 (PN 0.47uF))
     )
     (component Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight
-      (place J1 170815 -150368 front 0 (PN "Contactor 1"))
-      (place J4 155829 -92329 front 180 (PN "BMS TX"))
-      (place J5 146812 -92456 front 180 (PN "BMS RX"))
-      (place J7 162687 -150368 front 0 (PN "Contactor 2"))
-      (place J9 187071 -150368 front 0 (PN "BMS Reset"))
-      (place J11 195199 -150368 front 0 (PN "IMD Reset"))
-      (place J12 146431 -150368 front 0 (PN "TS Interlock"))
-      (place J13 178943 -150368 front 0 (PN "Temp Reset"))
-      (place J16 154559 -150368 front 0 (PN "Charger Interlock"))
-      (place J17 138303 -150368 front 0 (PN "Lid Interlock"))
+      (place J1 173863 -131826 front 180 (PN "Contactor 1"))
+      (place J4 105791 -114554 front 0 (PN "BMS TX"))
+      (place J5 97663 -114554 front 0 (PN "BMS RX"))
+      (place J7 165735 -131826 front 180 (PN "Contactor 2"))
+      (place J9 190119 -131826 front 180 (PN "BMS Reset"))
+      (place J11 198247 -131826 front 180 (PN "IMD Reset"))
+      (place J12 149479 -131826 front 180 (PN "TS Interlock"))
+      (place J13 181991 -131826 front 180 (PN "Temp Reset"))
+      (place J16 157607 -131826 front 180 (PN "Charger Interlock"))
+      (place J17 141351 -131826 front 180 (PN "Lid Interlock"))
       (place J18 47879 -107315 front 270 (PN "From HV Board"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x06x2.50mm_Straight
-      (place J2 195326 -118364 front 90 (PN "BMS Connector 1"))
-      (place J8 187198 -92075 front 180 (PN "IMD LV"))
+      (place J2 132969 -131953 front 180 (PN "BMS Connector 1"))
+      (place J8 124587 -114554 front 0 (PN "IMD LV"))
     )
     (component Connectors_Molex:Molex_NanoFit_2x06x2.50mm_Straight
-      (place J3 177165 -118237 front 90 (PN "BMS Connector 2"))
+      (place J3 114935 -129286 front 180 (PN "BMS Connector 2"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight
-      (place J6 167386 -92329 front 180 (PN "Current Sensor"))
+      (place J6 113919 -114554 front 0 (PN "Current Sensor"))
     )
     (component "FSFootprints:Ampseal - 14 pin"
       (place J14 66040 -148590 front 0 (PN "To ECU"))
     )
     (component "FSFootprints:Ampseal - 8 pin"
-      (place J15 112776 -148590 front 0 (PN "Charger LV"))
+      (place J15 111887 -148590 front 0 (PN "Charger LV"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x08x2.50mm_Straight
       (place J19 62103 -91567 front 180 (PN "Chip 1"))
@@ -86,43 +85,43 @@
       (place J22 131572 -91440 front 180 (PN "Chip 4"))
     )
     (component Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal
-      (place R1 120650 -125730 front 180 (PN 1.1kR))
-      (place R2 124206 -125730 front 0 (PN 1.1kR))
-      (place R3 110744 -131318 front 0 (PN 470kR))
-      (place R4 97790 -144399 front 180 (PN 120))
+      (place R1 168275 -121412 front 0 (PN 1.1kR))
+      (place R2 164465 -121412 front 180 (PN 1.1kR))
+      (place R3 166497 -107696 front 0 (PN 470kR))
+      (place R4 101981 -139954 front 180 (PN 120))
     )
     (component "FSFootprints:DE1A1B-L2-12V"
-      (place U1 161290 -135636 front 0 (PN "DE1A1B-L2-12V"))
-      (place U4 177292 -135636 front 0 (PN "DE1A1B-L2-12V"))
-      (place U6 193294 -135636 front 0 (PN "DE1A1B-L2-12V"))
+      (place U1 165989 -146558 front 0 (PN "DE1A1B-L2-12V"))
+      (place U4 179959 -146558 front 0 (PN "DE1A1B-L2-12V"))
+      (place U6 193929 -146558 front 0 (PN "DE1A1B-L2-12V"))
     )
     (component "Housings_DIP:DIP-8_W7.62mm"
-      (place U2 97790 -120904 front 90 (PN LM555N))
+      (place U2 155067 -100584 front 90 (PN LM555N))
     )
     (component "Housings_DIP:DIP-16_W7.62mm"
-      (place U3 121920 -120904 front 90 (PN SN754410))
+      (place U3 175387 -100584 front 90 (PN SN754410))
       (place U9 62230 -95377 front 270 (PN MCP3008))
       (place U10 85217 -94996 front 270 (PN MCP3008))
       (place U13 108331 -94996 front 270 (PN MCP3008))
       (place U14 131953 -95123 front 270 (PN MCP3008))
     )
     (component "Power_Integrations:TO-220"
-      (place U5 126746 -139192 front 90 (PN "L78S05CV-DG"))
+      (place U5 139573 -144780 front 180 (PN "L78S05CV-DG"))
     )
     (component "FSFootprints:DK1A1B-12V"
-      (place U7 148082 -135890 front 0 (PN "DK1A1B-12V"))
+      (place U7 154559 -146558 front 0 (PN "DK1A1B-12V"))
     )
     (component "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm"
       (place U8 66548 -115570 front 90 (PN ADUM4154ARIZ))
     )
     (component "SMD_Packages:DIP-8_SMD"
-      (place U11 94488 -136144 front 180 (PN ISO1050))
+      (place U11 94107 -131572 front 270 (PN ISO1050))
     )
     (component arduino:arduino_mini
       (place U12 67310 -131572 front 0 (PN stm_nucleo_FK303K8))
     )
     (component Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Straight
-      (place J10 195453 -98044 front 90 (PN "To HV Board"))
+      (place J10 142621 -114554 front 0 (PN "To HV Board"))
     )
   )
   (library
@@ -1078,13 +1077,13 @@
       (pins J3-2 J6-2 J14-12)
     )
     (net /CAN_H
-      (pins J3-4 J14-5 J15-6 U11-7 R4-1)
+      (pins J3-4 J14-5 U11-7 R4-1)
     )
     (net "Net-(J3-Pad5)"
       (pins J3-5 J3-6)
     )
     (net /CAN_L
-      (pins J3-7 J14-6 J15-7 U11-6 R4-2)
+      (pins J3-7 J14-6 U11-6 R4-2)
     )
     (net /BMS_TX
       (pins J3-11 J4-1)
@@ -1296,23 +1295,135 @@
     (net "Net-(U11-Pad3)"
       (pins U11-3 U12-5)
     )
-    (class kicad_default "" /5V_BMS /AIRS_ACC_OUT /AIRS_CHARGER_OUT /AIRS_FINAL
-      /AIRS_FINAL_CHARGER /AIRS_RELAYS_OUT /BMS_FLT /BMS_FLT_LATCHED /BMS_RESET
-      /BMS_RX /BMS_TX /CAN_H /CAN_L /IMD_FLT /IMD_FLT_5 /IMD_FLT_H /IMD_FLT_LATCHED
-      /IMD_RESET /SCLK /SIG_CURRENT /TEMP_FLT_H /TEMP_FLT_LATCHED /TEMP_RESET
-      /TEMP_SSI /TEMP_SSO /TEMP_SS_0 /TEMP_SS_1 /TEMP_SS_2 /TEMP_SS_3 /TIMER
-      /TIMER_H /V_L /V_S "Net-(C1-Pad2)" "Net-(J17-Pad1)" "Net-(J19-Pad1)"
+    (net /CHARGE_CONTROL
+      (pins J2-4)
+    )
+    (net "Net-(J2-Pad6)"
+      (pins J2-6)
+    )
+    (net "Net-(J8-Pad6)"
+      (pins J8-6)
+    )
+    (net "Net-(J14-Pad13)"
+      (pins J14-13)
+    )
+    (net "Net-(J14-Pad14)"
+      (pins J14-14)
+    )
+    (net "Net-(J14-Pad9)"
+      (pins J14-9)
+    )
+    (net /AIRS_FINAL_OUT_CHARGER
+      (pins J15-5)
+    )
+    (net "Net-(U2-Pad5)"
+      (pins U2-5)
+    )
+    (net "Net-(U2-Pad7)"
+      (pins U2-7)
+    )
+    (net /TEMP_FLT
+      (pins U3-2 U12-6)
+    )
+    (net "Net-(U3-Pad10)"
+      (pins U3-10)
+    )
+    (net "Net-(U3-Pad11)"
+      (pins U3-11)
+    )
+    (net "Net-(U7-Pad6)"
+      (pins U7-6)
+    )
+    (net "Net-(U7-Pad5)"
+      (pins U7-5)
+    )
+    (net /3.3V
+      (pins U8-1)
+    )
+    (net "Net-(U8-Pad9)"
+      (pins U8-9)
+    )
+    (net "Net-(U8-Pad10)"
+      (pins U8-10)
+    )
+    (net "Net-(U8-Pad11)"
+      (pins U8-11)
+    )
+    (net /TEMP_SCLK
+      (pins U8-18)
+    )
+    (net "Net-(U12-Pad1)"
+      (pins U12-1)
+    )
+    (net "Net-(U12-Pad2)"
+      (pins U12-2)
+    )
+    (net "Net-(U12-Pad3)"
+      (pins U12-3)
+    )
+    (net "Net-(U12-Pad7)"
+      (pins U12-7)
+    )
+    (net "Net-(U12-Pad8)"
+      (pins U12-8)
+    )
+    (net "Net-(U12-Pad9)"
+      (pins U12-9)
+    )
+    (net "Net-(U12-Pad13)"
+      (pins U12-13)
+    )
+    (net "Net-(U12-Pad15)"
+      (pins U12-15)
+    )
+    (net "Net-(U12-Pad16)"
+      (pins U12-16)
+    )
+    (net "Net-(U12-Pad18)"
+      (pins U12-18)
+    )
+    (net "Net-(U12-Pad19)"
+      (pins U12-19)
+    )
+    (net "Net-(U12-Pad26)"
+      (pins U12-26)
+    )
+    (net "Net-(U12-Pad27)"
+      (pins U12-27)
+    )
+    (net "Net-(U12-Pad28)"
+      (pins U12-28)
+    )
+    (net /CHARGER_CONTROL
+      (pins J15-6)
+    )
+    (net "Net-(J15-Pad7)"
+      (pins J15-7)
+    )
+    (class kicad_default "" /3.3V /5V_BMS /AIRS_ACC_OUT /AIRS_CHARGER_OUT
+      /AIRS_FINAL /AIRS_FINAL_CHARGER /AIRS_FINAL_OUT_CHARGER /AIRS_RELAYS_OUT
+      /BMS_FLT /BMS_FLT_LATCHED /BMS_RESET /BMS_RX /BMS_TX /CAN_H /CAN_L /CHARGER_CONTROL
+      /CHARGE_CONTROL /IMD_FLT /IMD_FLT_5 /IMD_FLT_H /IMD_FLT_LATCHED /IMD_RESET
+      /SCLK /SIG_CURRENT /TEMP_FLT /TEMP_FLT_H /TEMP_FLT_LATCHED /TEMP_RESET
+      /TEMP_SCLK /TEMP_SSI /TEMP_SSO /TEMP_SS_0 /TEMP_SS_1 /TEMP_SS_2 /TEMP_SS_3
+      /TIMER /TIMER_H /V_L /V_S "Net-(C1-Pad2)" "Net-(J14-Pad13)" "Net-(J14-Pad14)"
+      "Net-(J14-Pad9)" "Net-(J15-Pad7)" "Net-(J17-Pad1)" "Net-(J19-Pad1)"
       "Net-(J19-Pad2)" "Net-(J19-Pad3)" "Net-(J19-Pad4)" "Net-(J19-Pad5)"
-      "Net-(J19-Pad6)" "Net-(J19-Pad7)" "Net-(J19-Pad8)" "Net-(J20-Pad1)"
+      "Net-(J19-Pad6)" "Net-(J19-Pad7)" "Net-(J19-Pad8)" "Net-(J2-Pad6)" "Net-(J20-Pad1)"
       "Net-(J20-Pad2)" "Net-(J20-Pad3)" "Net-(J20-Pad4)" "Net-(J20-Pad5)"
       "Net-(J20-Pad6)" "Net-(J20-Pad7)" "Net-(J20-Pad8)" "Net-(J21-Pad1)"
       "Net-(J21-Pad2)" "Net-(J21-Pad3)" "Net-(J21-Pad4)" "Net-(J21-Pad5)"
       "Net-(J21-Pad6)" "Net-(J21-Pad7)" "Net-(J21-Pad8)" "Net-(J22-Pad1)"
       "Net-(J22-Pad2)" "Net-(J22-Pad3)" "Net-(J22-Pad4)" "Net-(J22-Pad5)"
-      "Net-(J22-Pad6)" "Net-(J22-Pad7)" "Net-(J22-Pad8)" "Net-(J3-Pad5)" "Net-(U1-Pad6)"
-      "Net-(U11-Pad2)" "Net-(U11-Pad3)" "Net-(U12-Pad20)" "Net-(U12-Pad21)"
-      "Net-(U12-Pad22)" "Net-(U12-Pad23)" "Net-(U12-Pad24)" "Net-(U12-Pad25)"
-      "Net-(U4-Pad6)" "Net-(U6-Pad6)"
+      "Net-(J22-Pad6)" "Net-(J22-Pad7)" "Net-(J22-Pad8)" "Net-(J3-Pad5)" "Net-(J8-Pad6)"
+      "Net-(U1-Pad6)" "Net-(U11-Pad2)" "Net-(U11-Pad3)" "Net-(U12-Pad1)" "Net-(U12-Pad13)"
+      "Net-(U12-Pad15)" "Net-(U12-Pad16)" "Net-(U12-Pad18)" "Net-(U12-Pad19)"
+      "Net-(U12-Pad2)" "Net-(U12-Pad20)" "Net-(U12-Pad21)" "Net-(U12-Pad22)"
+      "Net-(U12-Pad23)" "Net-(U12-Pad24)" "Net-(U12-Pad25)" "Net-(U12-Pad26)"
+      "Net-(U12-Pad27)" "Net-(U12-Pad28)" "Net-(U12-Pad3)" "Net-(U12-Pad7)"
+      "Net-(U12-Pad8)" "Net-(U12-Pad9)" "Net-(U2-Pad5)" "Net-(U2-Pad7)" "Net-(U3-Pad10)"
+      "Net-(U3-Pad11)" "Net-(U4-Pad6)" "Net-(U6-Pad6)" "Net-(U7-Pad5)" "Net-(U7-Pad6)"
+      "Net-(U8-Pad10)" "Net-(U8-Pad11)" "Net-(U8-Pad9)"
       (circuit
         (use_via Via[0-1]_800:600_um)
       )
@@ -1321,7 +1432,7 @@
         (clearance 200.1)
       )
     )
-    (class MainPower +12V +3V3 +5V /3.3V_TS "/BATT-" GND
+    (class MainPower +12V +3V3 +5V /3.3V_TS "/BATT-"
       (circuit
         (use_via Via[0-1]_1200:800_um)
       )
@@ -1330,7 +1441,7 @@
         (clearance 400.1)
       )
     )
-    (class Power /12V_SRC
+    (class Power /12V_SRC GND
       (circuit
         (use_via Via[0-1]_3600:2400_um)
       )

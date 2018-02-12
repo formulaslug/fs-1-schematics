@@ -504,10 +504,8 @@ Text Label 5650 4700 1    60   ~ 0
 12V
 Text Label 6250 4700 1    60   ~ 0
 GND
-Text Label 6150 4700 1    60   ~ 0
-CAN_L
 Text Label 6050 4700 1    60   ~ 0
-CAN_H
+CHARGER_CONTROL
 Text Label 5950 4700 1    60   ~ 0
 AIRS_FINAL_OUT_CHARGER
 Text Label 5850 4700 1    60   ~ 0
@@ -1140,7 +1138,7 @@ F 3 "" H 15050 4800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3250 7150 2    60   ~ 0
-FLT_TEMP
+TEMP_FLT
 Wire Wire Line
 	11650 3350 11950 3350
 Connection ~ 11850 3350
@@ -1354,4 +1352,7 @@ Wire Wire Line
 	850  7150 850  7100
 Wire Wire Line
 	850  7450 850  7500
+NoConn ~ 6150 4700
+NoConn ~ 5000 4700
+NoConn ~ 5100 4700
 $EndSCHEMATC

@@ -50,12 +50,12 @@
       (place U5 49149 -36957 front 270 (PN "G2RL-1A-E"))
     )
     (component "FSFootprints:SMD Fuse"
-      (place F6 62484 -72771 front 180 (PN Fuse))
-      (place F5 39624 -68199 front 90 (PN "Charger 60V Fuse"))
+      (place F6 63322.2 -72110.6 front 180 (PN Fuse))
+      (place F5 45453.3 -70739 front 90 (PN "Charger 60V Fuse"))
       (place F4 198882 -74295 front 270 (PN "TS 60V Fuse"))
       (place F3 128397 -81280 front 180 (PN Fuse))
       (place F2 43688 -89281 front 90 (PN "IMD/DCDC Fuse"))
-      (place F1 160147 -48260 front 90 (PN Fuse))
+      (place F1 157239 -50495.2 front 90 (PN Fuse))
     )
     (component "Housings_DIP:DIP-16_W7.62mm"
       (place U4 183007 -76200 front 180 (PN "PS2501-4"))
@@ -80,16 +80,16 @@
       (place R1 193167 -52070 front 90 (PN R))
     )
     (component "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight"
-      (place J9 72009 -72263 front 90 (PN "Charger Current to Batt"))
-      (place J3 30480 -70358 front 270 (PN "Batt Voltage"))
-      (place J1 30353 -80137 front 270 (PN "TS -> GLV Regulator Jumper"))
-      (place J10 61849 -62738 front 180 (PN "Charger Current"))
+      (place J9 73558.4 -72199.5 front 90 (PN "Charger Current to Batt"))
+      (place J3 34671 -70078.6 front 270 (PN "Batt Voltage"))
+      (place J1 34544 -79857.6 front 270 (PN "TS -> GLV Regulator Jumper"))
+      (place J10 62382.4 -51460.4 front 0 (PN "Charger Current"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight
       (place J8 169037 -68580 front 90 (PN "Acc LED 2"))
       (place J7 169037 -59690 front 90 (PN "Acc LED 1"))
       (place J6 145288 -86995 front 90 (PN "To LV Board"))
-      (place J5 28956 -90297 front 270 (PN "IMD TS"))
+      (place J5 33147 -90017.6 front 270 (PN "IMD TS"))
       (place J4 190627 -78740 front 180 (PN "TS (Switched)"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Straight
@@ -112,12 +112,12 @@
     )
     (component Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm
       (place C1 90297 -43180 front 270 (PN C))
-      (place C2 153797 -43180 front 270 (PN C))
+      (place C2 152806 -43180 front 270 (PN C))
       (place C5 90297 -71120 front 270 (PN C))
       (place C6 153797 -71120 front 270 (PN C))
     )
     (component Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical
-      (place R9 61722 -50165 front 270 (PN 0))
+      (place R9 62382.4 -63804.8 front 90 (PN 0))
     )
   )
   (library
@@ -1037,7 +1037,7 @@
       (pins U4-10 U4-12 U4-14 U4-16 J2-1 F1-1 C4-1)
     )
     (net GND
-      (pins U6-1 U5-1 U2-1 U1-5 J8-2 J7-2 J2-3 C4-2 C6-1)
+      (pins U6-8 U5-8 U2-1 U1-5 J8-2 J7-2 J2-3 C4-2 C6-1)
     )
     (net "Net-(C9-Pad1)"
       (pins U3-14 F3-2 C9-1)
@@ -1070,7 +1070,7 @@
       (pins R2-2 F4-1)
     )
     (net /CHARGER+
-      (pins U5-4 U5-6 F5-2 J10-1)
+      (pins U5-5 U5-6 F5-2 J10-1)
     )
     (net "Net-(F5-Pad1)"
       (pins R6-2 F5-1)
@@ -1079,7 +1079,7 @@
       (pins U2-8 J2-2)
     )
     (net /AIRS_FINAL_CHARGER
-      (pins U6-8 U5-8 J2-4)
+      (pins U6-1 U5-1 J2-4)
     )
     (net "/TS-"
       (pins R4-2 J4-2)
@@ -1088,7 +1088,7 @@
       (pins U4-9 U4-11 U4-13 U4-15 J8-1 J7-1)
     )
     (net "/CHARGER-"
-      (pins U6-4 U6-6 J10-2 R9-2)
+      (pins U6-5 U6-6 J10-2 R9-2)
     )
     (net "Net-(R1-Pad1)"
       (pins U4-5 R1-1)
@@ -1112,10 +1112,10 @@
       (pins F6-1 J9-1)
     )
     (net "/BATT-_CHARGER"
-      (pins U6-5 U6-3 J9-2)
+      (pins U6-4 U6-3 J9-2)
     )
     (net /BATT+_CHGFUSED
-      (pins F6-2 U5-5 U5-3)
+      (pins F6-2 U5-4 U5-3)
     )
     (net "Net-(R8-Pad2)"
       (pins R8-2 R9-1)
@@ -1123,12 +1123,11 @@
     (net /BATT+_DIRFUSED
       (pins J1-2 F2-2)
     )
-    (class kicad_default "" /BATT+_DIRECT_FUSED "Net-(C1-Pad1)" "Net-(C2-Pad2)"
-      "Net-(C9-Pad1)" "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad1)"
-      "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(F2-Pad2)" "Net-(F4-Pad1)" "Net-(F5-Pad1)"
-      "Net-(F6-Pad2)" "Net-(R1-Pad1)" "Net-(R3-Pad1)" "Net-(R5-Pad1)" "Net-(R7-Pad1)"
-      "Net-(R8-Pad2)" "Net-(U1-Pad2)" "Net-(U1-Pad3)" "Net-(U1-Pad6)" "Net-(U2-Pad5)"
-      "Net-(U2-Pad6)" "Net-(U3-Pad1)" "Net-(U3-Pad11)"
+    (class kicad_default "" "Net-(C1-Pad1)" "Net-(C2-Pad2)" "Net-(C9-Pad1)"
+      "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)"
+      "Net-(D4-Pad2)" "Net-(F4-Pad1)" "Net-(F5-Pad1)" "Net-(R1-Pad1)" "Net-(R3-Pad1)"
+      "Net-(R5-Pad1)" "Net-(R7-Pad1)" "Net-(R8-Pad2)" "Net-(U1-Pad2)" "Net-(U1-Pad3)"
+      "Net-(U1-Pad6)" "Net-(U2-Pad5)" "Net-(U2-Pad6)" "Net-(U3-Pad1)" "Net-(U3-Pad11)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
