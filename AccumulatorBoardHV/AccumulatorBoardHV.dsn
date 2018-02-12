@@ -21,18 +21,22 @@
       )
     )
     (boundary
-      (path pcb 0  18542 -101854  203200 -101854  203200 -28448  18542 -28448
-            18542 -101854  18542 -101854)
+      (path pcb 0  18161 -98933  203708 -98933  203708 -30861  18161 -30861
+            18161 -98933  18161 -98933)
     )
     (keepout "" (polygon F.Cu 0  182626 -84709  153924 -84709  153924 -78232  176149 -78232
             176149 -33909  182626 -33909))
     (keepout "" (polygon B.Cu 0  182626 -84709  153924 -84709  153924 -78232  176149 -78232
             176149 -33909  182626 -33909))
-    (keepout "" (polygon B.Cu 0  141859 -72517  101473 -72517  101473 -45720  141859 -45720))
-    (keepout "" (polygon F.Cu 0  141859 -72517  101473 -72517  101473 -45720  141859 -45720))
     (keepout "" (polygon F.Cu 0  84201 -33782  149987 -33782  149987 -40259  84201 -40259))
     (keepout "" (polygon B.Cu 0  149987 -40259  84201 -40259  84201 -33782  149987 -33782))
-    (via "Via[0-1]_600:400_um" "Via[0-1]_1200:400_um" "Via[0-1]_3200:2000_um")
+    (keepout "" (polygon F.Cu 0  143891 -51943  150749 -51943  150749 -56388  143891 -56388
+            143891 -72263  152400 -72263  152400 -75057  141732 -75057  141732 -72517
+            103505 -72517  103505 -45720  143891 -45720))
+    (keepout "" (polygon B.Cu 0  143891 -51943  150749 -51943  150749 -56388  143891 -56388
+            143891 -72263  152400 -72263  152400 -75057  141732 -75057  141732 -72517
+            103505 -72517  103505 -45720  143891 -45720))
+    (via "Via[0-1]_800:400_um" "Via[0-1]_1200:400_um" "Via[0-1]_3200:2000_um")
     (rule
       (width 250)
       (clearance 200.1)
@@ -46,8 +50,8 @@
       (place U5 49149 -36957 front 270 (PN "G2RL-1A-E"))
     )
     (component "FSFootprints:SMD Fuse"
-      (place F6 65913 -78486 front 180 (PN Fuse))
-      (place F5 38608 -71247 front 90 (PN "Charger 60V Fuse"))
+      (place F6 62484 -72771 front 180 (PN Fuse))
+      (place F5 39624 -68199 front 90 (PN "Charger 60V Fuse"))
       (place F4 198882 -74295 front 270 (PN "TS 60V Fuse"))
       (place F3 128397 -81280 front 180 (PN Fuse))
       (place F2 43688 -89281 front 90 (PN "IMD/DCDC Fuse"))
@@ -76,7 +80,7 @@
       (place R1 193167 -52070 front 90 (PN R))
     )
     (component "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight"
-      (place J9 76200 -76962 front 90 (PN "Charger Current to Batt"))
+      (place J9 72009 -72263 front 90 (PN "Charger Current to Batt"))
       (place J3 30480 -70358 front 270 (PN "Batt Voltage"))
       (place J1 30353 -80137 front 270 (PN "TS -> GLV Regulator Jumper"))
       (place J10 61849 -62738 front 180 (PN "Charger Current"))
@@ -1000,9 +1004,9 @@
       (shape (rect B.Cu -950 -950 950 950))
       (attach off)
     )
-    (padstack "Via[0-1]_600:400_um"
-      (shape (circle F.Cu 600))
-      (shape (circle B.Cu 600))
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
       (attach off)
     )
     (padstack "Via[0-1]_1200:400_um"
@@ -1055,9 +1059,6 @@
     )
     (net "Net-(D4-Pad2)"
       (pins U4-2 U4-4 R8-1 D4-2)
-    )
-    (net "Net-(F2-Pad2)"
-      (pins J1-2 F2-2)
     )
     (net /3.3V_TS
       (pins J6-1 F3-1)
@@ -1119,14 +1120,17 @@
     (net "Net-(R8-Pad2)"
       (pins R8-2 R9-1)
     )
-    (class kicad_default "" "Net-(C1-Pad1)" "Net-(C2-Pad2)" "Net-(C9-Pad1)"
-      "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)"
-      "Net-(D4-Pad2)" "Net-(F2-Pad2)" "Net-(F4-Pad1)" "Net-(F5-Pad1)" "Net-(F6-Pad2)"
-      "Net-(R1-Pad1)" "Net-(R3-Pad1)" "Net-(R5-Pad1)" "Net-(R7-Pad1)" "Net-(R8-Pad2)"
-      "Net-(U1-Pad2)" "Net-(U1-Pad3)" "Net-(U1-Pad6)" "Net-(U2-Pad5)" "Net-(U2-Pad6)"
-      "Net-(U3-Pad1)" "Net-(U3-Pad11)"
+    (net /BATT+_DIRFUSED
+      (pins J1-2 F2-2)
+    )
+    (class kicad_default "" /BATT+_DIRECT_FUSED "Net-(C1-Pad1)" "Net-(C2-Pad2)"
+      "Net-(C9-Pad1)" "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad1)"
+      "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(F2-Pad2)" "Net-(F4-Pad1)" "Net-(F5-Pad1)"
+      "Net-(F6-Pad2)" "Net-(R1-Pad1)" "Net-(R3-Pad1)" "Net-(R5-Pad1)" "Net-(R7-Pad1)"
+      "Net-(R8-Pad2)" "Net-(U1-Pad2)" "Net-(U1-Pad3)" "Net-(U1-Pad6)" "Net-(U2-Pad5)"
+      "Net-(U2-Pad6)" "Net-(U3-Pad1)" "Net-(U3-Pad11)"
       (circuit
-        (use_via Via[0-1]_600:400_um)
+        (use_via Via[0-1]_800:400_um)
       )
       (rule
         (width 250)
@@ -1134,14 +1138,14 @@
       )
     )
     (class BattCurrent /12V /12V_INDICATOR /12V_SRC /3.3V_TS /AIRS_FINAL_CHARGER
-      /BATT+ /BATT+_DIRECT /BATT+_DIRECT_FUSED /BATT+_LVBOARD "/BATT-" /TS+
-      "/TS-" GND
+      /BATT+ /BATT+_DIRECT /BATT+_DIRFUSED /BATT+_LVBOARD "/BATT-" /TS+ "/TS-"
+      GND
       (circuit
         (use_via Via[0-1]_1200:400_um)
       )
       (rule
         (width 500)
-        (clearance 200.1)
+        (clearance 400.1)
       )
     )
     (class ChgCurrent /BATT+_CHARGER /BATT+_CHGFUSED "/BATT-_CHARGER" /CHARGER+

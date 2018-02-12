@@ -851,4 +851,6 @@ F 3 "" H 3400 5100 50  0001 C CNN
 	1    3400 5100
 	0    1    1    0   
 $EndComp
+Text Label 2300 1150 3    60   ~ 0
+BATT+_DIRFUSED
 $EndSCHEMATC
