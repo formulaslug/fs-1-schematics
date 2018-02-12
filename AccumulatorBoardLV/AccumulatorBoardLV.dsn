@@ -21,7 +21,7 @@
       )
     )
     (boundary
-      (rect pcb 40045 -86260 205359 -158565)
+      (rect pcb 40945 -85925 205359 -158565)
     )
     (plane GND (polygon B.Cu 0  141097 -86614  205359 -86614  205359 -155956  42291 -155956
             42291 -119888  94361 -119888  94361 -112522  140970 -112522
@@ -32,7 +32,7 @@
     (keepout "" (polygon B.Cu 0  140589 -111633  93726 -111633  93726 -118872  42291 -118872
             42291 -112395  87376 -112395  87376 -105156  134112 -105156
             134112 -86360  140589 -86360))
-    (via "Via[0-1]_600:400_um" "Via[0-1]_1200:800_um" "Via[0-1]_4800:3200_um")
+    (via "Via[0-1]_800:600_um" "Via[0-1]_1200:800_um" "Via[0-1]_3600:2400_um")
     (rule
       (width 250)
       (clearance 200.1)
@@ -47,7 +47,7 @@
       (place C4 133604 -141732 front 90 (PN 10uF))
       (place C5 118110 -136652 front 270 (PN 10uF))
       (place C6 96012 -126492 front 180 (PN C))
-      (place C7 76708 -107188 front 270 (PN C))
+      (place C7 55626 -107569 front 270 (PN C))
       (place C2 113538 -118364 front 90 (PN 0.47uF))
     )
     (component Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight
@@ -61,14 +61,14 @@
       (place J13 178943 -150368 front 0 (PN "Temp Reset"))
       (place J16 154559 -150368 front 0 (PN "Charger Interlock"))
       (place J17 138303 -150368 front 0 (PN "Lid Interlock"))
-      (place J18 45720 -109982 front 90 (PN "From HV Board"))
+      (place J18 47879 -107315 front 270 (PN "From HV Board"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x06x2.50mm_Straight
       (place J2 195326 -118364 front 90 (PN "BMS Connector 1"))
       (place J8 187198 -92075 front 180 (PN "IMD LV"))
     )
     (component Connectors_Molex:Molex_NanoFit_2x06x2.50mm_Straight
-      (place J3 174371 -112014 front 180 (PN "BMS Connector 2"))
+      (place J3 177165 -118237 front 90 (PN "BMS Connector 2"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight
       (place J6 167386 -92329 front 180 (PN "Current Sensor"))
@@ -80,10 +80,10 @@
       (place J15 112776 -148590 front 0 (PN "Charger LV"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x08x2.50mm_Straight
-      (place J19 63373 -92329 front 180 (PN "Chip 1"))
-      (place J20 86233 -92329 front 180 (PN "Chip 2"))
-      (place J21 109093 -92329 front 180 (PN "Chip 3"))
-      (place J22 131572 -92202 front 180 (PN "Chip 4"))
+      (place J19 62103 -91567 front 180 (PN "Chip 1"))
+      (place J20 85217 -91567 front 180 (PN "Chip 2"))
+      (place J21 108331 -91567 front 180 (PN "Chip 3"))
+      (place J22 131572 -91440 front 180 (PN "Chip 4"))
     )
     (component Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal
       (place R1 120650 -125730 front 180 (PN 1.1kR))
@@ -101,10 +101,10 @@
     )
     (component "Housings_DIP:DIP-16_W7.62mm"
       (place U3 121920 -120904 front 90 (PN SN754410))
-      (place U9 63373 -96139 front 270 (PN MCP3008))
-      (place U10 86233 -95885 front 270 (PN MCP3008))
-      (place U13 109093 -95885 front 270 (PN MCP3008))
-      (place U14 131953 -95885 front 270 (PN MCP3008))
+      (place U9 62230 -95377 front 270 (PN MCP3008))
+      (place U10 85217 -94996 front 270 (PN MCP3008))
+      (place U13 108331 -94996 front 270 (PN MCP3008))
+      (place U14 131953 -95123 front 270 (PN MCP3008))
     )
     (component "Power_Integrations:TO-220"
       (place U5 126746 -139192 front 90 (PN "L78S05CV-DG"))
@@ -1019,9 +1019,9 @@
       (shape (rect F.Cu -975 -300 975 300))
       (attach off)
     )
-    (padstack "Via[0-1]_600:400_um"
-      (shape (circle F.Cu 600))
-      (shape (circle B.Cu 600))
+    (padstack "Via[0-1]_800:600_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
       (attach off)
     )
     (padstack "Via[0-1]_1200:800_um"
@@ -1029,9 +1029,9 @@
       (shape (circle B.Cu 1200))
       (attach off)
     )
-    (padstack "Via[0-1]_4800:3200_um"
-      (shape (circle F.Cu 4800))
-      (shape (circle B.Cu 4800))
+    (padstack "Via[0-1]_3600:2400_um"
+      (shape (circle F.Cu 3600))
+      (shape (circle B.Cu 3600))
       (attach off)
     )
   )
@@ -1301,7 +1301,7 @@
       /BMS_RX /BMS_TX /CAN_H /CAN_L /IMD_FLT /IMD_FLT_5 /IMD_FLT_H /IMD_FLT_LATCHED
       /IMD_RESET /SCLK /SIG_CURRENT /TEMP_FLT_H /TEMP_FLT_LATCHED /TEMP_RESET
       /TEMP_SSI /TEMP_SSO /TEMP_SS_0 /TEMP_SS_1 /TEMP_SS_2 /TEMP_SS_3 /TIMER
-      /TIMER_H /V_L /V_S GND "Net-(C1-Pad2)" "Net-(J17-Pad1)" "Net-(J19-Pad1)"
+      /TIMER_H /V_L /V_S "Net-(C1-Pad2)" "Net-(J17-Pad1)" "Net-(J19-Pad1)"
       "Net-(J19-Pad2)" "Net-(J19-Pad3)" "Net-(J19-Pad4)" "Net-(J19-Pad5)"
       "Net-(J19-Pad6)" "Net-(J19-Pad7)" "Net-(J19-Pad8)" "Net-(J20-Pad1)"
       "Net-(J20-Pad2)" "Net-(J20-Pad3)" "Net-(J20-Pad4)" "Net-(J20-Pad5)"
@@ -1314,14 +1314,14 @@
       "Net-(U12-Pad22)" "Net-(U12-Pad23)" "Net-(U12-Pad24)" "Net-(U12-Pad25)"
       "Net-(U4-Pad6)" "Net-(U6-Pad6)"
       (circuit
-        (use_via Via[0-1]_600:400_um)
+        (use_via Via[0-1]_800:600_um)
       )
       (rule
         (width 250)
         (clearance 200.1)
       )
     )
-    (class MainPower +12V +3V3 +5V /3.3V_TS "/BATT-"
+    (class MainPower +12V +3V3 +5V /3.3V_TS "/BATT-" GND
       (circuit
         (use_via Via[0-1]_1200:800_um)
       )
@@ -1332,10 +1332,10 @@
     )
     (class Power /12V_SRC
       (circuit
-        (use_via Via[0-1]_4800:3200_um)
+        (use_via Via[0-1]_3600:2400_um)
       )
       (rule
-        (width 2000)
+        (width 1500)
         (clearance 400.1)
       )
     )
