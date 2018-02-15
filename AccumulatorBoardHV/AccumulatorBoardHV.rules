@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1165)
+    (start_pass_no 925)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -122,8 +122,8 @@
     )
   )
   (class "kicad_default"
-    "Net-(C1-Pad1)" "Net-(C2-Pad2)" "Net-(C9-Pad1)" "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)"
-    "Net-(D4-Pad2)" "Net-(F4-Pad1)" "Net-(F5-Pad1)" "Net-(R1-Pad1)" "Net-(R3-Pad1)" "Net-(R5-Pad1)" "Net-(R7-Pad1)" "Net-(R8-Pad2)"
+    "Net-(C1-Pad1)" "Net-(C9-Pad1)" "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad2)"
+    "Net-(F4-Pad1)" "Net-(F5-Pad1)" "Net-(R1-Pad1)" "Net-(R3-Pad1)" "Net-(R5-Pad1)" "Net-(R7-Pad1)" "Net-(R8-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -135,7 +135,7 @@
   )
   (class BattCurrent
     /BATT+ "/BATT-" "/12V_SRC" GND "/3.3V_TS" /TS+ /12V "/AIRS_FINAL_CHARGER"
-    "/TS-" "/12V_INDICATOR" "/BATT+_DIRECT" "/BATT+_LVBOARD" "/BATT+_DIRFUSED"
+    "/TS-" "/12V_INDICATOR" "/BATT+_DIRECT" "/BATT+_LVBOARD" "/BATT+_DIRFUSED" "/VICOR_OUT"
     (clearance_class BattCurrent)
     (via_rule BattCurrent)
     (rule

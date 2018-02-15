@@ -24,10 +24,10 @@
       (path pcb 0  18161 -98933  203708 -98933  203708 -30861  18161 -30861
             18161 -98933  18161 -98933)
     )
-    (keepout "" (polygon F.Cu 0  182626 -84709  153924 -84709  153924 -78232  176149 -78232
-            176149 -33909  182626 -33909))
-    (keepout "" (polygon B.Cu 0  182626 -84709  153924 -84709  153924 -78232  176149 -78232
-            176149 -33909  182626 -33909))
+    (keepout "" (polygon F.Cu 0  182626 -84709  151003 -84709  151003 -78232  176149 -78232
+            176149 -33909  182626 -33909  182626 -84709))
+    (keepout "" (polygon B.Cu 0  182626 -84709  151003 -84709  151003 -78232  176149 -78232
+            176149 -33909  182626 -33909  182626 -84709))
     (keepout "" (polygon F.Cu 0  84201 -33782  149987 -33782  149987 -40259  84201 -40259))
     (keepout "" (polygon B.Cu 0  149987 -40259  84201 -40259  84201 -33782  149987 -33782))
     (keepout "" (polygon F.Cu 0  143891 -51943  150749 -51943  150749 -56388  143891 -56388
@@ -55,7 +55,7 @@
       (place F4 198882 -74295 front 270 (PN "TS 60V Fuse"))
       (place F3 128397 -81280 front 180 (PN Fuse))
       (place F2 43688 -89281 front 90 (PN "IMD/DCDC Fuse"))
-      (place F1 157239 -50495.2 front 90 (PN Fuse))
+      (place F1 163195 -46990 front 90 (PN Fuse))
     )
     (component "Housings_DIP:DIP-16_W7.62mm"
       (place U4 183007 -76200 front 180 (PN "PS2501-4"))
@@ -88,7 +88,7 @@
     (component Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight
       (place J8 169037 -68580 front 90 (PN "Acc LED 2"))
       (place J7 169037 -59690 front 90 (PN "Acc LED 1"))
-      (place J6 145288 -86995 front 90 (PN "To LV Board"))
+      (place J6 144399 -86995 front 90 (PN "To LV Board"))
       (place J5 33147 -90017.6 front 270 (PN "IMD TS"))
       (place J4 190627 -78740 front 180 (PN "TS (Switched)"))
     )
@@ -103,7 +103,7 @@
     )
     (component Capacitors_THT:CP_Radial_D8.0mm_P2.50mm
       (place C9 128397 -91440 front 270 (PN CP))
-      (place C4 156337 -60960 front 270 (PN CP))
+      (place C4 158496 -58166 front 270 (PN CP))
       (place C3 88011 -53086 front 270 (PN 0.47uF))
     )
     (component Capacitors_THT:CP_Radial_D16.0mm_P7.50mm
@@ -1027,14 +1027,11 @@
     (net /BATT+
       (pins U2-3 U1-1 J5-1 F2-1 C3-1 C1-2)
     )
-    (net "Net-(C2-Pad2)"
-      (pins U1-7 F1-2 C2-2)
-    )
     (net "/BATT-"
       (pins U3-2 U3-3 U3-16 U1-4 J6-2 J5-2 J3-2 C9-2 C8-2 C7-2 C3-2 C5-1)
     )
     (net /12V_SRC
-      (pins U4-10 U4-12 U4-14 U4-16 J2-1 F1-1 C4-1)
+      (pins U4-10 U4-12 U4-14 U4-16 J2-1 F1-1)
     )
     (net GND
       (pins U6-8 U5-8 U2-1 U1-5 J8-2 J7-2 J2-3 C4-2 C6-1)
@@ -1123,6 +1120,9 @@
     (net /BATT+_DIRFUSED
       (pins J1-2 F2-2)
     )
+    (net /VICOR_OUT
+      (pins U1-7 F1-2 C4-1 C2-2)
+    )
     (class kicad_default "" "Net-(C1-Pad1)" "Net-(C2-Pad2)" "Net-(C9-Pad1)"
       "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)"
       "Net-(D4-Pad2)" "Net-(F4-Pad1)" "Net-(F5-Pad1)" "Net-(R1-Pad1)" "Net-(R3-Pad1)"
@@ -1138,7 +1138,7 @@
     )
     (class BattCurrent /12V /12V_INDICATOR /12V_SRC /3.3V_TS /AIRS_FINAL_CHARGER
       /BATT+ /BATT+_DIRECT /BATT+_DIRFUSED /BATT+_LVBOARD "/BATT-" /TS+ "/TS-"
-      GND
+      /VICOR_OUT GND
       (circuit
         (use_via Via[0-1]_1200:400_um)
       )
