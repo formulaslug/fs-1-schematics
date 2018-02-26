@@ -1,4 +1,4 @@
-(pcb "C:\Users\Nicky\FSAE\fs-1-schematics\PEBoardLV\PEBoardLV.dsn"
+(pcb C:\Users\Nicky\Dropbox\College\FS\PEBoardLV\PEBoardLV.dsn
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -23,9 +23,6 @@
     (boundary
       (rect pcb 59355 -42385 197835 -121425)
     )
-    (plane +3V3 (polygon F.Cu 0  157480 -91440  119380 -91440  119380 -68580  106680 -68580
-            106680 -54610  157480 -54610))
-    (plane GND (polygon B.Cu 0  193040 -119380  60960 -119380  60960 -46990  193040 -46990))
     (via "Via[0-1]_600:400_um" "Via[0-1]_900:600_um")
     (rule
       (width 250)
@@ -37,16 +34,16 @@
   (placement
     (component Capacitors_SMD:C_0805_HandSoldering
       (place C11 132080 -55880 front 90 (PN 2.2uF))
-      (place C12 123190 -68580 front 180 (PN 2.2uF))
+      (place C12 123190 -67310 front 180 (PN 2.2uF))
       (place C19 107950 -63500 front 90 (PN 4.7uF))
     )
     (component Capacitors_SMD:C_0402
-      (place C13 142240 -63500 front 0 (PN 0.1uF))
-      (place C14 128270 -57150 front 90 (PN 0.1uF))
-      (place C15 124460 -71120 front 180 (PN 0.1uF))
-      (place C16 135890 -57150 front 90 (PN 0.1uF))
+      (place C13 141605 -63500 front 0 (PN 0.1uF))
+      (place C14 128270 -57785 front 90 (PN 0.1uF))
+      (place C15 124460 -69850 front 180 (PN 0.1uF))
+      (place C16 136525 -57785 front 90 (PN 0.1uF))
       (place C17 137160 -74930 front 270 (PN 0.1uF))
-      (place C18 142240 -69850 front 0 (PN 0.1uF))
+      (place C18 141605 -69850 front 0 (PN 0.1uF))
     )
     (component "TO_SOT_Packages_SMD:SOT-23"
       (place D1 124460 -83820 front 180 (PN D_TVS_x2_AAC))
@@ -113,9 +110,6 @@
     (component "FSFootprints:Ampseal - 35 pin"
       (place J9 187960 -82550 front 90 (PN "Main LV Connector"))
     )
-    (component Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm
-      (place J10 154940 -57150 front 0 (PN "SWD Header"))
-    )
     (component "FSFootprints:Ampseal-776276-1"
       (place J11 171450 -60960 back 90 (PN "ECU Debug Connector"))
     )
@@ -150,6 +144,9 @@
     )
     (component Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm
       (place RV1 64770 -74930 front 0 (PN POT))
+    )
+    (component Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm
+      (place J10 154940 -57150 front 0 (PN "SWD Header"))
     )
   )
   (library
@@ -764,29 +761,6 @@
       (keepout "" (circle F.Cu 2850 28500 0))
       (keepout "" (circle B.Cu 2850 28500 0))
     )
-    (image Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm
-      (outline (path signal 100  -635 1270  1270 1270))
-      (outline (path signal 100  1270 1270  1270 -13970))
-      (outline (path signal 100  1270 -13970  -1270 -13970))
-      (outline (path signal 100  -1270 -13970  -1270 635))
-      (outline (path signal 100  -1270 635  -635 1270))
-      (outline (path signal 120  -1330 -14030  1330 -14030))
-      (outline (path signal 120  -1330 -1270  -1330 -14030))
-      (outline (path signal 120  1330 -1270  1330 -14030))
-      (outline (path signal 120  -1330 -1270  1330 -1270))
-      (outline (path signal 120  -1330 0  -1330 1330))
-      (outline (path signal 120  -1330 1330  0 1330))
-      (outline (path signal 50  -1800 1800  -1800 -14500))
-      (outline (path signal 50  -1800 -14500  1800 -14500))
-      (outline (path signal 50  1800 -14500  1800 1800))
-      (outline (path signal 50  1800 1800  -1800 1800))
-      (pin Rect[A]Pad_1700x1700_um 1 0 0)
-      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
-      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
-      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
-      (pin Oval[A]Pad_1700x1700_um 5 0 -10160)
-      (pin Oval[A]Pad_1700x1700_um 6 0 -12700)
-    )
     (image "FSFootprints:Ampseal-776276-1"
       (outline (path signal 150  18200 -7300  18053.2 -8227.05  17627.1 -9063.36  16963.4 -9727.05
             16127.1 -10153.2  15200 -10300  14272.9 -10153.2  13436.6 -9727.05
@@ -1213,6 +1187,31 @@
       (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
       (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
     )
+    (image Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm
+      (outline (path signal 100  -635 1270  1270 1270))
+      (outline (path signal 100  1270 1270  1270 -19050))
+      (outline (path signal 100  1270 -19050  -1270 -19050))
+      (outline (path signal 100  -1270 -19050  -1270 635))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 120  -1330 -19110  1330 -19110))
+      (outline (path signal 120  -1330 -1270  -1330 -19110))
+      (outline (path signal 120  1330 -1270  1330 -19110))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -19550))
+      (outline (path signal 50  -1800 -19550  1800 -19550))
+      (outline (path signal 50  1800 -19550  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 4 0 -7620)
+      (pin Oval[A]Pad_1700x1700_um 5 0 -10160)
+      (pin Oval[A]Pad_1700x1700_um 6 0 -12700)
+      (pin Oval[A]Pad_1700x1700_um 7 0 -15240)
+      (pin Oval[A]Pad_1700x1700_um 8 0 -17780)
+    )
     (padstack Round[A]Pad_1524_um
       (shape (circle F.Cu 1524))
       (shape (circle B.Cu 1524))
@@ -1342,9 +1341,9 @@
     (net GND
       (pins C11-2 C12-2 C13-2 C14-2 C15-2 C16-2 C17-2 C18-2 C19-2 D1-3 D2-1 D3-1 D4-1
         R1-1 R4-2 R6-2 U1-11 U2-7 U4-4 U5-13 U5-8 U6-1 Y1-2 U3-7 J5-5 J6-2 J7-8 J8-2
-        J9-35 J9-22 J9-16 J9-19 J9-11 J10-3 J11-3 U7-4 U7-12 U7-5 U7-13 U8-2 U8-2@1
-        U8-2@2 U8-2@3 U8-2@4 U8-2@5 U9-2 U10-4 U10-5 U11-12 U11-18 U11-29 U11-60 U11-63
-        C4-2 C1-2 C2-2 C3-2 C5-2 C6-2 C7-2 C8-2 C9-2 C10-2 J12-4 RV1-3)
+        J9-35 J9-22 J9-16 J9-19 J9-11 J11-3 U7-4 U7-12 U7-5 U7-13 U8-2 U8-2@1 U8-2@2
+        U8-2@3 U8-2@4 U8-2@5 U9-2 U10-4 U10-5 U11-12 U11-18 U11-29 U11-60 U11-63 C4-2
+        C1-2 C2-2 C3-2 C5-2 C6-2 C7-2 C8-2 C9-2 C10-2 J12-4 RV1-3 J10-3)
     )
     (net "Net-(C3-Pad1)"
       (pins R7-2 U1-10 C3-1)
@@ -1366,10 +1365,10 @@
     )
     (net +3V3
       (pins C13-1 C14-1 C15-1 C16-1 C17-1 C18-1 C19-1 R5-1 R12-1 U1-9 Y1-4 J7-3 J9-14
-        J9-20 J10-1 J11-1 U8-3 U10-1 U11-1 U11-13 U11-19 U11-32 U11-48 U11-64 RV1-1)
+        J9-20 J11-1 U8-3 U10-1 U11-1 U11-13 U11-19 U11-32 U11-48 U11-64 RV1-1 J10-1)
     )
     (net /CAN_H
-      (pins D1-1 D1-2 FL1-2 FL1-4 J9-25 J9-26 J9-5 J9-4)
+      (pins D1-2 FL1-2 J9-25 J9-4)
     )
     (net "Net-(D2-Pad2)"
       (pins D2-2 R10-1)
@@ -1552,16 +1551,16 @@
       (pins U11-39 J12-3)
     )
     (net /SWDIO
-      (pins J10-4 J11-4 U11-46)
+      (pins J11-4 U11-46 J10-4)
     )
     (net /SWCLK
-      (pins J10-2 J11-2 U11-49)
+      (pins J11-2 U11-49 J10-2)
     )
     (net /UART_TX
-      (pins J11-8 U11-51)
+      (pins J11-8 U11-51 J10-8)
     )
     (net /UART_RX
-      (pins J11-7 U11-52)
+      (pins J11-7 U11-52 J10-7)
     )
     (net "Net-(J1-Pad1)"
       (pins R3-2 R4-1 J1-1)
@@ -1576,32 +1575,21 @@
       (pins R12-2 J9-17)
     )
     (net /NRST
-      (pins J10-5 J11-5 U11-7)
+      (pins J11-5 U11-7 J10-5)
     )
-    (class kicad_default "" +12V +3V3 +5V /3.3V /5V_BMS /BSPD_BRAKE /BSPD_CURRENT
-      /BSPD_FLT /BSPD_FLT_H /BSPD_FLT_LATCHED /BSPD_RESET /BSPD_SIG /BUTTON_1
-      /BUTTON_2 /BUTTON_3 /CLK /LED_AMS /LED_BSPD /LED_IMD /NRST /SIG_APPS_A
-      /SIG_APPS_B /SIG_BRAKE /SIG_BRAKELT /SIG_BSE /SIG_CURRENT /SIG_RTDS
-      /SIG_STEER /SIG_TORQUEA /SIG_TORQUEB /SIG_TSAL /STATUS_LED_1 /STATUS_LED_2
-      /STATUS_LED_3 /TIMER /TIMER_H /VCAP_1 /VCAP_2 GND "Net-(C3-Pad1)" "Net-(C4-Pad1)"
-      "Net-(C5-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(FL1-Pad1)"
-      "Net-(FL1-Pad3)" "Net-(J1-Pad1)" "Net-(J1-Pad2)" "Net-(J10-Pad6)" "Net-(J11-Pad6)"
-      "Net-(J3-Pad2)" "Net-(J9-Pad17)" "Net-(R1-Pad2)" "Net-(R5-Pad2)" "Net-(R7-Pad2)"
-      "Net-(R8-Pad2)" "Net-(U10-Pad10)" "Net-(U10-Pad11)" "Net-(U10-Pad2)"
-      "Net-(U10-Pad20)" "Net-(U10-Pad21)" "Net-(U10-Pad22)" "Net-(U10-Pad23)"
-      "Net-(U10-Pad24)" "Net-(U10-Pad25)" "Net-(U10-Pad3)" "Net-(U10-Pad36)"
-      "Net-(U10-Pad37)" "Net-(U10-Pad38)" "Net-(U10-Pad4)" "Net-(U10-Pad44)"
-      "Net-(U10-Pad45)" "Net-(U10-Pad50)" "Net-(U10-Pad53)" "Net-(U10-Pad54)"
-      "Net-(U10-Pad55)" "Net-(U10-Pad56)" "Net-(U10-Pad59)" "Net-(U10-Pad6)"
-      "Net-(U10-Pad8)" "Net-(U10-Pad9)" "Net-(U11-Pad10)" "Net-(U11-Pad11)"
-      "Net-(U11-Pad2)" "Net-(U11-Pad20)" "Net-(U11-Pad21)" "Net-(U11-Pad22)"
-      "Net-(U11-Pad23)" "Net-(U11-Pad24)" "Net-(U11-Pad25)" "Net-(U11-Pad3)"
-      "Net-(U11-Pad36)" "Net-(U11-Pad37)" "Net-(U11-Pad38)" "Net-(U11-Pad4)"
-      "Net-(U11-Pad44)" "Net-(U11-Pad45)" "Net-(U11-Pad50)" "Net-(U11-Pad53)"
-      "Net-(U11-Pad54)" "Net-(U11-Pad55)" "Net-(U11-Pad56)" "Net-(U11-Pad59)"
-      "Net-(U11-Pad6)" "Net-(U11-Pad8)" "Net-(U11-Pad9)" "Net-(U2-Pad1)" "Net-(U2-Pad10)"
-      "Net-(U2-Pad11)" "Net-(U2-Pad12)" "Net-(U2-Pad13)" "Net-(U2-Pad2)" "Net-(U2-Pad3)"
-      "Net-(U2-Pad4)" "Net-(U2-Pad5)" "Net-(U2-Pad9)" "Net-(U5-Pad9)" "Net-(Y1-Pad1)"
+    (net /CAN_L
+      (pins D1-1 FL1-4 J9-26 J9-5)
+    )
+    (class kicad_default "" +5V /5V_BMS /BSPD_BRAKE /BSPD_CURRENT /BSPD_FLT
+      /BSPD_FLT_H /BSPD_FLT_LATCHED /BSPD_RESET /BSPD_SIG /BUTTON_1 /BUTTON_2
+      /BUTTON_3 /CAN_L /CLK /LED_AMS /LED_BSPD /LED_IMD /NRST /SIG_BRAKELT
+      /SIG_BSE /SIG_CURRENT /SIG_RTDS /SIG_STEER /SIG_TSAL /STATUS_LED_1 /STATUS_LED_2
+      /TIMER /TIMER_H /VCAP_1 /VCAP_2 "Net-(C3-Pad1)" "Net-(C4-Pad1)" "Net-(C5-Pad1)"
+      "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(FL1-Pad1)" "Net-(FL1-Pad3)"
+      "Net-(J1-Pad1)" "Net-(J1-Pad2)" "Net-(J3-Pad2)" "Net-(J9-Pad17)" "Net-(R1-Pad2)"
+      "Net-(R5-Pad2)" "Net-(R8-Pad2)" "Net-(U2-Pad1)" "Net-(U2-Pad10)" "Net-(U2-Pad11)"
+      "Net-(U2-Pad12)" "Net-(U2-Pad13)" "Net-(U2-Pad2)" "Net-(U2-Pad3)" "Net-(U2-Pad4)"
+      "Net-(U2-Pad5)" "Net-(U2-Pad9)"
       (circuit
         (use_via Via[0-1]_600:400_um)
       )
@@ -1610,7 +1598,25 @@
         (clearance 200.1)
       )
     )
-    (class HighSpeed /CAN_H /CAN_L /CAN_RX_GLV /CAN_RX_TS /CAN_TX_GLV /CAN_TX_TS
+    (class 3.3V +3V3
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+    (class Ground GND
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+    (class HighSpeed /CAN_H /CAN_RX_GLV /CAN_RX_TS /CAN_TX_GLV /CAN_TX_TS
       /SWCLK /SWDIO /UART_RX /UART_TX /XTAL
       (circuit
         (use_via Via[0-1]_600:400_um)
@@ -1620,7 +1626,7 @@
         (clearance 200.1)
       )
     )
-    (class PowerandAirs /12V_LVMS /12V_SRC /AIRS_3PHASE_OUT /AIRS_ACC_OUT
+    (class PowerandAirs +12V /12V_LVMS /12V_SRC /AIRS_3PHASE_OUT /AIRS_ACC_OUT
       /AIRS_BEAM_OUT /AIRS_BOTS_OUT /AIRS_BSPD_OUT /AIRS_DASH_OUT /AIRS_FINAL
       /AIRS_LEFTESTOP_OUT /AIRS_PEINTERLOCKS_OUT /BRAKELT_H
       (circuit

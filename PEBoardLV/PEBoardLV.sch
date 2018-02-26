@@ -1819,8 +1819,6 @@ F 3 "" H 10400 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10050 5300 10050 5850
-Wire Wire Line
 	10050 5850 10900 5850
 Wire Wire Line
 	10750 5300 10750 5650
@@ -2102,17 +2100,6 @@ F 3 "" H 9250 10100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x06 J10
-U 1 1 5A9224B0
-P 8300 10000
-F 0 "J10" H 8300 10300 50  0000 C CNN
-F 1 "SWD Header" V 8400 10000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 8300 10000 50  0001 C CNN
-F 3 "" H 8300 10000 50  0001 C CNN
-	1    8300 10000
-	1    0    0    -1  
-$EndComp
-$Comp
 L +3.3V #PWR082
 U 1 1 5A922F44
 P 8100 9800
@@ -2253,11 +2240,31 @@ Connection ~ 3500 5450
 Connection ~ 3500 5750
 Connection ~ 4300 5750
 NoConn ~ 6350 5500
-Connection ~ 10050 5650
-Connection ~ 10050 5850
 Connection ~ 8700 6250
 Connection ~ 13600 5000
 Connection ~ 14500 5400
 Text Label 5750 5450 0    60   ~ 0
 3.3V
+$Comp
+L Conn_01x08 J10
+U 1 1 5A92295E
+P 8300 10100
+F 0 "J10" H 8300 10500 50  0000 C CNN
+F 1 "SWD Header" V 8400 10100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 8300 10100 50  0001 C CNN
+F 3 "" H 8300 10100 50  0001 C CNN
+	1    8300 10100
+	1    0    0    -1  
+$EndComp
+Text Label 8100 10400 2    60   ~ 0
+UART_RX
+Text Label 8100 10500 2    60   ~ 0
+UART_TX
+Wire Wire Line
+	10050 5300 10050 5450
+Wire Wire Line
+	10050 5450 10200 5450
+Wire Wire Line
+	10200 5450 10200 5850
+Connection ~ 10200 5850
 $EndSCHEMATC
