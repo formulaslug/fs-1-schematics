@@ -1,5 +1,5 @@
-(module G2RL-1A-E (layer F.Cu) (tedit 5A891260)
-  (fp_text reference REF** (at 8 4) (layer F.SilkS)
+(module G2RL-1A-E (layer F.Cu) (tedit 5A94AAAB)
+  (fp_text reference REF** (at -3.81 0 270) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value G2RL-1A-E (at 8 -4) (layer F.Fab)

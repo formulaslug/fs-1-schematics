@@ -29,7 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:PEBoardHV-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -542,7 +541,7 @@ U 1 1 59B395E2
 P 800 2050
 F 0 "J3" H 800 2250 50  0000 C CNN
 F 1 "E-Meter Internal" V 900 2050 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Straight" H 800 2050 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x02x2.50mm_Straight" H 800 2050 50  0001 C CNN
 F 3 "" H 800 2050 50  0001 C CNN
 	1    800  2050
 	-1   0    0    -1  
@@ -629,7 +628,7 @@ U 1 1 59B3ABDF
 P 7750 1300
 F 0 "C4" H 7775 1400 50  0000 L CNN
 F 1 "CP" H 7775 1200 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 7788 1150 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 7788 1150 50  0001 C CNN
 F 3 "" H 7750 1300 50  0001 C CNN
 	1    7750 1300
 	1    0    0    -1  
@@ -640,7 +639,7 @@ U 1 1 59B3AC80
 P 8550 1300
 F 0 "C5" H 8575 1400 50  0000 L CNN
 F 1 "CP" H 8575 1200 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 8588 1150 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 8588 1150 50  0001 C CNN
 F 3 "" H 8550 1300 50  0001 C CNN
 	1    8550 1300
 	1    0    0    -1  
@@ -688,7 +687,7 @@ U 1 1 5A3F30B7
 P 2450 1000
 F 0 "C2" H 2475 1100 50  0000 L CNN
 F 1 "C" H 2475 900 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 2488 850 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 2488 850 50  0001 C CNN
 F 3 "" H 2450 1000 50  0001 C CNN
 	1    2450 1000
 	1    0    0    -1  
@@ -699,7 +698,7 @@ U 1 1 5A3F31B6
 P 2950 1000
 F 0 "C3" H 2975 1100 50  0000 L CNN
 F 1 "C" H 2975 900 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 2988 850 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 2988 850 50  0001 C CNN
 F 3 "" H 2950 1000 50  0001 C CNN
 	1    2950 1000
 	1    0    0    -1  
@@ -807,11 +806,33 @@ U 1 1 5A84D24A
 P 5500 950
 F 0 "C1" H 5525 1050 50  0000 L CNN
 F 1 "CP" H 5525 850 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D8.0mm_P2.50mm" H 5538 800 50  0001 C CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5538 800 50  0001 C CNN
 F 3 "" H 5500 950 50  0001 C CNN
 	1    5500 950 
 	0    -1   -1   0   
 $EndComp
 Text Label 5650 950  0    60   ~ 0
 TS-
+$Comp
+L Conn_01x01 H1
+U 1 1 5A94B007
+P 10950 6050
+F 0 "H1" H 10950 6150 50  0000 C CNN
+F 1 "MtngHole" H 10950 5950 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4.5mm" H 10950 6050 50  0001 C CNN
+F 3 "" H 10950 6050 50  0001 C CNN
+	1    10950 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 H2
+U 1 1 5A94B644
+P 10950 6350
+F 0 "H2" H 10950 6450 50  0000 C CNN
+F 1 "MtngHole" H 10950 6250 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4.5mm" H 10950 6350 50  0001 C CNN
+F 3 "" H 10950 6350 50  0001 C CNN
+	1    10950 6350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

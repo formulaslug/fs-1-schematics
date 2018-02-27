@@ -1,5 +1,5 @@
-(module DK1A1B-12V (layer F.Cu) (tedit 5A88F8EA)
-  (fp_text reference REF** (at 0 1.27) (layer F.SilkS)
+(module DK1A1B-12V (layer F.Cu) (tedit 5A94AA99)
+  (fp_text reference REF** (at 0 10.16) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value DK1A1B-12V (at 0 -1.27) (layer F.Fab)
