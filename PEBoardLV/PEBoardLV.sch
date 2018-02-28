@@ -682,7 +682,7 @@ F 3 "" H 8700 6250 50  0001 C CNN
 	1    8700 6250
 	1    0    0    -1  
 $EndComp
-Text Label 4500 8400 2    60   ~ 0
+Text Label 4500 9200 2    60   ~ 0
 SIG_STEER
 Text Label 4500 8600 2    60   ~ 0
 SIG_TORQUEA
@@ -836,7 +836,7 @@ Text Label 1050 10000 0    60   ~ 0
 CAN_L
 Text Label 6750 9400 0    60   ~ 0
 LED_AMS
-Text Label 6750 9300 0    60   ~ 0
+Text Label 6750 8500 0    60   ~ 0
 LED_IMD
 Text Label 1050 10100 0    60   ~ 0
 BUTTON_1
@@ -1200,7 +1200,7 @@ Text Label 1050 8800 0    60   ~ 0
 3.3V
 Text Label 1050 9400 0    60   ~ 0
 3.3V
-Text Label 6750 9200 0    60   ~ 0
+Text Label 6750 9800 0    60   ~ 0
 LED_BSPD
 Text Label 15800 1350 1    60   ~ 0
 BSPD_FLT_LATCHED
@@ -2192,11 +2192,11 @@ SIG_TSAL
 Text Label 2750 10800 0    60   ~ 0
 SIG_RTDS
 NoConn ~ 6750 9900
-NoConn ~ 6750 9800
+NoConn ~ 6750 9200
 NoConn ~ 6750 9700
 NoConn ~ 6750 9100
 NoConn ~ 6750 9000
-NoConn ~ 6750 8500
+NoConn ~ 6750 9300
 NoConn ~ 6750 8200
 NoConn ~ 6750 8100
 NoConn ~ 6750 7900
@@ -2207,9 +2207,9 @@ NoConn ~ 4500 7200
 NoConn ~ 4500 9500
 NoConn ~ 4500 9400
 NoConn ~ 4500 9300
-NoConn ~ 4500 9200
-NoConn ~ 4500 9100
 NoConn ~ 4500 9000
+NoConn ~ 4500 9100
+NoConn ~ 4500 8400
 NoConn ~ 4500 8100
 NoConn ~ 4500 8000
 NoConn ~ 4500 7900
