@@ -35,22 +35,22 @@
   (placement
     (component Capacitors_SMD:C_0805_HandSoldering
       (place C11 119380 -74295 front 270 (PN 2.2uF))
-      (place C12 126365 -63500 front 270 (PN 2.2uF))
-      (place C19 120650 -53340 front 90 (PN 4.7uF))
+      (place C12 126365 -64135 front 270 (PN 2.2uF))
+      (place C19 121920 -53340 front 90 (PN 4.7uF))
     )
     (component Capacitors_SMD:C_0402
       (place C13 109855 -67310 front 180 (PN 0.1uF))
       (place C14 121920 -73025 front 270 (PN 0.1uF))
-      (place C15 126365 -59690 front 0 (PN 0.1uF))
+      (place C15 126365 -60325 front 0 (PN 0.1uF))
       (place C16 114300 -73025 front 270 (PN 0.1uF))
       (place C17 114300 -56515 front 90 (PN 0.1uF))
       (place C18 109855 -60960 front 180 (PN 0.1uF))
     )
     (component "TO_SOT_Packages_SMD:SOT-23"
-      (place D1 91440 -48260 front 0 (PN D_TVS_x2_AAC))
+      (place D1 92710 -48260 front 0 (PN D_TVS_x2_AAC))
     )
     (component "Inductors_SMD:L_CommonMode_Wuerth_WE-SL2"
-      (place FL1 101600 -48260 front 0 (PN EMI_Filter_CommonMode))
+      (place FL1 101600 -49530 front 0 (PN EMI_Filter_CommonMode))
     )
     (component Resistors_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal
       (place R1 130810 -76200 front 90 (PN R))
@@ -61,7 +61,7 @@
       (place R6 138430 -53340 front 0 (PN R))
       (place R7 152400 -104140 front 90 (PN 100k))
       (place R8 94615 -90170 front 90 (PN 4.7kR))
-      (place R9 94615 -70485 front 0 (PN 18k))
+      (place R9 92075 -70485 front 0 (PN 18k))
       (place R10 87630 -82550 front 90 (PN 330))
       (place R11 82550 -82550 front 90 (PN 330))
       (place R12 77470 -82550 front 90 (PN 330))
@@ -152,7 +152,7 @@
       (place J13 139700 -35560 front 180 (PN "To TSAL"))
     )
     (component Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm
-      (place J12 96520 -40640 front 270 (PN "Extra Pin Header"))
+      (place J12 97790 -40640 front 270 (PN "Extra Pin Header"))
     )
   )
   (library
