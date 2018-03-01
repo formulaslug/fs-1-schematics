@@ -1,4 +1,4 @@
-(pcb "C:\Users\Nicky\FS\fs-1-schematics\AccumulatorBoardHV\AccumulatorBoardHV.dsn"
+(pcb "C:\Users\Nicky\FSAE\fs-1-schematics\AccumulatorBoardHV\AccumulatorBoardHV.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -21,8 +21,9 @@
       )
     )
     (boundary
-      (path pcb 0  18161 -98933  203708 -98933  203708 -30861  18161 -30861
-            18161 -98933  18161 -98933)
+      (path pcb 0  203200 -31115  23495 -31115  23495 -31750  23495 -33020
+            23495 -100330  203200 -100330  203200 -99060  203200 -33020
+            203200 -31750  203200 -31115  203200 -31115)
     )
     (keepout "" (polygon F.Cu 0  182626 -84709  151003 -84709  151003 -78232  176149 -78232
             176149 -33909  182626 -33909  182626 -84709))
@@ -32,10 +33,12 @@
     (keepout "" (polygon B.Cu 0  149987 -40259  84201 -40259  84201 -33782  149987 -33782))
     (keepout "" (polygon F.Cu 0  143891 -51943  150749 -51943  150749 -56388  143891 -56388
             143891 -72263  152400 -72263  152400 -75057  141732 -75057  141732 -72517
-            103505 -72517  103505 -45720  143891 -45720))
+            103505 -72517  103505 -70485  99695 -70485  99695 -67945  103505 -67945
+            103505 -45720  143891 -45720  143891 -51943))
     (keepout "" (polygon B.Cu 0  143891 -51943  150749 -51943  150749 -56388  143891 -56388
             143891 -72263  152400 -72263  152400 -75057  141732 -75057  141732 -72517
-            103505 -72517  103505 -45720  143891 -45720))
+            103505 -72517  103505 -70485  99695 -70485  99695 -67945  103505 -67945
+            103505 -45720  143891 -45720  143891 -51943))
     (via "Via[0-1]_800:400_um" "Via[0-1]_1200:400_um" "Via[0-1]_3200:2000_um")
     (rule
       (width 250)
@@ -50,9 +53,9 @@
       (place U5 49149 -36957 front 270 (PN "G2RL-1A-E"))
     )
     (component "FSFootprints:SMD Fuse"
-      (place F6 63322.2 -72110.6 front 180 (PN Fuse))
-      (place F5 45453.3 -70739 front 90 (PN "Charger 60V Fuse"))
-      (place F4 198882 -74295 front 270 (PN "TS 60V Fuse"))
+      (place F6 63322.2 -69570.6 front 180 (PN Fuse))
+      (place F5 45085 -70485 front 90 (PN "Charger 60V Fuse"))
+      (place F4 187960 -74295 front 270 (PN "TS 60V Fuse"))
       (place F3 128397 -81280 front 180 (PN Fuse))
       (place F2 43688 -89281 front 90 (PN "IMD/DCDC Fuse"))
       (place F1 163195 -46990 front 90 (PN Fuse))
@@ -64,23 +67,23 @@
       (place U3 90297 -96520 front 90 (PN RDD08110S3V3))
     )
     (component "FSFootprints:DK1A1B-12V"
-      (place U2 32639 -51943 front 0 (PN "DK1A1B-12V"))
+      (place U2 33655 -55245 front 0 (PN "DK1A1B-12V"))
     )
     (component "FSFootprints:VICOR-DCDC"
       (place U1 96647 -43180 front 90 (PN V110C12E100BL))
     )
     (component Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
-      (place R8 198247 -96520 front 90 (PN 1.5kR))
-      (place R7 167767 -90170 front 0 (PN R))
-      (place R6 161417 -95250 front 180 (PN 1.5kR))
-      (place R5 191897 -90170 front 180 (PN R))
-      (place R4 188087 -67310 front 90 (PN 1.5kR))
-      (place R3 188087 -52070 front 90 (PN R))
-      (place R2 198882 -55245 front 270 (PN 1.5kR))
-      (place R1 193167 -52070 front 90 (PN R))
+      (place R8 190627 -95885 front 90 (PN 1.5kR))
+      (place R7 160147 -89535 front 0 (PN R))
+      (place R6 153670 -96520 front 90 (PN 1.5kR))
+      (place R5 184277 -89535 front 180 (PN R))
+      (place R4 186690 -59055 front 90 (PN 1.5kR))
+      (place R3 186690 -45720 front 90 (PN R))
+      (place R2 198755 -67945 front 270 (PN 1.5kR))
+      (place R1 193040 -59690 front 90 (PN R))
     )
     (component "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight"
-      (place J9 73558.4 -72199.5 front 90 (PN "Charger Current to Batt"))
+      (place J9 73558.4 -69659.5 front 90 (PN "Charger Current to Batt"))
       (place J3 34671 -70078.6 front 270 (PN "Batt Voltage"))
       (place J1 34544 -79857.6 front 270 (PN "TS -> GLV Regulator Jumper"))
       (place J10 62382.4 -51460.4 front 0 (PN "Charger Current"))
@@ -88,18 +91,18 @@
     (component Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight
       (place J8 169037 -68580 front 90 (PN "Acc LED 2"))
       (place J7 169037 -59690 front 90 (PN "Acc LED 1"))
-      (place J6 144399 -86995 front 90 (PN "To LV Board"))
-      (place J5 33147 -90017.6 front 270 (PN "IMD TS"))
-      (place J4 190627 -78740 front 180 (PN "TS (Switched)"))
+      (place J6 136525 -93980 front 0 (PN "To LV Board"))
+      (place J5 145415 -93980 front 0 (PN "IMD TS"))
+      (place J4 196850 -86360 front 90 (PN "TS (Switched)"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Straight
       (place J2 169037 -50800 front 90 (PN "To LV Board"))
     )
     (component "Diodes_THT:D_DO-15_P12.70mm_Horizontal"
-      (place D4 181737 -95250 front 0 (PN "12V Zener"))
-      (place D3 165227 -95250 front 0 (PN "48V Zener"))
-      (place D2 193167 -55880 front 270 (PN "12V Zener"))
-      (place D1 198882 -51435 front 90 (PN "48V Zener"))
+      (place D4 174117 -94615 front 0 (PN "12V Zener"))
+      (place D3 157607 -94615 front 0 (PN "48V Zener"))
+      (place D2 193675 -64770 front 270 (PN "12V Zener"))
+      (place D1 198755 -64770 front 90 (PN "48V Zener"))
     )
     (component Capacitors_THT:CP_Radial_D8.0mm_P2.50mm
       (place C9 128397 -91440 front 270 (PN CP))
@@ -118,6 +121,12 @@
     )
     (component Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical
       (place R9 62382.4 -63804.8 front 90 (PN 0))
+    )
+    (component Mounting_Holes:MountingHole_4.5mm
+      (place H1 28575 -36195 front 270 (PN MtngHole))
+      (place H2 28575 -95250 front 270 (PN MtngHole))
+      (place H3 198120 -95250 front 90 (PN MtngHole))
+      (place H4 198120 -36195 front 90 (PN MtngHole))
     )
   )
   (library
@@ -920,6 +929,20 @@
       (pin Round[A]Pad_1400_um 1 0 0)
       (pin Oval[A]Pad_1400x1400_um 2 1900 0)
     )
+    (image Mounting_Holes:MountingHole_4.5mm
+      (outline (path signal 150  4500 0  4279.75 -1390.58  3640.58 -2645.03  2645.03 -3640.58
+            1390.58 -4279.75  0 -4500  -1390.58 -4279.75  -2645.03 -3640.58
+            -3640.58 -2645.03  -4279.75 -1390.58  -4500 0  -4279.75 1390.58
+            -3640.58 2645.03  -2645.03 3640.58  -1390.58 4279.75  0 4500
+            1390.58 4279.75  2645.03 3640.58  3640.58 2645.03  4279.75 1390.58))
+      (outline (path signal 50  4750 0  4517.52 -1467.83  3842.83 -2791.98  2791.98 -3842.83
+            1467.83 -4517.52  0 -4750  -1467.83 -4517.52  -2791.98 -3842.83
+            -3842.83 -2791.98  -4517.52 -1467.83  -4750 0  -4517.52 1467.83
+            -3842.83 2791.98  -2791.98 3842.83  -1467.83 4517.52  0 4750
+            1467.83 4517.52  2791.98 3842.83  3842.83 2791.98  4517.52 1467.83))
+      (keepout "" (circle F.Cu 4500))
+      (keepout "" (circle B.Cu 4500))
+    )
     (padstack Round[A]Pad_1400_um
       (shape (circle F.Cu 1400))
       (shape (circle B.Cu 1400))
@@ -1123,11 +1146,12 @@
     (net /VICOR_OUT
       (pins U1-7 F1-2 C4-1 C2-2)
     )
-    (class kicad_default "" "Net-(C1-Pad1)" "Net-(C2-Pad2)" "Net-(C9-Pad1)"
-      "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)"
-      "Net-(D4-Pad2)" "Net-(F4-Pad1)" "Net-(F5-Pad1)" "Net-(R1-Pad1)" "Net-(R3-Pad1)"
-      "Net-(R5-Pad1)" "Net-(R7-Pad1)" "Net-(R8-Pad2)" "Net-(U1-Pad2)" "Net-(U1-Pad3)"
-      "Net-(U1-Pad6)" "Net-(U2-Pad5)" "Net-(U2-Pad6)" "Net-(U3-Pad1)" "Net-(U3-Pad11)"
+    (class kicad_default "" "Net-(C1-Pad1)" "Net-(C9-Pad1)" "Net-(D1-Pad1)"
+      "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad2)"
+      "Net-(F4-Pad1)" "Net-(F5-Pad1)" "Net-(H1-Pad1)" "Net-(H2-Pad1)" "Net-(H3-Pad1)"
+      "Net-(H4-Pad1)" "Net-(R1-Pad1)" "Net-(R3-Pad1)" "Net-(R5-Pad1)" "Net-(R7-Pad1)"
+      "Net-(R8-Pad2)" "Net-(U1-Pad2)" "Net-(U1-Pad3)" "Net-(U1-Pad6)" "Net-(U2-Pad5)"
+      "Net-(U2-Pad6)" "Net-(U3-Pad1)" "Net-(U3-Pad11)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
