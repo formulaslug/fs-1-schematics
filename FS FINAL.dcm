@@ -20,6 +20,12 @@ D 8 bits serial in // out Shift Register Open Collect.
 K HCMOS SR OpenCol
 $ENDCMP
 #
+$CMP EMI_Choke
+D EMI 2-inductor-filter
+K EMI filter
+F http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c30e.ashx?la=en-gb
+$ENDCMP
+#
 $CMP L78S05CV-DG
 D Positive 2A 35V Linear Regulator, Fixed Output 5V, TO-220
 $ENDCMP
