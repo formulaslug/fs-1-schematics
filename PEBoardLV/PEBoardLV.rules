@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 7669)
+    (start_pass_no 5303)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -47,12 +47,12 @@
     )
     (attach off)
   )
-  (padstack "Via[0-1]_10000:5000_um"
+  (padstack "Via[0-1]_100000:50000_um"
     (shape
-      (circle F.Cu 10000.0 0.0 0.0)
+      (circle F.Cu 100000.0 0.0 0.0)
     )
     (shape
-      (circle B.Cu 10000.0 0.0 0.0)
+      (circle B.Cu 100000.0 0.0 0.0)
     )
     (attach off)
   )
@@ -69,7 +69,7 @@
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
-    "Via[0-1]_10000:5000_um" "Via[0-1]_10000:5000_um" default
+    "Via[0-1]_100000:50000_um" "Via[0-1]_100000:50000_um" default
   )
   (via 
     "Via[0-1]_1000:600_um" "Via[0-1]_1000:600_um" default
@@ -78,7 +78,7 @@
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_10000:5000_um-kicad_default" "Via[0-1]_10000:5000_um" "kicad_default"
+    "Via[0-1]_100000:50000_um-kicad_default" "Via[0-1]_100000:50000_um" "kicad_default"
   )
   (via 
     "Via[0-1]_1000:600_um-kicad_default" "Via[0-1]_1000:600_um" "kicad_default"
@@ -87,7 +87,7 @@
     "Via[0-1]_800:400_um-3.3V" "Via[0-1]_800:400_um" 3.3V
   )
   (via 
-    "Via[0-1]_10000:5000_um-3.3V" "Via[0-1]_10000:5000_um" 3.3V
+    "Via[0-1]_100000:50000_um-3.3V" "Via[0-1]_100000:50000_um" 3.3V
   )
   (via 
     "Via[0-1]_1000:600_um-3.3V" "Via[0-1]_1000:600_um" 3.3V
@@ -96,7 +96,7 @@
     "Via[0-1]_800:400_um-Ground" "Via[0-1]_800:400_um" Ground
   )
   (via 
-    "Via[0-1]_10000:5000_um-Ground" "Via[0-1]_10000:5000_um" Ground
+    "Via[0-1]_100000:50000_um-Ground" "Via[0-1]_100000:50000_um" Ground
   )
   (via 
     "Via[0-1]_1000:600_um-Ground" "Via[0-1]_1000:600_um" Ground
@@ -105,7 +105,7 @@
     "Via[0-1]_800:400_um-HighSpeed" "Via[0-1]_800:400_um" HighSpeed
   )
   (via 
-    "Via[0-1]_10000:5000_um-HighSpeed" "Via[0-1]_10000:5000_um" HighSpeed
+    "Via[0-1]_100000:50000_um-HighSpeed" "Via[0-1]_100000:50000_um" HighSpeed
   )
   (via 
     "Via[0-1]_1000:600_um-HighSpeed" "Via[0-1]_1000:600_um" HighSpeed
@@ -114,7 +114,7 @@
     "Via[0-1]_800:400_um-PowerandAirs" "Via[0-1]_800:400_um" PowerandAirs
   )
   (via 
-    "Via[0-1]_10000:5000_um-PowerandAirs" "Via[0-1]_10000:5000_um" PowerandAirs
+    "Via[0-1]_100000:50000_um-PowerandAirs" "Via[0-1]_100000:50000_um" PowerandAirs
   )
   (via 
     "Via[0-1]_1000:600_um-PowerandAirs" "Via[0-1]_1000:600_um" PowerandAirs
@@ -132,7 +132,7 @@
     Ground "Via[0-1]_800:400_um-Ground"
   )
   (via_rule
-    HighSpeed "Via[0-1]_10000:5000_um-HighSpeed"
+    HighSpeed "Via[0-1]_100000:50000_um-HighSpeed"
   )
   (via_rule
     PowerandAirs "Via[0-1]_1000:600_um-PowerandAirs"
@@ -150,12 +150,12 @@
   (class "kicad_default"
     +5V "Net-(C3-Pad1)" "Net-(C4-Pad1)" "Net-(C5-Pad1)" "/VCAP_1" "/VCAP_2" "/BSPD_FLT" "/SIG_BRAKELT"
     "/BSPD_FLT_H" "/TIMER_H" /TIMER "/SIG_TSAL" "/BSPD_RESET" "/SIG_STEER" "/LED_IMD" "/LED_AMS"
-    "/LED_BSPD" "/BUTTON_2" "/BUTTON_1" "/BUTTON_3" "/SIG_BSE" "/SIG_CURRENT" "/5V_BMS" "Net-(R1-Pad2)"
-    "Net-(R5-Pad2)" "Net-(R8-Pad2)" "/STATUS_LED_1" "/STATUS_LED_2" "/BSPD_CURRENT" "/BSPD_BRAKE" "Net-(U2-Pad1)" "Net-(U2-Pad2)"
-    "Net-(U2-Pad9)" "Net-(U2-Pad3)" "Net-(U2-Pad10)" "Net-(U2-Pad4)" "Net-(U2-Pad11)" "Net-(U2-Pad5)" "Net-(U2-Pad12)" "Net-(U2-Pad13)"
-    "/BSPD_SIG" "/BSPD_FLT_LATCHED" /CLK "/SIG_RTDS" "Net-(J1-Pad1)" "Net-(J1-Pad2)" "Net-(J9-Pad17)" /NRST
-    /SWO "/STATUS_LED_3" "Net-(LD1-Pad2)" "Net-(LD2-Pad2)" "Net-(LD3-Pad2)" "/SIG_APPS_A" "/SIG_APPS_B" /PA4
-    /PA5 /PA7 /PC4
+    "/LED_BSPD" "/BUTTON_2" "/BUTTON_1" "/BUTTON_3" "/SIG_BSE" "/SIG_CURRENT" "Net-(R1-Pad2)" "Net-(R5-Pad2)"
+    "Net-(R8-Pad2)" "/STATUS_LED_1" "/STATUS_LED_2" "/BSPD_CURRENT" "/BSPD_BRAKE" "Net-(U2-Pad1)" "Net-(U2-Pad2)" "Net-(U2-Pad9)"
+    "Net-(U2-Pad3)" "Net-(U2-Pad10)" "Net-(U2-Pad4)" "Net-(U2-Pad11)" "Net-(U2-Pad5)" "Net-(U2-Pad12)" "Net-(U2-Pad13)" "/BSPD_SIG"
+    "/BSPD_FLT_LATCHED" /CLK "/SIG_RTDS" "/UART_TX" "/UART_RX" "Net-(J1-Pad1)" "Net-(J1-Pad2)" "Net-(J9-Pad17)"
+    /NRST /SWO "/STATUS_LED_3" "Net-(LD1-Pad2)" "Net-(LD2-Pad2)" "Net-(LD3-Pad2)" "/SIG_APPS_A" "/SIG_APPS_B"
+    /PA4 /PA5 /PA7 /PC4
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -189,7 +189,7 @@
   )
   (class HighSpeed
     "/CAN_H" "/CAN_TX_TS" "/CAN_RX_TS" "/CAN_RX_GLV" "/CAN_TX_GLV" /XTAL /SWDIO /SWCLK
-    "/UART_TX" "/UART_RX" "/CAN_L" "/CAN_H_PRE" "/CAN_L_PRE"
+    "/CAN_L" "/CAN_H_PRE" "/CAN_L_PRE"
     (clearance_class HighSpeed)
     (via_rule HighSpeed)
     (rule
