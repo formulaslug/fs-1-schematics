@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name FSfootprints)(type KiCad)(uri "C:/Users/Luis Barragan/Documents/GitHub/fs-1-schematics/FSFootprints")(options "")(descr "Formula Slug footprints"))
+)
