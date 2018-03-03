@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1090)
+    (start_pass_no 1039)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -63,7 +63,7 @@
     )
   )
   (class "kicad_default"
-    "/5V_GLV" GND "/3.3V_GLV" /CAN+ "/TS-" "/5V_TS" "Net-(D1-Pad1)" "Net-(D1-Pad2)"
+    GND "/TS-" "/5V_GLV" "/3.3V_GLV" /CAN+ "/5V_TS" "Net-(D1-Pad1)" "Net-(D1-Pad2)"
     "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad1)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(F1-Pad2)"
     "/TS+_SWITCHED_L" "Net-(F2-Pad2)" "/TS+_SWITCHED_R" "/TS+_FUSED" /TS+ +12V "/SIG_TSAL" "/CAN_TX"
     "/CAN_RX" "/AIRS_FINAL" "/CAN_H_BOARD" "/CAN_L_BOARD" "/CAN_H_CONTROLLER" "/CAN_L_CONTROLLER" "/EM_SIG+" "/EM_SIG-"
