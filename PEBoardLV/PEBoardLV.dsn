@@ -1,4 +1,4 @@
-(pcb "C:\Users\Nicky\FSAE\fs-1-schematics\PEBoardLV\PEBoardLV.dsn"
+(pcb "C:\Users\Nicky\FS\fs-1-schematics\PEBoardLV\PEBoardLV.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -24,7 +24,12 @@
       (path pcb 0  165100 -29210  51435 -29210  51435 -107950  165100 -107950
             165100 -29210  165100 -29210)
     )
-    (via "Via[0-1]_800:400_um" "Via[0-1]_10000:5000_um" "Via[0-1]_1000:600_um")
+    (plane GND (polygon B.Cu 0  163830 -106680  53340 -106680  53340 -31750  163830 -31750))
+    (plane +5V (polygon F.Cu 0  163830 -106680  90170 -106680  90170 -72390  110490 -72390
+            110490 -80010  134620 -80010  134620 -31750  163830 -31750))
+    (plane +3V3 (polygon F.Cu 0  133350 -78740  111760 -78740  111760 -71120  67310 -71120
+            67310 -29845  133350 -29845))
+    (via "Via[0-1]_800:400_um" "Via[0-1]_100000:50000_um" "Via[0-1]_1000:600_um")
     (rule
       (width 250)
       (clearance 205.1)
@@ -34,20 +39,20 @@
   )
   (placement
     (component Capacitors_SMD:C_0805_HandSoldering
-      (place C12 120650 -74295 front 270 (PN 2.2uF))
-      (place C13 127635 -62230 front 0 (PN 2.2uF))
+      (place C12 121285 -74930 front 270 (PN 2.2uF))
+      (place C13 128270 -62230 front 0 (PN 2.2uF))
       (place C20 124460 -52070 front 90 (PN 4.7uF))
     )
     (component Capacitors_SMD:C_0402
-      (place C14 123190 -72390 front 0 (PN 0.1uF))
-      (place C15 126365 -60325 front 0 (PN 0.1uF))
-      (place C16 115570 -73025 front 270 (PN 0.1uF))
-      (place C17 114300 -56515 front 90 (PN 0.1uF))
-      (place C18 110490 -60325 front 90 (PN 0.1uF))
-      (place C19 110490 -67310 front 270 (PN 0.1uF))
+      (place C14 123825 -73025 front 0 (PN 0.1uF))
+      (place C15 127000 -60325 front 0 (PN 0.1uF))
+      (place C16 114935 -73025 front 180 (PN 0.1uF))
+      (place C17 114300 -55880 front 90 (PN 0.1uF))
+      (place C18 109855 -61595 front 270 (PN 0.1uF))
+      (place C19 109855 -66040 front 90 (PN 0.1uF))
     )
     (component "TO_SOT_Packages_SMD:SOT-23"
-      (place D1 95250 -44450 front 0 (PN D_TVS_x2_AAC))
+      (place D1 95504 -43942 front 0 (PN D_TVS_x2_AAC))
     )
     (component "Housings_DIP:DIP-14_W7.62mm"
       (place U1 138430 -63500 front 0 (PN MCP6004))
@@ -65,7 +70,7 @@
       (place U6 100330 -74930 front 0 (PN LM555N))
     )
     (component "Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm_HandSoldering"
-      (place Y1 104775 -64135 front 0 (PN 8MHz))
+      (place Y1 106045 -64135 front 0 (PN 8MHz))
     )
     (component Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight
       (place J1 158750 -63500 front 90 (PN "BSPD Test Jumper"))
@@ -100,7 +105,7 @@
     (component Capacitors_THT:CP_Radial_D5.0mm_P2.50mm
       (place C1 118110 -83820 front 180 (PN CP))
       (place C2 130810 -81280 front 180 (PN CP))
-      (place C3 152400 -87630 front 90 (PN 10uF))
+      (place C3 152400 -91440 front 90 (PN 10uF))
       (place C5 96520 -76200 front 180 (PN 10uF))
       (place C6 96520 -96520 front 180 (PN CP))
       (place C7 95250 -104140 front 90 (PN CP))
@@ -111,7 +116,7 @@
     )
     (component Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm
       (place RV1 160020 -92710 front 180 (PN POT))
-      (place J13 90170 -44450 front 180 (PN "CAN Header"))
+      (place J13 87884 -42672 front 180 (PN "CAN Header"))
     )
     (component Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Straight
       (place J3 81280 -35560 front 180 (PN "To HV Interlocks"))
@@ -142,8 +147,8 @@
       (place R10 87630 -83820 front 90 (PN 330))
       (place R11 82550 -83820 front 90 (PN 330))
       (place R12 77470 -83820 front 90 (PN 330))
-      (place R13 72390 -83820 front 90 (PN 2.2k))
-      (place R14 71120 -49530 front 90 (PN 120))
+      (place R13 72390 -73660 front 270 (PN 2.2k))
+      (place R14 71120 -46990 front 90 (PN 120))
     )
     (component Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm
       (place J12 134620 -76200 front 180 (PN "Extra Pin Header"))
@@ -152,10 +157,10 @@
       (place J10 80010 -48260 back 90 (PN "ECU Debug Connector"))
     )
     (component Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm
-      (place J11 100330 -52070 front 270 (PN "SWD Header"))
+      (place J11 91440 -48260 front 0 (PN "SWD Header"))
     )
     (component Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm
-      (place J14 64770 -35560 front 180 (PN "UART Header"))
+      (place J14 87630 -48260 front 0 (PN "UART Header"))
     )
     (component Connectors_Molex:Molex_NanoFit_2x02x2.50mm_Straight
       (place J15 139700 -35560 front 180 (PN "To TSAL"))
@@ -1314,9 +1319,9 @@
       (shape (circle B.Cu 800))
       (attach off)
     )
-    (padstack "Via[0-1]_10000:5000_um"
-      (shape (circle F.Cu 10000))
-      (shape (circle B.Cu 10000))
+    (padstack "Via[0-1]_100000:50000_um"
+      (shape (circle F.Cu 100000))
+      (shape (circle B.Cu 100000))
       (attach off)
     )
     (padstack "Via[0-1]_1000:600_um"
@@ -1328,7 +1333,7 @@
   (network
     (net +5V
       (pins U1-4 U2-14 U5-10 U5-16 U6-4 U6-8 U3-14 J7-2 U7-1 U7-9 U7-16 U9-3 U10-8
-        C1-1 C2-1 C6-1 C8-1 C9-1 R7-1 R8-1 C11-1)
+        C1-1 C2-1 C6-1 C8-1 C9-1 RV1-1 R2-2 R3-1 R5-1 R7-1 R8-1 C11-1)
     )
     (net GND
       (pins C12-2 C14-2 C15-2 C16-2 C17-2 C18-2 D1-3 U1-11 U2-7 U4-4 U5-13 U5-8 U6-1
@@ -1358,7 +1363,7 @@
     )
     (net +3V3
       (pins C14-1 C15-1 C16-1 C17-1 C18-1 U1-9 Y1-4 J7-3 J9-14 J9-20 U8-3 U10-1 U11-1
-        U11-13 U11-19 U11-32 U11-48 U11-64 RV1-1 R5-1 R13-1 C19-1 C20-1 J10-1 J11-1)
+        U11-13 U11-19 U11-32 U11-48 U11-64 R13-1 C19-1 C20-1 J10-1 J11-1)
     )
     (net /CAN_H
       (pins D1-2 J9-25 J9-4 FL1-2 J13-1 R14-1)
@@ -1453,9 +1458,6 @@
     (net /SIG_CURRENT
       (pins J1-3 J9-10)
     )
-    (net /5V_BMS
-      (pins J9-9 R2-2 R3-1)
-    )
     (net "Net-(R1-Pad2)"
       (pins U1-3 R1-2 R2-1)
     )
@@ -1484,25 +1486,25 @@
       (pins U2-2 U5-15)
     )
     (net "Net-(U2-Pad9)"
-      (pins U2-9 U5-4)
+      (pins U2-9 U5-7)
     )
     (net "Net-(U2-Pad3)"
       (pins U2-3 U5-1)
     )
     (net "Net-(U2-Pad10)"
-      (pins U2-10 U5-5)
+      (pins U2-10 U5-6)
     )
     (net "Net-(U2-Pad4)"
       (pins U2-4 U5-2)
     )
     (net "Net-(U2-Pad11)"
-      (pins U2-11 U5-6)
+      (pins U2-11 U5-5)
     )
     (net "Net-(U2-Pad5)"
       (pins U2-5 U5-3)
     )
     (net "Net-(U2-Pad12)"
-      (pins U2-12 U5-7)
+      (pins U2-12 U5-4)
     )
     (net "Net-(U2-Pad13)"
       (pins U2-13 U3-6)
@@ -1535,10 +1537,10 @@
       (pins U11-49 J10-2 J11-2)
     )
     (net /UART_TX
-      (pins U11-51 J10-8 J14-2)
+      (pins U11-51 J10-7 J14-1)
     )
     (net /UART_RX
-      (pins U11-52 J10-7 J14-1)
+      (pins U11-52 J10-8 J14-2)
     )
     (net "Net-(J1-Pad1)"
       (pins J1-1 R3-2 R4-1)
@@ -1597,21 +1599,16 @@
     (net /CAN_L_PRE
       (pins U10-6 FL1-4)
     )
-    (class kicad_default "" +5V /5V_BMS /BSPD_BRAKE /BSPD_CURRENT /BSPD_FLT
-      /BSPD_FLT_H /BSPD_FLT_LATCHED /BSPD_RESET /BSPD_SIG /BUTTON_1 /BUTTON_2
-      /BUTTON_3 /CLK /LED_AMS /LED_BSPD /LED_IMD /NRST /PA4 /PA5 /PA7 /PC0
-      /PC1 /PC2 /PC3 /PC4 /SIG_APPS_A /SIG_APPS_B /SIG_BRAKELT /SIG_BSE /SIG_CURRENT
-      /SIG_RTDS /SIG_STEER /SIG_TSAL /STATUS_LED_1 /STATUS_LED_2 /STATUS_LED_3
-      /SWO /TIMER /TIMER_H /VCAP_1 /VCAP_2 "Net-(C3-Pad1)" "Net-(C4-Pad1)"
-      "Net-(C5-Pad1)" "Net-(H1-Pad1)" "Net-(H2-Pad1)" "Net-(J1-Pad1)" "Net-(J1-Pad2)"
-      "Net-(J5-Pad6)" "Net-(J9-Pad17)" "Net-(LD1-Pad2)" "Net-(LD2-Pad2)" "Net-(LD3-Pad2)"
-      "Net-(R1-Pad2)" "Net-(R5-Pad2)" "Net-(R8-Pad2)" "Net-(U11-Pad14)" "Net-(U11-Pad2)"
-      "Net-(U11-Pad25)" "Net-(U11-Pad3)" "Net-(U11-Pad36)" "Net-(U11-Pad38)"
-      "Net-(U11-Pad4)" "Net-(U11-Pad42)" "Net-(U11-Pad43)" "Net-(U11-Pad44)"
-      "Net-(U11-Pad45)" "Net-(U11-Pad53)" "Net-(U11-Pad54)" "Net-(U11-Pad56)"
-      "Net-(U11-Pad59)" "Net-(U11-Pad6)" "Net-(U2-Pad1)" "Net-(U2-Pad10)"
-      "Net-(U2-Pad11)" "Net-(U2-Pad12)" "Net-(U2-Pad13)" "Net-(U2-Pad2)" "Net-(U2-Pad3)"
-      "Net-(U2-Pad4)" "Net-(U2-Pad5)" "Net-(U2-Pad9)" "Net-(U5-Pad9)" "Net-(Y1-Pad1)"
+    (class kicad_default "" +5V /BSPD_BRAKE /BSPD_CURRENT /BSPD_FLT /BSPD_FLT_H
+      /BSPD_FLT_LATCHED /BSPD_RESET /BSPD_SIG /BUTTON_1 /BUTTON_2 /BUTTON_3
+      /CLK /LED_AMS /LED_BSPD /LED_IMD /NRST /PA4 /PA5 /PA7 /PC4 /SIG_APPS_A
+      /SIG_APPS_B /SIG_BRAKELT /SIG_BSE /SIG_CURRENT /SIG_RTDS /SIG_STEER
+      /SIG_TSAL /STATUS_LED_1 /STATUS_LED_2 /STATUS_LED_3 /SWO /TIMER /TIMER_H
+      /UART_RX /UART_TX /VCAP_1 /VCAP_2 "Net-(C3-Pad1)" "Net-(C4-Pad1)" "Net-(C5-Pad1)"
+      "Net-(J1-Pad1)" "Net-(J1-Pad2)" "Net-(J9-Pad17)" "Net-(LD1-Pad2)" "Net-(LD2-Pad2)"
+      "Net-(LD3-Pad2)" "Net-(R1-Pad2)" "Net-(R5-Pad2)" "Net-(R8-Pad2)" "Net-(U2-Pad1)"
+      "Net-(U2-Pad10)" "Net-(U2-Pad11)" "Net-(U2-Pad12)" "Net-(U2-Pad13)"
+      "Net-(U2-Pad2)" "Net-(U2-Pad3)" "Net-(U2-Pad4)" "Net-(U2-Pad5)" "Net-(U2-Pad9)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
@@ -1639,9 +1636,9 @@
       )
     )
     (class HighSpeed /CAN_H /CAN_H_PRE /CAN_L /CAN_L_PRE /CAN_RX_GLV /CAN_RX_TS
-      /CAN_TX_GLV /CAN_TX_TS /SWCLK /SWDIO /UART_RX /UART_TX /XTAL
+      /CAN_TX_GLV /CAN_TX_TS /SWCLK /SWDIO /XTAL
       (circuit
-        (use_via Via[0-1]_10000:5000_um)
+        (use_via Via[0-1]_100000:50000_um)
       )
       (rule
         (width 250)
@@ -1661,5 +1658,39 @@
     )
   )
   (wiring
+    (wire (path B.Cu 500  100330 -104140  102362 -102108)(net +12V)(type protect))
+    (wire (path B.Cu 500  118618 -44450  124460 -44450)(net +12V)(type protect))
+    (wire (path B.Cu 500  102362 -60706  118618 -44450)(net +12V)(type protect))
+    (wire (path B.Cu 500  102362 -102108  102362 -60706)(net +12V)(type protect))
+    (wire (path F.Cu 250  121360 -70470  121360 -73605  121285 -73680)(net /VCAP_1)(type protect))
+    (wire (path F.Cu 250  123810 -61520  126310 -61520  127020 -62230)(net /VCAP_2)(type protect))
+    (wire (path F.Cu 250  60960 -76580  69470 -76580  72390 -73660)(net +3V3)(type protect))
+    (wire (path F.Cu 250  127880 -53080  124700 -53080  124460 -53320)(net +3V3)(type protect))
+    (wire (path F.Cu 250  123275 -73025  123275 -72983  121860 -71568  121860 -70470)(net +3V3)(type protect))
+    (wire (path F.Cu 250  115485 -73025  115485 -72559)(net +3V3)(type protect))
+    (wire (path F.Cu 250  115360 -72434  115360 -70470)(net +3V3)(type protect))
+    (wire (path F.Cu 250  115485 -72559  115360 -72434)(net +3V3)(type protect))
+    (wire (path F.Cu 250  112410 -67020  110285 -67020  109855 -66590)(net +3V3)(type protect))
+    (wire (path F.Cu 250  112410 -61020  109880 -61020  109855 -61045)(net +3V3)(type protect))
+    (wire (path F.Cu 250  114360 -59070  114360 -56490  114300 -56430)(net +3V3)(type protect))
+    (wire (path F.Cu 250  117360 -59070  117360 -55868)(net /CAN_TX_TS)(type protect))
+    (wire (path F.Cu 250  143470 -48300  156250 -48300)(net /CAN_TX_TS)(type protect))
+    (wire (path F.Cu 250  136906 -54864  143470 -48300)(net /CAN_TX_TS)(type protect))
+    (wire (path F.Cu 250  118364 -54864  136906 -54864)(net /CAN_TX_TS)(type protect))
+    (wire (path F.Cu 250  117360 -55868  118364 -54864)(net /CAN_TX_TS)(type protect))
+    (wire (path F.Cu 250  117860 -59070  117860 -56130)(net /CAN_RX_TS)(type protect))
+    (wire (path F.Cu 250  141986 -50800  156250 -50800)(net /CAN_RX_TS)(type protect))
+    (wire (path F.Cu 250  137414 -55372  141986 -50800)(net /CAN_RX_TS)(type protect))
+    (wire (path F.Cu 250  118618 -55372  137414 -55372)(net /CAN_RX_TS)(type protect))
+    (wire (path F.Cu 250  117860 -56130  118618 -55372)(net /CAN_RX_TS)(type protect))
+    (wire (path F.Cu 500  60960 -48580  55052 -48580)(net /AIRS_BOTS_OUT)(type protect))
+    (wire (path F.Cu 500  55626 -102870  71120 -102870)(net /AIRS_BOTS_OUT)(type protect))
+    (wire (path F.Cu 500  52832 -100076  55626 -102870)(net /AIRS_BOTS_OUT)(type protect))
+    (wire (path F.Cu 500  52832 -50800  52832 -100076)(net /AIRS_BOTS_OUT)(type protect))
+    (wire (path F.Cu 500  55052 -48580  52832 -50800)(net /AIRS_BOTS_OUT)(type protect))
+    (wire (path F.Cu 250  115860 -59070  115860 -53050  119380 -49530)(net /CAN_RX_GLV)(type protect))
+    (wire (path F.Cu 250  115360 -59070  115360 -51010  119380 -46990)(net /CAN_TX_GLV)(type protect))
+    (wire (path F.Cu 250  111760 -49530  111700 -49530  107890 -45720)(net /CAN_H_PRE)(type protect))
+    (wire (path F.Cu 250  111760 -46990  111700 -46990  107890 -43180)(net /CAN_L_PRE)(type protect))
   )
 )

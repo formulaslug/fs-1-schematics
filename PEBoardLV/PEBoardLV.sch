@@ -147,7 +147,7 @@ F 3 "" H 5200 1050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4900 1200 2    60   ~ 0
-5V_BMS
+5V
 Text Notes 5050 750  0    60   ~ 0
 Current Signal Comparator:\nIf Current Signal < 2.6V
 Text Label 6000 1300 0    60   ~ 0
@@ -206,8 +206,6 @@ F 3 "" H 3900 5500 50  0000 C CNN
 $EndComp
 Text Label 3900 5750 3    60   ~ 0
 GND
-Text Label 4700 2500 0    60   ~ 0
-3.3V
 Text Label 1050 6850 0    60   ~ 0
 BSPD_RESET
 $Comp
@@ -600,7 +598,7 @@ F 3 "" H 3550 1650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3850 1500 0    60   ~ 0
-5V_BMS
+5V
 $Comp
 L GND #PWR027
 U 1 1 58B8C947
@@ -784,8 +782,6 @@ Text Label 1050 8100 0    60   ~ 0
 AIRS_ACC_OUT
 Text Label 1050 8200 0    60   ~ 0
 AIRS_FINAL
-Text Label 1050 8300 0    60   ~ 0
-5V_BMS
 Text Label 1050 8400 0    60   ~ 0
 SIG_CURRENT
 Text Label 1050 8600 0    60   ~ 0
@@ -1627,25 +1623,7 @@ Wire Wire Line
 Wire Wire Line
 	10100 1500 10250 1500
 Wire Wire Line
-	9800 1950 10250 1950
-Wire Wire Line
-	10250 1950 10250 2350
-Wire Wire Line
-	9800 2050 10150 2050
-Wire Wire Line
-	10150 2050 10150 2450
-Wire Wire Line
-	10150 2450 10250 2450
-Wire Wire Line
-	9800 2150 10050 2150
-Wire Wire Line
-	10050 2150 10050 2550
-Wire Wire Line
-	10050 2550 10250 2550
-Wire Wire Line
-	10250 2650 9950 2650
-Wire Wire Line
-	9950 2650 9950 2250
+	10000 2450 10250 2450
 Wire Wire Line
 	9950 2250 9800 2250
 Wire Wire Line
@@ -2104,9 +2082,9 @@ Text Label 8800 10300 2    60   ~ 0
 SWDIO
 Text Label 8800 10400 2    60   ~ 0
 NRST
-Text Label 11250 10400 2    60   ~ 0
-UART_RX
 Text Label 11250 10500 2    60   ~ 0
+UART_RX
+Text Label 11250 10400 2    60   ~ 0
 UART_TX
 $Comp
 L +3.3V #PWR084
@@ -2210,9 +2188,9 @@ F 3 "" H 8300 10100 50  0001 C CNN
 	1    8300 10100
 	1    0    0    -1  
 $EndComp
-Text Label 8100 10400 2    60   ~ 0
-UART_RX
 Text Label 8100 10500 2    60   ~ 0
+UART_RX
+Text Label 8100 10400 2    60   ~ 0
 UART_TX
 Wire Wire Line
 	10050 5300 10050 5450
@@ -2398,4 +2376,37 @@ F 3 "" H 9000 10200 50  0001 C CNN
 	1    9000 10200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9950 2250 9950 2350
+Wire Wire Line
+	9950 2350 10250 2350
+Wire Wire Line
+	9800 2150 10000 2150
+Wire Wire Line
+	10000 2150 10000 2450
+Wire Wire Line
+	9800 2050 10050 2050
+Wire Wire Line
+	10050 2050 10050 2550
+Wire Wire Line
+	10050 2550 10250 2550
+Wire Wire Line
+	9800 1950 10100 1950
+Wire Wire Line
+	10100 1950 10100 2650
+Wire Wire Line
+	10100 2650 10250 2650
+$Comp
+L +5V #PWR089
+U 1 1 5A993C9C
+P 4700 2500
+F 0 "#PWR089" H 4700 2350 50  0001 C CNN
+F 1 "+5V" H 4700 2640 50  0000 C CNN
+F 2 "" H 4700 2500 50  0000 C CNN
+F 3 "" H 4700 2500 50  0000 C CNN
+	1    4700 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4700 2500
+NoConn ~ 1050 8300
 $EndSCHEMATC
