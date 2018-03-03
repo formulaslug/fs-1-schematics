@@ -34,7 +34,7 @@
     (keepout "" (polygon F.Cu 0  140462 -117983  194437 -117983  194437 -78359  226949 -78359
             226949 -84709  200914 -84709  200914 -124460  134112 -124460
             134112 -51054  140462 -51054))
-    (via "Via[0-1]_600:400_um")
+    (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
       (clearance 200.1)
@@ -878,9 +878,9 @@
       (shape (rect B.Cu -950 -950 950 950))
       (attach off)
     )
-    (padstack "Via[0-1]_600:400_um"
-      (shape (circle F.Cu 600))
-      (shape (circle B.Cu 600))
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
       (attach off)
     )
   )
@@ -1014,12 +1014,11 @@
       /CAN_L_DEBUG /CAN_RX /CAN_TX /EM_SIG+ "/EM_SIG-" /SIG_TSAL /TS+ /TS+_FUSED
       /TS+_SWITCHED_L /TS+_SWITCHED_R "/TS-" GND "Net-(D1-Pad1)" "Net-(D1-Pad2)"
       "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad1)"
-      "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(F1-Pad2)" "Net-(F2-Pad2)" "Net-(H1-Pad1)"
-      "Net-(H2-Pad1)" "Net-(H3-Pad1)" "Net-(J2-Pad8)" "Net-(J7-Pad1)" "Net-(J7-Pad2)"
-      "Net-(R11-Pad2)" "Net-(R13-Pad2)" "Net-(R14-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad2)"
-      "Net-(U4-Pad3)" "Net-(U4-Pad4)" "Net-(U5-Pad3)" "Net-(U5-Pad4)"
+      "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(F1-Pad2)" "Net-(F2-Pad2)" "Net-(J7-Pad1)"
+      "Net-(J7-Pad2)" "Net-(R11-Pad2)" "Net-(R13-Pad2)" "Net-(R14-Pad2)" "Net-(R3-Pad2)"
+      "Net-(R6-Pad2)"
       (circuit
-        (use_via Via[0-1]_600:400_um)
+        (use_via Via[0-1]_800:400_um)
       )
       (rule
         (width 250)

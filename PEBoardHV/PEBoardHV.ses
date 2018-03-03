@@ -92,6 +92,15 @@
       (host_version 4.0.7)
     )
     (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
       (padstack "Via[0-1]_600:400_um"
         (shape
           (circle F.Cu 6000 0 0)
