@@ -39,7 +39,7 @@
             143891 -72263  152400 -72263  152400 -75057  141732 -75057  141732 -72517
             103505 -72517  103505 -70485  99695 -70485  99695 -67945  103505 -67945
             103505 -45720  143891 -45720  143891 -51943))
-    (via "Via[0-1]_800:400_um" "Via[0-1]_1200:400_um" "Via[0-1]_3200:2000_um")
+    (via "Via[0-1]_800:400_um" "Via[0-1]_1200:600_um" "Via[0-1]_3200:2000_um")
     (rule
       (width 250)
       (clearance 200.1)
@@ -54,17 +54,16 @@
     )
     (component "FSFootprints:SMD Fuse"
       (place F6 63322.2 -69570.6 front 180 (PN Fuse))
-      (place F5 45085 -70485 front 90 (PN "Charger 60V Fuse"))
-      (place F4 187960 -74295 front 270 (PN "TS 60V Fuse"))
-      (place F3 128397 -81280 front 180 (PN Fuse))
-      (place F2 43688 -89281 front 90 (PN "IMD/DCDC Fuse"))
+      (place F5 41910 -67945 front 0 (PN "Charger 60V Fuse"))
+      (place F4 187960 -67945 front 270 (PN "TS 60V Fuse"))
+      (place F3 166370 -88265 front 180 (PN Fuse))
       (place F1 163195 -46990 front 90 (PN Fuse))
     )
     (component "Housings_DIP:DIP-16_W7.62mm"
       (place U4 183007 -76200 front 180 (PN "PS2501-4"))
     )
     (component FSFootprints:RDD08110S3V3
-      (place U3 90297 -96520 front 90 (PN RDD08110S3V3))
+      (place U3 113030 -97155 front 90 (PN RDD08110S3V3))
     )
     (component "FSFootprints:DK1A1B-12V"
       (place U2 33655 -55245 front 0 (PN "DK1A1B-12V"))
@@ -73,45 +72,45 @@
       (place U1 96647 -43180 front 90 (PN V110C12E100BL))
     )
     (component Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
-      (place R8 190627 -95885 front 90 (PN 1.5kR))
-      (place R7 160147 -89535 front 0 (PN R))
-      (place R6 153670 -96520 front 90 (PN 1.5kR))
-      (place R5 184277 -89535 front 180 (PN R))
+      (place R8 196850 -70485 front 90 (PN 1.5kR))
+      (place R7 180975 -97155 front 0 (PN R))
+      (place R6 177165 -97790 front 90 (PN 1.5kR))
+      (place R5 191135 -92710 front 180 (PN R))
       (place R4 186690 -59055 front 90 (PN 1.5kR))
       (place R3 186690 -45720 front 90 (PN R))
-      (place R2 198755 -67945 front 270 (PN 1.5kR))
-      (place R1 193040 -59690 front 90 (PN R))
+      (place R2 200660 -60325 front 270 (PN 1.5kR))
+      (place R1 190500 -45720 front 90 (PN R))
     )
     (component "Connectors_Molex:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight"
       (place J9 73558.4 -69659.5 front 90 (PN "Charger Current to Batt"))
-      (place J3 34671 -70078.6 front 270 (PN "Batt Voltage"))
-      (place J1 34544 -79857.6 front 270 (PN "TS -> GLV Regulator Jumper"))
+      (place J3 45720 -94615 front 270 (PN "Batt Voltage"))
+      (place J1 53340 -94615 front 90 (PN "TS -> GLV Regulator Jumper"))
       (place J10 62382.4 -51460.4 front 0 (PN "Charger Current"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight
       (place J8 169037 -68580 front 90 (PN "Acc LED 2"))
       (place J7 169037 -59690 front 90 (PN "Acc LED 1"))
-      (place J6 136525 -93980 front 0 (PN "To LV Board"))
-      (place J5 145415 -93980 front 0 (PN "IMD TS"))
-      (place J4 196850 -86360 front 90 (PN "TS (Switched)"))
+      (place J6 168910 -94615 front 0 (PN "To LV Board"))
+      (place J5 159385 -94615 front 0 (PN "IMD TS"))
+      (place J4 197485 -76835 front 90 (PN "TS (Switched)"))
     )
     (component Connectors_Molex:Molex_NanoFit_1x04x2.50mm_Straight
       (place J2 169037 -50800 front 90 (PN "To LV Board"))
     )
     (component "Diodes_THT:D_DO-15_P12.70mm_Horizontal"
-      (place D4 174117 -94615 front 0 (PN "12V Zener"))
-      (place D3 157607 -94615 front 0 (PN "48V Zener"))
-      (place D2 193675 -64770 front 270 (PN "12V Zener"))
-      (place D1 198755 -64770 front 90 (PN "48V Zener"))
+      (place D4 186690 -82550 front 0 (PN "12V Zener"))
+      (place D3 199390 -87630 front 180 (PN "48V Zener"))
+      (place D2 195580 -44450 front 270 (PN "12V Zener"))
+      (place D1 200660 -57150 front 90 (PN "48V Zener"))
     )
     (component Capacitors_THT:CP_Radial_D8.0mm_P2.50mm
-      (place C9 128397 -91440 front 270 (PN CP))
+      (place C9 149860 -90805 front 270 (PN CP))
       (place C4 158496 -58166 front 270 (PN CP))
       (place C3 88011 -53086 front 270 (PN 0.47uF))
     )
     (component Capacitors_THT:CP_Radial_D16.0mm_P7.50mm
-      (place C8 77597 -86360 front 270 (PN 100uF))
-      (place C7 58547 -86360 front 270 (PN 100uF))
+      (place C8 101600 -85725 front 270 (PN 100uF))
+      (place C7 83820 -85725 front 270 (PN 100uF))
     )
     (component Capacitors_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm
       (place C1 90297 -43180 front 270 (PN C))
@@ -119,14 +118,17 @@
       (place C5 90297 -71120 front 270 (PN C))
       (place C6 153797 -71120 front 270 (PN C))
     )
-    (component Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical
-      (place R9 62382.4 -63804.8 front 90 (PN 0))
-    )
     (component Mounting_Holes:MountingHole_4.5mm
       (place H1 28575 -36195 front 270 (PN MtngHole))
       (place H2 28575 -95250 front 270 (PN MtngHole))
       (place H3 198120 -95250 front 90 (PN MtngHole))
       (place H4 198120 -36195 front 90 (PN MtngHole))
+    )
+    (component "Fuse_Holders_and_Fuses:Fuseholder6x32_Horiz_Open_Schurter0031-8002"
+      (place F2 67310 -81915 front 180 (PN "IMD/DCDC Fuse"))
+    )
+    (component "Oddities:NetTie-I_Connected_SMD"
+      (place R9 64770 -62230 front 180 (PN 0))
     )
   )
   (library
@@ -909,26 +911,6 @@
       (pin Round[A]Pad_1600_um 1 0 0)
       (pin Round[A]Pad_1600_um 2 5000 0)
     )
-    (image Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical
-      (outline (path signal 100  800 0  760.845 -247.214  647.214 -470.228  470.228 -647.214
-            247.214 -760.845  0 -800  -247.214 -760.845  -470.228 -647.214
-            -647.214 -470.228  -760.845 -247.214  -800 0  -760.845 247.214
-            -647.214 470.228  -470.228 647.214  -247.214 760.845  0 800
-            247.214 760.845  470.228 647.214  647.214 470.228  760.845 247.214))
-      (outline (path signal 120  860 0  817.909 -265.755  695.755 -505.495  505.495 -695.755
-            265.755 -817.909  0 -860  -265.755 -817.909  -505.495 -695.755
-            -695.755 -505.495  -817.909 -265.755  -860 0  -817.909 265.755
-            -695.755 505.495  -505.495 695.755  -265.755 817.909  0 860
-            265.755 817.909  505.495 695.755  695.755 505.495  817.909 265.755))
-      (outline (path signal 100  0 0  1900 0))
-      (outline (path signal 120  860 0  900 0))
-      (outline (path signal 50  -1150 1150  -1150 -1150))
-      (outline (path signal 50  -1150 -1150  2950 -1150))
-      (outline (path signal 50  2950 -1150  2950 1150))
-      (outline (path signal 50  2950 1150  -1150 1150))
-      (pin Round[A]Pad_1400_um 1 0 0)
-      (pin Oval[A]Pad_1400x1400_um 2 1900 0)
-    )
     (image Mounting_Holes:MountingHole_4.5mm
       (outline (path signal 150  4500 0  4279.75 -1390.58  3640.58 -2645.03  2645.03 -3640.58
             1390.58 -4279.75  0 -4500  -1390.58 -4279.75  -2645.03 -3640.58
@@ -943,10 +925,54 @@
       (keepout "" (circle F.Cu 4500))
       (keepout "" (circle B.Cu 4500))
     )
-    (padstack Round[A]Pad_1400_um
-      (shape (circle F.Cu 1400))
-      (shape (circle B.Cu 1400))
-      (attach off)
+    (image "Fuse_Holders_and_Fuses:Fuseholder6x32_Horiz_Open_Schurter0031-8002"
+      (outline (path signal 100  -2950 -5450  40550 -5450))
+      (outline (path signal 100  -2950 5450  40550 5450))
+      (outline (path signal 100  -2950 -2600  -2950 -7550))
+      (outline (path signal 100  -2950 -7550  40550 -7550))
+      (outline (path signal 100  40550 -7550  40550 -2600))
+      (outline (path signal 100  40550 -2600  39050 -2600))
+      (outline (path signal 100  39050 -2600  39050 2600))
+      (outline (path signal 100  39050 2600  40550 2600))
+      (outline (path signal 100  40550 2600  40550 7550))
+      (outline (path signal 100  40550 7550  -2950 7550))
+      (outline (path signal 100  -2950 7550  -2950 2650))
+      (outline (path signal 100  -2950 2650  -1450 2650))
+      (outline (path signal 100  -1450 2650  -1450 -2600))
+      (outline (path signal 100  -1450 -2600  -2950 -2600))
+      (outline (path signal 120  -3050 -2540  -3050 -7620))
+      (outline (path signal 120  -3050 7620  -3050 2540))
+      (outline (path signal 120  -3050 2540  -1520 2540))
+      (outline (path signal 120  -1520 -2540  -3050 -2540))
+      (outline (path signal 120  40640 -2540  40640 -7620))
+      (outline (path signal 120  40640 7620  40640 2540))
+      (outline (path signal 120  40640 2540  39120 2540))
+      (outline (path signal 120  39120 -2540  40640 -2540))
+      (outline (path signal 120  -3050 5460  40640 5460))
+      (outline (path signal 120  40640 -5460  -3050 -5460))
+      (outline (path signal 120  40640 -7620  -3050 -7620))
+      (outline (path signal 120  -3050 7620  40640 7620))
+      (outline (path signal 50  -3200 7800  40800 7800))
+      (outline (path signal 50  -3200 7800  -3200 -7800))
+      (outline (path signal 50  40800 -7800  40800 7800))
+      (outline (path signal 50  40800 -7800  -3200 -7800))
+      (pin Oval[A]Pad_3250x6000_um (rotate 90) 2 37590 0)
+      (pin Oval[A]Pad_3250x6000_um (rotate 90) 1 0 0)
+      (keepout "" (circle F.Cu 3250 18800 0))
+      (keepout "" (circle B.Cu 3250 18800 0))
+    )
+    (image "Oddities:NetTie-I_Connected_SMD"
+      (outline (path signal 304.8  1778 1016  -1778 1016))
+      (outline (path signal 304.8  -1778 762  1778 762))
+      (outline (path signal 304.8  1778 508  -1778 508))
+      (outline (path signal 304.8  -1778 254  1778 254))
+      (outline (path signal 304.8  1778 0  -1778 0))
+      (outline (path signal 304.8  -1778 -254  1778 -254))
+      (outline (path signal 304.8  1778 -508  -1778 -508))
+      (outline (path signal 304.8  -1778 -762  1778 -762))
+      (outline (path signal 304.8  1778 -1016  -1778 -1016))
+      (pin Rect[T]Pad_1998.98x1998.98_um 1 -2540 0)
+      (pin Rect[T]Pad_1998.98x1998.98_um 2 2540 0)
     )
     (padstack Round[A]Pad_1524_um
       (shape (circle F.Cu 1524))
@@ -988,11 +1014,6 @@
       (shape (circle B.Cu 4762.5))
       (attach off)
     )
-    (padstack Oval[A]Pad_1400x1400_um
-      (shape (path F.Cu 1400  0 0  0 0))
-      (shape (path B.Cu 1400  0 0  0 0))
-      (attach off)
-    )
     (padstack Oval[A]Pad_1600x1600_um
       (shape (path F.Cu 1600  0 0  0 0))
       (shape (path B.Cu 1600  0 0  0 0))
@@ -1001,6 +1022,11 @@
     (padstack Oval[A]Pad_2400x2400_um
       (shape (path F.Cu 2400  0 0  0 0))
       (shape (path B.Cu 2400  0 0  0 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_3250x6000_um
+      (shape (path F.Cu 3250  0 -1375  0 1375))
+      (shape (path B.Cu 3250  0 -1375  0 1375))
       (attach off)
     )
     (padstack Rect[A]Pad_2400x2400_um
@@ -1027,12 +1053,16 @@
       (shape (rect B.Cu -950 -950 950 950))
       (attach off)
     )
+    (padstack Rect[T]Pad_1998.98x1998.98_um
+      (shape (rect F.Cu -999.49 -999.49 999.49 999.49))
+      (attach off)
+    )
     (padstack "Via[0-1]_800:400_um"
       (shape (circle F.Cu 800))
       (shape (circle B.Cu 800))
       (attach off)
     )
-    (padstack "Via[0-1]_1200:400_um"
+    (padstack "Via[0-1]_1200:600_um"
       (shape (circle F.Cu 1200))
       (shape (circle B.Cu 1200))
       (attach off)
@@ -1048,7 +1078,7 @@
       (pins U1-C U1-C@1 U1-C@2 U1-C@3 U1-C@4 U1-C@5 C1-1 C2-1 C5-2 C6-2)
     )
     (net /BATT+
-      (pins U2-3 U1-1 J5-1 F2-1 C3-1 C1-2)
+      (pins U2-3 U1-1 J5-1 C3-1 C1-2 F2-1)
     )
     (net "/BATT-"
       (pins U3-2 U3-3 U3-16 U1-4 J6-2 J5-2 J3-2 C9-2 C8-2 C7-2 C3-2 C5-1)
@@ -1164,7 +1194,7 @@
       /BATT+ /BATT+_DIRECT /BATT+_DIRFUSED /BATT+_LVBOARD "/BATT-" /TS+ "/TS-"
       /VICOR_OUT GND
       (circuit
-        (use_via Via[0-1]_1200:400_um)
+        (use_via Via[0-1]_1200:600_um)
       )
       (rule
         (width 500)

@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 743)
+    (start_pass_no 960)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -45,7 +45,7 @@
     )
     (attach off)
   )
-  (padstack "Via[0-1]_1200:400_um"
+  (padstack "Via[0-1]_1200:600_um"
     (shape
       (circle F.Cu 1200.0 0.0 0.0)
     )
@@ -67,7 +67,7 @@
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
-    "Via[0-1]_1200:400_um" "Via[0-1]_1200:400_um" default
+    "Via[0-1]_1200:600_um" "Via[0-1]_1200:600_um" default
   )
   (via 
     "Via[0-1]_3200:2000_um" "Via[0-1]_3200:2000_um" default
@@ -76,7 +76,7 @@
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_1200:400_um-kicad_default" "Via[0-1]_1200:400_um" "kicad_default"
+    "Via[0-1]_1200:600_um-kicad_default" "Via[0-1]_1200:600_um" "kicad_default"
   )
   (via 
     "Via[0-1]_3200:2000_um-kicad_default" "Via[0-1]_3200:2000_um" "kicad_default"
@@ -85,7 +85,7 @@
     "Via[0-1]_800:400_um-BattCurrent" "Via[0-1]_800:400_um" BattCurrent
   )
   (via 
-    "Via[0-1]_1200:400_um-BattCurrent" "Via[0-1]_1200:400_um" BattCurrent
+    "Via[0-1]_1200:600_um-BattCurrent" "Via[0-1]_1200:600_um" BattCurrent
   )
   (via 
     "Via[0-1]_3200:2000_um-BattCurrent" "Via[0-1]_3200:2000_um" BattCurrent
@@ -94,7 +94,7 @@
     "Via[0-1]_800:400_um-ChgCurrent" "Via[0-1]_800:400_um" ChgCurrent
   )
   (via 
-    "Via[0-1]_1200:400_um-ChgCurrent" "Via[0-1]_1200:400_um" ChgCurrent
+    "Via[0-1]_1200:600_um-ChgCurrent" "Via[0-1]_1200:600_um" ChgCurrent
   )
   (via 
     "Via[0-1]_3200:2000_um-ChgCurrent" "Via[0-1]_3200:2000_um" ChgCurrent
@@ -106,7 +106,7 @@
     "kicad_default" "Via[0-1]_800:400_um-kicad_default"
   )
   (via_rule
-    BattCurrent "Via[0-1]_1200:400_um-BattCurrent"
+    BattCurrent "Via[0-1]_1200:600_um-BattCurrent"
   )
   (via_rule
     ChgCurrent "Via[0-1]_3200:2000_um-ChgCurrent"

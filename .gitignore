@@ -4,3 +4,6 @@
 *.bck
 *-rescue.lib
 *-cache.lib
+*.drl
+*.gbr
+*.zip

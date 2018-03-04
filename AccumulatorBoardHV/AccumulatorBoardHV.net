@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/Nicky/FSAE/fs-1-schematics/AccumulatorBoardHV/AccumulatorBoardHV.sch)
-    (date "2/28/2018 7:52:54 PM")
+    (date "3/4/2018 1:35:38 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -29,7 +29,7 @@
       (tstamp 589D2D5E))
     (comp (ref F2)
       (value "IMD/DCDC Fuse")
-      (footprint "FSFootprints:SMD Fuse")
+      (footprint Fuse_Holders_and_Fuses:Fuseholder6x32_Horiz_Open_Schurter0031-8002)
       (libsource (lib device) (part Fuse))
       (sheetpath (names /) (tstamps /))
       (tstamp 589D3051))
@@ -263,7 +263,7 @@
       (tstamp 5A81246B))
     (comp (ref R9)
       (value 0)
-      (footprint Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical)
+      (footprint Oddities:NetTie-I_Connected_SMD)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 5A81592B))
