@@ -1,0 +1,391 @@
+
+(session Brakelight2.ses
+  (base_design Brakelight2.dsn)
+  (placement
+    (resolution um 10)
+    (component LEDs:LED_D5.0mm
+      (place D1 1570500 -324500 front 90)
+      (place D2 1570500 -390500 front 90)
+      (place D3 1570500 -456500 front 90)
+      (place D4 1570500 -522500 front 90)
+      (place D5 1162500 -324500 front 90)
+      (place D6 1162500 -390500 front 90)
+      (place D7 1162500 -456500 front 90)
+      (place D8 1162500 -522500 front 90)
+      (place D9 1094500 -324500 front 90)
+      (place D10 1094500 -390500 front 90)
+      (place D11 1094500 -456500 front 90)
+      (place D12 1094500 -522500 front 90)
+      (place D13 1230500 -324500 front 90)
+      (place D14 1230500 -390500 front 90)
+      (place D15 1230500 -456500 front 90)
+      (place D16 1230500 -522500 front 90)
+      (place D17 1366500 -324500 front 90)
+      (place D18 1366500 -390500 front 90)
+      (place D19 1366500 -456500 front 90)
+      (place D20 1366500 -522500 front 90)
+      (place D21 1434500 -324500 front 90)
+      (place D22 1434500 -390500 front 90)
+      (place D23 1434500 -456500 front 90)
+      (place D24 1434500 -522500 front 90)
+      (place D25 1502500 -324500 front 90)
+      (place D26 1502500 -390500 front 90)
+      (place D27 1502500 -456500 front 90)
+      (place D28 1502500 -522500 front 90)
+      (place D29 1298500 -324500 front 90)
+      (place D30 1298500 -390500 front 90)
+      (place D31 1298500 -456500 front 90)
+      (place D32 1298500 -522500 front 90)
+    )
+    (component Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight
+      (place J1 1793500 -394000 front 270)
+    )
+    (component Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+      (place R1 944500 -295000 front 0)
+      (place R2 943500 -493000 front 0)
+      (place R3 943500 -526000 front 0)
+      (place R4 943500 -460000 front 0)
+      (place R5 944500 -394000 front 0)
+      (place R6 944500 -361000 front 0)
+      (place R7 944500 -328000 front 0)
+      (place R8 944000 -427000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version 4.0.7)
+    )
+    (library_out 
+      (padstack "Via[0-1]_600:400_um"
+        (shape
+          (circle F.Cu 6000 0 0)
+        )
+        (shape
+          (circle B.Cu 6000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(D1-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1570500 -365100
+            1570500 -324500
+          )
+        )
+      )
+      (net "Net-(D2-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1570500 -431100
+            1570500 -390500
+          )
+        )
+      )
+      (net "Net-(D3-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1570500 -497100
+            1570500 -456500
+          )
+        )
+      )
+      (net "Net-(D10-Pad2)"
+        (wire
+          (path B.Cu 2500
+            1094500 -365100
+            1094500 -324500
+          )
+        )
+      )
+      (net "Net-(D10-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1094500 -431100
+            1094500 -390500
+          )
+        )
+      )
+      (net "Net-(D11-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1094500 -497100
+            1094500 -456500
+          )
+        )
+      )
+      (net "Net-(D12-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1094500 -522500
+            1082247 -522500
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            943500 -526000
+            955089 -537589
+            1067158 -537589
+            1082247 -522500
+          )
+        )
+      )
+      (net "Net-(D13-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1230500 -365100
+            1230500 -324500
+          )
+        )
+      )
+      (net "Net-(D14-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1230500 -431100
+            1230500 -390500
+          )
+        )
+      )
+      (net "Net-(D15-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1230500 -497100
+            1230500 -456500
+          )
+        )
+      )
+      (net "Net-(D16-Pad1)"
+        (wire
+          (path F.Cu 2500
+            1230500 -522500
+            1218247 -522500
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            943500 -460000
+            993747 -510247
+            1205994 -510247
+            1218247 -522500
+          )
+        )
+      )
+      (net "Net-(D17-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1366500 -365100
+            1366500 -324500
+          )
+        )
+      )
+      (net "Net-(D18-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1366500 -431100
+            1366500 -390500
+          )
+        )
+      )
+      (net "Net-(D19-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1366500 -497100
+            1366500 -456500
+          )
+        )
+      )
+      (net "Net-(D20-Pad1)"
+        (wire
+          (path F.Cu 2500
+            1366500 -522500
+            1354247 -522500
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            944500 -394000
+            1022488 -471988
+            1303735 -471988
+            1354247 -522500
+          )
+        )
+      )
+      (net "Net-(D21-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1434500 -365100
+            1434500 -324500
+          )
+        )
+      )
+      (net "Net-(D22-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1434500 -431100
+            1434500 -390500
+          )
+        )
+      )
+      (net "Net-(D23-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1434500 -497100
+            1434500 -456500
+          )
+        )
+      )
+      (net "Net-(D24-Pad1)"
+        (wire
+          (path F.Cu 2500
+            944500 -361000
+            1027746 -444246
+            1330975 -444246
+            1409229 -522500
+            1434500 -522500
+          )
+        )
+      )
+      (net "Net-(D25-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1502500 -365100
+            1502500 -324500
+          )
+        )
+      )
+      (net "Net-(D26-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1502500 -431100
+            1502500 -390500
+          )
+        )
+      )
+      (net "Net-(D27-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1502500 -497100
+            1502500 -456500
+          )
+        )
+      )
+      (net "Net-(D28-Pad1)"
+        (wire
+          (path F.Cu 2500
+            944500 -328000
+            994746 -378246
+            1262976 -378246
+            1305572 -420842
+            1336240 -420842
+            1359644 -444246
+            1398975 -444246
+            1477229 -522500
+            1502500 -522500
+          )
+        )
+      )
+      (net "Net-(D29-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1298500 -365100
+            1298500 -324500
+          )
+        )
+      )
+      (net "Net-(D30-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1298500 -431100
+            1298500 -390500
+          )
+        )
+      )
+      (net "Net-(D31-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1298500 -497100
+            1298500 -456500
+          )
+        )
+      )
+      (net "Net-(D32-Pad1)"
+        (wire
+          (path F.Cu 2500
+            1298500 -522500
+            1286247 -522500
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            944000 -427000
+            996729 -479729
+            1243476 -479729
+            1286247 -522500
+          )
+        )
+      )
+      (net "Net-(D4-Pad1)"
+        (wire
+          (path F.Cu 2500
+            944500 -295000
+            961000 -311500
+            1194230 -311500
+            1237571 -354841
+            1268239 -354841
+            1291644 -378246
+            1330976 -378246
+            1360682 -407952
+            1430681 -407952
+            1545229 -522500
+            1570500 -522500
+          )
+        )
+      )
+      (net "Net-(D5-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1162500 -365100
+            1162500 -324500
+          )
+        )
+      )
+      (net "Net-(D6-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1162500 -431100
+            1162500 -390500
+          )
+        )
+      )
+      (net "Net-(D7-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1162500 -497100
+            1162500 -456500
+          )
+        )
+      )
+      (net "Net-(D8-Pad1)"
+        (wire
+          (path B.Cu 2500
+            1162500 -522500
+            1150247 -522500
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            943500 -493000
+            960747 -510247
+            1137994 -510247
+            1150247 -522500
+          )
+        )
+      )
+    )
+  )
+)

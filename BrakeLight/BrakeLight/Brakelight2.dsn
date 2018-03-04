@@ -1,0 +1,338 @@
+(pcb "C:\Users\Luis Barragan\Documents\GitHub\fs-1-schematics\BrakeLight\BrakeLight2\Brakelight2.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.7")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  81450 -26900  185050 -26900  185050 -55200  81450 -55200
+            81450 -26900  81450 -26900)
+    )
+    (plane +12V (polygon F.Cu 0  183050 -54550  92050 -54550  92050 -27550  183050 -27550))
+    (plane GND (polygon B.Cu 0  183050 -54550  92050 -54550  92050 -27550  183050 -27550))
+    (via "Via[0-1]_600:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component LEDs:LED_D5.0mm
+      (place D1 157050 -32450 front 90 (PN LED))
+      (place D2 157050 -39050 front 90 (PN LED))
+      (place D3 157050 -45650 front 90 (PN LED))
+      (place D4 157050 -52250 front 90 (PN LED))
+      (place D5 116250 -32450 front 90 (PN LED))
+      (place D6 116250 -39050 front 90 (PN LED))
+      (place D7 116250 -45650 front 90 (PN LED))
+      (place D8 116250 -52250 front 90 (PN LED))
+      (place D9 109450 -32450 front 90 (PN LED))
+      (place D10 109450 -39050 front 90 (PN LED))
+      (place D11 109450 -45650 front 90 (PN LED))
+      (place D12 109450 -52250 front 90 (PN LED))
+      (place D13 123050 -32450 front 90 (PN LED))
+      (place D14 123050 -39050 front 90 (PN LED))
+      (place D15 123050 -45650 front 90 (PN LED))
+      (place D16 123050 -52250 front 90 (PN LED))
+      (place D17 136650 -32450 front 90 (PN LED))
+      (place D18 136650 -39050 front 90 (PN LED))
+      (place D19 136650 -45650 front 90 (PN LED))
+      (place D20 136650 -52250 front 90 (PN LED))
+      (place D21 143450 -32450 front 90 (PN LED))
+      (place D22 143450 -39050 front 90 (PN LED))
+      (place D23 143450 -45650 front 90 (PN LED))
+      (place D24 143450 -52250 front 90 (PN LED))
+      (place D25 150250 -32450 front 90 (PN LED))
+      (place D26 150250 -39050 front 90 (PN LED))
+      (place D27 150250 -45650 front 90 (PN LED))
+      (place D28 150250 -52250 front 90 (PN LED))
+      (place D29 129850 -32450 front 90 (PN LED))
+      (place D30 129850 -39050 front 90 (PN LED))
+      (place D31 129850 -45650 front 90 (PN LED))
+      (place D32 129850 -52250 front 90 (PN LED))
+    )
+    (component Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight
+      (place J1 179350 -39400 front 270 (PN Conn_01x02))
+    )
+    (component Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+      (place R1 94450 -29500 front 0 (PN R))
+      (place R2 94350 -49300 front 0 (PN R))
+      (place R3 94350 -52600 front 0 (PN R))
+      (place R4 94350 -46000 front 0 (PN R))
+      (place R5 94450 -39400 front 0 (PN R))
+      (place R6 94450 -36100 front 0 (PN R))
+      (place R7 94450 -32800 front 0 (PN R))
+      (place R8 94400 -42700 front 0 (PN R))
+    )
+  )
+  (library
+    (image LEDs:LED_D5.0mm
+      (outline (path signal 100  3770 0  3647.64 -772.542  3292.54 -1469.46  2739.46 -2022.54
+            2042.54 -2377.64  1270 -2500  497.458 -2377.64  -199.463 -2022.54
+            -752.542 -1469.46  -1107.64 -772.542  -1230 0  -1107.64 772.542
+            -752.542 1469.46  -199.463 2022.54  497.458 2377.64  1270 2500
+            2042.54 2377.64  2739.46 2022.54  3292.54 1469.46  3647.64 772.542))
+      (outline (path signal 120  3770 0  3647.64 -772.542  3292.54 -1469.46  2739.46 -2022.54
+            2042.54 -2377.64  1270 -2500  497.458 -2377.64  -199.463 -2022.54
+            -752.542 -1469.46  -1107.64 -772.542  -1230 0  -1107.64 772.542
+            -752.542 1469.46  -199.463 2022.54  497.458 2377.64  1270 2500
+            2042.54 2377.64  2739.46 2022.54  3292.54 1469.46  3647.64 772.542))
+      (outline (path signal 100  -1230 1469.69  -1230 -1469.69))
+      (outline (path signal 120  -1290 1545  -1290 -1545))
+      (outline (path signal 50  -1950 3250  -1950 -3250))
+      (outline (path signal 50  -1950 -3250  4500 -3250))
+      (outline (path signal 50  4500 -3250  4500 3250))
+      (outline (path signal 50  4500 3250  -1950 3250))
+      (pin Rect[A]Pad_1800x1800_um 1 0 0)
+      (pin Round[A]Pad_1800_um 2 2540 0)
+    )
+    (image Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight
+      (outline (path signal 100  1250 1740  -1720 1740))
+      (outline (path signal 100  -1720 1740  -1720 -1740))
+      (outline (path signal 100  -1720 -1740  -1350 -1740))
+      (outline (path signal 100  -1350 -1740  -1350 -4600))
+      (outline (path signal 100  -1350 -4600  1250 -4600))
+      (outline (path signal 100  1250 1740  4220 1740))
+      (outline (path signal 100  4220 1740  4220 -1740))
+      (outline (path signal 100  4220 -1740  3850 -1740))
+      (outline (path signal 100  3850 -1740  3850 -4600))
+      (outline (path signal 100  3850 -4600  1250 -4600))
+      (outline (path signal 120  1250 1890  -1870 1890))
+      (outline (path signal 120  -1870 1890  -1870 -1890))
+      (outline (path signal 120  -1870 -1890  -1500 -1890))
+      (outline (path signal 120  -1500 -1890  -1500 -4750))
+      (outline (path signal 120  -1500 -4750  1250 -4750))
+      (outline (path signal 120  1250 1890  4370 1890))
+      (outline (path signal 120  4370 1890  4370 -1890))
+      (outline (path signal 120  4370 -1890  4000 -1890))
+      (outline (path signal 120  4000 -1890  4000 -4750))
+      (outline (path signal 120  4000 -4750  1250 -4750))
+      (outline (path signal 100  -850 -2540  -850 -4100))
+      (outline (path signal 100  -850 -4100  3350 -4100))
+      (outline (path signal 100  3350 -4100  3350 -2540))
+      (outline (path signal 100  3350 -2540  -850 -2540))
+      (outline (path signal 50  -2210 2240  -2210 -2240))
+      (outline (path signal 50  -2210 -2240  -1850 -2240))
+      (outline (path signal 50  -1850 -2240  -1850 -5090))
+      (outline (path signal 50  -1850 -5090  4340 -5090))
+      (outline (path signal 50  4340 -5090  4340 -2240))
+      (outline (path signal 50  4340 -2240  4710 -2240))
+      (outline (path signal 50  4710 -2240  4710 2240))
+      (outline (path signal 50  4710 2240  -2210 2240))
+      (outline (path signal 100  -1187.5 1187.5  -1187.5 -1187.5))
+      (outline (path signal 100  -1187.5 -1187.5  1187.5 -1187.5))
+      (outline (path signal 100  1187.5 -1187.5  1187.5 1187.5))
+      (outline (path signal 100  1187.5 1187.5  -1187.5 1187.5))
+      (outline (path signal 100  1312.5 1187.5  1312.5 -1187.5))
+      (outline (path signal 100  1312.5 -1187.5  3687.5 -1187.5))
+      (outline (path signal 100  3687.5 -1187.5  3687.5 1187.5))
+      (outline (path signal 100  3687.5 1187.5  1312.5 1187.5))
+      (outline (path signal 120  -2220 0  -2820 -300))
+      (outline (path signal 120  -2820 -300  -2820 300))
+      (outline (path signal 120  -2820 300  -2220 0))
+      (outline (path signal 100  -2220 0  -2820 -300))
+      (outline (path signal 100  -2820 -300  -2820 300))
+      (outline (path signal 100  -2820 300  -2220 0))
+      (pin Rect[A]Pad_1900x1900_um 1 0 0)
+      (pin Round[A]Pad_1900_um 2 2500 0)
+      (keepout "" (circle F.Cu 1300 1250 -1340))
+      (keepout "" (circle B.Cu 1300 1250 -1340))
+    )
+    (image Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
+      (outline (path signal 100  1930 1250  1930 -1250))
+      (outline (path signal 100  1930 -1250  8230 -1250))
+      (outline (path signal 100  8230 -1250  8230 1250))
+      (outline (path signal 100  8230 1250  1930 1250))
+      (outline (path signal 100  0 0  1930 0))
+      (outline (path signal 100  10160 0  8230 0))
+      (outline (path signal 120  1870 1310  1870 -1310))
+      (outline (path signal 120  1870 -1310  8290 -1310))
+      (outline (path signal 120  8290 -1310  8290 1310))
+      (outline (path signal 120  8290 1310  1870 1310))
+      (outline (path signal 120  980 0  1870 0))
+      (outline (path signal 120  9180 0  8290 0))
+      (outline (path signal 50  -1050 1600  -1050 -1600))
+      (outline (path signal 50  -1050 -1600  11250 -1600))
+      (outline (path signal 50  11250 -1600  11250 1600))
+      (outline (path signal 50  11250 1600  -1050 1600))
+      (pin Round[A]Pad_1600_um 1 0 0)
+      (pin Oval[A]Pad_1600x1600_um 2 10160 0)
+    )
+    (padstack Round[A]Pad_1600_um
+      (shape (circle F.Cu 1600))
+      (shape (circle B.Cu 1600))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1800_um
+      (shape (circle F.Cu 1800))
+      (shape (circle B.Cu 1800))
+      (attach off)
+    )
+    (padstack Round[A]Pad_1900_um
+      (shape (circle F.Cu 1900))
+      (shape (circle B.Cu 1900))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_1600x1600_um
+      (shape (path F.Cu 1600  0 0  0 0))
+      (shape (path B.Cu 1600  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1800x1800_um
+      (shape (rect F.Cu -900 -900 900 900))
+      (shape (rect B.Cu -900 -900 900 900))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1900x1900_um
+      (shape (rect F.Cu -950 -950 950 950))
+      (shape (rect B.Cu -950 -950 950 950))
+      (attach off)
+    )
+    (padstack "Via[0-1]_600:400_um"
+      (shape (circle F.Cu 600))
+      (shape (circle B.Cu 600))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(D1-Pad1)"
+      (pins D1-1 D2-2)
+    )
+    (net +12V
+      (pins D1-2 D5-2 D9-2 D13-2 D17-2 D21-2 D25-2 D29-2 J1-1)
+    )
+    (net "Net-(D2-Pad1)"
+      (pins D2-1 D3-2)
+    )
+    (net "Net-(D3-Pad1)"
+      (pins D3-1 D4-2)
+    )
+    (net "Net-(D10-Pad2)"
+      (pins D9-1 D10-2)
+    )
+    (net "Net-(D10-Pad1)"
+      (pins D10-1 D11-2)
+    )
+    (net "Net-(D11-Pad1)"
+      (pins D11-1 D12-2)
+    )
+    (net "Net-(D12-Pad1)"
+      (pins D12-1 R3-1)
+    )
+    (net "Net-(D13-Pad1)"
+      (pins D13-1 D14-2)
+    )
+    (net "Net-(D14-Pad1)"
+      (pins D14-1 D15-2)
+    )
+    (net "Net-(D15-Pad1)"
+      (pins D15-1 D16-2)
+    )
+    (net "Net-(D16-Pad1)"
+      (pins D16-1 R4-1)
+    )
+    (net "Net-(D17-Pad1)"
+      (pins D17-1 D18-2)
+    )
+    (net "Net-(D18-Pad1)"
+      (pins D18-1 D19-2)
+    )
+    (net "Net-(D19-Pad1)"
+      (pins D19-1 D20-2)
+    )
+    (net "Net-(D20-Pad1)"
+      (pins D20-1 R5-1)
+    )
+    (net "Net-(D21-Pad1)"
+      (pins D21-1 D22-2)
+    )
+    (net "Net-(D22-Pad1)"
+      (pins D22-1 D23-2)
+    )
+    (net "Net-(D23-Pad1)"
+      (pins D23-1 D24-2)
+    )
+    (net "Net-(D24-Pad1)"
+      (pins D24-1 R6-1)
+    )
+    (net "Net-(D25-Pad1)"
+      (pins D25-1 D26-2)
+    )
+    (net "Net-(D26-Pad1)"
+      (pins D26-1 D27-2)
+    )
+    (net "Net-(D27-Pad1)"
+      (pins D27-1 D28-2)
+    )
+    (net "Net-(D28-Pad1)"
+      (pins D28-1 R7-1)
+    )
+    (net "Net-(D29-Pad1)"
+      (pins D29-1 D30-2)
+    )
+    (net "Net-(D30-Pad1)"
+      (pins D30-1 D31-2)
+    )
+    (net "Net-(D31-Pad1)"
+      (pins D31-1 D32-2)
+    )
+    (net "Net-(D32-Pad1)"
+      (pins D32-1 R8-1)
+    )
+    (net GND
+      (pins J1-2 R1-2 R2-2 R3-2 R4-2 R5-2 R6-2 R7-2 R8-2)
+    )
+    (net "Net-(D4-Pad1)"
+      (pins D4-1 R1-1)
+    )
+    (net "Net-(D5-Pad1)"
+      (pins D5-1 D6-2)
+    )
+    (net "Net-(D6-Pad1)"
+      (pins D6-1 D7-2)
+    )
+    (net "Net-(D7-Pad1)"
+      (pins D7-1 D8-2)
+    )
+    (net "Net-(D8-Pad1)"
+      (pins D8-1 R2-1)
+    )
+    (class kicad_default "" +12V GND "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D10-Pad1)"
+      "Net-(D10-Pad2)" "Net-(D11-Pad1)" "Net-(D12-Pad1)" "Net-(D13-Pad1)"
+      "Net-(D14-Pad1)" "Net-(D15-Pad1)" "Net-(D16-Pad1)" "Net-(D17-Pad1)"
+      "Net-(D18-Pad1)" "Net-(D19-Pad1)" "Net-(D2-Pad1)" "Net-(D20-Pad1)" "Net-(D21-Pad1)"
+      "Net-(D22-Pad1)" "Net-(D23-Pad1)" "Net-(D24-Pad1)" "Net-(D25-Pad1)"
+      "Net-(D26-Pad1)" "Net-(D27-Pad1)" "Net-(D28-Pad1)" "Net-(D29-Pad1)"
+      "Net-(D3-Pad1)" "Net-(D30-Pad1)" "Net-(D31-Pad1)" "Net-(D32-Pad1)" "Net-(D36-Pad1)"
+      "Net-(D37-Pad1)" "Net-(D38-Pad1)" "Net-(D39-Pad1)" "Net-(D4-Pad1)" "Net-(D40-Pad1)"
+      "Net-(D5-Pad1)" "Net-(D6-Pad1)" "Net-(D7-Pad1)" "Net-(D8-Pad1)"
+      (circuit
+        (use_via Via[0-1]_600:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
