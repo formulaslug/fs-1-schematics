@@ -768,7 +768,7 @@ U 1 1 59C0C0AD
 P 3900 7500
 F 0 "U12" H 3900 6850 70  0000 C CNN
 F 1 "stm_nucleo_FK303K8" H 3850 6650 70  0000 C CNN
-F 2 "arduino:arduino_mini" H 3950 6150 60  0001 C CNN
+F 2 "FSFootprints:arduino_mini" H 3950 6150 60  0001 C CNN
 F 3 "" H 4500 7650 60  0001 C CNN
 	1    3900 7500
 	1    0    0    -1  
