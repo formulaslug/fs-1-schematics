@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 6155)
+    (start_pass_no 2876)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -40,8 +40,11 @@
     (clear 300.2 (type "kicad_default"_MainPower))
     (clear 400.2 (type "kicad_default"_Power))
     (clear 300.2 (type Ground_Ground))
+    (clear 300.2 (type Ground_HighSpeed))
     (clear 300.2 (type Ground_MainPower))
     (clear 400.2 (type Ground_Power))
+    (clear 300.2 (type HighSpeed_MainPower))
+    (clear 400.2 (type HighSpeed_Power))
     (clear 300.2 (type MainPower_MainPower))
     (clear 400.2 (type MainPower_Power))
     (clear 400.2 (type Power_Power))
@@ -64,12 +67,21 @@
     )
     (attach off)
   )
-  (padstack "Via[0-1]_3600:2400_um"
+  (padstack "Via[0-1]_100000:50000_um"
     (shape
-      (circle F.Cu 3600.0 0.0 0.0)
+      (circle F.Cu 100000.0 0.0 0.0)
     )
     (shape
-      (circle B.Cu 3600.0 0.0 0.0)
+      (circle B.Cu 100000.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_2400:1600_um"
+    (shape
+      (circle F.Cu 2400.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 2400.0 0.0 0.0)
     )
     (attach off)
   )
@@ -80,7 +92,10 @@
     "Via[0-1]_1200:800_um" "Via[0-1]_1200:800_um" default
   )
   (via 
-    "Via[0-1]_3600:2400_um" "Via[0-1]_3600:2400_um" default
+    "Via[0-1]_100000:50000_um" "Via[0-1]_100000:50000_um" default
+  )
+  (via 
+    "Via[0-1]_2400:1600_um" "Via[0-1]_2400:1600_um" default
   )
   (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
@@ -89,7 +104,10 @@
     "Via[0-1]_1200:800_um-kicad_default" "Via[0-1]_1200:800_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_3600:2400_um-kicad_default" "Via[0-1]_3600:2400_um" "kicad_default"
+    "Via[0-1]_100000:50000_um-kicad_default" "Via[0-1]_100000:50000_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_2400:1600_um-kicad_default" "Via[0-1]_2400:1600_um" "kicad_default"
   )
   (via 
     "Via[0-1]_800:400_um-Ground" "Via[0-1]_800:400_um" Ground
@@ -98,7 +116,22 @@
     "Via[0-1]_1200:800_um-Ground" "Via[0-1]_1200:800_um" Ground
   )
   (via 
-    "Via[0-1]_3600:2400_um-Ground" "Via[0-1]_3600:2400_um" Ground
+    "Via[0-1]_100000:50000_um-Ground" "Via[0-1]_100000:50000_um" Ground
+  )
+  (via 
+    "Via[0-1]_2400:1600_um-Ground" "Via[0-1]_2400:1600_um" Ground
+  )
+  (via 
+    "Via[0-1]_800:400_um-HighSpeed" "Via[0-1]_800:400_um" HighSpeed
+  )
+  (via 
+    "Via[0-1]_1200:800_um-HighSpeed" "Via[0-1]_1200:800_um" HighSpeed
+  )
+  (via 
+    "Via[0-1]_100000:50000_um-HighSpeed" "Via[0-1]_100000:50000_um" HighSpeed
+  )
+  (via 
+    "Via[0-1]_2400:1600_um-HighSpeed" "Via[0-1]_2400:1600_um" HighSpeed
   )
   (via 
     "Via[0-1]_800:400_um-MainPower" "Via[0-1]_800:400_um" MainPower
@@ -107,7 +140,10 @@
     "Via[0-1]_1200:800_um-MainPower" "Via[0-1]_1200:800_um" MainPower
   )
   (via 
-    "Via[0-1]_3600:2400_um-MainPower" "Via[0-1]_3600:2400_um" MainPower
+    "Via[0-1]_100000:50000_um-MainPower" "Via[0-1]_100000:50000_um" MainPower
+  )
+  (via 
+    "Via[0-1]_2400:1600_um-MainPower" "Via[0-1]_2400:1600_um" MainPower
   )
   (via 
     "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
@@ -116,7 +152,10 @@
     "Via[0-1]_1200:800_um-Power" "Via[0-1]_1200:800_um" Power
   )
   (via 
-    "Via[0-1]_3600:2400_um-Power" "Via[0-1]_3600:2400_um" Power
+    "Via[0-1]_100000:50000_um-Power" "Via[0-1]_100000:50000_um" Power
+  )
+  (via 
+    "Via[0-1]_2400:1600_um-Power" "Via[0-1]_2400:1600_um" Power
   )
   (via_rule
     default "Via[0-1]_800:400_um"
@@ -128,10 +167,13 @@
     Ground "Via[0-1]_1200:800_um-Ground"
   )
   (via_rule
+    HighSpeed "Via[0-1]_100000:50000_um-HighSpeed"
+  )
+  (via_rule
     MainPower "Via[0-1]_1200:800_um-MainPower"
   )
   (via_rule
-    Power "Via[0-1]_3600:2400_um-Power"
+    Power "Via[0-1]_2400:1600_um-Power"
   )
   (class default
     (clearance_class default)
@@ -144,16 +186,15 @@
     )
   )
   (class "kicad_default"
-    "Net-(C1-Pad2)" "/AIRS_FINAL" "/BMS_FLT" "/V_L" "/V_S" "/5V_BMS" "/SIG_CURRENT" "/CAN_H"
-    "Net-(J3-Pad5)" "/CAN_L" "/BMS_TX" "/BMS_RX" "/IMD_FLT" "/BMS_RESET" "/AIRS_FINAL_CHARGER" "/IMD_RESET"
-    "/AIRS_RELAYS_OUT" "/AIRS_ACC_OUT" "/TEMP_RESET" "/AIRS_CHARGER_OUT" "Net-(J17-Pad1)" "Net-(J19-Pad1)" "Net-(J19-Pad2)" "Net-(J19-Pad3)"
-    "Net-(J19-Pad4)" "Net-(J19-Pad5)" "Net-(J19-Pad6)" "Net-(J19-Pad7)" "Net-(J19-Pad8)" "Net-(J20-Pad1)" "Net-(J20-Pad2)" "Net-(J20-Pad3)"
-    "Net-(J20-Pad4)" "Net-(J20-Pad5)" "Net-(J20-Pad6)" "Net-(J20-Pad7)" "Net-(J20-Pad8)" "Net-(J21-Pad1)" "Net-(J21-Pad2)" "Net-(J21-Pad3)"
-    "Net-(J21-Pad4)" "Net-(J21-Pad5)" "Net-(J21-Pad6)" "Net-(J21-Pad7)" "Net-(J21-Pad8)" "Net-(J22-Pad1)" "Net-(J22-Pad2)" "Net-(J22-Pad3)"
-    "Net-(J22-Pad4)" "Net-(J22-Pad5)" "Net-(J22-Pad6)" "Net-(J22-Pad7)" "Net-(J22-Pad8)" "/IMD_FLT_5" "/TIMER_H" "/TEMP_FLT_LATCHED"
-    "/TEMP_FLT_H" "Net-(U1-Pad6)" /TIMER "/IMD_FLT_H" "/BMS_FLT_LATCHED" "Net-(U4-Pad6)" "/IMD_FLT_LATCHED" "Net-(U6-Pad6)"
-    "Net-(U12-Pad23)" "Net-(U12-Pad25)" "Net-(U12-Pad24)" "Net-(U12-Pad22)" "Net-(U12-Pad21)" "Net-(U12-Pad20)" "/TEMP_SS_3" "/TEMP_SS_2"
-    "/TEMP_SS_1" "/TEMP_SS_0" "/TEMP_SSO" "/TEMP_SSI" /SCLK "Net-(U11-Pad2)" "Net-(U11-Pad3)" "/TEMP_FLT"
+    "Net-(C1-Pad2)" "/BMS_FLT" "/V_L" "/V_S" "/5V_BMS" "/SIG_CURRENT" "Net-(J3-Pad5)" "/IMD_FLT"
+    "/BMS_RESET" "/AIRS_FINAL_CHARGER" "/IMD_RESET" "/TEMP_RESET" "/AIRS_CHARGER_OUT" "Net-(J19-Pad1)" "Net-(J19-Pad2)" "Net-(J19-Pad3)"
+    "Net-(J19-Pad4)" "Net-(J19-Pad5)" "Net-(J19-Pad6)" "Net-(J19-Pad7)" "Net-(J20-Pad1)" "Net-(J20-Pad2)" "Net-(J20-Pad3)" "Net-(J20-Pad4)"
+    "Net-(J20-Pad5)" "Net-(J20-Pad6)" "Net-(J20-Pad7)" "Net-(J21-Pad1)" "Net-(J21-Pad2)" "Net-(J21-Pad3)" "Net-(J21-Pad4)" "Net-(J21-Pad5)"
+    "Net-(J21-Pad6)" "Net-(J21-Pad7)" "Net-(J22-Pad1)" "Net-(J22-Pad2)" "Net-(J22-Pad3)" "Net-(J22-Pad4)" "Net-(J22-Pad5)" "Net-(J22-Pad6)"
+    "Net-(J22-Pad7)" "/IMD_FLT_5" "/TIMER_H" "/TEMP_FLT_LATCHED" "/TEMP_FLT_H" /TIMER "/IMD_FLT_H" "/BMS_FLT_LATCHED"
+    "/IMD_FLT_LATCHED" "Net-(U12-Pad23)" "Net-(U12-Pad25)" "Net-(U12-Pad24)" "Net-(U12-Pad22)" "Net-(U12-Pad21)" "Net-(U12-Pad20)" "/TEMP_SS_3"
+    "/TEMP_SS_2" "/TEMP_SS_1" "/TEMP_SS_0" "/TEMP_SSO" "/TEMP_SSI" /SCLK "Net-(U11-Pad2)" "Net-(U11-Pad3)"
+    "/TEMP_FLT" "/CHARGER_CONTROL"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -174,8 +215,20 @@
       (use_layer F.Cu B.Cu)
     )
   )
+  (class HighSpeed
+    "/CAN_H" "/CAN_L" "/BMS_TX" "/BMS_RX"
+    (clearance_class HighSpeed)
+    (via_rule HighSpeed)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
   (class MainPower
-    +5V +12V +3V3 "/3.3V_TS" "/BATT-"
+    "/3.3V_TS" "/BATT-" +5V +12V +3V3 "/AIRS_FINAL" "/AIRS_RELAYS_OUT" "/AIRS_ACC_OUT"
+    "/AIRS_LID_OUT" "/AIRS_TEMP_OUT" "/AIRS_BMS_OUT" "/AIRS_IMD_OUT"
     (clearance_class MainPower)
     (via_rule MainPower)
     (rule
@@ -190,7 +243,7 @@
     (clearance_class Power)
     (via_rule Power)
     (rule
-      (width 1500.0)
+      (width 1000.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
