@@ -886,4 +886,48 @@ F 3 "" H 2400 5450 50  0001 C CNN
 	1    2400 5450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Conn_01x01 J2
+U 1 1 5AA25485
+P 3900 5150
+F 0 "J2" H 3900 5250 50  0000 C CNN
+F 1 "Conn_01x01" H 3900 5050 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 3900 5150 50  0001 C CNN
+F 3 "" H 3900 5150 50  0001 C CNN
+	1    3900 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J3
+U 1 1 5AA2591E
+P 3900 5400
+F 0 "J3" H 3900 5500 50  0000 C CNN
+F 1 "Conn_01x01" H 3900 5300 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 3900 5400 50  0001 C CNN
+F 3 "" H 3900 5400 50  0001 C CNN
+	1    3900 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J4
+U 1 1 5AA259D3
+P 3900 5650
+F 0 "J4" H 3900 5750 50  0000 C CNN
+F 1 "Conn_01x01" H 3900 5550 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 3900 5650 50  0001 C CNN
+F 3 "" H 3900 5650 50  0001 C CNN
+	1    3900 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J5
+U 1 1 5AA25A8B
+P 3900 5900
+F 0 "J5" H 3900 6000 50  0000 C CNN
+F 1 "Conn_01x01" H 3900 5800 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 3900 5900 50  0001 C CNN
+F 3 "" H 3900 5900 50  0001 C CNN
+	1    3900 5900
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

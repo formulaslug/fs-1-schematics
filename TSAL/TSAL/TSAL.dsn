@@ -1,4 +1,4 @@
-(pcb "C:\Users\Luis Barragan\Documents\GitHub\fs-1-schematics\TSAL\oldTSAL\TSAL.dsn"
+(pcb "C:\Users\Luis Barragan\Documents\GitHub\fs-1-schematics\TSAL\TSAL\TSAL.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -21,13 +21,13 @@
       )
     )
     (boundary
-      (path pcb 0  201575 -113375  40575 -113375  40575 -84425  201575 -84425
-            201575 -99600  201575 -113375  201575 -113375)
+      (path pcb 0  210475 -113375  34925 -113375  34925 -84425  210475 -84425
+            210475 -113375  210475 -113375)
     )
     (plane GND (polygon B.Cu 0  172375 -85275  199750 -85275  199725 -112650  41575 -112650
             41575 -85275))
     (plane +12V (polygon F.Cu 0  199725 -112650  41575 -112650  41575 -85275  199750 -85275))
-    (via "Via[0-1]_600:400_um")
+    (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
       (clearance 200.1)
@@ -37,8 +37,8 @@
   )
   (placement
     (component FSfootprints:RTDS_H
-      (place LS2 187602 -99210 front 0 (PN "RTDS Piezo"))
-      (place LS1 55100 -98725 front 0 (PN "RTDS Piezo"))
+      (place LS2 195200 -99150 front 0 (PN "RTDS Piezo"))
+      (place LS1 50100 -98750 front 180 (PN "RTDS Piezo"))
     )
     (component Capacitors_THT:CP_Radial_D5.0mm_P2.50mm
       (place C301 163218 -98702 front 0 (PN 10uF))
@@ -104,6 +104,12 @@
     )
     (component FSfootprints:LM555CN
       (place U2 171346 -94384 front 0 (PN LM555N))
+    )
+    (component Mounting_Holes:MountingHole_3.2mm_M3
+      (place J2 65325 -90925 front 0 (PN Conn_01x01))
+      (place J3 65325 -106675 front 0 (PN Conn_01x01))
+      (place J4 180175 -90125 front 0 (PN Conn_01x01))
+      (place J5 180125 -106600 front 0 (PN Conn_01x01))
     )
   )
   (library
@@ -486,6 +492,20 @@
       (pin Round[A]Pad_1524_um 7 0 5080)
       (pin Round[A]Pad_1524_um 8 0 7620)
     )
+    (image Mounting_Holes:MountingHole_3.2mm_M3
+      (outline (path signal 150  3200 0  3043.38 -988.854  2588.85 -1880.91  1880.91 -2588.85
+            988.854 -3043.38  0 -3200  -988.854 -3043.38  -1880.91 -2588.85
+            -2588.85 -1880.91  -3043.38 -988.854  -3200 0  -3043.38 988.854
+            -2588.85 1880.91  -1880.91 2588.85  -988.854 3043.38  0 3200
+            988.854 3043.38  1880.91 2588.85  2588.85 1880.91  3043.38 988.854))
+      (outline (path signal 50  3450 0  3281.14 -1066.11  2791.11 -2027.86  2027.86 -2791.11
+            1066.11 -3281.14  0 -3450  -1066.11 -3281.14  -2027.86 -2791.11
+            -2791.11 -2027.86  -3281.14 -1066.11  -3450 0  -3281.14 1066.11
+            -2791.11 2027.86  -2027.86 2791.11  -1066.11 3281.14  0 3450
+            1066.11 3281.14  2027.86 2791.11  2791.11 2027.86  3281.14 1066.11))
+      (keepout "" (circle F.Cu 3200))
+      (keepout "" (circle B.Cu 3200))
+    )
     (padstack Round[A]Pad_1524_um
       (shape (circle F.Cu 1524))
       (shape (circle B.Cu 1524))
@@ -541,9 +561,9 @@
       (shape (rect B.Cu -950 -950 950 950))
       (attach off)
     )
-    (padstack "Via[0-1]_600:400_um"
-      (shape (circle F.Cu 600))
-      (shape (circle B.Cu 600))
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
       (attach off)
     )
   )
@@ -690,9 +710,10 @@
       "Net-(D320-Pad1)" "Net-(D321-Pad1)" "Net-(D322-Pad1)" "Net-(D323-Pad1)"
       "Net-(D324-Pad1)" "Net-(D325-Pad1)" "Net-(D326-Pad1)" "Net-(D327-Pad1)"
       "Net-(D328-Pad1)" "Net-(D329-Pad1)" "Net-(D330-Pad1)" "Net-(D331-Pad1)"
-      "Net-(D332-Pad1)" "Net-(H301-Pad2)" "Net-(R301-Pad2)" "Net-(U2-Pad5)"
+      "Net-(D332-Pad1)" "Net-(H301-Pad2)" "Net-(J2-Pad1)" "Net-(J3-Pad1)"
+      "Net-(J4-Pad1)" "Net-(J5-Pad1)" "Net-(R301-Pad2)" "Net-(U2-Pad5)"
       (circuit
-        (use_via Via[0-1]_600:400_um)
+        (use_via Via[0-1]_800:400_um)
       )
       (rule
         (width 250)
@@ -701,36 +722,5 @@
     )
   )
   (wiring
-    (wire (path F.Cu 250  104036 -90066  104036 -94130)(net "Net-(D301-Pad1)")(type protect))
-    (wire (path F.Cu 250  137056 -87526  143660 -87526)(net /OSC)(type protect))
-    (wire (path F.Cu 250  130452 -87526  137056 -87526)(net /OSC)(type protect))
-    (wire (path F.Cu 250  123848 -87526  130452 -87526)(net /OSC)(type protect))
-    (wire (path F.Cu 250  117244 -87526  123848 -87526)(net /OSC)(type protect))
-    (wire (path F.Cu 250  110640 -87526  117244 -87526)(net /OSC)(type protect))
-    (wire (path F.Cu 250  104036 -87526  110640 -87526)(net /OSC)(type protect))
-    (wire (path F.Cu 250  97432 -87526  104036 -87526)(net /OSC)(type protect))
-    (wire (path B.Cu 250  104036 -96670  104036 -100734)(net "Net-(D302-Pad1)")(type protect))
-    (wire (path F.Cu 250  104036 -103274  104036 -107338)(net "Net-(D303-Pad1)")(type protect))
-    (wire (path F.Cu 250  97432 -90066  97432 -94130)(net "Net-(D305-Pad1)")(type protect))
-    (wire (path B.Cu 250  97432 -96670  97432 -100734)(net "Net-(D306-Pad1)")(type protect))
-    (wire (path F.Cu 250  97432 -103274  97432 -107338)(net "Net-(D307-Pad1)")(type protect))
-    (wire (path F.Cu 250  117244 -90066  117244 -94130)(net "Net-(D309-Pad1)")(type protect))
-    (wire (path B.Cu 250  117244 -96670  117244 -100734)(net "Net-(D310-Pad1)")(type protect))
-    (wire (path F.Cu 250  117244 -103274  117244 -107338)(net "Net-(D311-Pad1)")(type protect))
-    (wire (path F.Cu 250  123848 -90066  123848 -94130)(net "Net-(D313-Pad1)")(type protect))
-    (wire (path B.Cu 250  123848 -96670  123848 -100734)(net "Net-(D314-Pad1)")(type protect))
-    (wire (path F.Cu 250  123848 -103274  123848 -107338)(net "Net-(D315-Pad1)")(type protect))
-    (wire (path F.Cu 250  143660 -90066  143660 -94130)(net "Net-(D317-Pad1)")(type protect))
-    (wire (path B.Cu 250  143660 -96670  143660 -100734)(net "Net-(D318-Pad1)")(type protect))
-    (wire (path F.Cu 250  143660 -103274  143660 -107338)(net "Net-(D319-Pad1)")(type protect))
-    (wire (path F.Cu 250  130452 -90066  130452 -94130)(net "Net-(D321-Pad1)")(type protect))
-    (wire (path B.Cu 250  130452 -96670  130452 -100734)(net "Net-(D322-Pad1)")(type protect))
-    (wire (path F.Cu 250  130452 -103274  130452 -107338)(net "Net-(D323-Pad1)")(type protect))
-    (wire (path F.Cu 250  110640 -90066  110640 -94130)(net "Net-(D325-Pad1)")(type protect))
-    (wire (path B.Cu 250  110640 -96670  110640 -100734)(net "Net-(D326-Pad1)")(type protect))
-    (wire (path F.Cu 250  110640 -103274  110640 -107338)(net "Net-(D327-Pad1)")(type protect))
-    (wire (path F.Cu 250  137056 -90066  137056 -94130)(net "Net-(D329-Pad1)")(type protect))
-    (wire (path B.Cu 250  137056 -96670  137056 -100734)(net "Net-(D330-Pad1)")(type protect))
-    (wire (path F.Cu 250  137056 -103274  137056 -107338)(net "Net-(D331-Pad1)")(type protect))
   )
 )

@@ -891,4 +891,48 @@ Wire Wire Line
 	6900 3500 6900 3350
 Wire Wire Line
 	6600 3350 6600 3150
+$Comp
+L Conn_01x01 J2
+U 1 1 5AA24086
+P 7050 5350
+F 0 "J2" H 7050 5450 50  0000 C CNN
+F 1 "Conn_01x01" H 7050 5250 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7050 5350 50  0001 C CNN
+F 3 "" H 7050 5350 50  0001 C CNN
+	1    7050 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J3
+U 1 1 5AA2430B
+P 7050 5650
+F 0 "J3" H 7050 5750 50  0000 C CNN
+F 1 "Conn_01x01" H 7050 5550 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7050 5650 50  0001 C CNN
+F 3 "" H 7050 5650 50  0001 C CNN
+	1    7050 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J4
+U 1 1 5AA243A8
+P 7050 5950
+F 0 "J4" H 7050 6050 50  0000 C CNN
+F 1 "Conn_01x01" H 7050 5850 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7050 5950 50  0001 C CNN
+F 3 "" H 7050 5950 50  0001 C CNN
+	1    7050 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_01x01 J5
+U 1 1 5AA24580
+P 7100 6250
+F 0 "J5" H 7100 6350 50  0000 C CNN
+F 1 "Conn_01x01" H 7100 6150 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7100 6250 50  0001 C CNN
+F 3 "" H 7100 6250 50  0001 C CNN
+	1    7100 6250
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
