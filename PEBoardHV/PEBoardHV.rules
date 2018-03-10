@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 567)
+    (start_pass_no 754)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -27,9 +27,9 @@
   )
   (rule
     (width 250.0)
-    (clear 200.2)
+    (clear 240.2)
     (clear 125.0 (type smd_to_turn_gap))
-    (clear 50.0 (type smd_smd))
+    (clear 60.0 (type smd_smd))
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -40,17 +40,41 @@
     )
     (attach off)
   )
+  (padstack "Via[0-1]_1200:600_um"
+    (shape
+      (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
   (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
   )
   (via 
+    "Via[0-1]_1200:600_um" "Via[0-1]_1200:600_um" default
+  )
+  (via 
     "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1200:600_um-kicad_default" "Via[0-1]_1200:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-EMPower" "Via[0-1]_800:400_um" EMPower
+  )
+  (via 
+    "Via[0-1]_1200:600_um-EMPower" "Via[0-1]_1200:600_um" EMPower
   )
   (via_rule
     default "Via[0-1]_800:400_um"
   )
   (via_rule
     "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    EMPower "Via[0-1]_1200:600_um-EMPower"
   )
   (class default
     (clearance_class default)
@@ -63,16 +87,26 @@
     )
   )
   (class "kicad_default"
-    GND "/TS-" "/5V_GLV" "/3.3V_GLV" /CAN+ "/5V_TS" "Net-(D1-Pad1)" "Net-(D1-Pad2)"
-    "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad1)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(F1-Pad2)"
-    "/TS+_SWITCHED_L" "Net-(F2-Pad2)" "/TS+_SWITCHED_R" "/TS+_FUSED" /TS+ +12V "/SIG_TSAL" "/CAN_TX"
-    "/CAN_RX" "/AIRS_FINAL" "/CAN_H_BOARD" "/CAN_L_BOARD" "/CAN_H_CONTROLLER" "/CAN_L_CONTROLLER" "/EM_SIG+" "/EM_SIG-"
-    "/CAN_H_DEBUG" "/CAN_L_DEBUG" "Net-(J7-Pad1)" "Net-(J7-Pad2)" "Net-(R13-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad2)" "Net-(R11-Pad2)"
-    "Net-(R14-Pad2)"
+    "/TS-" "/5V_GLV" "/3.3V_GLV" /CAN+ "/5V_TS" "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)"
+    "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad1)" "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(F1-Pad2)" "/TS+_SWITCHED_L"
+    "Net-(F2-Pad2)" "/TS+_SWITCHED_R" "/TS+_FUSED" /TS+ "/SIG_TSAL" "/CAN_TX" "/CAN_RX" "/AIRS_FINAL"
+    "/CAN_H_BOARD" "/CAN_L_BOARD" "/CAN_H_CONTROLLER" "/CAN_L_CONTROLLER" "/EM_SIG+" "/EM_SIG-" "/CAN_H_DEBUG" "/CAN_L_DEBUG"
+    "Net-(J7-Pad1)" "Net-(J7-Pad2)" "Net-(R13-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad2)" "Net-(R11-Pad2)" "Net-(R14-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
       (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class EMPower
+    GND +12V
+    (clearance_class EMPower)
+    (via_rule EMPower)
+    (rule
+      (width 500.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)

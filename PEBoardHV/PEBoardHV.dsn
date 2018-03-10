@@ -1,4 +1,4 @@
-(pcb "C:\Users\Nicky\FS\fs-1-schematics\PEBoardHV\PEBoardHV.dsn"
+(pcb "C:\Users\Nicky\FSAE\fs-1-schematics\PEBoardHV\PEBoardHV.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -28,18 +28,20 @@
             226695 -127000  121285 -127000  121285 -52070  133350 -52070))
     (plane "/TS-" (polygon B.Cu 0  226695 -77470  193675 -77470  193675 -117475  140970 -117475
             140970 -52070  226695 -52070))
+    (plane +12V (polygon F.Cu 0  133350 -125095  201295 -125095  201295 -85725  226695 -85725
+            226695 -127000  121285 -127000  121285 -69977  133350 -69977))
     (keepout "" (polygon B.Cu 0  140462 -117983  194437 -117983  194437 -78359  226949 -78359
             226949 -84709  200914 -84709  200914 -124460  134112 -124460
             134112 -51054  140462 -51054))
     (keepout "" (polygon F.Cu 0  140462 -117983  194437 -117983  194437 -78359  226949 -78359
             226949 -84709  200914 -84709  200914 -124460  134112 -124460
             134112 -51054  140462 -51054))
-    (via "Via[0-1]_800:400_um")
+    (via "Via[0-1]_800:400_um" "Via[0-1]_1200:600_um")
     (rule
       (width 250)
-      (clearance 200.1)
-      (clearance 200.1 (type default_smd))
-      (clearance 50 (type smd_smd))
+      (clearance 240.1)
+      (clearance 240.1 (type default_smd))
+      (clearance 60 (type smd_smd))
     )
   )
   (placement
@@ -49,42 +51,40 @@
       (place H1 125476 -56388 front 180 (PN MtngHole))
     )
     (component Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
-      (place R12 157480 -71120 front 180 (PN 3kR))
-      (place R11 172720 -71120 front 180 (PN 1.2kR))
-      (place R10 193040 -88265 front 180 (PN 5kR))
-      (place R9 219075 -71120 front 180 (PN R))
-      (place R8 168910 -88265 front 180 (PN 5kR))
-      (place R7 157480 -76200 front 180 (PN 3kR))
-      (place R6 172720 -76200 front 180 (PN 1.2kR))
-      (place R5 214376 -56388 front 270 (PN R))
-      (place R4 157480 -81280 front 180 (PN 3kR))
-      (place R3 208915 -75565 front 0 (PN 1.2kR))
-      (place R2 210566 -56388 front 270 (PN R))
+      (place R12 157226 -70993 front 180 (PN 3kR))
+      (place R11 204216 -64008 front 270 (PN 1.2kR))
+      (place R9 208026 -64008 front 270 (PN R))
+      (place R7 157226 -74803 front 180 (PN 3kR))
+      (place R6 200406 -64008 front 180 (PN 1.2kR))
+      (place R5 200406 -67818 front 180 (PN R))
+      (place R4 157226 -78613 front 180 (PN 3kR))
+      (place R3 190246 -75438 front 0 (PN 1.2kR))
+      (place R2 200406 -71628 front 180 (PN R))
       (place R1 144526 -53848 front 270 (PN 120))
     )
     (component "Diodes_THT:D_A-405_P10.16mm_Horizontal"
-      (place D6 189865 -67945 front 180 (PN "12V Zener"))
-      (place D5 204470 -66675 front 180 (PN "48V Zener"))
-      (place D4 189865 -72390 front 180 (PN "12V Zener"))
-      (place D3 204470 -71120 front 180 (PN "48V Zener"))
-      (place D2 189865 -76835 front 180 (PN "12V Zener"))
-      (place D1 204470 -75565 front 180 (PN "48V Zener"))
+      (place D6 171831 -65278 front 180 (PN "12V Zener"))
+      (place D5 184531 -65278 front 180 (PN "48V Zener"))
+      (place D4 171831 -69088 front 180 (PN "12V Zener"))
+      (place D3 184531 -69088 front 180 (PN "48V Zener"))
+      (place D2 171831 -72898 front 180 (PN "12V Zener"))
+      (place D1 184531 -72898 front 180 (PN "48V Zener"))
     )
     (component Connectors_Molex:Molex_NanoFit_2x02x2.50mm_Straight
       (place J3 125730 -91440 front 270 (PN "E-Meter Internal"))
     )
     (component Capacitors_THT:CP_Radial_D5.0mm_P2.50mm
-      (place C5 166370 -81280 front 270 (PN CP))
-      (place C4 185420 -81280 front 270 (PN CP))
+      (place C5 168021 -76708 front 270 (PN CP))
+      (place C4 184531 -76708 front 270 (PN CP))
       (place C3 125730 -64770 front 0 (PN C))
       (place C2 128270 -85090 front 180 (PN C))
       (place C1 151130 -55753 front 270 (PN CP))
     )
     (component "FSFootprints:DT15-2P"
-      (place J7 167005 -110490 back 270 (PN TSMPs))
+      (place J7 167386 -107188 back 270 (PN TSMPs))
     )
     (component "FSFootprints:TO-220-3_Horizontal_HeatSunk"
-      (place U1 178435 -80010 front 180 (PN "L78S05CV-DG"))
+      (place U1 178816 -76708 front 180 (PN "L78S05CV-DG"))
     )
     (component "FSFootprints:DK1A1B-12V"
       (place U5 142748 -109855 front 90 (PN "DK1A1B-12V"))
@@ -111,9 +111,9 @@
       (place J1 125730 -71120 front 270 (PN "To PE LV"))
     )
     (component "FSFootprints:SMD Fuse"
-      (place F3 186055 -62865 front 0 (PN Fuse))
-      (place F2 169037 -65405 front 0 (PN Fuse))
-      (place F1 154178 -65405 front 0 (PN Fuse))
+      (place F3 152781 -66548 front 0 (PN Fuse))
+      (place F2 218186 -65278 front 0 (PN Fuse))
+      (place F1 218186 -72898 front 0 (PN Fuse))
     )
     (component "TO_SOT_Packages_THT:TO-220-2_Vertical"
       (place R13 155575 -97790 front 90 (PN 1K))
@@ -121,6 +121,10 @@
     )
     (component "FSFootprints:DT15-4P"
       (place J5 214376 -103378 back 0 (PN "E-Meter External"))
+    )
+    (component Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal
+      (place R8 168656 -83058 front 180 (PN 5kR))
+      (place R10 164846 -115443 front 0 (PN 5kR))
     )
   )
   (library
@@ -818,6 +822,26 @@
       (keepout "" (circle F.Cu 2790 10670 -8655))
       (keepout "" (circle B.Cu 2790 10670 -8655))
     )
+    (image Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal
+      (outline (path signal 100  4210 2250  4210 -2250))
+      (outline (path signal 100  4210 -2250  16110 -2250))
+      (outline (path signal 100  16110 -2250  16110 2250))
+      (outline (path signal 100  16110 2250  4210 2250))
+      (outline (path signal 100  0 0  4210 0))
+      (outline (path signal 100  20320 0  16110 0))
+      (outline (path signal 120  4150 2310  4150 -2310))
+      (outline (path signal 120  4150 -2310  16170 -2310))
+      (outline (path signal 120  16170 -2310  16170 2310))
+      (outline (path signal 120  16170 2310  4150 2310))
+      (outline (path signal 120  1380 0  4150 0))
+      (outline (path signal 120  18940 0  16170 0))
+      (outline (path signal 50  -1450 2600  -1450 -2600))
+      (outline (path signal 50  -1450 -2600  21800 -2600))
+      (outline (path signal 50  21800 -2600  21800 2600))
+      (outline (path signal 50  21800 2600  -1450 2600))
+      (pin Round[A]Pad_2400_um 1 0 0)
+      (pin Oval[A]Pad_2400x2400_um 2 20320 0)
+    )
     (padstack Round[A]Pad_1524_um
       (shape (circle F.Cu 1524))
       (shape (circle B.Cu 1524))
@@ -833,6 +857,11 @@
       (shape (circle B.Cu 1900))
       (attach off)
     )
+    (padstack Round[A]Pad_2400_um
+      (shape (circle F.Cu 2400))
+      (shape (circle B.Cu 2400))
+      (attach off)
+    )
     (padstack Round[A]Pad_3120_um
       (shape (circle F.Cu 3120))
       (shape (circle B.Cu 3120))
@@ -846,6 +875,11 @@
     (padstack Oval[A]Pad_1800x1800_um
       (shape (path F.Cu 1800  0 0  0 0))
       (shape (path B.Cu 1800  0 0  0 0))
+      (attach off)
+    )
+    (padstack Oval[A]Pad_2400x2400_um
+      (shape (path F.Cu 2400  0 0  0 0))
+      (shape (path B.Cu 2400  0 0  0 0))
       (attach off)
     )
     (padstack Rect[T]Pad_5080x3810_um
@@ -881,6 +915,11 @@
       (shape (circle B.Cu 800))
       (attach off)
     )
+    (padstack "Via[0-1]_1200:600_um"
+      (shape (circle F.Cu 1200))
+      (shape (circle B.Cu 1200))
+      (attach off)
+    )
   )
   (network
     (net /5V_GLV
@@ -896,8 +935,8 @@
       (pins C4-1 U1-1 J2-3)
     )
     (net "/TS-"
-      (pins R12-1 R10-1 R7-1 R4-1 C5-2 C4-2 C1-2 U1-2 U1-2@1 U2-5 J8-3 R13-1 R14-1
-        J6-2)
+      (pins R12-1 R7-1 R4-1 C5-2 C4-2 C1-2 U1-2 U1-2@1 U2-5 J8-3 R13-1 R14-1 J6-2
+        R10-1)
     )
     (net /5V_TS
       (pins C5-1 C1-1 U1-3 U2-8)
@@ -942,7 +981,7 @@
       (pins U5-5 J4-2 F2-1)
     )
     (net /TS+_FUSED
-      (pins R9-1 R8-2 J9-1 J9-2 F3-2)
+      (pins R9-1 J9-1 J9-2 F3-2 R8-2)
     )
     (net /TS+
       (pins J4-1 J2-1 F3-1 J6-1)
@@ -987,10 +1026,10 @@
       (pins J8-2 J4-6)
     )
     (net "Net-(J7-Pad1)"
-      (pins R8-1 J7-1)
+      (pins J7-1 R8-1)
     )
     (net "Net-(J7-Pad2)"
-      (pins R10-2 J7-2)
+      (pins J7-2 R10-2)
     )
     (net "Net-(R13-Pad2)"
       (pins U4-6 R13-2)
@@ -1007,21 +1046,30 @@
     (net "Net-(R14-Pad2)"
       (pins U5-6 R14-2)
     )
-    (class kicad_default "" +12V /3.3V_GLV /5V_GLV /5V_TS /AIRS_FINAL /CAN+
-      /CAN_H_BOARD /CAN_H_CONTROLLER /CAN_H_DEBUG /CAN_L_BOARD /CAN_L_CONTROLLER
-      /CAN_L_DEBUG /CAN_RX /CAN_TX /EM_SIG+ "/EM_SIG-" /SIG_TSAL /TS+ /TS+_FUSED
-      /TS+_SWITCHED_L /TS+_SWITCHED_R "/TS-" GND "Net-(D1-Pad1)" "Net-(D1-Pad2)"
-      "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad1)"
-      "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(F1-Pad2)" "Net-(F2-Pad2)" "Net-(H1-Pad1)"
-      "Net-(H2-Pad1)" "Net-(H3-Pad1)" "Net-(J2-Pad8)" "Net-(J7-Pad1)" "Net-(J7-Pad2)"
-      "Net-(R11-Pad2)" "Net-(R13-Pad2)" "Net-(R14-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad2)"
-      "Net-(U4-Pad3)" "Net-(U4-Pad4)" "Net-(U5-Pad3)" "Net-(U5-Pad4)"
+    (class kicad_default "" /3.3V_GLV /5V_GLV /5V_TS /AIRS_FINAL /CAN+ /CAN_H_BOARD
+      /CAN_H_CONTROLLER /CAN_H_DEBUG /CAN_L_BOARD /CAN_L_CONTROLLER /CAN_L_DEBUG
+      /CAN_RX /CAN_TX /EM_SIG+ "/EM_SIG-" /SIG_TSAL /TS+ /TS+_FUSED /TS+_SWITCHED_L
+      /TS+_SWITCHED_R "/TS-" "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)"
+      "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad1)" "Net-(D5-Pad2)"
+      "Net-(D6-Pad2)" "Net-(F1-Pad2)" "Net-(F2-Pad2)" "Net-(H1-Pad1)" "Net-(H2-Pad1)"
+      "Net-(H3-Pad1)" "Net-(J2-Pad8)" "Net-(J7-Pad1)" "Net-(J7-Pad2)" "Net-(R11-Pad2)"
+      "Net-(R13-Pad2)" "Net-(R14-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad2)" "Net-(U4-Pad3)"
+      "Net-(U4-Pad4)" "Net-(U5-Pad3)" "Net-(U5-Pad4)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )
       (rule
         (width 250)
-        (clearance 200.1)
+        (clearance 240.1)
+      )
+    )
+    (class EMPower +12V GND
+      (circuit
+        (use_via Via[0-1]_1200:600_um)
+      )
+      (rule
+        (width 500)
+        (clearance 240.1)
       )
     )
   )
