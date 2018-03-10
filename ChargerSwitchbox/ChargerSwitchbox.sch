@@ -200,7 +200,7 @@ Wire Wire Line
 	4150 2700 4250 2700
 Wire Wire Line
 	4250 3300 4150 3300
-Text Label 4250 1500 0    60   ~ 0
+Text Label 4550 1500 0    60   ~ 0
 CHARGER_OUT+
 Text Label 4150 2100 3    60   ~ 0
 CHARGER+
@@ -255,7 +255,7 @@ U 1 1 5A9F7258
 P 4500 900
 F 0 "R2" V 4580 900 50  0000 C CNN
 F 1 "R" V 4500 900 50  0000 C CNN
-F 2 "Oddities:NetTie-I_Connected_SMD" V 4430 900 50  0001 C CNN
+F 2 "FSFootprints:SMDNetTie" V 4430 900 50  0001 C CNN
 F 3 "" H 4500 900 50  0001 C CNN
 	1    4500 900 
 	0    1    1    0   
@@ -316,4 +316,17 @@ F 3 "" H 950 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1150 3200 1150 2550
+$Comp
+L Fuse F1
+U 1 1 5AA304A6
+P 4400 1500
+F 0 "F1" V 4480 1500 50  0000 C CNN
+F 1 "Fuse" V 4325 1500 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_vert_closed_Bulgin_FX0456" V 4330 1500 50  0001 C CNN
+F 3 "" H 4400 1500 50  0001 C CNN
+	1    4400 1500
+	0    1    1    0   
+$EndComp
+Text Label 4150 1500 2    60   ~ 0
+CHARGER_OUT+_FUSED
 $EndSCHEMATC

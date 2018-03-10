@@ -1,4 +1,4 @@
-(pcb "C:\Users\Nicky\FSAE\fs-1-schematics\PEBoardHV\PEBoardHV.dsn"
+(pcb "C:\Users\Nicky\FS\fs-1-schematics\PEBoardHV\PEBoardHV.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -44,7 +44,7 @@
   )
   (placement
     (component Mounting_Holes:MountingHole_4.5mm
-      (place H3 221996 -56388 front 0 (PN MtngHole))
+      (place H3 221996 -56388 front 180 (PN MtngHole))
       (place H2 125476 -122428 front 0 (PN MtngHole))
       (place H1 125476 -56388 front 180 (PN MtngHole))
     )
@@ -86,9 +86,6 @@
     (component "FSFootprints:TO-220-3_Horizontal_HeatSunk"
       (place U1 178435 -80010 front 180 (PN "L78S05CV-DG"))
     )
-    (component "FSFootprints:DT13-4P"
-      (place J5 218694 -105537 front 180 (PN "E-Meter External"))
-    )
     (component "FSFootprints:DK1A1B-12V"
       (place U5 142748 -109855 front 90 (PN "DK1A1B-12V"))
       (place U4 142748 -93472 front 90 (PN "DK1A1B-12V"))
@@ -121,6 +118,9 @@
     (component "TO_SOT_Packages_THT:TO-220-2_Vertical"
       (place R13 155575 -97790 front 90 (PN 1K))
       (place R14 155575 -114300 front 90 (PN 1K))
+    )
+    (component "FSFootprints:DT15-4P"
+      (place J5 214376 -103378 back 0 (PN "E-Meter External"))
     )
   )
   (library
@@ -441,26 +441,6 @@
       (pin Rect[A]Pad_1800x1800_um 1 0 0)
       (pin Oval[A]Pad_1800x1800_um 2@1 2540 0)
       (pin Oval[A]Pad_1800x1800_um 3 5080 0)
-    )
-    (image "FSFootprints:DT13-4P"
-      (outline (path signal 150  6320 -17640  -8380 -17640))
-      (outline (path signal 150  6320 -12715  6320 -17640))
-      (outline (path signal 150  6320 20710  -8380 20710))
-      (outline (path signal 150  6320 12715  6320 20710))
-      (outline (path signal 150  16510 -12715  6320 -12715))
-      (outline (path signal 150  16510 12715  6320 12715))
-      (outline (path signal 150  16510 12715  16510 -12715))
-      (outline (path signal 150  -8380 20710  -8380 -17640))
-      (pin Round[A]Pad_3120_um 3 6100 -2225)
-      (pin Round[A]Pad_3120_um 4 6100 2225)
-      (pin Round[A]Pad_3120_um 2 12450 -2225)
-      (pin Round[A]Pad_3120_um 1 12450 2225)
-      (keepout "" (circle F.Cu 2790 11430 8650))
-      (keepout "" (circle B.Cu 2790 11430 8650))
-      (keepout "" (circle F.Cu 2790 11430 -8650))
-      (keepout "" (circle B.Cu 2790 11430 -8650))
-      (keepout "" (circle F.Cu 2790))
-      (keepout "" (circle B.Cu 2790))
     )
     (image "FSFootprints:DK1A1B-12V"
       (outline (path signal 150  -7366 -9080.5  -7366 11620.5))
@@ -820,6 +800,24 @@
       (pin Rect[A]Pad_1800x1800_um 1 0 0)
       (pin Oval[A]Pad_1800x1800_um 2 5080 0)
     )
+    (image "FSFootprints:DT15-4P"
+      (outline (path signal 150  -17625 -20716  17625 -20716))
+      (outline (path signal 150  17625 -20716  17625 17637))
+      (outline (path signal 150  -17625 17637  17625 17637))
+      (outline (path signal 150  -17625 -20716  -17625 17637))
+      (pin Round[A]Pad_3120_um 1 -4560 -2225)
+      (pin Round[A]Pad_3120_um 2 -4560 2225)
+      (pin Round[A]Pad_3120_um 4 4560 -2225)
+      (pin Round[A]Pad_3120_um 3 4560 2225)
+      (keepout "" (circle F.Cu 2790 -10670 8655))
+      (keepout "" (circle B.Cu 2790 -10670 8655))
+      (keepout "" (circle F.Cu 2790 -10670 -8655))
+      (keepout "" (circle B.Cu 2790 -10670 -8655))
+      (keepout "" (circle F.Cu 2790 10670 8655))
+      (keepout "" (circle B.Cu 2790 10670 8655))
+      (keepout "" (circle F.Cu 2790 10670 -8655))
+      (keepout "" (circle B.Cu 2790 10670 -8655))
+    )
     (padstack Round[A]Pad_1524_um
       (shape (circle F.Cu 1524))
       (shape (circle B.Cu 1524))
@@ -889,7 +887,7 @@
       (pins C2-1 U3-12 U3-14 U3-16 J1-2)
     )
     (net GND
-      (pins J3-4 C3-2 C2-2 J5-4 U5-1 U4-1 U2-4 J1-8)
+      (pins J3-4 C3-2 C2-2 U5-1 U4-1 U2-4 J1-8 J5-4)
     )
     (net /3.3V_GLV
       (pins C3-1 U2-1 J1-3)
@@ -950,7 +948,7 @@
       (pins J4-1 J2-1 F3-1 J6-1)
     )
     (net +12V
-      (pins J3-1 J5-1 J1-1)
+      (pins J3-1 J1-1 J5-1)
     )
     (net /SIG_TSAL
       (pins U3-11 U3-13 U3-15 J1-4)
@@ -1014,9 +1012,10 @@
       /CAN_L_DEBUG /CAN_RX /CAN_TX /EM_SIG+ "/EM_SIG-" /SIG_TSAL /TS+ /TS+_FUSED
       /TS+_SWITCHED_L /TS+_SWITCHED_R "/TS-" GND "Net-(D1-Pad1)" "Net-(D1-Pad2)"
       "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad1)"
-      "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(F1-Pad2)" "Net-(F2-Pad2)" "Net-(J7-Pad1)"
-      "Net-(J7-Pad2)" "Net-(R11-Pad2)" "Net-(R13-Pad2)" "Net-(R14-Pad2)" "Net-(R3-Pad2)"
-      "Net-(R6-Pad2)"
+      "Net-(D5-Pad2)" "Net-(D6-Pad2)" "Net-(F1-Pad2)" "Net-(F2-Pad2)" "Net-(H1-Pad1)"
+      "Net-(H2-Pad1)" "Net-(H3-Pad1)" "Net-(J2-Pad8)" "Net-(J7-Pad1)" "Net-(J7-Pad2)"
+      "Net-(R11-Pad2)" "Net-(R13-Pad2)" "Net-(R14-Pad2)" "Net-(R3-Pad2)" "Net-(R6-Pad2)"
+      "Net-(U4-Pad3)" "Net-(U4-Pad4)" "Net-(U5-Pad3)" "Net-(U5-Pad4)"
       (circuit
         (use_via Via[0-1]_800:400_um)
       )

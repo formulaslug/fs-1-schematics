@@ -761,7 +761,7 @@ U 1 1 59B23E00
 P 850 9200
 F 0 "J9" H 850 11000 50  0000 C CNN
 F 1 "Main LV Connector" V 950 9200 50  0000 C CNN
-F 2 "FSFootprints:Ampseal - 35 pin" H 850 9200 50  0001 C CNN
+F 2 "FSFootprints:Ampseal-776231" H 850 9200 50  0001 C CNN
 F 3 "" H 850 9200 50  0001 C CNN
 	1    850  9200
 	-1   0    0    -1  
@@ -1041,7 +1041,7 @@ F 1 "GND" H 1100 4450 50  0000 C CNN
 F 2 "" H 1100 4600 50  0001 C CNN
 F 3 "" H 1100 4600 50  0001 C CNN
 	1    1100 4600
-	1    0    0    -1  
+	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR046
@@ -2409,4 +2409,5 @@ F 3 "" H 4700 2500 50  0000 C CNN
 $EndComp
 Connection ~ 4700 2500
 NoConn ~ 1050 8300
+NoConn ~ 1100 4700
 $EndSCHEMATC

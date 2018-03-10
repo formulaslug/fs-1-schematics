@@ -11,9 +11,21 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2876)
+    (start_pass_no 2553)
     (layer_rule F.Cu
       (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.1)
+    )
+    (layer_rule In1.Cu
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 3.1)
+    )
+    (layer_rule In2.Cu
+      (active off)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
       (against_preferred_direction_trace_costs 3.1)
@@ -27,12 +39,12 @@
   )
   (rule
     (width 250.0)
-    (clear 200.2)
+    (clear 250.2)
     (clear 125.0 (type smd_to_turn_gap))
     (clear 300.2 (type default_Ground))
     (clear 300.2 (type default_MainPower))
     (clear 400.2 (type default_Power))
-    (clear 50.0 (type smd_smd))
+    (clear 62.6 (type smd_smd))
     (clear 300.2 (type smd_Ground))
     (clear 300.2 (type smd_MainPower))
     (clear 400.2 (type smd_Power))
@@ -49,36 +61,60 @@
     (clear 400.2 (type MainPower_Power))
     (clear 400.2 (type Power_Power))
   )
-  (padstack "Via[0-1]_800:400_um"
+  (padstack "Via[0-3]_800:400_um"
     (shape
       (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
     )
     (shape
       (circle B.Cu 800.0 0.0 0.0)
     )
     (attach off)
   )
-  (padstack "Via[0-1]_1200:800_um"
+  (padstack "Via[0-3]_1200:800_um"
     (shape
       (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 1200.0 0.0 0.0)
     )
     (shape
       (circle B.Cu 1200.0 0.0 0.0)
     )
     (attach off)
   )
-  (padstack "Via[0-1]_100000:50000_um"
+  (padstack "Via[0-3]_100000:50000_um"
     (shape
       (circle F.Cu 100000.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 100000.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 100000.0 0.0 0.0)
     )
     (shape
       (circle B.Cu 100000.0 0.0 0.0)
     )
     (attach off)
   )
-  (padstack "Via[0-1]_2400:1600_um"
+  (padstack "Via[0-3]_2400:1600_um"
     (shape
       (circle F.Cu 2400.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 2400.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 2400.0 0.0 0.0)
     )
     (shape
       (circle B.Cu 2400.0 0.0 0.0)
@@ -86,94 +122,94 @@
     (attach off)
   )
   (via 
-    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
   )
   (via 
-    "Via[0-1]_1200:800_um" "Via[0-1]_1200:800_um" default
+    "Via[0-3]_1200:800_um" "Via[0-3]_1200:800_um" default
   )
   (via 
-    "Via[0-1]_100000:50000_um" "Via[0-1]_100000:50000_um" default
+    "Via[0-3]_100000:50000_um" "Via[0-3]_100000:50000_um" default
   )
   (via 
-    "Via[0-1]_2400:1600_um" "Via[0-1]_2400:1600_um" default
+    "Via[0-3]_2400:1600_um" "Via[0-3]_2400:1600_um" default
   )
   (via 
-    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_1200:800_um-kicad_default" "Via[0-1]_1200:800_um" "kicad_default"
+    "Via[0-3]_1200:800_um-kicad_default" "Via[0-3]_1200:800_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_100000:50000_um-kicad_default" "Via[0-1]_100000:50000_um" "kicad_default"
+    "Via[0-3]_100000:50000_um-kicad_default" "Via[0-3]_100000:50000_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_2400:1600_um-kicad_default" "Via[0-1]_2400:1600_um" "kicad_default"
+    "Via[0-3]_2400:1600_um-kicad_default" "Via[0-3]_2400:1600_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_800:400_um-Ground" "Via[0-1]_800:400_um" Ground
+    "Via[0-3]_800:400_um-Ground" "Via[0-3]_800:400_um" Ground
   )
   (via 
-    "Via[0-1]_1200:800_um-Ground" "Via[0-1]_1200:800_um" Ground
+    "Via[0-3]_1200:800_um-Ground" "Via[0-3]_1200:800_um" Ground
   )
   (via 
-    "Via[0-1]_100000:50000_um-Ground" "Via[0-1]_100000:50000_um" Ground
+    "Via[0-3]_100000:50000_um-Ground" "Via[0-3]_100000:50000_um" Ground
   )
   (via 
-    "Via[0-1]_2400:1600_um-Ground" "Via[0-1]_2400:1600_um" Ground
+    "Via[0-3]_2400:1600_um-Ground" "Via[0-3]_2400:1600_um" Ground
   )
   (via 
-    "Via[0-1]_800:400_um-HighSpeed" "Via[0-1]_800:400_um" HighSpeed
+    "Via[0-3]_800:400_um-HighSpeed" "Via[0-3]_800:400_um" HighSpeed
   )
   (via 
-    "Via[0-1]_1200:800_um-HighSpeed" "Via[0-1]_1200:800_um" HighSpeed
+    "Via[0-3]_1200:800_um-HighSpeed" "Via[0-3]_1200:800_um" HighSpeed
   )
   (via 
-    "Via[0-1]_100000:50000_um-HighSpeed" "Via[0-1]_100000:50000_um" HighSpeed
+    "Via[0-3]_100000:50000_um-HighSpeed" "Via[0-3]_100000:50000_um" HighSpeed
   )
   (via 
-    "Via[0-1]_2400:1600_um-HighSpeed" "Via[0-1]_2400:1600_um" HighSpeed
+    "Via[0-3]_2400:1600_um-HighSpeed" "Via[0-3]_2400:1600_um" HighSpeed
   )
   (via 
-    "Via[0-1]_800:400_um-MainPower" "Via[0-1]_800:400_um" MainPower
+    "Via[0-3]_800:400_um-MainPower" "Via[0-3]_800:400_um" MainPower
   )
   (via 
-    "Via[0-1]_1200:800_um-MainPower" "Via[0-1]_1200:800_um" MainPower
+    "Via[0-3]_1200:800_um-MainPower" "Via[0-3]_1200:800_um" MainPower
   )
   (via 
-    "Via[0-1]_100000:50000_um-MainPower" "Via[0-1]_100000:50000_um" MainPower
+    "Via[0-3]_100000:50000_um-MainPower" "Via[0-3]_100000:50000_um" MainPower
   )
   (via 
-    "Via[0-1]_2400:1600_um-MainPower" "Via[0-1]_2400:1600_um" MainPower
+    "Via[0-3]_2400:1600_um-MainPower" "Via[0-3]_2400:1600_um" MainPower
   )
   (via 
-    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+    "Via[0-3]_800:400_um-Power" "Via[0-3]_800:400_um" Power
   )
   (via 
-    "Via[0-1]_1200:800_um-Power" "Via[0-1]_1200:800_um" Power
+    "Via[0-3]_1200:800_um-Power" "Via[0-3]_1200:800_um" Power
   )
   (via 
-    "Via[0-1]_100000:50000_um-Power" "Via[0-1]_100000:50000_um" Power
+    "Via[0-3]_100000:50000_um-Power" "Via[0-3]_100000:50000_um" Power
   )
   (via 
-    "Via[0-1]_2400:1600_um-Power" "Via[0-1]_2400:1600_um" Power
+    "Via[0-3]_2400:1600_um-Power" "Via[0-3]_2400:1600_um" Power
   )
   (via_rule
-    default "Via[0-1]_800:400_um"
+    default "Via[0-3]_800:400_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
   )
   (via_rule
-    Ground "Via[0-1]_1200:800_um-Ground"
+    Ground "Via[0-3]_1200:800_um-Ground"
   )
   (via_rule
-    HighSpeed "Via[0-1]_100000:50000_um-HighSpeed"
+    HighSpeed "Via[0-3]_100000:50000_um-HighSpeed"
   )
   (via_rule
-    MainPower "Via[0-1]_1200:800_um-MainPower"
+    MainPower "Via[0-3]_1200:800_um-MainPower"
   )
   (via_rule
-    Power "Via[0-1]_2400:1600_um-Power"
+    Power "Via[0-3]_2400:1600_um-Power"
   )
   (class default
     (clearance_class default)

@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source C:\Users\Nicky\FSAE\fs-1-schematics\PEBoardHV\PEBoardHV.sch)
-    (date "3/2/2018 9:35:38 PM")
+    (source C:/Users/Nicky/FS/fs-1-schematics/PEBoardHV/PEBoardHV.sch)
+    (date "3/9/2018 9:41:18 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -203,7 +203,7 @@
       (tstamp 59B395E2))
     (comp (ref J5)
       (value "E-Meter External")
-      (footprint FSFootprints:DT13-4P)
+      (footprint FSFootprints:DT15-4P)
       (libsource (lib conn) (part Conn_01x04))
       (sheetpath (names /) (tstamps /))
       (tstamp 59B39C6F))
@@ -510,7 +510,7 @@
         (pin (num 2) (name ~) (type passive)))))
   (libraries
     (library (logical "FS FINAL")
-      (uri "C:\\Users\\Nicky\\FSAE\\fs-1-schematics\\FS FINAL.lib"))
+      (uri "C:\\Users\\Nicky\\FS\\fs-1-schematics\\FS FINAL.lib"))
     (library (logical device)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical conn)
