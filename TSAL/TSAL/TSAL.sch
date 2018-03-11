@@ -31,7 +31,6 @@ LIBS:valves
 LIBS:arduino
 LIBS:FS FINAL
 LIBS:symbols
-LIBS:TSAL-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -786,7 +785,7 @@ U 1 1 58DA5C2D
 P 4300 3150
 F 0 "LS1" H 4350 3375 50  0000 R CNN
 F 1 "RTDS Piezo" H 4650 3300 50  0000 R CNN
-F 2 "FSfootprints:RTDS_H" H 4300 2950 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 4300 2950 50  0001 C CNN
 F 3 "" H 4290 3100 50  0001 C CNN
 	1    4300 3150
 	1    0    0    -1  
@@ -853,7 +852,7 @@ U 1 1 5A59BA97
 P 5250 3150
 F 0 "LS2" H 5300 3375 50  0000 R CNN
 F 1 "RTDS Piezo" H 5600 3300 50  0000 R CNN
-F 2 "FSfootprints:RTDS_H" H 5250 2950 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 5250 2950 50  0001 C CNN
 F 3 "" H 5240 3100 50  0001 C CNN
 	1    5250 3150
 	1    0    0    -1  
