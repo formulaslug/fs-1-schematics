@@ -206,7 +206,7 @@ F 3 "" H 10500 3800 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 10200 3550 2    60   ~ 0
-TS+_FUSED
+TS+
 Text Label 10500 3950 3    60   ~ 0
 TS-
 $Comp

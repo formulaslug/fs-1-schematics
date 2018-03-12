@@ -981,10 +981,10 @@
       (pins U5-5 J4-2 F2-1)
     )
     (net /TS+_FUSED
-      (pins R9-1 J9-1 J9-2 F3-2 R8-2)
+      (pins R9-1 J9-1 J9-2 F3-2)
     )
     (net /TS+
-      (pins J4-1 J2-1 F3-1 J6-1)
+      (pins J4-1 J2-1 F3-1 J6-1 R8-2)
     )
     (net +12V
       (pins J3-1 J1-1 J5-1)
