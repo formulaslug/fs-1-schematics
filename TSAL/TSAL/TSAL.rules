@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 661)
+    (start_pass_no 840)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 7.0)
+      (against_preferred_direction_trace_costs 2.0)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.2)
+      (against_preferred_direction_trace_costs 2.0)
     )
   )
   (rule
@@ -63,7 +63,7 @@
     )
   )
   (class "kicad_default"
-    GND +12V +5V "Net-(C303-Pad1)" "Net-(D301-Pad1)" /OSC "Net-(D302-Pad1)" "Net-(D303-Pad1)"
+    +12V GND +5V "Net-(C303-Pad1)" "Net-(D301-Pad1)" /OSC "Net-(D302-Pad1)" "Net-(D303-Pad1)"
     "Net-(D304-Pad1)" "Net-(D305-Pad1)" "Net-(D306-Pad1)" "Net-(D307-Pad1)" "Net-(D308-Pad1)" "Net-(D309-Pad1)" "Net-(D310-Pad1)" "Net-(D311-Pad1)"
     "Net-(D312-Pad1)" "Net-(D313-Pad1)" "Net-(D314-Pad1)" "Net-(D315-Pad1)" "Net-(D316-Pad1)" "Net-(D317-Pad1)" "Net-(D318-Pad1)" "Net-(D319-Pad1)"
     "Net-(D320-Pad1)" "Net-(D321-Pad1)" "Net-(D322-Pad1)" "Net-(D323-Pad1)" "Net-(D324-Pad1)" "Net-(D325-Pad1)" "Net-(D326-Pad1)" "Net-(D327-Pad1)"
