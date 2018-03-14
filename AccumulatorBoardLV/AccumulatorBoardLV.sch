@@ -991,50 +991,6 @@ Text Label 9900 8750 0    60   ~ 0
 TEMP_SS_2
 Text Label 12950 8800 0    60   ~ 0
 TEMP_SS_3
-$Comp
-L Conn_01x08 J19
-U 1 1 59C1AEA8
-P 8400 7050
-F 0 "J19" H 8400 7450 50  0000 C CNN
-F 1 "Chip 1" H 8400 6550 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x04x2.50mm_Straight" H 8400 7050 50  0001 C CNN
-F 3 "" H 8400 7050 50  0001 C CNN
-	1    8400 7050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Conn_01x08 J21
-U 1 1 59C1AF7F
-P 8400 8550
-F 0 "J21" H 8400 8950 50  0000 C CNN
-F 1 "Chip 3" H 8400 8050 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x04x2.50mm_Straight" H 8400 8550 50  0001 C CNN
-F 3 "" H 8400 8550 50  0001 C CNN
-	1    8400 8550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Conn_01x08 J20
-U 1 1 59C1B02E
-P 11450 7050
-F 0 "J20" H 11450 7450 50  0000 C CNN
-F 1 "Chip 2" H 11450 6550 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x04x2.50mm_Straight" H 11450 7050 50  0001 C CNN
-F 3 "" H 11450 7050 50  0001 C CNN
-	1    11450 7050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Conn_01x08 J22
-U 1 1 59C1B0E4
-P 11450 8600
-F 0 "J22" H 11450 9000 50  0000 C CNN
-F 1 "Chip 4" H 11450 8100 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x04x2.50mm_Straight" H 11450 8600 50  0001 C CNN
-F 3 "" H 11450 8600 50  0001 C CNN
-	1    11450 8600
-	-1   0    0    -1  
-$EndComp
 Text Notes 5900 5850 0    60   ~ 0
 Temp System
 Text Notes 5950 6000 0    60   ~ 0
@@ -1432,7 +1388,7 @@ Wire Wire Line
 	8700 7250 8600 7250
 Wire Wire Line
 	8700 7350 8600 7350
-Text Label 8600 7450 3    60   ~ 0
+Text Label 8600 7650 0    60   ~ 0
 BATT-
 Wire Wire Line
 	8600 8250 8700 8250
@@ -1448,7 +1404,7 @@ Wire Wire Line
 	8700 8750 8600 8750
 Wire Wire Line
 	8600 8850 8700 8850
-Text Label 8600 8950 3    60   ~ 0
+Text Label 8600 9150 0    60   ~ 0
 BATT-
 Wire Wire Line
 	11650 6750 11750 6750
@@ -1478,12 +1434,65 @@ Wire Wire Line
 	11750 8800 11650 8800
 Wire Wire Line
 	11650 8900 11750 8900
-Text Label 11650 9000 3    60   ~ 0
+Text Label 11650 9200 0    60   ~ 0
 BATT-
-Text Label 11650 7450 3    60   ~ 0
+Text Label 11650 7650 0    60   ~ 0
 BATT-
 NoConn ~ 11750 7450
 NoConn ~ 11750 9000
 NoConn ~ 8700 8950
 NoConn ~ 8700 7450
+$Comp
+L Conn_01x10 J19
+U 1 1 5AA89576
+P 8400 7150
+F 0 "J19" H 8400 7650 50  0000 C CNN
+F 1 "Chip 1" H 8400 6550 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x05x2.50mm_Straight" H 8400 7150 50  0001 C CNN
+F 3 "" H 8400 7150 50  0001 C CNN
+	1    8400 7150
+	-1   0    0    -1  
+$EndComp
+Text Label 8600 7550 0    60   ~ 0
+3.3V_TS
+NoConn ~ 8600 7450
+$Comp
+L Conn_01x10 J20
+U 1 1 5AA89A40
+P 11450 7150
+F 0 "J20" H 11450 7650 50  0000 C CNN
+F 1 "Chip 2" H 11450 6550 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x05x2.50mm_Straight" H 11450 7150 50  0001 C CNN
+F 3 "" H 11450 7150 50  0001 C CNN
+	1    11450 7150
+	-1   0    0    -1  
+$EndComp
+Text Label 11650 7550 0    60   ~ 0
+3.3V_TS
+$Comp
+L Conn_01x10 J21
+U 1 1 5AA8AACD
+P 8400 8650
+F 0 "J21" H 8400 9150 50  0000 C CNN
+F 1 "Chip 3" H 8400 8050 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x05x2.50mm_Straight" H 8400 8650 50  0001 C CNN
+F 3 "" H 8400 8650 50  0001 C CNN
+	1    8400 8650
+	-1   0    0    -1  
+$EndComp
+Text Label 8600 9050 0    60   ~ 0
+3.3V_TS
+$Comp
+L Conn_01x10 J22
+U 1 1 5AA8B655
+P 11450 8700
+F 0 "J22" H 11450 9200 50  0000 C CNN
+F 1 "Chip 4" H 11450 8100 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x05x2.50mm_Straight" H 11450 8700 50  0001 C CNN
+F 3 "" H 11450 8700 50  0001 C CNN
+	1    11450 8700
+	-1   0    0    -1  
+$EndComp
+Text Label 11650 9100 0    60   ~ 0
+3.3V_TS
 $EndSCHEMATC
