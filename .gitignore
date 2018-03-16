@@ -7,3 +7,7 @@
 *.drl
 *.gbr
 *.zip
+*.rules
+*.ses
+*.dsn
+*.net
