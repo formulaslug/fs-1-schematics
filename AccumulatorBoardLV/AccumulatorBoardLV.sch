@@ -835,7 +835,7 @@ CAN_L
 Text Label 4550 6750 0    60   ~ 0
 GND
 Text Label 4550 6650 0    60   ~ 0
-5V
+12V
 Text Label 3250 6950 2    60   ~ 0
 GND
 $Comp
@@ -876,7 +876,6 @@ F 3 "" H 5050 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5500 7650
-NoConn ~ 5500 7750
 $Comp
 L Conn_01x02 J18
 U 1 1 59C14120
@@ -893,7 +892,7 @@ Text Label 7500 6850 2    60   ~ 0
 Text Label 7500 6950 2    60   ~ 0
 BATT-
 Text Label 6800 7050 0    60   ~ 0
-TEMP_SCLK
+SCLK
 Text Label 6800 7150 0    60   ~ 0
 TEMP_SSI
 Text Label 6800 7250 0    60   ~ 0
@@ -906,7 +905,6 @@ Text Label 6800 7550 0    60   ~ 0
 TEMP_SS_2
 Text Label 6800 7650 0    60   ~ 0
 TEMP_SS_3
-NoConn ~ 6800 7750
 $Comp
 L MCP3008 U13
 U 1 1 59C16580
@@ -1336,23 +1334,23 @@ $EndComp
 $Comp
 L Conn_01x01 H1
 U 1 1 5A97D013
-P 15700 8800
-F 0 "H1" H 15700 8900 50  0000 C CNN
-F 1 "MtngHole" H 15700 8700 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_4.5mm" H 15700 8800 50  0001 C CNN
-F 3 "" H 15700 8800 50  0001 C CNN
-	1    15700 8800
+P 17300 8800
+F 0 "H1" H 17300 8900 50  0000 C CNN
+F 1 "MtngHole" H 17300 8700 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4.5mm" H 17300 8800 50  0001 C CNN
+F 3 "" H 17300 8800 50  0001 C CNN
+	1    17300 8800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x01 H2
 U 1 1 5A97DEDA
-P 15700 9100
-F 0 "H2" H 15700 9200 50  0000 C CNN
-F 1 "MtngHole" H 15700 9000 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_4.5mm" H 15700 9100 50  0001 C CNN
-F 3 "" H 15700 9100 50  0001 C CNN
-	1    15700 9100
+P 17300 9100
+F 0 "H2" H 17300 9200 50  0000 C CNN
+F 1 "MtngHole" H 17300 9000 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_4.5mm" H 17300 9100 50  0001 C CNN
+F 3 "" H 17300 9100 50  0001 C CNN
+	1    17300 9100
 	1    0    0    -1  
 $EndComp
 Text Label 14850 6000 2    60   ~ 0
@@ -1495,4 +1493,12 @@ F 3 "" H 5500 6850 50  0001 C CNN
 	1    5500 6850
 	1    0    0    -1  
 $EndComp
+Text Label 6800 7750 0    60   ~ 0
+BATT-
+Text Label 5500 7750 2    60   ~ 0
+GND
+Text Label 3250 7050 2    60   ~ 0
+CAN_TX
+Text Label 3250 7950 2    60   ~ 0
+CAN_RX
 $EndSCHEMATC
