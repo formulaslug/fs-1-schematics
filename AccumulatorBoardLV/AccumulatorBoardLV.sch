@@ -1136,8 +1136,6 @@ Connection ~ 1450 7800
 Wire Wire Line
 	2200 7050 3250 7050
 Wire Wire Line
-	2150 7950 3250 7950
-Wire Wire Line
 	4550 7950 4700 7950
 Wire Wire Line
 	4550 7150 5500 7150
@@ -1211,8 +1209,6 @@ Wire Wire Line
 	2200 7050 2200 7500
 Wire Wire Line
 	2200 7500 2050 7500
-Wire Wire Line
-	2150 7950 2150 7100
 Wire Wire Line
 	2150 7100 2050 7100
 Text Label 3250 7550 2    60   ~ 0
@@ -1499,6 +1495,10 @@ Text Label 5500 7750 2    60   ~ 0
 GND
 Text Label 3250 7050 2    60   ~ 0
 CAN_TX
-Text Label 3250 7950 2    60   ~ 0
+Text Label 3250 7850 2    60   ~ 0
 CAN_RX
+Wire Wire Line
+	3250 7850 2150 7850
+Wire Wire Line
+	2150 7850 2150 7100
 $EndSCHEMATC
