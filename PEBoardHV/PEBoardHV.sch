@@ -105,15 +105,15 @@ Text Label 4850 5950 2    60   ~ 0
 GND
 Text Label 4850 7250 2    60   ~ 0
 GND
-Text Label 10500 700  2    60   ~ 0
+Text Label 10050 800  2    60   ~ 0
 TS+
-Text Label 10500 900  2    60   ~ 0
+Text Label 10550 800  0    60   ~ 0
 CAN+
-Text Label 10500 1100 2    60   ~ 0
+Text Label 10050 900  2    60   ~ 0
 CAN_L_BOARD
-Text Label 10500 800  2    60   ~ 0
+Text Label 10050 2000 2    60   ~ 0
 TS+_SWITCHED_L
-Text Label 10500 1000 2    60   ~ 0
+Text Label 10050 1000 2    60   ~ 0
 CAN_H_BOARD
 $Comp
 L R R10
@@ -153,61 +153,61 @@ Text Label 8550 1150 0    60   ~ 0
 5V_TS
 Text Label 8150 1450 3    60   ~ 0
 TS-
-Text Label 10500 1950 2    60   ~ 0
+Text Label 10050 1350 2    60   ~ 0
 TS+
-Text Label 10500 2050 2    60   ~ 0
+Text Label 10050 1900 2    60   ~ 0
 TS+_SWITCHED_R
 $Comp
 L Conn_01x02 J6
 U 1 1 58916262
-P 10700 3000
-F 0 "J6" H 10700 3150 50  0000 C CNN
-F 1 "HV Cable" V 10800 3000 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10700 3000 50  0001 C CNN
-F 3 "" H 10700 3000 50  0000 C CNN
-	1    10700 3000
+P 10250 2500
+F 0 "J6" H 10250 2650 50  0000 C CNN
+F 1 "HV Cable" V 10350 2500 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10250 2500 50  0001 C CNN
+F 3 "" H 10250 2500 50  0000 C CNN
+	1    10250 2500
 	1    0    0    -1  
 $EndComp
-Text Label 10500 3000 2    60   ~ 0
+Text Label 10050 2500 2    60   ~ 0
 TS+
-Text Label 10500 3100 2    60   ~ 0
+Text Label 10050 2600 2    60   ~ 0
 TS-
 $Comp
-L Conn_01x02 J7
+L Conn_01x02 J8
 U 1 1 5891667E
-P 10700 3550
-F 0 "J7" H 10700 3700 50  0000 C CNN
-F 1 "TSMPs" V 10800 3550 50  0000 C CNN
-F 2 "FSFootprints:DT15-2P" H 10700 3550 50  0001 C CNN
-F 3 "" H 10700 3550 50  0000 C CNN
-	1    10700 3550
+P 10250 2950
+F 0 "J8" H 10250 3100 50  0000 C CNN
+F 1 "TSMPs" V 10350 2950 50  0000 C CNN
+F 2 "FSFootprints:DT15-2P" H 10250 2950 50  0001 C CNN
+F 3 "" H 10250 2950 50  0000 C CNN
+	1    10250 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R6
+L R R4
 U 1 1 58916788
-P 10350 3550
-F 0 "R6" V 10430 3550 50  0000 C CNN
-F 1 "5kR" V 10350 3550 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal" V 10280 3550 50  0001 C CNN
-F 3 "" H 10350 3550 50  0000 C CNN
-	1    10350 3550
+P 9900 2950
+F 0 "R4" V 9980 2950 50  0000 C CNN
+F 1 "5kR" V 9900 2950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal" V 9830 2950 50  0001 C CNN
+F 3 "" H 9900 2950 50  0000 C CNN
+	1    9900 2950
 	0    1    1    0   
 $EndComp
 $Comp
-L R R7
+L R R6
 U 1 1 58916808
-P 10500 3800
-F 0 "R7" V 10580 3800 50  0000 C CNN
-F 1 "5kR" V 10500 3800 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal" V 10430 3800 50  0001 C CNN
-F 3 "" H 10500 3800 50  0000 C CNN
-	1    10500 3800
+P 10050 3200
+F 0 "R6" V 10130 3200 50  0000 C CNN
+F 1 "5kR" V 10050 3200 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal" V 9980 3200 50  0001 C CNN
+F 3 "" H 10050 3200 50  0000 C CNN
+	1    10050 3200
 	-1   0    0    1   
 $EndComp
-Text Label 10200 3550 2    60   ~ 0
+Text Label 9750 2950 2    60   ~ 0
 TS+
-Text Label 10500 3950 3    60   ~ 0
+Text Label 10050 3350 3    60   ~ 0
 TS-
 $Comp
 L L78S05CV-DG U1
@@ -220,41 +220,18 @@ F 3 "" H 8150 1200 50  0000 C CNN
 	1    8150 1200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Conn_01x08 J2
-U 1 1 58BCB06C
-P 10700 1000
-F 0 "J2" H 10700 1450 50  0000 C CNN
-F 1 "Left Connector (Master)" V 10800 1000 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x04x2.50mm_Straight" H 10700 1000 50  0001 C CNN
-F 3 "" H 10700 1000 50  0000 C CNN
-	1    10700 1000
-	1    0    0    -1  
-$EndComp
-Text Label 10500 1200 2    60   ~ 0
+Text Label 10550 1000 0    60   ~ 0
 CAN_H_CONTROLLER
-Text Label 10500 1300 2    60   ~ 0
+Text Label 10550 900  0    60   ~ 0
 CAN_L_CONTROLLER
-$Comp
-L Conn_01x06 J4
-U 1 1 58BCB682
-P 10700 2150
-F 0 "J4" H 10700 2500 50  0000 C CNN
-F 1 "Right Connector (Slave)" V 10800 2150 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Straight" H 10700 2150 50  0001 C CNN
-F 3 "" H 10700 2150 50  0000 C CNN
-	1    10700 2150
-	1    0    0    -1  
-$EndComp
-Text Label 10500 2150 2    60   ~ 0
+Text Label 10550 1550 0    60   ~ 0
 CAN_H_CONTROLLER
-Text Label 10500 2250 2    60   ~ 0
+Text Label 10550 1450 0    60   ~ 0
 CAN_L_CONTROLLER
-Text Label 10500 2350 2    60   ~ 0
+Text Label 8650 2300 0    60   ~ 0
 CAN_H_DEBUG
-Text Label 10500 2450 2    60   ~ 0
+Text Label 10050 1450 2    60   ~ 0
 CAN_L_DEBUG
-NoConn ~ 10500 1400
 $Comp
 L D_Zener D2
 U 1 1 58C314A3
@@ -327,10 +304,10 @@ F 3 "" H 6200 3300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L R R5
 U 1 1 58C4B7BC
 P 5700 3200
-F 0 "R4" V 5780 3200 50  0000 C CNN
+F 0 "R5" V 5780 3200 50  0000 C CNN
 F 1 "1.2kR" V 5700 3200 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5630 3200 50  0001 C CNN
 F 3 "" H 5700 3200 50  0000 C CNN
@@ -435,10 +412,10 @@ F 3 "" H 6350 2600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R5
+L R R7
 U 1 1 58C4CA42
 P 6350 3450
-F 0 "R5" V 6430 3450 50  0000 C CNN
+F 0 "R7" V 6430 3450 50  0000 C CNN
 F 1 "1.5k" V 6350 3450 50  0000 C CNN
 F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6280 3450 50  0001 C CNN
 F 3 "" H 6350 3450 50  0000 C CNN
@@ -504,10 +481,10 @@ F 3 "" H 1000 650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04 J3
+L Conn_01x04 J5
 U 1 1 59B395E2
 P 800 2050
-F 0 "J3" H 800 2250 50  0000 C CNN
+F 0 "J5" H 800 2250 50  0000 C CNN
 F 1 "E-Meter Internal" V 900 2050 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_2x02x2.50mm_Straight" H 800 2050 50  0001 C CNN
 F 3 "" H 800 2050 50  0001 C CNN
@@ -554,10 +531,10 @@ EM_SIG+
 Text Label 1000 2150 0    60   ~ 0
 EM_SIG-
 $Comp
-L Conn_01x04 J5
+L Conn_01x04 J7
 U 1 1 59B39C6F
 P 800 2900
-F 0 "J5" H 800 3100 50  0000 C CNN
+F 0 "J7" H 800 3100 50  0000 C CNN
 F 1 "E-Meter External" V 900 2900 50  0000 C CNN
 F 2 "FSFootprints:DT15-4P" H 800 2900 50  0001 C CNN
 F 3 "" H 800 2900 50  0001 C CNN
@@ -616,31 +593,31 @@ Wire Wire Line
 	7750 1450 8550 1450
 Connection ~ 8150 1450
 $Comp
-L Conn_01x03 J8
+L Conn_01x03 J9
 U 1 1 59B3870A
-P 10700 4800
-F 0 "J8" H 10700 5000 50  0000 C CNN
-F 1 "HV CAN Debug" V 10800 4800 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight" H 10700 4800 50  0001 C CNN
-F 3 "" H 10700 4800 50  0001 C CNN
-	1    10700 4800
+P 10250 3850
+F 0 "J9" H 10250 4050 50  0000 C CNN
+F 1 "HV CAN Debug" V 10350 3850 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight" H 10250 3850 50  0001 C CNN
+F 3 "" H 10250 3850 50  0001 C CNN
+	1    10250 3850
 	1    0    0    -1  
 $EndComp
-Text Label 10500 4700 2    60   ~ 0
+Text Label 10050 3750 2    60   ~ 0
 CAN_H_DEBUG
-Text Label 10500 4800 2    60   ~ 0
+Text Label 10050 3850 2    60   ~ 0
 CAN_L_DEBUG
-Text Label 10500 4900 2    60   ~ 0
+Text Label 10050 3950 2    60   ~ 0
 TS-
 Text Notes 5450 4650 2    60   ~ 0
 GLV      TS
 Text Notes 5450 600  2    60   ~ 0
 GLV      TS
 $Comp
-L Conn_01x08 J1
+L Conn_01x08 J2
 U 1 1 59B38655
 P 800 950
-F 0 "J1" H 800 1350 50  0000 C CNN
+F 0 "J2" H 800 1350 50  0000 C CNN
 F 1 "To PE LV" V 900 950 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_2x04x2.50mm_Straight" H 800 950 50  0001 C CNN
 F 3 "" H 800 950 50  0001 C CNN
@@ -666,7 +643,7 @@ U 1 1 5A3F31B6
 P 2950 1000
 F 0 "C3" H 2975 1100 50  0000 L CNN
 F 1 "C" H 2975 900 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 2988 850 50  0001 C CNN
+F 2 "Capacitors_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2988 850 50  0001 C CNN
 F 3 "" H 2950 1000 50  0001 C CNN
 	1    2950 1000
 	1    0    0    -1  
@@ -731,22 +708,22 @@ F 3 "" H 5250 4150 50  0000 L CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02 J9
+L Conn_01x02 J10
 U 1 1 5A5D5996
-P 10700 5300
-F 0 "J9" H 10700 5400 50  0000 C CNN
-F 1 "EMeter HV" H 10700 5100 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10700 5300 50  0001 C CNN
-F 3 "" H 10700 5300 50  0001 C CNN
-	1    10700 5300
+P 10250 4350
+F 0 "J10" H 10250 4450 50  0000 C CNN
+F 1 "EMeter HV" H 10250 4150 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10250 4350 50  0001 C CNN
+F 3 "" H 10250 4350 50  0001 C CNN
+	1    10250 4350
 	1    0    0    -1  
 $EndComp
 Text Label 6500 4000 0    60   ~ 0
 TS+_FUSED
-Text Label 10500 5400 2    60   ~ 0
+Text Label 10050 4450 2    60   ~ 0
 TS+_FUSED
 Wire Wire Line
-	10500 5300 10500 5400
+	10050 4350 10050 4450
 Wire Wire Line
 	5450 6200 5450 6100
 Wire Wire Line
@@ -757,7 +734,7 @@ U 1 1 5A837AFE
 P 7100 1450
 F 0 "R1" V 7180 1450 50  0000 C CNN
 F 1 "120" V 7100 1450 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7030 1450 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7030 1450 50  0001 C CNN
 F 3 "" H 7100 1450 50  0001 C CNN
 	1    7100 1450
 	1    0    0    -1  
@@ -768,7 +745,7 @@ U 1 1 5A84D24A
 P 5500 950
 F 0 "C1" H 5525 1050 50  0000 L CNN
 F 1 "CP" H 5525 850 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5538 800 50  0001 C CNN
+F 2 "Capacitors_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5538 800 50  0001 C CNN
 F 3 "" H 5500 950 50  0001 C CNN
 	1    5500 950 
 	0    -1   -1   0   
@@ -923,10 +900,10 @@ DISCHARGE_L
 Text Label 6350 6500 2    60   ~ 0
 DISCHARGE_R
 $Comp
-L Conn_01x02 J10
+L Conn_01x02 J11
 U 1 1 5AB89F55
 P 6550 6400
-F 0 "J10" H 6550 6500 50  0000 C CNN
+F 0 "J11" H 6550 6500 50  0000 C CNN
 F 1 "Discharge Jumper" H 6550 6200 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x01_Pitch2.54mm" H 6550 6400 50  0001 C CNN
 F 3 "" H 6550 6400 50  0001 C CNN
@@ -996,4 +973,60 @@ Wire Wire Line
 Connection ~ 6750 1800
 Text Label 6600 1450 1    60   ~ 0
 TS-
+$Comp
+L D D8
+U 1 1 5AD96E3E
+P 4850 5800
+F 0 "D8" H 4850 5900 50  0000 C CNN
+F 1 "D" H 4850 5700 50  0000 C CNN
+F 2 "Diodes_SMD:D_1206" H 4850 5800 50  0001 C CNN
+F 3 "" H 4850 5800 50  0001 C CNN
+	1    4850 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L D D9
+U 1 1 5AD97483
+P 4850 7100
+F 0 "D9" H 4850 7200 50  0000 C CNN
+F 1 "D" H 4850 7000 50  0000 C CNN
+F 2 "Diodes_SMD:D_1206" H 4850 7100 50  0001 C CNN
+F 3 "" H 4850 7100 50  0001 C CNN
+	1    4850 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_02x03_Top_Bottom J1
+U 1 1 5ADAB6B1
+P 10250 900
+F 0 "J1" H 10300 1100 50  0000 C CNN
+F 1 "Left Connector (Master)" H 10300 700 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Straight" H 10250 900 50  0001 C CNN
+F 3 "" H 10250 900 50  0001 C CNN
+	1    10250 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x02 J4
+U 1 1 5ADAC6DA
+P 10250 1900
+F 0 "J4" H 10250 2000 50  0000 C CNN
+F 1 "Ring Terminal Connector" H 10250 1700 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10250 1900 50  0001 C CNN
+F 3 "" H 10250 1900 50  0001 C CNN
+	1    10250 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x03_Top_Bottom J3
+U 1 1 5ADACFF7
+P 10250 1450
+F 0 "J3" H 10300 1650 50  0000 C CNN
+F 1 "Right Connector (Slave)" H 10300 1250 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Straight" H 10250 1450 50  0001 C CNN
+F 3 "" H 10250 1450 50  0001 C CNN
+	1    10250 1450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10550 1350
 $EndSCHEMATC
