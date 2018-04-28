@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
-LIBS:AccumulatorBoardHV-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -119,7 +118,7 @@ F 3 "" H 3650 4100 50  0000 C CNN
 $EndComp
 Text Label 3550 4250 2    60   ~ 0
 TS-
-Text Label 2850 3650 3    60   ~ 0
+Text Label 2750 3650 3    60   ~ 0
 TS+
 Text Label 5050 3850 0    60   ~ 0
 12V_INDICATOR_CTRL
@@ -207,12 +206,12 @@ $EndComp
 $Comp
 L Fuse F4
 U 1 1 58C4B2C9
-P 3000 3650
-F 0 "F4" V 3080 3650 50  0000 C CNN
-F 1 "TS 60V Fuse" V 2925 3650 50  0000 C CNN
-F 2 "FSFootprints:SMD Fuse" V 2930 3650 50  0001 C CNN
-F 3 "" H 3000 3650 50  0000 C CNN
-	1    3000 3650
+P 2900 3650
+F 0 "F4" V 2980 3650 50  0000 C CNN
+F 1 "TS 60V Fuse" V 2825 3650 50  0000 C CNN
+F 2 "FSFootprints:SMD Fuse" V 2830 3650 50  0001 C CNN
+F 3 "" H 2900 3650 50  0000 C CNN
+	1    2900 3650
 	0    1    1    0   
 $EndComp
 Text Label 6600 950  0    60   ~ 0
@@ -322,17 +321,17 @@ F 3 "" H 3650 4950 50  0000 C CNN
 $EndComp
 Text Label 3250 5100 2    60   ~ 0
 CHARGER-
-Text Label 2850 4500 3    60   ~ 0
+Text Label 2750 4500 3    60   ~ 0
 CHARGER+
 $Comp
 L Fuse F5
 U 1 1 59A3D9E0
-P 3000 4500
-F 0 "F5" V 3080 4500 50  0000 C CNN
-F 1 "Charger 60V Fuse" V 2925 4500 50  0000 C CNN
-F 2 "FSFootprints:SMD Fuse" V 2930 4500 50  0001 C CNN
-F 3 "" H 3000 4500 50  0000 C CNN
-	1    3000 4500
+P 2900 4500
+F 0 "F5" V 2980 4500 50  0000 C CNN
+F 1 "Charger 60V Fuse" V 2825 4500 50  0000 C CNN
+F 2 "FSFootprints:SMD Fuse" V 2830 4500 50  0001 C CNN
+F 3 "" H 2900 4500 50  0000 C CNN
+	1    2900 4500
 	0    1    1    0   
 $EndComp
 $Comp
@@ -841,4 +840,14 @@ Wire Wire Line
 	6500 3850 6800 3850
 Wire Wire Line
 	6800 3850 6800 3750
+Text Label 3650 5100 0    60   ~ 0
+CHARGER-_60
+Wire Wire Line
+	3050 4500 3150 4500
+Text Label 3150 4500 1    60   ~ 0
+CHARGER+_F
+Wire Wire Line
+	3050 3650 3150 3650
+Text Label 3150 3650 1    60   ~ 0
+TS+_F
 $EndSCHEMATC

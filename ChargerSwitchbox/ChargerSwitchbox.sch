@@ -30,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:arduino
-LIBS:ChargerSwitchbox-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -294,7 +293,7 @@ U 1 1 5AA304A6
 P 4400 1500
 F 0 "F1" V 4480 1500 50  0000 C CNN
 F 1 "Fuse" V 4325 1500 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_vert_closed_Bulgin_FX0456" V 4330 1500 50  0001 C CNN
+F 2 "FSFootprints:Fuseholder5x20_vert" V 4330 1500 50  0001 C CNN
 F 3 "" H 4400 1500 50  0001 C CNN
 	1    4400 1500
 	0    1    1    0   

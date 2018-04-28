@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name FSFootprints)(type KiCad)(uri C:/Users/Sam/GitHub/fs-1-schematics/FSFootprints)(options "")(descr ""))
+  (lib (name FSFootprints)(type KiCad)(uri ../FSFootprints/)(options "")(descr ""))
 )

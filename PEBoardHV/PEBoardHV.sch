@@ -370,23 +370,23 @@ Wire Wire Line
 $Comp
 L Fuse F2
 U 1 1 58C4C02B
-P 6650 2100
-F 0 "F2" V 6730 2100 50  0000 C CNN
-F 1 "Fuse" V 6575 2100 50  0000 C CNN
-F 2 "FSFootprints:SMD Fuse" V 6580 2100 50  0001 C CNN
-F 3 "" H 6650 2100 50  0000 C CNN
-	1    6650 2100
+P 6750 2100
+F 0 "F2" V 6830 2100 50  0000 C CNN
+F 1 "Fuse" V 6675 2100 50  0000 C CNN
+F 2 "FSFootprints:SMD Fuse" V 6680 2100 50  0001 C CNN
+F 3 "" H 6750 2100 50  0000 C CNN
+	1    6750 2100
 	0    1    1    0   
 $EndComp
 $Comp
 L Fuse F3
 U 1 1 58C4C0C4
-P 6650 2950
-F 0 "F3" V 6730 2950 50  0000 C CNN
-F 1 "Fuse" V 6575 2950 50  0000 C CNN
-F 2 "FSFootprints:SMD Fuse" V 6580 2950 50  0001 C CNN
-F 3 "" H 6650 2950 50  0000 C CNN
-	1    6650 2950
+P 6750 2950
+F 0 "F3" V 6830 2950 50  0000 C CNN
+F 1 "Fuse" V 6675 2950 50  0000 C CNN
+F 2 "FSFootprints:SMD Fuse" V 6680 2950 50  0001 C CNN
+F 3 "" H 6750 2950 50  0000 C CNN
+	1    6750 2950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -451,9 +451,9 @@ Text Label 4950 3400 2    60   ~ 0
 SIG_TSAL
 Text Label 4950 4250 2    60   ~ 0
 SIG_TSAL
-Text Label 6800 2100 0    60   ~ 0
+Text Label 6900 2100 0    60   ~ 0
 TS+_SWITCHED_L
-Text Label 6800 2950 0    60   ~ 0
+Text Label 6900 2950 0    60   ~ 0
 TS+_SWITCHED_R
 Text Label 6800 3800 0    60   ~ 0
 TS+
@@ -1051,4 +1051,12 @@ F 3 "" H 4950 4550 50  0001 C CNN
 	1    4950 4550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6600 2100 6500 2100
+Text Label 6600 2100 3    60   ~ 0
+TS+_LF
+Wire Wire Line
+	6600 2950 6500 2950
+Text Label 6600 2950 3    60   ~ 0
+TS+_RF
 $EndSCHEMATC
