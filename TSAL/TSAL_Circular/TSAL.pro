@@ -1,4 +1,4 @@
-update=3/28/2018 6:58:21 PM
+update=4/28/2018 10:36:04 PM
 version=1
 last_client=eeschema
 [pcbnew]
@@ -127,3 +127,13 @@ LibName95=xilinx
 LibName96=zetex
 LibName97=Zilog
 LibName98=FS FINAL
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
