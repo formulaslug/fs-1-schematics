@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Temp Board-rescue
 LIBS:FS FINAL
 LIBS:power
 LIBS:device
@@ -30,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:Temp Board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -542,7 +542,7 @@ U 1 1 58A1F075
 P 1800 5500
 F 0 "P144" H 1800 5650 50  0000 C CNN
 F 1 "Energus 1" V 1900 5500 50  0000 C CNN
-F 2 "FSFootprints:Energus" H 1800 5500 60  0001 C CNN
+F 2 "FSFootprints:Energus_End_L" H 1800 5500 60  0001 C CNN
 F 3 "" H 1800 5500 60  0000 C CNN
 	1    1800 5500
 	-1   0    0    -1  
@@ -557,7 +557,7 @@ U 1 1 58A1FC2F
 P 1800 1300
 F 0 "P107" H 1800 1450 50  0000 C CNN
 F 1 "Energus 7" V 1900 1300 50  0000 C CNN
-F 2 "FSFootprints:Energus" H 1800 1300 60  0001 C CNN
+F 2 "FSFootprints:Energus_End_R" H 1800 1300 60  0001 C CNN
 F 3 "" H 1800 1300 60  0000 C CNN
 	1    1800 1300
 	-1   0    0    -1  
@@ -765,17 +765,6 @@ F 3 "" H 6600 3600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 P113
-U 1 1 59811FE5
-P 2400 5800
-F 0 "P113" H 2400 5900 50  0000 C CNN
-F 1 "CONN_01X01" V 2500 5800 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2400 6100 50  0001 C CNN
-F 3 "" H 2400 5800 50  0000 C CNN
-	1    2400 5800
-	-1   0    0    1   
-$EndComp
-$Comp
 L +3.3V #PWR017
 U 1 1 59826F03
 P 6400 2250
@@ -798,21 +787,6 @@ F 3 "" H 6400 4100 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Conn_01x01 P116
-U 1 1 5982788B
-P 2400 1100
-F 0 "P116" H 2400 1200 50  0000 C CNN
-F 1 "CONN_01X01" V 2500 1100 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3_Pad" H 2400 1400 50  0001 C CNN
-F 3 "" H 2400 1100 50  0000 C CNN
-	1    2400 1100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2600 1100 2600 1300
-Wire Wire Line
-	2600 5800 2600 5600
-$Comp
 L Conn_01x02 J1
 U 1 1 5AE2E37E
 P 6600 2250
@@ -834,4 +808,32 @@ F 3 "" H 6600 4100 50  0001 C CNN
 	1    6600 4100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Conn_01x02 J4
+U 1 1 5AE7D5C8
+P 3300 5800
+F 0 "J4" H 3300 5900 50  0000 C CNN
+F 1 "Conn_01x02" H 3300 5600 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 3300 5800 50  0001 C CNN
+F 3 "" H 3300 5800 50  0001 C CNN
+	1    3300 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5600 3100 5900
+Connection ~ 3100 5800
+$Comp
+L Conn_01x02 J3
+U 1 1 5AE7DC3D
+P 3300 1000
+F 0 "J3" H 3300 1100 50  0000 C CNN
+F 1 "Conn_01x02" H 3300 800 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 3300 1000 50  0001 C CNN
+F 3 "" H 3300 1000 50  0001 C CNN
+	1    3300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1000 3100 1300
+Connection ~ 3100 1100
 $EndSCHEMATC
