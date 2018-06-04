@@ -86,25 +86,25 @@ F 3 "" H 3750 3000 50  0000 C CNN
 $EndComp
 Text Label 3750 3250 3    60   ~ 0
 GND
-Text Label 2650 1150 3    60   ~ 0
+Text Label 2700 2100 1    60   ~ 0
 BMS_FLT
-Text Label 2750 1150 3    60   ~ 0
+Text Label 2800 2100 1    60   ~ 0
 V_L
-Text Label 2850 1150 3    60   ~ 0
+Text Label 2900 2100 1    60   ~ 0
 V_S
-Text Label 3050 1150 3    60   ~ 0
+Text Label 3100 2100 1    60   ~ 0
 GND
-Text Label 4100 1150 3    60   ~ 0
+Text Label 4150 2100 1    60   ~ 0
 GND
-Text Label 3400 1150 3    60   ~ 0
+Text Label 3450 2100 1    60   ~ 0
 5V_BMS
-Text Label 3500 1150 3    60   ~ 0
+Text Label 3550 2100 1    60   ~ 0
 SIG_CURRENT
-Text Label 3600 1150 3    60   ~ 0
+Text Label 3650 2100 1    60   ~ 0
 GND
-Text Label 3700 1150 3    60   ~ 0
+Text Label 3750 2100 1    60   ~ 0
 CAN_H
-Text Label 4000 1150 3    60   ~ 0
+Text Label 4050 2100 1    60   ~ 0
 CAN_L
 $Comp
 L Conn_01x02 J9
@@ -144,10 +144,10 @@ F 3 "" H 900 950 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02 J7
+L Conn_01x02 J2
 U 1 1 58ACF5F5
 P 900 1450
-F 0 "J7" H 900 1600 50  0000 C CNN
+F 0 "J2" H 900 1600 50  0000 C CNN
 F 1 "Contactor 2" V 1000 1450 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 900 1450 50  0001 C CNN
 F 3 "" H 900 1450 50  0000 C CNN
@@ -165,13 +165,13 @@ AIRS_FINAL
 $Comp
 L Conn_01x02 J17
 U 1 1 58AFAE78
-P 15050 6000
-F 0 "J17" H 15050 6150 50  0000 C CNN
-F 1 "Lid Interlock" V 15150 6000 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 15050 6000 50  0001 C CNN
-F 3 "" H 15050 6000 50  0000 C CNN
-	1    15050 6000
-	1    0    0    -1  
+P 14350 6000
+F 0 "J17" H 14350 6150 50  0000 C CNN
+F 1 "Lid Interlock" V 14450 6000 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 14350 6000 50  0001 C CNN
+F 3 "" H 14350 6000 50  0000 C CNN
+	1    14350 6000
+	-1   0    0    -1  
 $EndComp
 $Comp
 L +5V #PWR01
@@ -370,62 +370,62 @@ F 3 "" H 8050 2300 50  0000 C CNN
 	1    8050 2300
 	1    0    0    -1  
 $EndComp
-Text Label 4300 1150 3    60   ~ 0
+Text Label 4350 2100 1    60   ~ 0
 GND
-Text Label 4200 1150 3    60   ~ 0
+Text Label 4250 2100 1    60   ~ 0
 GND
-Text Notes 3850 1200 3    60   ~ 0
+Text Notes 3900 2050 1    60   ~ 0
 BMS CAN Termination
 $Comp
-L Conn_01x12 J3
+L Conn_01x12 J5
 U 1 1 58B7B94A
-P 3900 950
-F 0 "J3" H 3900 1600 50  0000 C CNN
-F 1 "BMS Connector 2" V 4000 950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x06x2.50mm_Straight" H 3900 950 50  0001 C CNN
-F 3 "" H 3900 950 50  0000 C CNN
-	1    3900 950 
-	0    -1   -1   0   
+P 3950 2300
+F 0 "J5" H 3950 2950 50  0000 C CNN
+F 1 "BMS Connector 2" V 4050 2300 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x06x2.50mm_Straight" H 3950 2300 50  0001 C CNN
+F 3 "" H 3950 2300 50  0000 C CNN
+	1    3950 2300
+	0    -1   1    0   
 $EndComp
-Text Label 4400 1150 3    60   ~ 0
+Text Label 4450 2100 1    60   ~ 0
 BMS_TX
-Text Label 4500 1150 3    60   ~ 0
+Text Label 4550 2100 1    60   ~ 0
 BMS_RX
 $Comp
-L Conn_01x02 J4
+L Conn_01x02 J6
 U 1 1 58B7C6A2
-P 4750 950
-F 0 "J4" H 4750 1100 50  0000 C CNN
-F 1 "BMS TX" V 4850 950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 4750 950 50  0001 C CNN
-F 3 "" H 4750 950 50  0000 C CNN
-	1    4750 950 
-	0    -1   -1   0   
+P 4800 2300
+F 0 "J6" H 4800 2450 50  0000 C CNN
+F 1 "BMS TX" V 4900 2300 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 4800 2300 50  0001 C CNN
+F 3 "" H 4800 2300 50  0000 C CNN
+	1    4800 2300
+	0    -1   1    0   
 $EndComp
 $Comp
-L Conn_01x02 J5
+L Conn_01x02 J7
 U 1 1 58B7C7A0
-P 5100 950
-F 0 "J5" H 5100 1100 50  0000 C CNN
-F 1 "BMS RX" V 5200 950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 5100 950 50  0001 C CNN
-F 3 "" H 5100 950 50  0000 C CNN
-	1    5100 950 
-	0    -1   -1   0   
+P 5150 2300
+F 0 "J7" H 5150 2450 50  0000 C CNN
+F 1 "BMS RX" V 5250 2300 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 5150 2300 50  0001 C CNN
+F 3 "" H 5150 2300 50  0000 C CNN
+	1    5150 2300
+	0    -1   1    0   
 $EndComp
-Text Label 4750 1150 3    60   ~ 0
+Text Label 4800 2100 1    60   ~ 0
 BMS_TX
-Text Label 4850 1150 3    60   ~ 0
+Text Label 4900 2100 1    60   ~ 0
 GND
-Text Label 5100 1150 3    60   ~ 0
+Text Label 5150 2100 1    60   ~ 0
 BMS_RX
-Text Label 5200 1150 3    60   ~ 0
+Text Label 5250 2100 1    60   ~ 0
 GND
 $Comp
-L Conn_01x06 J8
+L Conn_01x06 J3
 U 1 1 58B80A68
 P 900 2100
-F 0 "J8" H 900 2450 50  0000 C CNN
+F 0 "J3" H 900 2450 50  0000 C CNN
 F 1 "IMD LV" V 1000 2100 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Straight" H 900 2100 50  0001 C CNN
 F 3 "" H 900 2100 50  0000 C CNN
@@ -704,7 +704,7 @@ F 3 "" H 12050 2000 50  0001 C CNN
 	1    12050 2000
 	1    0    0    -1  
 $EndComp
-Text Label 14850 6100 2    60   ~ 0
+Text Label 14550 6100 0    60   ~ 0
 AIRS_LID_OUT
 Text Label 14850 800  2    60   ~ 0
 AIRS_PEINTERLOCKS_OUT
@@ -738,21 +738,21 @@ SIG_CURRENT
 Text Label 1100 5250 0    60   ~ 0
 AIRS_LID_OUT
 $Comp
-L Conn_01x03 J6
+L Conn_01x03 J8
 U 1 1 59A3D124
-P 5650 950
-F 0 "J6" H 5650 1150 50  0000 C CNN
-F 1 "Current Sensor" V 5750 950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight" H 5650 950 50  0001 C CNN
-F 3 "" H 5650 950 50  0000 C CNN
-	1    5650 950 
-	0    -1   -1   0   
+P 5700 2300
+F 0 "J8" H 5700 2500 50  0000 C CNN
+F 1 "Current Sensor" V 5800 2300 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight" H 5700 2300 50  0001 C CNN
+F 3 "" H 5700 2300 50  0000 C CNN
+	1    5700 2300
+	0    -1   1    0   
 $EndComp
-Text Label 5550 1150 3    60   ~ 0
+Text Label 5600 2100 1    60   ~ 0
 5V_BMS
-Text Label 5650 1150 3    60   ~ 0
+Text Label 5700 2100 1    60   ~ 0
 SIG_CURRENT
-Text Label 5750 1150 3    60   ~ 0
+Text Label 5800 2100 1    60   ~ 0
 GND
 Text Label 15050 800  0    60   ~ 0
 TEMP_FLT_LATCHED
@@ -879,17 +879,17 @@ NoConn ~ 5500 7650
 $Comp
 L Conn_01x02 J18
 U 1 1 59C14120
-P 7700 6850
-F 0 "J18" H 7700 6950 50  0000 C CNN
-F 1 "From HV Board" H 7700 6650 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7700 6850 50  0001 C CNN
-F 3 "" H 7700 6850 50  0001 C CNN
-	1    7700 6850
-	1    0    0    -1  
+P 7550 6850
+F 0 "J18" H 7550 6950 50  0000 C CNN
+F 1 "From HV Board" H 7550 6650 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7550 6850 50  0001 C CNN
+F 3 "" H 7550 6850 50  0001 C CNN
+	1    7550 6850
+	-1   0    0    -1  
 $EndComp
-Text Label 7500 6850 2    60   ~ 0
+Text Label 7750 6850 0    60   ~ 0
 3.3V_TS
-Text Label 7500 6950 2    60   ~ 0
+Text Label 7750 6950 0    60   ~ 0
 BATT-
 Text Label 6800 7050 0    60   ~ 0
 SCLK
@@ -1082,135 +1082,6 @@ F 3 "" H 15050 4800 50  0000 C CNN
 $EndComp
 Text Label 3250 7150 2    60   ~ 0
 TEMP_FLT
-Wire Wire Line
-	11650 3350 11950 3350
-Connection ~ 11850 3350
-Connection ~ 11750 3350
-Wire Wire Line
-	8050 1400 8350 1400
-Connection ~ 11050 3050
-Wire Wire Line
-	9750 2000 9750 2650
-Wire Wire Line
-	3800 1150 3900 1150
-Wire Wire Line
-	11850 1000 12150 1000
-Wire Wire Line
-	11050 2950 11050 3050
-Wire Wire Line
-	11050 3050 10850 3050
-Wire Wire Line
-	3700 4700 3700 4600
-Wire Wire Line
-	4000 4700 4000 4300
-Wire Wire Line
-	3800 4700 3700 4700
-Wire Notes Line
-	15950 600  11200 600 
-Wire Notes Line
-	7600 2550 7600 5700
-Wire Wire Line
-	8050 2000 8250 2000
-Wire Wire Line
-	8250 2000 8250 2650
-Wire Wire Line
-	8250 2650 9750 2650
-Wire Wire Line
-	8050 2000 8050 1400
-Wire Notes Line
-	15950 5700 15950 600 
-Wire Notes Line
-	7600 5700 15950 5700
-Wire Wire Line
-	3350 3250 4150 3250
-Connection ~ 3750 3250
-Wire Notes Line
-	7600 2700 7600 600 
-Wire Notes Line
-	7600 600  11500 600 
-Wire Notes Line
-	13050 5700 13050 600 
-Wire Wire Line
-	1350 7800 1550 7800
-Connection ~ 1450 7800
-Wire Wire Line
-	2200 7050 3250 7050
-Wire Wire Line
-	4550 7950 4700 7950
-Wire Wire Line
-	4550 7150 5500 7150
-Wire Wire Line
-	4550 7250 5500 7250
-Wire Wire Line
-	4550 7350 4950 7350
-Wire Wire Line
-	4950 7350 4950 7050
-Wire Wire Line
-	4950 7050 5500 7050
-Wire Wire Line
-	4550 7450 5050 7450
-Wire Wire Line
-	5050 7450 5050 7350
-Wire Wire Line
-	5050 7350 5500 7350
-Wire Wire Line
-	4550 7550 5150 7550
-Wire Wire Line
-	5150 7550 5150 7450
-Wire Wire Line
-	5150 7450 5500 7450
-Wire Wire Line
-	4550 7650 5250 7650
-Wire Wire Line
-	5250 7650 5250 7550
-Wire Wire Line
-	5250 7550 5500 7550
-Wire Wire Line
-	7500 6850 6800 6850
-Wire Wire Line
-	7500 6950 6800 6950
-Wire Wire Line
-	9500 7650 9200 7650
-Wire Wire Line
-	12250 7650 12550 7650
-Wire Wire Line
-	9500 9150 9200 9150
-Wire Wire Line
-	12250 9200 12550 9200
-Wire Wire Line
-	12550 6550 12250 6550
-Wire Wire Line
-	9500 6550 9200 6550
-Wire Wire Line
-	12550 8100 12250 8100
-Wire Wire Line
-	9500 8050 9200 8050
-Wire Notes Line
-	550  5900 550  9550
-Wire Notes Line
-	550  9550 13500 9550
-Wire Notes Line
-	13500 9550 13500 5900
-Wire Notes Line
-	13500 5900 550  5900
-Wire Notes Line
-	6150 9550 6150 5900
-Wire Wire Line
-	14050 1400 14050 1300
-Wire Wire Line
-	14050 2850 14050 2750
-Wire Wire Line
-	14850 2250 14850 1900
-Wire Wire Line
-	14050 4300 14050 4200
-Wire Wire Line
-	14850 3700 14850 3350
-Wire Wire Line
-	2200 7050 2200 7500
-Wire Wire Line
-	2200 7500 2050 7500
-Wire Wire Line
-	2150 7100 2050 7100
 Text Label 3250 7550 2    60   ~ 0
 TEMP_FLT_LATCHED
 Text Label 3250 7650 2    60   ~ 0
@@ -1232,29 +1103,23 @@ F 3 "" H 14350 5500 50  0000 C CNN
 $EndComp
 Text Label 14350 5200 2    60   ~ 0
 TIMER_H
-Wire Wire Line
-	14850 5050 14850 4800
-Wire Wire Line
-	14850 6000 14850 5650
 Text Label 14850 700  0    60   ~ 0
 AIRS_CHARGER_OUT
-Wire Wire Line
-	14850 800  14850 700 
 NoConn ~ 4600 4700
 $Comp
-L Conn_01x06 J2
+L Conn_01x06 J4
 U 1 1 5A5D2F58
-P 2850 950
-F 0 "J2" H 2850 1250 50  0000 C CNN
-F 1 "BMS Connector 1" V 2950 950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Straight" H 2850 950 50  0001 C CNN
-F 3 "" H 2850 950 50  0001 C CNN
-	1    2850 950 
-	0    -1   -1   0   
+P 2900 2300
+F 0 "J4" H 2900 2600 50  0000 C CNN
+F 1 "BMS Connector 1" V 3000 2300 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x03x2.50mm_Straight" H 2900 2300 50  0001 C CNN
+F 3 "" H 2900 2300 50  0001 C CNN
+	1    2900 2300
+	0    -1   1    0   
 $EndComp
-Text Label 2950 1150 3    60   ~ 0
+Text Label 3000 2100 1    60   ~ 0
 CHARGER_CONTROL
-NoConn ~ 3150 1150
+NoConn ~ 3200 2100
 Text Label 9500 7650 0    60   ~ 0
 BATT-
 Text Label 9500 9150 0    60   ~ 0
@@ -1277,20 +1142,16 @@ $EndComp
 Text Label 1100 3900 0    60   ~ 0
 12V
 $Comp
-L R R4
+L R R6
 U 1 1 5A7DD64D
 P 850 7300
-F 0 "R4" V 930 7300 50  0000 C CNN
+F 0 "R6" V 930 7300 50  0000 C CNN
 F 1 "120" V 850 7300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 780 7300 50  0001 C CNN
 F 3 "" H 850 7300 50  0001 C CNN
 	1    850  7300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	850  7150 850  7100
-Wire Wire Line
-	850  7450 850  7500
 NoConn ~ 6150 4700
 NoConn ~ 5000 4700
 NoConn ~ 5100 4700
@@ -1349,7 +1210,7 @@ F 3 "" H 17300 9100 50  0001 C CNN
 	1    17300 9100
 	1    0    0    -1  
 $EndComp
-Text Label 14850 6000 2    60   ~ 0
+Text Label 14550 6000 0    60   ~ 0
 AIRS_RELAYS_OUT
 Text Label 14850 5050 2    60   ~ 0
 AIRS_IMD_OUT
@@ -1357,66 +1218,10 @@ Text Label 14850 3700 2    60   ~ 0
 AIRS_BMS_OUT
 Text Label 14850 2250 2    60   ~ 0
 AIRS_TEMP_OUT
-Wire Wire Line
-	8700 6750 8600 6750
-Wire Wire Line
-	8700 6850 8600 6850
-Wire Wire Line
-	8700 6950 8600 6950
-Wire Wire Line
-	8700 7050 8600 7050
-Wire Wire Line
-	8700 7150 8600 7150
-Wire Wire Line
-	8700 7250 8600 7250
-Wire Wire Line
-	8700 7350 8600 7350
-Text Label 8600 7650 0    60   ~ 0
+Text Label 8550 7650 0    60   ~ 0
 BATT-
-Wire Wire Line
-	8600 8250 8700 8250
-Wire Wire Line
-	8700 8350 8600 8350
-Wire Wire Line
-	8600 8450 8700 8450
-Wire Wire Line
-	8700 8550 8600 8550
-Wire Wire Line
-	8600 8650 8700 8650
-Wire Wire Line
-	8700 8750 8600 8750
-Wire Wire Line
-	8600 8850 8700 8850
 Text Label 8600 9150 0    60   ~ 0
 BATT-
-Wire Wire Line
-	11650 6750 11750 6750
-Wire Wire Line
-	11750 6850 11650 6850
-Wire Wire Line
-	11650 6950 11750 6950
-Wire Wire Line
-	11750 7050 11650 7050
-Wire Wire Line
-	11650 7150 11750 7150
-Wire Wire Line
-	11750 7250 11650 7250
-Wire Wire Line
-	11650 7350 11750 7350
-Wire Wire Line
-	11650 8300 11750 8300
-Wire Wire Line
-	11750 8400 11650 8400
-Wire Wire Line
-	11650 8500 11750 8500
-Wire Wire Line
-	11650 8600 11750 8600
-Wire Wire Line
-	11650 8700 11750 8700
-Wire Wire Line
-	11750 8800 11650 8800
-Wire Wire Line
-	11650 8900 11750 8900
 Text Label 11650 9200 0    60   ~ 0
 BATT-
 Text Label 11650 7650 0    60   ~ 0
@@ -1428,17 +1233,17 @@ NoConn ~ 8700 7450
 $Comp
 L Conn_01x10 J19
 U 1 1 5AA89576
-P 8400 7150
-F 0 "J19" H 8400 7650 50  0000 C CNN
-F 1 "Chip 1" H 8400 6550 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_2x05x2.50mm_Straight" H 8400 7150 50  0001 C CNN
-F 3 "" H 8400 7150 50  0001 C CNN
-	1    8400 7150
+P 8350 7150
+F 0 "J19" H 8350 7650 50  0000 C CNN
+F 1 "Chip 1" H 8350 6550 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x05x2.50mm_Straight" H 8350 7150 50  0001 C CNN
+F 3 "" H 8350 7150 50  0001 C CNN
+	1    8350 7150
 	-1   0    0    -1  
 $EndComp
-Text Label 8600 7550 0    60   ~ 0
+Text Label 8550 7550 0    60   ~ 0
 3.3V_TS
-NoConn ~ 8600 7450
+NoConn ~ 8550 7450
 $Comp
 L Conn_01x10 J20
 U 1 1 5AA89A40
@@ -1497,10 +1302,6 @@ Text Label 3250 7050 2    60   ~ 0
 CAN_TX
 Text Label 3250 7850 2    60   ~ 0
 CAN_RX
-Wire Wire Line
-	3250 7850 2150 7850
-Wire Wire Line
-	2150 7850 2150 7100
 $Comp
 L CP C9
 U 1 1 5AC9C051
@@ -1534,8 +1335,6 @@ F 3 "" H 14050 1150 50  0001 C CNN
 	1    14050 1150
 	0    -1   -1   0   
 $EndComp
-Connection ~ 14050 1300
-Connection ~ 14050 1000
 $Comp
 L D D2
 U 1 1 5AD83A0E
@@ -1662,4 +1461,266 @@ Text Label 13050 9300 2    60   ~ 0
 BATT-
 Text Label 13050 9000 0    60   ~ 0
 3.3V_TS
+$Comp
+L R R4
+U 1 1 5B13751B
+P 10550 7250
+F 0 "R4" V 10630 7250 50  0000 C CNN
+F 1 "R" V 10550 7250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10480 7250 50  0001 C CNN
+F 3 "" H 10550 7250 50  0001 C CNN
+	1    10550 7250
+	0    1    1    0   
+$EndComp
+Text Label 10700 7250 0    60   ~ 0
+3.3V_TS
+$Comp
+L R R7
+U 1 1 5B13878D
+P 10550 8750
+F 0 "R7" V 10630 8750 50  0000 C CNN
+F 1 "R" V 10550 8750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10480 8750 50  0001 C CNN
+F 3 "" H 10550 8750 50  0001 C CNN
+	1    10550 8750
+	0    1    1    0   
+$EndComp
+Text Label 10700 8750 0    60   ~ 0
+3.3V_TS
+$Comp
+L R R5
+U 1 1 5B139C8A
+P 13600 7250
+F 0 "R5" V 13680 7250 50  0000 C CNN
+F 1 "R" V 13600 7250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 13530 7250 50  0001 C CNN
+F 3 "" H 13600 7250 50  0001 C CNN
+	1    13600 7250
+	0    1    1    0   
+$EndComp
+Text Label 13750 7250 0    60   ~ 0
+3.3V_TS
+$Comp
+L R R8
+U 1 1 5B13AB2E
+P 13600 8800
+F 0 "R8" V 13680 8800 50  0000 C CNN
+F 1 "R" V 13600 8800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 13530 8800 50  0001 C CNN
+F 3 "" H 13600 8800 50  0001 C CNN
+	1    13600 8800
+	0    1    1    0   
+$EndComp
+Text Label 13750 8800 0    60   ~ 0
+3.3V_TS
+NoConn ~ 11650 7450
+NoConn ~ 11650 9000
+NoConn ~ 8600 8950
+Wire Wire Line
+	11650 3350 11950 3350
+Connection ~ 11850 3350
+Connection ~ 11750 3350
+Wire Wire Line
+	8050 1400 8350 1400
+Connection ~ 11050 3050
+Wire Wire Line
+	9750 2000 9750 2650
+Wire Wire Line
+	3850 2100 3950 2100
+Wire Wire Line
+	11850 1000 12150 1000
+Wire Wire Line
+	11050 2950 11050 3050
+Wire Wire Line
+	11050 3050 10850 3050
+Wire Wire Line
+	3700 4700 3700 4600
+Wire Wire Line
+	4000 4700 4000 4300
+Wire Wire Line
+	3800 4700 3700 4700
+Wire Notes Line
+	15950 600  11200 600 
+Wire Notes Line
+	7600 2550 7600 5700
+Wire Wire Line
+	8050 2000 8250 2000
+Wire Wire Line
+	8250 2000 8250 2650
+Wire Wire Line
+	8250 2650 9750 2650
+Wire Wire Line
+	8050 2000 8050 1400
+Wire Notes Line
+	15950 5700 15950 600 
+Wire Notes Line
+	7600 5700 15950 5700
+Wire Wire Line
+	3350 3250 4150 3250
+Connection ~ 3750 3250
+Wire Notes Line
+	7600 2700 7600 600 
+Wire Notes Line
+	7600 600  11500 600 
+Wire Notes Line
+	13050 5700 13050 600 
+Wire Wire Line
+	1350 7800 1550 7800
+Connection ~ 1450 7800
+Wire Wire Line
+	2200 7050 3250 7050
+Wire Wire Line
+	4550 7950 4700 7950
+Wire Wire Line
+	4550 7150 5500 7150
+Wire Wire Line
+	4550 7250 5500 7250
+Wire Wire Line
+	4550 7350 4950 7350
+Wire Wire Line
+	4950 7350 4950 7050
+Wire Wire Line
+	4950 7050 5500 7050
+Wire Wire Line
+	4550 7450 5050 7450
+Wire Wire Line
+	5050 7450 5050 7350
+Wire Wire Line
+	5050 7350 5500 7350
+Wire Wire Line
+	4550 7550 5150 7550
+Wire Wire Line
+	5150 7550 5150 7450
+Wire Wire Line
+	5150 7450 5500 7450
+Wire Wire Line
+	4550 7650 5250 7650
+Wire Wire Line
+	5250 7650 5250 7550
+Wire Wire Line
+	5250 7550 5500 7550
+Wire Wire Line
+	9500 7650 9200 7650
+Wire Wire Line
+	12250 7650 12550 7650
+Wire Wire Line
+	9500 9150 9200 9150
+Wire Wire Line
+	12250 9200 12550 9200
+Wire Wire Line
+	12550 6550 12250 6550
+Wire Wire Line
+	9500 6550 9200 6550
+Wire Wire Line
+	12550 8100 12250 8100
+Wire Wire Line
+	9500 8050 9200 8050
+Wire Notes Line
+	550  5900 550  9550
+Wire Notes Line
+	550  9550 14150 9550
+Wire Notes Line
+	14150 9550 14150 5900
+Wire Notes Line
+	14150 5900 550  5900
+Wire Notes Line
+	6150 9550 6150 5900
+Wire Wire Line
+	14050 1400 14050 1300
+Wire Wire Line
+	14050 2850 14050 2750
+Wire Wire Line
+	14850 2250 14850 1900
+Wire Wire Line
+	14050 4300 14050 4200
+Wire Wire Line
+	14850 3700 14850 3350
+Wire Wire Line
+	2200 7050 2200 7500
+Wire Wire Line
+	2200 7500 2050 7500
+Wire Wire Line
+	2150 7100 2050 7100
+Wire Wire Line
+	14850 5050 14850 4800
+Wire Wire Line
+	14850 800  14850 700 
+Wire Wire Line
+	850  7150 850  7100
+Wire Wire Line
+	850  7450 850  7500
+Wire Wire Line
+	8600 8250 8700 8250
+Wire Wire Line
+	8700 8350 8600 8350
+Wire Wire Line
+	8600 8450 8700 8450
+Wire Wire Line
+	8700 8550 8600 8550
+Wire Wire Line
+	8600 8650 8700 8650
+Wire Wire Line
+	8700 8750 8600 8750
+Wire Wire Line
+	8600 8850 8700 8850
+Wire Wire Line
+	11650 6750 11750 6750
+Wire Wire Line
+	11750 6850 11650 6850
+Wire Wire Line
+	11650 6950 11750 6950
+Wire Wire Line
+	11750 7050 11650 7050
+Wire Wire Line
+	11650 7150 11750 7150
+Wire Wire Line
+	11750 7250 11650 7250
+Wire Wire Line
+	11650 7350 11750 7350
+Wire Wire Line
+	11650 8300 11750 8300
+Wire Wire Line
+	11750 8400 11650 8400
+Wire Wire Line
+	11650 8500 11750 8500
+Wire Wire Line
+	11650 8600 11750 8600
+Wire Wire Line
+	11650 8700 11750 8700
+Wire Wire Line
+	11750 8800 11650 8800
+Wire Wire Line
+	11650 8900 11750 8900
+Wire Wire Line
+	3250 7850 2150 7850
+Wire Wire Line
+	2150 7850 2150 7100
+Connection ~ 14050 1300
+Connection ~ 14050 1000
+Wire Wire Line
+	10400 8750 9900 8750
+Wire Wire Line
+	9900 7250 10400 7250
+Wire Wire Line
+	13450 7250 12950 7250
+Wire Wire Line
+	12950 8800 13450 8800
+Wire Wire Line
+	8700 6750 8550 6750
+Wire Wire Line
+	8550 6850 8700 6850
+Wire Wire Line
+	8700 6950 8550 6950
+Wire Wire Line
+	8550 7050 8700 7050
+Wire Wire Line
+	8700 7150 8550 7150
+Wire Wire Line
+	8550 7250 8700 7250
+Wire Wire Line
+	8700 7350 8550 7350
+Text Label 6800 6850 0    60   ~ 0
+3.3V_TS
+Text Label 6800 6950 0    60   ~ 0
+BATT-
 $EndSCHEMATC
