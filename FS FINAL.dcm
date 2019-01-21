@@ -34,7 +34,7 @@ $CMP LD1117V33
 D Positive 800mA 15V Linear Regulator, Fixed Output 3.3V, TO-220
 $ENDCMP
 #
-$CMP MCP2515-I/ST
+$CMP MCP2515-I_ST
 D Stand-Alone CAN Controller with SPI Interface, Industrial temperature range
 K CAN Controller SPI
 F http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf
