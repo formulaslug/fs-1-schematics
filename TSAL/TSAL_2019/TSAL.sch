@@ -1,0 +1,790 @@
+EESchema Schematic File Version 4
+LIBS:TSAL-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "TSAL"
+Date "2016-04-01"
+Rev "0.9"
+Comp "Formula Slug - UCSC EV R&D"
+Comment1 "University of California Santa Cruz"
+Comment2 "Thimann Laboratories 372"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 3500 850  0    60   ~ 0
+TSAL - Oscillator
+Text Label 900  3100 2    60   ~ 0
+OSC
+$Comp
+L Device:LED_Small D1
+U 1 1 570A5E4D
+P 1000 3100
+F 0 "D1" H 950 3225 50  0000 L CNN
+F 1 "Led_Small" H 825 3000 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1000 3100 60  0001 C CNN
+F 3 "" V 1000 3100 60  0000 C CNN
+	1    1000 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 570A5EA8
+P 1300 3100
+F 0 "D2" H 1250 3225 50  0000 L CNN
+F 1 "Led_Small" H 1125 3000 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1300 3100 60  0001 C CNN
+F 3 "" V 1300 3100 60  0000 C CNN
+	1    1300 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 570A6252
+P 1600 3100
+F 0 "D3" H 1550 3225 50  0000 L CNN
+F 1 "Led_Small" H 1425 3000 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1600 3100 60  0001 C CNN
+F 3 "" V 1600 3100 60  0000 C CNN
+	1    1600 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D4
+U 1 1 570A6258
+P 1900 3100
+F 0 "D4" H 1850 3225 50  0000 L CNN
+F 1 "Led_Small" H 1725 3000 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1900 3100 60  0001 C CNN
+F 3 "" V 1900 3100 60  0000 C CNN
+	1    1900 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D5
+U 1 1 570A647F
+P 2200 3100
+F 0 "D5" H 2150 3225 50  0000 L CNN
+F 1 "Led_Small" H 2025 3000 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 2200 3100 60  0001 C CNN
+F 3 "" V 2200 3100 60  0000 C CNN
+	1    2200 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 570A6A3F
+P 2450 3100
+F 0 "R3" V 2530 3100 50  0000 C CNN
+F 1 "68" V 2450 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2380 3100 30  0001 C CNN
+F 3 "" H 2450 3100 30  0000 C CNN
+	1    2450 3100
+	0    -1   1    0   
+$EndComp
+Wire Notes Line
+	7900 900  900  900 
+Wire Notes Line
+	900  900  900  2500
+Wire Notes Line
+	900  2500 7900 2500
+Wire Notes Line
+	7900 2500 7900 900 
+Wire Wire Line
+	1200 3100 1100 3100
+Wire Wire Line
+	1800 3100 1700 3100
+Wire Wire Line
+	1500 3100 1400 3100
+Wire Wire Line
+	2000 3100 2100 3100
+$Comp
+L conn:Conn_01x04 J1
+U 1 1 5ABC6103
+P 1350 1600
+F 0 "J1" H 1350 1800 50  0000 C CNN
+F 1 "Main Connector" V 1450 1600 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_2x02x2.50mm_Straight" H 1350 1600 50  0001 C CNN
+F 3 "" H 1350 1600 50  0001 C CNN
+	1    1350 1600
+	-1   0    0    -1  
+$EndComp
+Text Label 2600 3100 0    60   ~ 0
+GND
+$Comp
+L Device:Speaker LS2
+U 1 1 5ABC577A
+P 4100 3150
+F 0 "LS2" H 4150 3375 50  0000 R CNN
+F 1 "Speaker" H 4150 3300 50  0000 R CNN
+F 2 "FSFootprints:RTDS_H" H 4100 2950 50  0001 C CNN
+F 3 "" H 4090 3100 50  0001 C CNN
+	1    4100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Speaker LS1
+U 1 1 5ABC5A59
+P 3250 3150
+F 0 "LS1" H 3300 3375 50  0000 R CNN
+F 1 "Speaker" H 3300 3300 50  0000 R CNN
+F 2 "FSFootprints:RTDS_H" H 3250 2950 50  0001 C CNN
+F 3 "" H 3240 3100 50  0001 C CNN
+	1    3250 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3150 3450 3150
+Wire Wire Line
+	3450 3250 3900 3250
+Text Label 3450 3250 0    60   ~ 0
+GND
+Text Label 3450 3150 0    60   ~ 0
+RTDS_H
+Text Label 900  3450 2    60   ~ 0
+OSC
+$Comp
+L Device:LED_Small D6
+U 1 1 5ABCA007
+P 1000 3450
+F 0 "D6" H 950 3575 50  0000 L CNN
+F 1 "Led_Small" H 825 3350 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1000 3450 60  0001 C CNN
+F 3 "" V 1000 3450 60  0000 C CNN
+	1    1000 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D7
+U 1 1 5ABCA00D
+P 1300 3450
+F 0 "D7" H 1250 3575 50  0000 L CNN
+F 1 "Led_Small" H 1125 3350 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1300 3450 60  0001 C CNN
+F 3 "" V 1300 3450 60  0000 C CNN
+	1    1300 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D8
+U 1 1 5ABCA013
+P 1600 3450
+F 0 "D8" H 1550 3575 50  0000 L CNN
+F 1 "Led_Small" H 1425 3350 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1600 3450 60  0001 C CNN
+F 3 "" V 1600 3450 60  0000 C CNN
+	1    1600 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D9
+U 1 1 5ABCA019
+P 1900 3450
+F 0 "D9" H 1850 3575 50  0000 L CNN
+F 1 "Led_Small" H 1725 3350 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1900 3450 60  0001 C CNN
+F 3 "" V 1900 3450 60  0000 C CNN
+	1    1900 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D10
+U 1 1 5ABCA01F
+P 2200 3450
+F 0 "D10" H 2150 3575 50  0000 L CNN
+F 1 "Led_Small" H 2025 3350 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 2200 3450 60  0001 C CNN
+F 3 "" V 2200 3450 60  0000 C CNN
+	1    2200 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 3450 1100 3450
+Wire Wire Line
+	1800 3450 1700 3450
+Wire Wire Line
+	1500 3450 1400 3450
+Wire Wire Line
+	2000 3450 2100 3450
+Text Label 2600 3450 0    60   ~ 0
+GND
+Text Label 900  3750 2    60   ~ 0
+OSC
+$Comp
+L Device:LED_Small D11
+U 1 1 5ABCA1B4
+P 1000 3750
+F 0 "D11" H 950 3875 50  0000 L CNN
+F 1 "Led_Small" H 825 3650 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1000 3750 60  0001 C CNN
+F 3 "" V 1000 3750 60  0000 C CNN
+	1    1000 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D12
+U 1 1 5ABCA1BA
+P 1300 3750
+F 0 "D12" H 1250 3875 50  0000 L CNN
+F 1 "Led_Small" H 1125 3650 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1300 3750 60  0001 C CNN
+F 3 "" V 1300 3750 60  0000 C CNN
+	1    1300 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D13
+U 1 1 5ABCA1C0
+P 1600 3750
+F 0 "D13" H 1550 3875 50  0000 L CNN
+F 1 "Led_Small" H 1425 3650 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1600 3750 60  0001 C CNN
+F 3 "" V 1600 3750 60  0000 C CNN
+	1    1600 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D14
+U 1 1 5ABCA1C6
+P 1900 3750
+F 0 "D14" H 1850 3875 50  0000 L CNN
+F 1 "Led_Small" H 1725 3650 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1900 3750 60  0001 C CNN
+F 3 "" V 1900 3750 60  0000 C CNN
+	1    1900 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D15
+U 1 1 5ABCA1CC
+P 2200 3750
+F 0 "D15" H 2150 3875 50  0000 L CNN
+F 1 "Led_Small" H 2025 3650 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 2200 3750 60  0001 C CNN
+F 3 "" V 2200 3750 60  0000 C CNN
+	1    2200 3750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 3750 1100 3750
+Wire Wire Line
+	1800 3750 1700 3750
+Wire Wire Line
+	1500 3750 1400 3750
+Wire Wire Line
+	2000 3750 2100 3750
+Text Label 2600 3750 0    60   ~ 0
+GND
+Text Label 900  4100 2    60   ~ 0
+OSC
+$Comp
+L Device:LED_Small D16
+U 1 1 5ABCA282
+P 1000 4100
+F 0 "D16" H 950 4225 50  0000 L CNN
+F 1 "Led_Small" H 825 4000 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1000 4100 60  0001 C CNN
+F 3 "" V 1000 4100 60  0000 C CNN
+	1    1000 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D17
+U 1 1 5ABCA288
+P 1300 4100
+F 0 "D17" H 1250 4225 50  0000 L CNN
+F 1 "Led_Small" H 1125 4000 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1300 4100 60  0001 C CNN
+F 3 "" V 1300 4100 60  0000 C CNN
+	1    1300 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D18
+U 1 1 5ABCA28E
+P 1600 4100
+F 0 "D18" H 1550 4225 50  0000 L CNN
+F 1 "Led_Small" H 1425 4000 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1600 4100 60  0001 C CNN
+F 3 "" V 1600 4100 60  0000 C CNN
+	1    1600 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D19
+U 1 1 5ABCA294
+P 1900 4100
+F 0 "D19" H 1850 4225 50  0000 L CNN
+F 1 "Led_Small" H 1725 4000 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1900 4100 60  0001 C CNN
+F 3 "" V 1900 4100 60  0000 C CNN
+	1    1900 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D20
+U 1 1 5ABCA29A
+P 2200 4100
+F 0 "D20" H 2150 4225 50  0000 L CNN
+F 1 "Led_Small" H 2025 4000 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 2200 4100 60  0001 C CNN
+F 3 "" V 2200 4100 60  0000 C CNN
+	1    2200 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4100 1100 4100
+Wire Wire Line
+	1800 4100 1700 4100
+Wire Wire Line
+	1500 4100 1400 4100
+Wire Wire Line
+	2000 4100 2100 4100
+Text Label 2600 4100 0    60   ~ 0
+GND
+Text Label 900  4450 2    60   ~ 0
+OSC
+$Comp
+L Device:LED_Small D21
+U 1 1 5ABCA375
+P 1000 4450
+F 0 "D21" H 950 4575 50  0000 L CNN
+F 1 "Led_Small" H 825 4350 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1000 4450 60  0001 C CNN
+F 3 "" V 1000 4450 60  0000 C CNN
+	1    1000 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D22
+U 1 1 5ABCA37B
+P 1300 4450
+F 0 "D22" H 1250 4575 50  0000 L CNN
+F 1 "Led_Small" H 1125 4350 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1300 4450 60  0001 C CNN
+F 3 "" V 1300 4450 60  0000 C CNN
+	1    1300 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D23
+U 1 1 5ABCA381
+P 1600 4450
+F 0 "D23" H 1550 4575 50  0000 L CNN
+F 1 "Led_Small" H 1425 4350 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1600 4450 60  0001 C CNN
+F 3 "" V 1600 4450 60  0000 C CNN
+	1    1600 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D24
+U 1 1 5ABCA387
+P 1900 4450
+F 0 "D24" H 1850 4575 50  0000 L CNN
+F 1 "Led_Small" H 1725 4350 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1900 4450 60  0001 C CNN
+F 3 "" V 1900 4450 60  0000 C CNN
+	1    1900 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D25
+U 1 1 5ABCA38D
+P 2200 4450
+F 0 "D25" H 2150 4575 50  0000 L CNN
+F 1 "Led_Small" H 2025 4350 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 2200 4450 60  0001 C CNN
+F 3 "" V 2200 4450 60  0000 C CNN
+	1    2200 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4450 1100 4450
+Wire Wire Line
+	1800 4450 1700 4450
+Wire Wire Line
+	1500 4450 1400 4450
+Wire Wire Line
+	2000 4450 2100 4450
+Text Label 2600 4450 0    60   ~ 0
+GND
+Text Label 900  4800 2    60   ~ 0
+OSC
+$Comp
+L Device:LED_Small D26
+U 1 1 5ABCA5D9
+P 1000 4800
+F 0 "D26" H 950 4925 50  0000 L CNN
+F 1 "Led_Small" H 825 4700 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1000 4800 60  0001 C CNN
+F 3 "" V 1000 4800 60  0000 C CNN
+	1    1000 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D27
+U 1 1 5ABCA5DF
+P 1300 4800
+F 0 "D27" H 1250 4925 50  0000 L CNN
+F 1 "Led_Small" H 1125 4700 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1300 4800 60  0001 C CNN
+F 3 "" V 1300 4800 60  0000 C CNN
+	1    1300 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D28
+U 1 1 5ABCA5E5
+P 1600 4800
+F 0 "D28" H 1550 4925 50  0000 L CNN
+F 1 "Led_Small" H 1425 4700 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1600 4800 60  0001 C CNN
+F 3 "" V 1600 4800 60  0000 C CNN
+	1    1600 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D29
+U 1 1 5ABCA5EB
+P 1900 4800
+F 0 "D29" H 1850 4925 50  0000 L CNN
+F 1 "Led_Small" H 1725 4700 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 1900 4800 60  0001 C CNN
+F 3 "" V 1900 4800 60  0000 C CNN
+	1    1900 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D30
+U 1 1 5ABCA5F1
+P 2200 4800
+F 0 "D30" H 2150 4925 50  0000 L CNN
+F 1 "Led_Small" H 2025 4700 50  0001 L CNN
+F 2 "FSFootprints:LED_SMD-2" V 2200 4800 60  0001 C CNN
+F 3 "" V 2200 4800 60  0000 C CNN
+	1    2200 4800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4800 1100 4800
+Wire Wire Line
+	1800 4800 1700 4800
+Wire Wire Line
+	1500 4800 1400 4800
+Wire Wire Line
+	2000 4800 2100 4800
+Text Label 2600 4800 0    60   ~ 0
+GND
+$Comp
+L Device:R R4
+U 1 1 5ABCB11C
+P 2450 3450
+F 0 "R4" V 2530 3450 50  0000 C CNN
+F 1 "68" V 2450 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2380 3450 30  0001 C CNN
+F 3 "" H 2450 3450 30  0000 C CNN
+	1    2450 3450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5ABCB1BD
+P 2450 3750
+F 0 "R5" V 2530 3750 50  0000 C CNN
+F 1 "68" V 2450 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2380 3750 30  0001 C CNN
+F 3 "" H 2450 3750 30  0000 C CNN
+	1    2450 3750
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5ABCB263
+P 2450 4100
+F 0 "R6" V 2530 4100 50  0000 C CNN
+F 1 "68" V 2450 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2380 4100 30  0001 C CNN
+F 3 "" H 2450 4100 30  0000 C CNN
+	1    2450 4100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5ABCB30A
+P 2450 4450
+F 0 "R7" V 2530 4450 50  0000 C CNN
+F 1 "68" V 2450 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2380 4450 30  0001 C CNN
+F 3 "" H 2450 4450 30  0000 C CNN
+	1    2450 4450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5ABCB3B8
+P 2450 4800
+F 0 "R8" V 2530 4800 50  0000 C CNN
+F 1 "68" V 2450 4800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2380 4800 30  0001 C CNN
+F 3 "" H 2450 4800 30  0000 C CNN
+	1    2450 4800
+	0    -1   1    0   
+$EndComp
+$Comp
+L conn:Conn_01x01 H1
+U 1 1 5ADD2E14
+P 11300 7050
+F 0 "H1" H 11300 7150 50  0000 C CNN
+F 1 "MtngHole" H 11300 6950 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 11300 7050 50  0001 C CNN
+F 3 "" H 11300 7050 50  0001 C CNN
+	1    11300 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 H2
+U 1 1 5ADD42C1
+P 11650 7050
+F 0 "H2" H 11650 7150 50  0000 C CNN
+F 1 "MtngHole" H 11650 6950 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 11650 7050 50  0001 C CNN
+F 3 "" H 11650 7050 50  0001 C CNN
+	1    11650 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 H3
+U 1 1 5ADD4374
+P 11300 7250
+F 0 "H3" H 11300 7350 50  0000 C CNN
+F 1 "MtngHole" H 11300 7150 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 11300 7250 50  0001 C CNN
+F 3 "" H 11300 7250 50  0001 C CNN
+	1    11300 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:Conn_01x01 H4
+U 1 1 5ADD4426
+P 11650 7250
+F 0 "H4" H 11650 7350 50  0000 C CNN
+F 1 "MtngHole" H 11650 7150 50  0001 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 11650 7250 50  0001 C CNN
+F 3 "" H 11650 7250 50  0001 C CNN
+	1    11650 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C45DE05
+P 1550 1500
+F 0 "#PWR?" H 1550 1350 50  0001 C CNN
+F 1 "+12V" H 1565 1673 50  0000 C CNN
+F 2 "" H 1550 1500 50  0001 C CNN
+F 3 "" H 1550 1500 50  0001 C CNN
+	1    1550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C45DEE1
+P 1550 1800
+F 0 "#PWR?" H 1550 1550 50  0001 C CNN
+F 1 "GND" H 1555 1627 50  0000 C CNN
+F 2 "" H 1550 1800 50  0001 C CNN
+F 3 "" H 1550 1800 50  0001 C CNN
+	1    1550 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1550 1600 2    60   Output ~ 0
+SIG_TSAL
+Text GLabel 1550 1700 2    60   Output ~ 0
+SIG_RTDS
+$Comp
+L power:+12V #PWR?
+U 1 1 5C45EA07
+P 3400 1300
+F 0 "#PWR?" H 3400 1150 50  0001 C CNN
+F 1 "+12V" H 3415 1473 50  0000 C CNN
+F 2 "" H 3400 1300 50  0001 C CNN
+F 3 "" H 3400 1300 50  0001 C CNN
+	1    3400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C45EE65
+P 3400 2100
+F 0 "#PWR?" H 3400 1850 50  0001 C CNN
+F 1 "GND" H 3405 1927 50  0000 C CNN
+F 2 "" H 3400 2100 50  0001 C CNN
+F 3 "" H 3400 2100 50  0001 C CNN
+	1    3400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C45EF65
+P 4400 1450
+F 0 "R?" H 4470 1496 50  0000 L CNN
+F 1 "1k" H 4470 1405 50  0000 L CNN
+F 2 "" V 4330 1450 50  0001 C CNN
+F 3 "~" H 4400 1450 50  0001 C CNN
+	1    4400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C45EFE5
+P 4400 1750
+F 0 "R?" H 4470 1796 50  0000 L CNN
+F 1 "5k" H 4470 1705 50  0000 L CNN
+F 2 "" V 4330 1750 50  0001 C CNN
+F 3 "~" H 4400 1750 50  0001 C CNN
+	1    4400 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1900 3900 1900
+Wire Wire Line
+	2900 1500 2800 1500
+$Comp
+L linear:SE555 U?
+U 1 1 5C45E7F1
+P 3400 1700
+F 0 "U?" H 3100 2050 50  0000 C CNN
+F 1 "SE555" H 3600 2050 50  0000 C CNN
+F 2 "" H 3400 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3400 1700 50  0001 C CNN
+	1    3400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C45BB3C
+P 4400 2050
+F 0 "C?" H 4515 2096 50  0000 L CNN
+F 1 "30uF" H 4515 2005 50  0000 L CNN
+F 2 "" H 4438 1900 50  0001 C CNN
+F 3 "~" H 4400 2050 50  0001 C CNN
+	1    4400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C45CC8B
+P 4400 2200
+F 0 "#PWR?" H 4400 1950 50  0001 C CNN
+F 1 "GND" H 4405 2027 50  0000 C CNN
+F 2 "" H 4400 2200 50  0001 C CNN
+F 3 "" H 4400 2200 50  0001 C CNN
+	1    4400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C45FCCA
+P 4400 1300
+F 0 "#PWR?" H 4400 1150 50  0001 C CNN
+F 1 "+12V" H 4415 1473 50  0000 C CNN
+F 2 "" H 4400 1300 50  0001 C CNN
+F 3 "" H 4400 1300 50  0001 C CNN
+	1    4400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C4615D6
+P 2200 1700
+F 0 "#PWR?" H 2200 1450 50  0001 C CNN
+F 1 "GND" H 2205 1527 50  0000 C CNN
+F 2 "" H 2200 1700 50  0001 C CNN
+F 3 "" H 2200 1700 50  0001 C CNN
+	1    2200 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C4640B1
+P 2600 1300
+F 0 "#PWR?" H 2600 1150 50  0001 C CNN
+F 1 "+12V" H 2615 1473 50  0000 C CNN
+F 2 "" H 2600 1300 50  0001 C CNN
+F 3 "" H 2600 1300 50  0001 C CNN
+	1    2600 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1700 2500 1700
+$Comp
+L Device:C C?
+U 1 1 5C46506D
+P 2350 1700
+F 0 "C?" H 2465 1746 50  0000 L CNN
+F 1 "10uF" H 2465 1655 50  0000 L CNN
+F 2 "" H 2388 1550 50  0001 C CNN
+F 3 "~" H 2350 1700 50  0001 C CNN
+	1    2350 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 1500 2800 1000
+Wire Wire Line
+	4200 1000 4200 1900
+Wire Wire Line
+	2800 1000 4200 1000
+Connection ~ 4400 1900
+Wire Wire Line
+	4400 1900 4200 1900
+Connection ~ 4200 1900
+Wire Wire Line
+	4400 1600 4100 1600
+Wire Wire Line
+	4100 1600 4100 1700
+Wire Wire Line
+	4100 1700 3900 1700
+Connection ~ 4400 1600
+Text GLabel 3900 1500 2    60   Output ~ 0
+555
+$Comp
+L Device:Q_NMOS_DGS Q?
+U 1 1 5C47199C
+P 2500 2100
+F 0 "Q?" H 2705 2146 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 2705 2055 50  0000 L CNN
+F 2 "" H 2700 2200 50  0001 C CNN
+F 3 "~" H 2500 2100 50  0001 C CNN
+	1    2500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C4742FA
+P 2600 1450
+F 0 "R?" H 2670 1496 50  0000 L CNN
+F 1 "R" H 2670 1405 50  0000 L CNN
+F 2 "" V 2530 1450 50  0001 C CNN
+F 3 "~" H 2600 1450 50  0001 C CNN
+	1    2600 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1600 2600 1900
+Wire Wire Line
+	2600 1900 2900 1900
+Connection ~ 2600 1900
+$Comp
+L power:GND #PWR?
+U 1 1 5C476B59
+P 2600 2300
+F 0 "#PWR?" H 2600 2050 50  0001 C CNN
+F 1 "GND" H 2605 2127 50  0000 C CNN
+F 2 "" H 2600 2300 50  0001 C CNN
+F 3 "" H 2600 2300 50  0001 C CNN
+	1    2600 2300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
