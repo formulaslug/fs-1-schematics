@@ -1,4 +1,5 @@
 (sym_lib_table
+  (lib (name FS_FINAL)(type Legacy)(uri "${FS_GITHUB}/fs-1-schematics/FS FINAL.lib")(options "")(descr ""))
   (lib (name ac-dc)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/ac-dc.lib)(options "")(descr ""))
   (lib (name actel)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/actel.lib)(options "")(descr ""))
   (lib (name adc-dac)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/adc-dac.lib)(options "")(descr ""))
@@ -81,5 +82,4 @@
   (lib (name xilinx)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/xilinx.lib)(options "")(descr ""))
   (lib (name zetex)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/zetex.lib)(options "")(descr ""))
   (lib (name Zilog)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Zilog.lib)(options "")(descr ""))
-  (lib (name FS-FINAL)(type Legacy)(uri "C:/Users/Sam/GitHub/fs-1-schematics/FS FINAL.lib")(options "")(descr ""))
 )
