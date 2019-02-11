@@ -1,6 +1,6 @@
-update=22/05/2015 07:44:53
+update=Sunday, 10 February 2019 'pmt' 20:23:34
 version=1
-last_client=kicad
+last_client=eeschema
 [general]
 version=1
 RootSch=
@@ -31,3 +31,6 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+LibName1=/Users/dukeloke/git/fs-1-schematics/symbols
+LibName2=/Users/dukeloke/git/fs-1-schematics/arduino
+LibName3=/Users/dukeloke/git/fs-1-schematics/FS FINAL
