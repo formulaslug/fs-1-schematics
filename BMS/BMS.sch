@@ -1,4 +1,7 @@
 EESchema Schematic File Version 4
+LIBS:symbols
+LIBS:arduino
+LIBS:FS FINAL
 LIBS:BMS-cache
 EELAYER 26 0
 EELAYER END
@@ -14,17 +17,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L BMS-rescue:LTC6811-FS_FINAL U1
-U 1 1 5C45220C
-P 5800 1050
-F 0 "U1" H 5800 1215 50  0000 C CNN
-F 1 "LTC6811" H 5800 1124 50  0000 C CNN
-F 2 "Housings_SSOP:SSOP-48_7.5x15.9mm_Pitch0.635mm" H 5800 1050 50  0001 C CNN
-F 3 "" H 5800 1050 50  0001 C CNN
-	1    5800 1050
-	1    0    0    -1  
-$EndComp
 $Comp
 L Transistor_FET:BSS84 Q2
 U 1 1 5C45290E
@@ -1119,4 +1111,15 @@ Connection ~ 10700 900
 Connection ~ 7100 700 
 Wire Wire Line
 	7600 1000 7500 1000
+$Comp
+L FS_FINAL:LTC6811 U?
+U 1 1 5C643C55
+P 5800 1050
+F 0 "U?" H 5800 1215 50  0000 C CNN
+F 1 "LTC6811" H 5800 1124 50  0000 C CNN
+F 2 "" H 5800 1050 50  0001 C CNN
+F 3 "" H 5800 1050 50  0001 C CNN
+	1    5800 1050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
