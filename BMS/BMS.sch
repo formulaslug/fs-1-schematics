@@ -1,4 +1,7 @@
 EESchema Schematic File Version 4
+LIBS:symbols
+LIBS:arduino
+LIBS:FS FINAL
 LIBS:BMS-cache
 EELAYER 26 0
 EELAYER END
