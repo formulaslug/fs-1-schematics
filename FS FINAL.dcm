@@ -20,10 +20,22 @@ D 8 bits serial in // out Shift Register Open Collect.
 K HCMOS SR OpenCol
 $ENDCMP
 #
+$CMP ADG708
+D Single 8-to-1 CMOS Low Voltage 2-Wire Serially Controlled, Matrix Switches
+K analog switch selector multiplexer TWI I2C IIC 8-to-1
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADG728_729.pdf
+$ENDCMP
+#
 $CMP EMI_Choke
 D EMI 2-inductor-filter
 K EMI filter
 F http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c30e.ashx?la=en-gb
+$ENDCMP
+#
+$CMP HM2113ZNL
+D Coupled inductor with iron core
+K inductor choke coil reactor magnetic coupled
+F ~
 $ENDCMP
 #
 $CMP L78S05CV-DG
