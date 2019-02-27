@@ -1,8 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:symbols
-LIBS:arduino
-LIBS:FS FINAL
-LIBS:BMS-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -18,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L BMS-rescue:LTC6811-FS_FINAL U1
+L FS_FINAL:LTC6811 U1
 U 1 1 5C45220C
 P 5800 1100
 F 0 "U1" H 5800 1265 50  0000 C CNN
@@ -930,8 +926,6 @@ Wire Wire Line
 Wire Wire Line
 	6500 3200 7100 3200
 Wire Wire Line
-	7500 3500 7100 3500
-Wire Wire Line
 	6500 3100 7500 3100
 Wire Wire Line
 	7500 3100 7500 3200
@@ -939,9 +933,6 @@ Text GLabel 7600 3500 2    50   Input ~ 0
 V-
 Wire Wire Line
 	5000 3900 5000 6750
-Wire Wire Line
-	7600 3500 7500 3500
-Connection ~ 7500 3500
 Text GLabel 5100 6750 2    50   Output ~ 0
 V-
 Wire Wire Line
@@ -1396,7 +1387,6 @@ Text GLabel 7950 2150 2    50   Output ~ 0
 ICMP
 Wire Wire Line
 	7950 2150 7850 2150
-Connection ~ 7850 2150
 Text GLabel 7700 4350 0    50   Input ~ 0
 MUX_A0
 Text GLabel 7700 4450 0    50   Input ~ 0
@@ -1413,12 +1403,6 @@ Text GLabel 6500 3800 2    50   Input ~ 0
 TEMP
 Text GLabel 8500 5350 2    50   Output ~ 0
 TEMP
-Wire Wire Line
-	8850 2250 8950 2250
-Wire Wire Line
-	8850 2850 8950 2850
-Connection ~ 8950 2250
-Connection ~ 8950 2850
 $Comp
 L FS_FINAL:HM2113ZNL L1
 U 1 1 5C8D8362
@@ -1430,10 +1414,6 @@ F 3 "~" H 9650 2550 50  0001 C CNN
 	1    9800 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8950 2250 9150 2250
-Wire Wire Line
-	8950 2850 9150 2850
 Wire Wire Line
 	9150 2250 9150 2450
 Wire Wire Line
@@ -1497,4 +1477,10 @@ Wire Wire Line
 	10250 2450 10450 2450
 Wire Wire Line
 	10450 2650 10250 2650
+Wire Wire Line
+	7100 3500 7600 3500
+Wire Wire Line
+	8850 2250 9150 2250
+Wire Wire Line
+	8850 2850 9150 2850
 $EndSCHEMATC
