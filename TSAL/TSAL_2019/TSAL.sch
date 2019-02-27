@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:TSAL-cache
 EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -47,7 +46,7 @@ Wire Wire Line
 Wire Wire Line
 	4850 5050 4950 5050
 $Comp
-L conn:Conn_01x04 J1
+L Connector_Generic:Conn_01x04 J1
 U 1 1 5ABC6103
 P 750 1600
 F 0 "J1" H 750 1800 50  0000 C CNN
@@ -135,7 +134,7 @@ F 3 "" H 5300 6800 30  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L conn:Conn_01x01 H1
+L Connector_Generic:Conn_01x01 H1
 U 1 1 5ADD2E14
 P 9800 6150
 F 0 "H1" H 9800 6250 50  0000 C CNN
@@ -146,7 +145,7 @@ F 3 "" H 9800 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x01 H2
+L Connector_Generic:Conn_01x01 H2
 U 1 1 5ADD42C1
 P 10150 6150
 F 0 "H2" H 10150 6250 50  0000 C CNN
@@ -157,7 +156,7 @@ F 3 "" H 10150 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x01 H3
+L Connector_Generic:Conn_01x01 H3
 U 1 1 5ADD4374
 P 9800 6350
 F 0 "H3" H 9800 6450 50  0000 C CNN
@@ -168,7 +167,7 @@ F 3 "" H 9800 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x01 H4
+L Connector_Generic:Conn_01x01 H4
 U 1 1 5ADD4426
 P 10150 6350
 F 0 "H4" H 10150 6450 50  0000 C CNN
@@ -251,7 +250,7 @@ $EndComp
 Wire Wire Line
 	5300 1900 5000 1900
 $Comp
-L linear:SE555 U1
+L Timer:SE555 U1
 U 1 1 5C45E7F1
 P 4150 1700
 F 0 "U1" H 3850 2050 50  0000 C CNN
@@ -1593,10 +1592,10 @@ Wire Wire Line
 	7400 1700 8300 1700
 Connection ~ 7400 1700
 $Comp
-L Device:R_Small R?
+L Device:R_Small R18
 U 1 1 5C59BBFD
 P 8300 1900
-F 0 "R?" H 8370 1946 50  0000 L CNN
+F 0 "R18" H 8370 1946 50  0000 L CNN
 F 1 "4.7k" H 8370 1855 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 8230 1900 50  0001 C CNN
 F 3 "~" H 8300 1900 50  0001 C CNN
@@ -1606,10 +1605,10 @@ $EndComp
 Wire Wire Line
 	8300 1700 8300 1800
 $Comp
-L Device:Q_NMOS_GDS Q?
+L Device:Q_NMOS_GDS Q3
 U 1 1 5C5A24FD
 P 8500 1700
-F 0 "Q?" H 8705 1746 50  0000 L CNN
+F 0 "Q3" H 8705 1746 50  0000 L CNN
 F 1 "TSM320N03CX" H 8705 1655 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 8700 1800 50  0001 C CNN
 F 3 "https://www.taiwansemi.com/products/datasheet/TSM320N03CX_B1607.pdf" H 8500 1700 50  0001 C CNN
@@ -1617,10 +1616,10 @@ F 3 "https://www.taiwansemi.com/products/datasheet/TSM320N03CX_B1607.pdf" H 8500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5C5A25E5
 P 8600 1900
-F 0 "#PWR?" H 8600 1650 50  0001 C CNN
+F 0 "#PWR0101" H 8600 1650 50  0001 C CNN
 F 1 "GND" H 8605 1727 50  0000 C CNN
 F 2 "" H 8600 1900 50  0001 C CNN
 F 3 "" H 8600 1900 50  0001 C CNN
@@ -1628,10 +1627,10 @@ F 3 "" H 8600 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5C5A26C0
 P 8300 2000
-F 0 "#PWR?" H 8300 1750 50  0001 C CNN
+F 0 "#PWR0102" H 8300 1750 50  0001 C CNN
 F 1 "GND" H 8305 1827 50  0000 C CNN
 F 2 "" H 8300 2000 50  0001 C CNN
 F 3 "" H 8300 2000 50  0001 C CNN
@@ -1639,10 +1638,10 @@ F 3 "" H 8300 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0103
 U 1 1 5C5A2B6B
 P 8600 1200
-F 0 "#PWR?" H 8600 1050 50  0001 C CNN
+F 0 "#PWR0103" H 8600 1050 50  0001 C CNN
 F 1 "+12V" H 8615 1373 50  0000 C CNN
 F 2 "" H 8600 1200 50  0001 C CNN
 F 3 "" H 8600 1200 50  0001 C CNN
@@ -1650,10 +1649,10 @@ F 3 "" H 8600 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R19
 U 1 1 5C5A2B71
 P 8600 1300
-F 0 "R?" H 8670 1346 50  0000 L CNN
+F 0 "R19" H 8670 1346 50  0000 L CNN
 F 1 "10k" H 8670 1255 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 8530 1300 50  0001 C CNN
 F 3 "~" H 8600 1300 50  0001 C CNN
