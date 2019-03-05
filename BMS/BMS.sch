@@ -20,7 +20,7 @@ U 1 1 5C45220C
 P 5800 1100
 F 0 "U1" H 5800 1265 50  0000 C CNN
 F 1 "LTC6811" H 5800 1174 50  0000 C CNN
-F 2 "Housings_SSOP:SSOP-48_7.5x15.9mm_Pitch0.635mm" H 5800 1100 50  0001 C CNN
+F 2 "FSFootprints:FSOP-48_[LTC6811-2]" H 5800 1100 50  0001 C CNN
 F 3 "" H 5800 1100 50  0001 C CNN
 	1    5800 1100
 	1    0    0    -1  
@@ -135,7 +135,7 @@ U 1 1 5C45F610
 P 800 1250
 F 0 "J1" H 906 1728 50  0000 C CNN
 F 1 "Cell Taps" V 700 1200 50  0000 C CNN
-F 2 "FSFootprints:Cell Taps" H 800 1250 50  0001 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x08x2.50mm_Straight" H 800 1250 50  0001 C CNN
 F 3 "~" H 800 1250 50  0001 C CNN
 	1    800  1250
 	1    0    0    -1  
@@ -875,17 +875,6 @@ F 3 "~" H 7100 3350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R17
-U 1 1 5C72E4D4
-P 6650 2800
-F 0 "R17" V 6750 2800 50  0000 C CNN
-F 1 "10k" V 6650 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6580 2800 50  0001 C CNN
-F 3 "~" H 6650 2800 50  0001 C CNN
-	1    6650 2800
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C3
 U 1 1 5C660F08
 P 7000 1550
@@ -997,8 +986,6 @@ Wire Wire Line
 	6600 1300 6500 1300
 Text GLabel 6500 2600 2    50   Input ~ 0
 VREG
-Text GLabel 6800 2800 2    50   Input ~ 0
-VREG
 Text GLabel 10800 950  2    50   Input ~ 0
 VREG
 $Comp
@@ -1060,7 +1047,7 @@ U 1 1 5C6EFE0D
 P 8100 4950
 F 0 "U2" H 7800 5800 50  0000 L CNN
 F 1 "ADG708" H 7800 5700 50  0000 L CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 8350 4100 50  0001 L CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 8350 4100 50  0001 L CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG708_709.pdf" H 8110 4950 50  0001 C CNN
 	1    8100 4950
 	1    0    0    -1  
@@ -1197,8 +1184,6 @@ V-
 Text GLabel 5750 5950 2    50   Input ~ 0
 V-
 Text GLabel 5750 6150 2    50   Input ~ 0
-V-
-Text GLabel 7700 5550 0    50   Input ~ 0
 V-
 $Comp
 L Device:R R34
@@ -1359,23 +1344,6 @@ F 3 "~" H 9250 3050 50  0001 C CNN
 $EndComp
 Text GLabel 9250 3150 3    50   Input ~ 0
 V-
-$Comp
-L Connector:Conn_01x03_Male J10
-U 1 1 5C7A9370
-P 9800 3700
-F 0 "J10" H 9773 3723 50  0000 R CNN
-F 1 "Current Sensor" H 9773 3632 50  0000 R CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight" H 9800 3700 50  0001 C CNN
-F 3 "~" H 9800 3700 50  0001 C CNN
-	1    9800 3700
-	-1   0    0    -1  
-$EndComp
-Text GLabel 9600 3600 0    50   Input ~ 0
-VREG
-Text GLabel 9600 3800 0    50   Input ~ 0
-V-
-Wire Wire Line
-	9600 3700 6500 3700
 Text GLabel 7700 4650 0    50   Input ~ 0
 VREG
 Text GLabel 6500 2100 2    50   Output ~ 0
@@ -1394,13 +1362,13 @@ Text GLabel 7700 4450 0    50   Input ~ 0
 MUX_A1
 Text GLabel 7700 4550 0    50   Input ~ 0
 MUX_A2
-Text GLabel 6500 3400 2    50   Output ~ 0
-MUX_A0
 Text GLabel 6500 3500 2    50   Output ~ 0
+MUX_A0
+Text GLabel 6500 3800 2    50   Output ~ 0
 MUX_A1
-Text GLabel 6500 3600 2    50   Output ~ 0
+Text GLabel 6500 3700 2    50   Output ~ 0
 MUX_A2
-Text GLabel 6500 3800 2    50   Input ~ 0
+Text GLabel 6500 3400 2    50   Input ~ 0
 TEMP
 Text GLabel 8500 5350 2    50   Output ~ 0
 TEMP
@@ -1479,9 +1447,36 @@ Wire Wire Line
 Wire Wire Line
 	10450 2650 10250 2650
 Wire Wire Line
-	7100 3500 7600 3500
+	7100 3500 7500 3500
 Wire Wire Line
-	8850 2250 9150 2250
+	8850 2250 8950 2250
 Wire Wire Line
-	8850 2850 9150 2850
+	8850 2850 8950 2850
+Connection ~ 7500 3500
+Wire Wire Line
+	7500 3500 7600 3500
+Connection ~ 8950 2250
+Wire Wire Line
+	8950 2250 9150 2250
+Connection ~ 8950 2850
+Wire Wire Line
+	8950 2850 9150 2850
+Connection ~ 7850 2150
+Text GLabel 6500 3600 2    50   Input ~ 0
+VREG
+$Comp
+L Device:R R17
+U 1 1 5C80812D
+P 8200 850
+F 0 "R17" V 7993 850 50  0000 C CNN
+F 1 "0" V 8084 850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8130 850 50  0001 C CNN
+F 3 "~" H 8200 850 50  0001 C CNN
+	1    8200 850 
+	0    1    1    0   
+$EndComp
+Text GLabel 8050 850  0    50   Output ~ 0
+VREG
+Text GLabel 8350 850  2    50   Output ~ 0
+VREG
 $EndSCHEMATC
