@@ -1395,28 +1395,6 @@ Wire Wire Line
 	9250 2950 9250 2550
 Wire Wire Line
 	9250 2550 9350 2550
-$Comp
-L Device:R R40
-U 1 1 5CA16E1A
-P 10600 2450
-F 0 "R40" V 10700 2400 50  0000 L CNN
-F 1 "22" V 10600 2450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10530 2450 50  0001 C CNN
-F 3 "~" H 10600 2450 50  0001 C CNN
-	1    10600 2450
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R R41
-U 1 1 5CA1723F
-P 10600 2650
-F 0 "R41" V 10700 2600 50  0000 L CNN
-F 1 "22" V 10600 2650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10530 2650 50  0001 C CNN
-F 3 "~" H 10600 2650 50  0001 C CNN
-	1    10600 2650
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	10750 2450 10850 2450
 Wire Wire Line
@@ -1425,23 +1403,6 @@ Wire Wire Line
 	10850 2600 10850 2650
 Wire Wire Line
 	10850 2650 10750 2650
-$Comp
-L Device:C_Small C14
-U 1 1 5CA52F72
-P 10350 3050
-F 0 "C14" V 10450 3050 50  0000 C CNN
-F 1 "10nF" V 10250 3050 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10388 2900 50  0001 C CNN
-F 3 "~" H 10350 3050 50  0001 C CNN
-	1    10350 3050
-	1    0    0    -1  
-$EndComp
-Text GLabel 10350 3150 3    50   Input ~ 0
-V-
-Wire Wire Line
-	10350 2950 10350 2550
-Wire Wire Line
-	10250 2550 10350 2550
 Wire Wire Line
 	10250 2450 10450 2450
 Wire Wire Line
@@ -1479,4 +1440,26 @@ Text GLabel 8050 850  0    50   Output ~ 0
 VREG
 Text GLabel 8350 850  2    50   Output ~ 0
 VREG
+$Comp
+L Device:R R41
+U 1 1 5CA1723F
+P 10600 2650
+F 0 "R41" V 10700 2600 50  0000 L CNN
+F 1 "22" V 10600 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10530 2650 50  0001 C CNN
+F 3 "~" H 10600 2650 50  0001 C CNN
+	1    10600 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R40
+U 1 1 5CA16E1A
+P 10600 2450
+F 0 "R40" V 10700 2400 50  0000 L CNN
+F 1 "22" V 10600 2450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10530 2450 50  0001 C CNN
+F 3 "~" H 10600 2450 50  0001 C CNN
+	1    10600 2450
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC

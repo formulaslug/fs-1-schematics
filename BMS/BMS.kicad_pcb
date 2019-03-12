@@ -17,10 +17,10 @@
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
-    (36 B.SilkS user)
+    (36 B.SilkS user hide)
     (37 F.SilkS user)
     (38 B.Mask user)
-    (39 F.Mask user)
+    (39 F.Mask user hide)
     (40 Dwgs.User user)
     (41 Cmts.User user)
     (42 Eco1.User user)
@@ -35,7 +35,7 @@
 
   (setup
     (last_trace_width 0.25)
-    (trace_clearance 0.16)
+    (trace_clearance 0.1778)
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.2)
@@ -162,7 +162,7 @@
   (net 69 MUX_A0)
 
   (net_class Default "This is the default net class."
-    (clearance 0.16)
+    (clearance 0.1778)
     (trace_width 0.25)
     (via_dia 0.8)
     (via_drill 0.4)
