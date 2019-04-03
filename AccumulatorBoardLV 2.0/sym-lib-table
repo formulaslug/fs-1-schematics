@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name AccumulatorBoardLV-2.0-rescue)(type Legacy)(uri "${KIPRJMOD}/AccumulatorBoardLV 2.0-rescue.lib")(options "")(descr ""))
+)
