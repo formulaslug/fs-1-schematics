@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:BMS-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -135,7 +135,7 @@ U 1 1 5C45F610
 P 800 1250
 F 0 "J1" H 906 1728 50  0000 C CNN
 F 1 "Cell Taps" V 700 1200 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x08x2.50mm_Straight" H 800 1250 50  0001 C CNN
+F 2 "FSFootprints:Cell Taps" H 800 1250 50  0001 C CNN
 F 3 "~" H 800 1250 50  0001 C CNN
 	1    800  1250
 	1    0    0    -1  
@@ -212,8 +212,6 @@ Wire Wire Line
 	2400 2500 2400 2550
 Wire Wire Line
 	2700 2000 2900 2000
-Wire Wire Line
-	2400 1750 1700 1750
 Connection ~ 2400 1750
 $Comp
 L Transistor_FET:BSS84 Q4
@@ -598,37 +596,37 @@ Wire Wire Line
 Wire Wire Line
 	1600 1150 1600 2550
 Wire Wire Line
-	1600 2550 2400 2550
+	1600 2550 1900 2550
 Wire Wire Line
 	1000 1250 1500 1250
 Wire Wire Line
 	1500 1250 1500 3350
 Wire Wire Line
-	1500 3350 2400 3350
+	1500 3350 1900 3350
 Wire Wire Line
 	1000 1350 1400 1350
 Wire Wire Line
 	1400 1350 1400 4150
 Wire Wire Line
-	1400 4150 2400 4150
+	1400 4150 1900 4150
 Wire Wire Line
 	1300 4950 1300 1450
 Wire Wire Line
 	1300 1450 1000 1450
 Wire Wire Line
-	1300 4950 2400 4950
+	1300 4950 1900 4950
 Wire Wire Line
 	1000 1550 1200 1550
 Wire Wire Line
 	1200 1550 1200 5750
 Wire Wire Line
-	1200 5750 2400 5750
+	1200 5750 1900 5750
 Wire Wire Line
 	1000 1650 1100 1650
 Wire Wire Line
 	1100 1650 1100 6550
 Wire Wire Line
-	1100 6550 2400 6550
+	1100 6550 1900 6550
 Wire Wire Line
 	2400 6550 2400 6750
 Wire Wire Line
@@ -753,7 +751,7 @@ L Device:R R12
 U 1 1 5C64035B
 P 7850 2000
 F 0 "R12" V 7750 2000 50  0000 C CNN
-F 1 "R" V 7850 2000 50  0000 C CNN
+F 1 "1.5k" V 7850 2000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 7780 2000 50  0001 C CNN
 F 3 "~" H 7850 2000 50  0001 C CNN
 	1    7850 2000
@@ -764,22 +762,11 @@ L Device:R R13
 U 1 1 5C6463D7
 P 7850 2300
 F 0 "R13" V 7750 2300 50  0000 C CNN
-F 1 "R" V 7850 2300 50  0000 C CNN
+F 1 "680" V 7850 2300 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 7780 2300 50  0001 C CNN
 F 3 "~" H 7850 2300 50  0001 C CNN
 	1    7850 2300
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5C617FF6
-P 9300 1500
-F 0 "R5" H 9300 1650 50  0000 L CNN
-F 1 "10k" V 9300 1500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9230 1500 50  0001 C CNN
-F 3 "~" H 9300 1500 50  0001 C CNN
-	1    9300 1500
-	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_DIP_x04 SW1
@@ -795,28 +782,14 @@ $EndComp
 Wire Wire Line
 	10000 1150 9700 1150
 Wire Wire Line
-	10000 1050 9500 1050
-Wire Wire Line
-	10000 950  9300 950 
-Wire Wire Line
-	9300 1350 9300 950 
-Connection ~ 9300 950 
-Wire Wire Line
-	9500 1350 9500 1050
-Connection ~ 9500 1050
-Wire Wire Line
 	9700 1150 9700 1350
 Connection ~ 9700 1150
 Wire Wire Line
 	9900 1350 9900 1250
 Wire Wire Line
-	9100 950  9300 950 
+	9500 1150 9700 1150
 Wire Wire Line
-	9100 1050 9500 1050
-Wire Wire Line
-	9100 1150 9700 1150
-Wire Wire Line
-	9100 1250 9900 1250
+	9500 1250 9900 1250
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5C641A44
@@ -842,16 +815,16 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 5C618B80
-P 6650 750
-F 0 "R2" V 6550 750 50  0000 C CNN
-F 1 "100" V 6650 750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6580 750 50  0001 C CNN
-F 3 "~" H 6650 750 50  0001 C CNN
-	1    6650 750 
+P 6150 750
+F 0 "R2" V 6050 750 50  0000 C CNN
+F 1 "100" V 6150 750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6080 750 50  0001 C CNN
+F 3 "~" H 6150 750 50  0001 C CNN
+	1    6150 750 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5000 750  6500 750 
+	5000 750  6000 750 
 $Comp
 L Device:C C7
 U 1 1 5C70E196
@@ -886,9 +859,6 @@ F 3 "~" H 7000 1550 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Connection ~ 5000 750 
-Wire Wire Line
-	6800 750  7000 750 
-Connection ~ 7000 750 
 Wire Wire Line
 	7000 750  7000 900 
 $Comp
@@ -932,18 +902,10 @@ Text GLabel 6500 1900 2    50   Output ~ 0
 A0
 Text GLabel 6500 1800 2    50   Output ~ 0
 A1
-Text GLabel 6500 1700 2    50   Output ~ 0
-A2
-Text GLabel 6500 1600 2    50   Output ~ 0
-A3
-Text GLabel 9100 1250 0    50   Input ~ 0
+Text GLabel 9500 1250 0    50   Input ~ 0
 A0
-Text GLabel 9100 1150 0    50   Input ~ 0
+Text GLabel 9500 1150 0    50   Input ~ 0
 A1
-Text GLabel 9100 1050 0    50   Input ~ 0
-A2
-Text GLabel 9100 950  0    50   Input ~ 0
-A3
 Text GLabel 7850 2450 3    50   Input ~ 0
 V-
 Text GLabel 7000 1700 3    50   Input ~ 0
@@ -959,16 +921,6 @@ Wire Wire Line
 	9900 1750 9700 1750
 Wire Wire Line
 	9700 1750 9700 1650
-Wire Wire Line
-	9700 1750 9500 1750
-Wire Wire Line
-	9500 1750 9500 1650
-Connection ~ 9700 1750
-Wire Wire Line
-	9500 1750 9300 1750
-Wire Wire Line
-	9300 1750 9300 1650
-Connection ~ 9500 1750
 Wire Wire Line
 	9900 1750 10000 1750
 Connection ~ 9900 1750
@@ -986,19 +938,8 @@ Wire Wire Line
 	6600 1300 6500 1300
 Text GLabel 6500 2600 2    50   Input ~ 0
 VREG
-Text GLabel 10800 950  2    50   Input ~ 0
+Text GLabel 10600 1150 2    50   Input ~ 0
 VREG
-$Comp
-L Device:R R6
-U 1 1 5C9AA7A2
-P 9500 1500
-F 0 "R6" H 9500 1650 50  0000 L CNN
-F 1 "10k" V 9500 1500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9430 1500 50  0001 C CNN
-F 3 "~" H 9500 1500 50  0001 C CNN
-	1    9500 1500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R7
 U 1 1 5C9AA820
@@ -1021,42 +962,23 @@ F 3 "~" H 9900 1500 50  0001 C CNN
 	1    9900 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10600 1250 10700 1250
-Wire Wire Line
-	10700 1250 10700 1150
-Wire Wire Line
-	10700 1150 10600 1150
-Wire Wire Line
-	10700 1150 10700 1050
-Wire Wire Line
-	10700 1050 10600 1050
-Connection ~ 10700 1150
-Wire Wire Line
-	10700 1050 10700 950 
-Wire Wire Line
-	10700 950  10600 950 
-Connection ~ 10700 1050
-Wire Wire Line
-	10800 950  10700 950 
-Connection ~ 10700 950 
 Connection ~ 7100 750 
 $Comp
 L FS_FINAL:ADG708 U2
 U 1 1 5C6EFE0D
-P 8100 4950
-F 0 "U2" H 7800 5800 50  0000 L CNN
-F 1 "ADG708" H 7800 5700 50  0000 L CNN
-F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 8350 4100 50  0001 L CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG708_709.pdf" H 8110 4950 50  0001 C CNN
-	1    8100 4950
+P 8900 4950
+F 0 "U2" H 8600 5800 50  0000 L CNN
+F 1 "ADG708" H 8600 5700 50  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H 9150 4100 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG708_709.pdf" H 8910 4950 50  0001 C CNN
+	1    8900 4950
 	1    0    0    -1  
 $EndComp
-Text GLabel 8300 5850 3    50   Input ~ 0
+Text GLabel 9100 5850 3    50   Input ~ 0
 V-
-Text GLabel 8300 4150 1    50   Input ~ 0
+Text GLabel 9100 4150 1    50   Input ~ 0
 VREG
-Text GLabel 8200 5850 3    50   Input ~ 0
+Text GLabel 9000 5850 3    50   Input ~ 0
 V-
 $Comp
 L Connector:Conn_01x02_Male J3
@@ -1138,7 +1060,7 @@ F 3 "~" H 5550 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7700 4950 6100 4950
+	8500 4950 6100 4950
 Wire Wire Line
 	6100 4950 6100 5050
 Wire Wire Line
@@ -1146,9 +1068,9 @@ Wire Wire Line
 Wire Wire Line
 	6300 5250 6300 5050
 Wire Wire Line
-	6300 5050 7700 5050
+	6300 5050 8500 5050
 Wire Wire Line
-	7700 5150 6500 5150
+	8500 5150 6500 5150
 Wire Wire Line
 	6500 5150 6500 5450
 Wire Wire Line
@@ -1158,15 +1080,15 @@ Wire Wire Line
 Wire Wire Line
 	6700 5650 6700 5250
 Wire Wire Line
-	6700 5250 7700 5250
+	6700 5250 8500 5250
 Wire Wire Line
 	5750 5850 6900 5850
 Wire Wire Line
 	6900 5850 6900 5350
 Wire Wire Line
-	6900 5350 7700 5350
+	6900 5350 8500 5350
 Wire Wire Line
-	7700 5450 7100 5450
+	8500 5450 7100 5450
 Wire Wire Line
 	7100 5450 7100 6050
 Wire Wire Line
@@ -1185,83 +1107,17 @@ Text GLabel 5750 5950 2    50   Input ~ 0
 V-
 Text GLabel 5750 6150 2    50   Input ~ 0
 V-
-$Comp
-L Device:R R34
-U 1 1 5C8E1442
-P 6100 4600
-F 0 "R34" H 6030 4554 50  0000 R CNN
-F 1 "10k" H 6030 4645 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 4600 50  0001 C CNN
-F 3 "~" H 6100 4600 50  0001 C CNN
-	1    6100 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R35
-U 1 1 5C8EFCEA
-P 6300 4600
-F 0 "R35" H 6230 4554 50  0000 R CNN
-F 1 "10k" H 6230 4645 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6230 4600 50  0001 C CNN
-F 3 "~" H 6300 4600 50  0001 C CNN
-	1    6300 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R36
-U 1 1 5C8EFE2E
-P 6500 4600
-F 0 "R36" H 6430 4554 50  0000 R CNN
-F 1 "10k" H 6430 4645 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 4600 50  0001 C CNN
-F 3 "~" H 6500 4600 50  0001 C CNN
-	1    6500 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R37
-U 1 1 5C8EFE34
-P 6700 4600
-F 0 "R37" H 6630 4554 50  0000 R CNN
-F 1 "10k" H 6630 4645 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6630 4600 50  0001 C CNN
-F 3 "~" H 6700 4600 50  0001 C CNN
-	1    6700 4600
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5750 5050 6100 5050
 $Comp
 L Device:R R33
 U 1 1 5C97E704
 P 5900 4600
-F 0 "R33" H 5830 4554 50  0000 R CNN
-F 1 "10k" H 5830 4645 50  0000 R CNN
+F 0 "R33" V 5800 4600 50  0000 C CNN
+F 1 "2.2k" V 5900 4600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 5830 4600 50  0001 C CNN
 F 3 "~" H 5900 4600 50  0001 C CNN
 	1    5900 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R38
-U 1 1 5C98CB64
-P 6900 4600
-F 0 "R38" H 6830 4554 50  0000 R CNN
-F 1 "10k" H 6830 4645 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6830 4600 50  0001 C CNN
-F 3 "~" H 6900 4600 50  0001 C CNN
-	1    6900 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R39
-U 1 1 5C98CB6A
-P 7100 4600
-F 0 "R39" H 7030 4554 50  0000 R CNN
-F 1 "10k" H 7030 4645 50  0000 R CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7030 4600 50  0001 C CNN
-F 3 "~" H 7100 4600 50  0001 C CNN
-	1    7100 4600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1286,7 +1142,7 @@ Wire Wire Line
 	5900 4850 5900 4750
 Connection ~ 5900 4850
 Wire Wire Line
-	5900 4850 7700 4850
+	5900 4850 8500 4850
 Text GLabel 5900 4450 1    50   Input ~ 0
 VREG
 Text GLabel 6100 4450 1    50   Input ~ 0
@@ -1344,7 +1200,7 @@ F 3 "~" H 9250 3050 50  0001 C CNN
 $EndComp
 Text GLabel 9250 3150 3    50   Input ~ 0
 V-
-Text GLabel 7700 4650 0    50   Input ~ 0
+Text GLabel 8500 4650 0    50   Input ~ 0
 VREG
 Text GLabel 6500 2100 2    50   Output ~ 0
 IBIAS
@@ -1362,15 +1218,15 @@ Text GLabel 7700 4450 0    50   Input ~ 0
 MUX_A1
 Text GLabel 7700 4550 0    50   Input ~ 0
 MUX_A2
-Text GLabel 6500 3500 2    50   Output ~ 0
+Text GLabel 6500 3400 2    50   Output ~ 0
 MUX_A0
-Text GLabel 6500 3800 2    50   Output ~ 0
+Text GLabel 6500 3500 2    50   Output ~ 0
 MUX_A1
-Text GLabel 6500 3700 2    50   Output ~ 0
+Text GLabel 6500 3600 2    50   Output ~ 0
 MUX_A2
-Text GLabel 6500 3400 2    50   Input ~ 0
+Text GLabel 6500 3700 2    50   Input ~ 0
 TEMP
-Text GLabel 8500 5350 2    50   Output ~ 0
+Text GLabel 9300 5350 2    50   Output ~ 0
 TEMP
 $Comp
 L FS_FINAL:HM2113ZNL L1
@@ -1423,23 +1279,6 @@ Connection ~ 8950 2850
 Wire Wire Line
 	8950 2850 9150 2850
 Connection ~ 7850 2150
-Text GLabel 6500 3600 2    50   Input ~ 0
-VREG
-$Comp
-L Device:R R17
-U 1 1 5C80812D
-P 8200 850
-F 0 "R17" V 7993 850 50  0000 C CNN
-F 1 "0" V 8084 850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 8130 850 50  0001 C CNN
-F 3 "~" H 8200 850 50  0001 C CNN
-	1    8200 850 
-	0    1    1    0   
-$EndComp
-Text GLabel 8050 850  0    50   Output ~ 0
-VREG
-Text GLabel 8350 850  2    50   Output ~ 0
-VREG
 $Comp
 L Device:R R41
 U 1 1 5CA1723F
@@ -1462,4 +1301,460 @@ F 3 "~" H 10600 2450 50  0001 C CNN
 	1    10600 2450
 	0    1    -1   0   
 $EndComp
+Text GLabel 6500 1700 2    50   Input ~ 0
+V-
+Text GLabel 6500 1600 2    50   Input ~ 0
+V-
+Text GLabel 10600 1250 2    50   Input ~ 0
+VREG
+Wire Wire Line
+	2400 1400 2300 1400
+Connection ~ 2400 1400
+$Comp
+L Device:R_Small R5
+U 1 1 5CA45635
+P 9750 1050
+F 0 "R5" V 9800 1200 50  0000 C CNN
+F 1 "200" V 9750 1050 38  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 9750 1050 50  0001 C CNN
+F 3 "~" H 9750 1050 50  0001 C CNN
+	1    9750 1050
+	0    1    1    0   
+$EndComp
+Text GLabel 9500 1050 0    50   BiDi ~ 0
+IPA
+Text GLabel 10600 1050 2    50   BiDi ~ 0
+IMA
+Wire Wire Line
+	9850 1050 10000 1050
+Wire Wire Line
+	9500 1050 9650 1050
+Text GLabel 6300 750  2    50   Output ~ 0
+V+IN
+Text GLabel 6900 750  0    50   Input ~ 0
+V+OUT
+Wire Wire Line
+	6900 750  7000 750 
+Connection ~ 7000 750 
+Text GLabel 10600 950  2    50   Output ~ 0
+V+OUT
+Text GLabel 9500 950  0    50   Input ~ 0
+V+IN
+Wire Wire Line
+	9500 950  10000 950 
+Text GLabel 8300 3950 1    50   Input ~ 0
+VREG
+Text GLabel 8100 3950 1    50   Input ~ 0
+VREG
+Text GLabel 7900 3950 1    50   Input ~ 0
+VREG
+$Comp
+L Device:R R37
+U 1 1 5CB256AD
+P 7900 4100
+F 0 "R37" V 7800 4100 50  0000 C CNN
+F 1 "10k" V 7900 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7830 4100 50  0001 C CNN
+F 3 "~" H 7900 4100 50  0001 C CNN
+	1    7900 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R38
+U 1 1 5CB256B7
+P 8100 4100
+F 0 "R38" V 8000 4100 50  0000 C CNN
+F 1 "10k" V 8100 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8030 4100 50  0001 C CNN
+F 3 "~" H 8100 4100 50  0001 C CNN
+	1    8100 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R39
+U 1 1 5CB256C1
+P 8300 4100
+F 0 "R39" V 8200 4100 50  0000 C CNN
+F 1 "10k" V 8300 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8230 4100 50  0001 C CNN
+F 3 "~" H 8300 4100 50  0001 C CNN
+	1    8300 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 4350 7900 4350
+Wire Wire Line
+	7700 4450 8100 4450
+Wire Wire Line
+	7700 4550 8300 4550
+Wire Wire Line
+	7900 4250 7900 4350
+Connection ~ 7900 4350
+Wire Wire Line
+	7900 4350 8500 4350
+Wire Wire Line
+	8100 4250 8100 4450
+Connection ~ 8100 4450
+Wire Wire Line
+	8100 4450 8500 4450
+Wire Wire Line
+	8300 4250 8300 4550
+Connection ~ 8300 4550
+Wire Wire Line
+	8300 4550 8500 4550
+$Comp
+L Device:R R43
+U 1 1 5CB8F0D9
+P 6100 4600
+F 0 "R43" V 6000 4600 50  0000 C CNN
+F 1 "2.2k" V 6100 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 4600 50  0001 C CNN
+F 3 "~" H 6100 4600 50  0001 C CNN
+	1    6100 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R44
+U 1 1 5CB8F2CA
+P 6300 4600
+F 0 "R44" V 6200 4600 50  0000 C CNN
+F 1 "2.2k" V 6300 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6230 4600 50  0001 C CNN
+F 3 "~" H 6300 4600 50  0001 C CNN
+	1    6300 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R45
+U 1 1 5CB8F2D4
+P 6500 4600
+F 0 "R45" V 6400 4600 50  0000 C CNN
+F 1 "2.2k" V 6500 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 4600 50  0001 C CNN
+F 3 "~" H 6500 4600 50  0001 C CNN
+	1    6500 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R46
+U 1 1 5CB9B3D2
+P 6700 4600
+F 0 "R46" V 6600 4600 50  0000 C CNN
+F 1 "2.2k" V 6700 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6630 4600 50  0001 C CNN
+F 3 "~" H 6700 4600 50  0001 C CNN
+	1    6700 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R47
+U 1 1 5CB9B3DC
+P 6900 4600
+F 0 "R47" V 6800 4600 50  0000 C CNN
+F 1 "2.2k" V 6900 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6830 4600 50  0001 C CNN
+F 3 "~" H 6900 4600 50  0001 C CNN
+	1    6900 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R48
+U 1 1 5CB9B3E6
+P 7100 4600
+F 0 "R48" V 7000 4600 50  0000 C CNN
+F 1 "2.2k" V 7100 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 7030 4600 50  0001 C CNN
+F 3 "~" H 7100 4600 50  0001 C CNN
+	1    7100 4600
+	-1   0    0    1   
+$EndComp
+Text GLabel 8000 1000 1    50   Input ~ 0
+VREG
+$Comp
+L Device:LED_Small D2
+U 1 1 5CBA85F4
+P 1900 1550
+F 0 "D2" V 1900 1450 50  0000 C CNN
+F 1 "LH R974-LP-1" V 1750 1300 38  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" V 1900 1550 50  0001 C CNN
+F 3 "~" V 1900 1550 50  0001 C CNN
+	1    1900 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R17
+U 1 1 5CBA9CFD
+P 2200 1400
+F 0 "R17" V 2150 1250 50  0000 C CNN
+F 1 "120" V 2200 1400 38  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2200 1400 50  0001 C CNN
+F 3 "~" H 2200 1400 50  0001 C CNN
+	1    2200 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 1400 1900 1400
+Wire Wire Line
+	1900 1400 1900 1450
+Wire Wire Line
+	1700 1750 1900 1750
+Wire Wire Line
+	1900 1650 1900 1750
+Connection ~ 1900 1750
+Wire Wire Line
+	1900 1750 2400 1750
+Wire Wire Line
+	2400 2200 2300 2200
+$Comp
+L Device:LED_Small D3
+U 1 1 5CBF8669
+P 1900 2350
+F 0 "D3" V 1900 2250 50  0000 C CNN
+F 1 "LH R974-LP-1" V 1750 2100 38  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" V 1900 2350 50  0001 C CNN
+F 3 "~" V 1900 2350 50  0001 C CNN
+	1    1900 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R34
+U 1 1 5CBF866F
+P 2200 2200
+F 0 "R34" V 2150 2050 50  0000 C CNN
+F 1 "120" V 2200 2200 38  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2200 2200 50  0001 C CNN
+F 3 "~" H 2200 2200 50  0001 C CNN
+	1    2200 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 2200 1900 2200
+Wire Wire Line
+	1900 2200 1900 2250
+Wire Wire Line
+	1900 2450 1900 2550
+Connection ~ 1900 2550
+Wire Wire Line
+	1900 2550 2400 2550
+Connection ~ 2400 2200
+Wire Wire Line
+	2400 3000 2300 3000
+$Comp
+L Device:LED_Small D4
+U 1 1 5CC06ED3
+P 1900 3150
+F 0 "D4" V 1900 3050 50  0000 C CNN
+F 1 "LH R974-LP-1" V 1750 2900 38  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" V 1900 3150 50  0001 C CNN
+F 3 "~" V 1900 3150 50  0001 C CNN
+	1    1900 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R35
+U 1 1 5CC06ED9
+P 2200 3000
+F 0 "R35" V 2150 2850 50  0000 C CNN
+F 1 "120" V 2200 3000 38  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2200 3000 50  0001 C CNN
+F 3 "~" H 2200 3000 50  0001 C CNN
+	1    2200 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 3000 1900 3000
+Wire Wire Line
+	1900 3000 1900 3050
+Wire Wire Line
+	1900 3250 1900 3350
+Connection ~ 2400 3000
+Connection ~ 1900 3350
+Wire Wire Line
+	1900 3350 2400 3350
+Wire Wire Line
+	2400 3800 2300 3800
+$Comp
+L Device:LED_Small D5
+U 1 1 5CC162ED
+P 1900 3950
+F 0 "D5" V 1900 3850 50  0000 C CNN
+F 1 "LH R974-LP-1" V 1750 3700 38  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" V 1900 3950 50  0001 C CNN
+F 3 "~" V 1900 3950 50  0001 C CNN
+	1    1900 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R36
+U 1 1 5CC162F3
+P 2200 3800
+F 0 "R36" V 2150 3650 50  0000 C CNN
+F 1 "120" V 2200 3800 38  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2200 3800 50  0001 C CNN
+F 3 "~" H 2200 3800 50  0001 C CNN
+	1    2200 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 3800 1900 3800
+Wire Wire Line
+	1900 3800 1900 3850
+Wire Wire Line
+	1900 4050 1900 4150
+Connection ~ 1900 4150
+Wire Wire Line
+	1900 4150 2400 4150
+Connection ~ 2400 3800
+Wire Wire Line
+	2400 4600 2300 4600
+$Comp
+L Device:LED_Small D6
+U 1 1 5CC26056
+P 1900 4750
+F 0 "D6" V 1900 4650 50  0000 C CNN
+F 1 "LH R974-LP-1" V 1750 4500 38  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" V 1900 4750 50  0001 C CNN
+F 3 "~" V 1900 4750 50  0001 C CNN
+	1    1900 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R42
+U 1 1 5CC2605C
+P 2200 4600
+F 0 "R42" V 2150 4450 50  0000 C CNN
+F 1 "120" V 2200 4600 38  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2200 4600 50  0001 C CNN
+F 3 "~" H 2200 4600 50  0001 C CNN
+	1    2200 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 4600 1900 4600
+Wire Wire Line
+	1900 4600 1900 4650
+Wire Wire Line
+	1900 4850 1900 4950
+Connection ~ 2400 4600
+Connection ~ 1900 4950
+Wire Wire Line
+	1900 4950 2400 4950
+Wire Wire Line
+	2400 5400 2300 5400
+$Comp
+L Device:LED_Small D7
+U 1 1 5CC3680F
+P 1900 5550
+F 0 "D7" V 1900 5450 50  0000 C CNN
+F 1 "LH R974-LP-1" V 1750 5300 38  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" V 1900 5550 50  0001 C CNN
+F 3 "~" V 1900 5550 50  0001 C CNN
+	1    1900 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R49
+U 1 1 5CC36815
+P 2200 5400
+F 0 "R49" V 2150 5250 50  0000 C CNN
+F 1 "120" V 2200 5400 38  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2200 5400 50  0001 C CNN
+F 3 "~" H 2200 5400 50  0001 C CNN
+	1    2200 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 5400 1900 5400
+Wire Wire Line
+	1900 5400 1900 5450
+Wire Wire Line
+	1900 5650 1900 5750
+Connection ~ 2400 5400
+Connection ~ 1900 5750
+Wire Wire Line
+	1900 5750 2400 5750
+Wire Wire Line
+	2400 6200 2300 6200
+$Comp
+L Device:LED_Small D8
+U 1 1 5CC47CA3
+P 1900 6350
+F 0 "D8" V 1900 6250 50  0000 C CNN
+F 1 "LH R974-LP-1" V 1750 6100 38  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" V 1900 6350 50  0001 C CNN
+F 3 "~" V 1900 6350 50  0001 C CNN
+	1    1900 6350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R50
+U 1 1 5CC47CA9
+P 2200 6200
+F 0 "R50" V 2150 6050 50  0000 C CNN
+F 1 "120" V 2200 6200 38  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 2200 6200 50  0001 C CNN
+F 3 "~" H 2200 6200 50  0001 C CNN
+	1    2200 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 6200 1900 6200
+Wire Wire Line
+	1900 6200 1900 6250
+Wire Wire Line
+	1900 6450 1900 6550
+Connection ~ 2400 6200
+Connection ~ 1900 6550
+Wire Wire Line
+	1900 6550 2400 6550
+$Comp
+L Device:LED_Small D1
+U 1 1 5CC5A313
+P 8000 1300
+F 0 "D1" V 8000 1200 50  0000 C CNN
+F 1 "LH R974-LP-1" V 7900 1050 38  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" V 8000 1300 50  0001 C CNN
+F 3 "~" V 8000 1300 50  0001 C CNN
+	1    8000 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5CC5A319
+P 8000 1100
+F 0 "R6" H 7900 1100 50  0000 C CNN
+F 1 "160" V 8000 1100 38  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 8000 1100 50  0001 C CNN
+F 3 "~" H 8000 1100 50  0001 C CNN
+	1    8000 1100
+	-1   0    0    1   
+$EndComp
+Text GLabel 8000 1400 3    50   Input ~ 0
+V-
+Text GLabel 7200 3800 2    50   Input ~ 0
+VREG
+$Comp
+L Device:LED_Small D9
+U 1 1 5CCFAAE0
+P 6900 3800
+F 0 "D9" H 6900 3700 50  0000 C CNN
+F 1 "LH R974-LP-1" H 6900 3600 38  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" V 6900 3800 50  0001 C CNN
+F 3 "~" V 6900 3800 50  0001 C CNN
+	1    6900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R51
+U 1 1 5CCFAAEA
+P 7100 3800
+F 0 "R51" V 7000 3800 50  0000 C CNN
+F 1 "160" V 7100 3800 38  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" H 7100 3800 50  0001 C CNN
+F 3 "~" H 7100 3800 50  0001 C CNN
+	1    7100 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6800 3800 6500 3800
 $EndSCHEMATC
