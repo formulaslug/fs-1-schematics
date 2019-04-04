@@ -568,21 +568,8 @@ Wire Wire Line
 Wire Wire Line
 	2700 6000 2900 6000
 Connection ~ 2400 5750
-$Comp
-L Device:R R31
-U 1 1 5C461235
-P 2600 6550
-F 0 "R31" V 2500 6550 50  0000 C CNN
-F 1 "100" V 2600 6550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2530 6550 50  0001 C CNN
-F 3 "~" H 2600 6550 50  0001 C CNN
-	1    2600 6550
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	2750 6550 2800 6550
-Wire Wire Line
-	2400 6550 2450 6550
+	2400 6550 2800 6550
 Connection ~ 2800 6550
 Connection ~ 2400 6550
 Wire Wire Line
@@ -793,12 +780,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 5C641A44
-P 11050 2600
-F 0 "J2" H 11023 2480 50  0000 R CNN
-F 1 "IsoSPI" H 11023 2571 50  0000 R CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 11050 2600 50  0001 C CNN
-F 3 "~" H 11050 2600 50  0001 C CNN
-	1    11050 2600
+P 10850 2700
+F 0 "J2" H 10823 2580 50  0000 R CNN
+F 1 "IsoSPI" H 10823 2671 50  0000 R CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10850 2700 50  0001 C CNN
+F 3 "~" H 10850 2700 50  0001 C CNN
+	1    10850 2700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -983,222 +970,185 @@ V-
 $Comp
 L Connector:Conn_01x02_Male J3
 U 1 1 5C77AB59
-P 5550 4850
-F 0 "J3" H 5500 4750 50  0000 C CNN
-F 1 "Temp 1" H 5400 4850 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 5550 4850 50  0001 C CNN
-F 3 "~" H 5550 4850 50  0001 C CNN
-	1    5550 4850
+P 7300 4850
+F 0 "J3" H 7250 4750 50  0000 C CNN
+F 1 "Temp 1" H 7150 4850 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7300 4850 50  0001 C CNN
+F 3 "~" H 7300 4850 50  0001 C CNN
+	1    7300 4850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 4850 5900 4850
 $Comp
 L Connector:Conn_01x02_Male J4
 U 1 1 5C7875D4
-P 5550 5050
-F 0 "J4" H 5500 4950 50  0000 C CNN
-F 1 "Temp 2" H 5400 5050 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 5550 5050 50  0001 C CNN
-F 3 "~" H 5550 5050 50  0001 C CNN
-	1    5550 5050
+P 7300 5050
+F 0 "J4" H 7250 4950 50  0000 C CNN
+F 1 "Temp 2" H 7150 5050 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7300 5050 50  0001 C CNN
+F 3 "~" H 7300 5050 50  0001 C CNN
+	1    7300 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J5
 U 1 1 5C787757
-P 5550 5250
-F 0 "J5" H 5500 5150 50  0000 C CNN
-F 1 "Temp 3" H 5400 5250 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 5550 5250 50  0001 C CNN
-F 3 "~" H 5550 5250 50  0001 C CNN
-	1    5550 5250
+P 7300 5250
+F 0 "J5" H 7250 5150 50  0000 C CNN
+F 1 "Temp 3" H 7150 5250 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7300 5250 50  0001 C CNN
+F 3 "~" H 7300 5250 50  0001 C CNN
+	1    7300 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J6
 U 1 1 5C78775D
-P 5550 5450
-F 0 "J6" H 5500 5350 50  0000 C CNN
-F 1 "Temp 4" H 5400 5450 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 5550 5450 50  0001 C CNN
-F 3 "~" H 5550 5450 50  0001 C CNN
-	1    5550 5450
+P 7300 5450
+F 0 "J6" H 7250 5350 50  0000 C CNN
+F 1 "Temp 4" H 7150 5450 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7300 5450 50  0001 C CNN
+F 3 "~" H 7300 5450 50  0001 C CNN
+	1    7300 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J7
 U 1 1 5C7934F0
-P 5550 5650
-F 0 "J7" H 5500 5550 50  0000 C CNN
-F 1 "Temp 5" H 5400 5650 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 5550 5650 50  0001 C CNN
-F 3 "~" H 5550 5650 50  0001 C CNN
-	1    5550 5650
+P 7300 5650
+F 0 "J7" H 7250 5550 50  0000 C CNN
+F 1 "Temp 5" H 7150 5650 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7300 5650 50  0001 C CNN
+F 3 "~" H 7300 5650 50  0001 C CNN
+	1    7300 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J8
 U 1 1 5C7934F6
-P 5550 5850
-F 0 "J8" H 5500 5750 50  0000 C CNN
-F 1 "Temp 6" H 5400 5850 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 5550 5850 50  0001 C CNN
-F 3 "~" H 5550 5850 50  0001 C CNN
-	1    5550 5850
+P 7300 5850
+F 0 "J8" H 7250 5750 50  0000 C CNN
+F 1 "Temp 6" H 7150 5850 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7300 5850 50  0001 C CNN
+F 3 "~" H 7300 5850 50  0001 C CNN
+	1    7300 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x02_Male J9
 U 1 1 5C7934FC
-P 5550 6050
-F 0 "J9" H 5500 5950 50  0000 C CNN
-F 1 "Temp 7" H 5400 6050 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 5550 6050 50  0001 C CNN
-F 3 "~" H 5550 6050 50  0001 C CNN
-	1    5550 6050
+P 7300 6050
+F 0 "J9" H 7250 5950 50  0000 C CNN
+F 1 "Temp 7" H 7150 6050 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 7300 6050 50  0001 C CNN
+F 3 "~" H 7300 6050 50  0001 C CNN
+	1    7300 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 4950 6100 4950
+	8500 4950 7900 4950
 Wire Wire Line
-	6100 4950 6100 5050
+	7900 4950 7900 5050
 Wire Wire Line
-	5750 5250 6300 5250
+	7500 5250 8000 5250
 Wire Wire Line
-	6300 5250 6300 5050
+	8000 5250 8000 5050
 Wire Wire Line
-	6300 5050 8500 5050
+	8000 5050 8500 5050
 Wire Wire Line
-	8500 5150 6500 5150
+	8500 5150 8100 5150
 Wire Wire Line
-	6500 5150 6500 5450
+	8100 5150 8100 5450
 Wire Wire Line
-	6500 5450 5750 5450
+	8100 5450 7500 5450
 Wire Wire Line
-	5750 5650 6700 5650
+	7500 5650 8200 5650
 Wire Wire Line
-	6700 5650 6700 5250
+	8200 5650 8200 5250
 Wire Wire Line
-	6700 5250 8500 5250
+	8200 5250 8500 5250
 Wire Wire Line
-	5750 5850 6900 5850
+	7500 5850 8300 5850
 Wire Wire Line
-	6900 5850 6900 5350
+	8300 5850 8300 5350
 Wire Wire Line
-	6900 5350 8500 5350
+	8300 5350 8500 5350
 Wire Wire Line
-	8500 5450 7100 5450
+	8500 5450 8400 5450
 Wire Wire Line
-	7100 5450 7100 6050
+	8400 5450 8400 6050
 Wire Wire Line
-	7100 6050 5750 6050
-Text GLabel 5750 4950 2    50   Input ~ 0
+	8400 6050 7500 6050
+Text GLabel 7500 4950 2    50   Input ~ 0
 V-
-Text GLabel 5750 5150 2    50   Input ~ 0
+Text GLabel 7500 5150 2    50   Input ~ 0
 V-
-Text GLabel 5750 5350 2    50   Input ~ 0
+Text GLabel 7500 5350 2    50   Input ~ 0
 V-
-Text GLabel 5750 5550 2    50   Input ~ 0
+Text GLabel 7500 5550 2    50   Input ~ 0
 V-
-Text GLabel 5750 5750 2    50   Input ~ 0
+Text GLabel 7500 5750 2    50   Input ~ 0
 V-
-Text GLabel 5750 5950 2    50   Input ~ 0
+Text GLabel 7500 5950 2    50   Input ~ 0
 V-
-Text GLabel 5750 6150 2    50   Input ~ 0
+Text GLabel 7500 6150 2    50   Input ~ 0
 V-
 Wire Wire Line
-	5750 5050 6100 5050
+	7500 5050 7900 5050
 $Comp
 L Device:R R33
 U 1 1 5C97E704
-P 5900 4600
-F 0 "R33" V 5800 4600 50  0000 C CNN
-F 1 "2.2k" V 5900 4600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 5830 4600 50  0001 C CNN
-F 3 "~" H 5900 4600 50  0001 C CNN
-	1    5900 4600
+P 9500 5100
+F 0 "R33" V 9400 5100 50  0000 C CNN
+F 1 "2.2k" V 9500 5100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9430 5100 50  0001 C CNN
+F 3 "~" H 9500 5100 50  0001 C CNN
+	1    9500 5100
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7100 5450 7100 4750
-Connection ~ 7100 5450
-Wire Wire Line
-	6900 5350 6900 4750
-Connection ~ 6900 5350
-Wire Wire Line
-	6700 5250 6700 4750
-Connection ~ 6700 5250
-Wire Wire Line
-	6500 5150 6500 4750
-Connection ~ 6500 5150
-Wire Wire Line
-	6300 5050 6300 4750
-Connection ~ 6300 5050
-Wire Wire Line
-	6100 4950 6100 4750
-Connection ~ 6100 4950
-Wire Wire Line
-	5900 4850 5900 4750
-Connection ~ 5900 4850
-Wire Wire Line
-	5900 4850 8500 4850
-Text GLabel 5900 4450 1    50   Input ~ 0
-VREG
-Text GLabel 6100 4450 1    50   Input ~ 0
-VREG
-Text GLabel 6300 4450 1    50   Input ~ 0
-VREG
-Text GLabel 6500 4450 1    50   Input ~ 0
-VREG
-Text GLabel 6700 4450 1    50   Input ~ 0
-VREG
-Text GLabel 6900 4450 1    50   Input ~ 0
-VREG
-Text GLabel 7100 4450 1    50   Input ~ 0
+Text GLabel 9500 4950 1    50   Input ~ 0
 VREG
 Text GLabel 6500 2300 2    50   BiDi ~ 0
 IPA
 Text GLabel 6500 2400 2    50   BiDi ~ 0
 IMA
-Text GLabel 8850 2250 0    50   BiDi ~ 0
+Text GLabel 8450 2450 0    50   BiDi ~ 0
 IPA
-Text GLabel 8850 2850 0    50   BiDi ~ 0
+Text GLabel 8450 3050 0    50   BiDi ~ 0
 IMA
 $Comp
 L Device:R R32
 U 1 1 5CB4E575
-P 8950 2400
-F 0 "R32" H 9020 2446 50  0000 L CNN
-F 1 "402" V 8950 2400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 8880 2400 50  0001 C CNN
-F 3 "~" H 8950 2400 50  0001 C CNN
-	1    8950 2400
+P 8550 2600
+F 0 "R32" H 8620 2646 50  0000 L CNN
+F 1 "402" V 8550 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8480 2600 50  0001 C CNN
+F 3 "~" H 8550 2600 50  0001 C CNN
+	1    8550 2600
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C12
 U 1 1 5CB4E66C
-P 8950 2700
-F 0 "C12" H 8836 2654 50  0000 R CNN
-F 1 "15pF" H 8836 2745 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8988 2550 50  0001 C CNN
-F 3 "~" H 8950 2700 50  0001 C CNN
-	1    8950 2700
+P 8550 2900
+F 0 "C12" H 8436 2854 50  0000 R CNN
+F 1 "15pF" H 8436 2945 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8588 2750 50  0001 C CNN
+F 3 "~" H 8550 2900 50  0001 C CNN
+	1    8550 2900
 	1    0    0    1   
 $EndComp
 $Comp
 L Device:C_Small C13
 U 1 1 5CC3BAE6
-P 9250 3050
-F 0 "C13" V 9350 3050 50  0000 C CNN
-F 1 "10nF" V 9150 3050 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9288 2900 50  0001 C CNN
-F 3 "~" H 9250 3050 50  0001 C CNN
-	1    9250 3050
+P 8850 3250
+F 0 "C13" V 8950 3250 50  0000 C CNN
+F 1 "10nF" V 8750 3250 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8888 3100 50  0001 C CNN
+F 3 "~" H 8850 3250 50  0001 C CNN
+	1    8850 3250
 	1    0    0    -1  
 $EndComp
-Text GLabel 9250 3150 3    50   Input ~ 0
+Text GLabel 8850 3350 3    50   Input ~ 0
 V-
 Text GLabel 8500 4650 0    50   Input ~ 0
 VREG
@@ -1226,79 +1176,75 @@ Text GLabel 6500 3600 2    50   Output ~ 0
 MUX_A2
 Text GLabel 6500 3700 2    50   Input ~ 0
 TEMP
-Text GLabel 9300 5350 2    50   Output ~ 0
+Text GLabel 9600 5350 2    50   Output ~ 0
 TEMP
 $Comp
 L FS_FINAL:HM2113ZNL L1
 U 1 1 5C8D8362
-P 9800 2550
-F 0 "L1" H 9800 2828 50  0000 C CNN
-F 1 "HM2113ZNL" H 9800 2737 50  0000 C CNN
-F 2 "FSFootprints:HM2113ZNL" H 9650 2550 50  0001 C CNN
-F 3 "~" H 9650 2550 50  0001 C CNN
-	1    9800 2550
+P 9400 2750
+F 0 "L1" H 9400 3028 50  0000 C CNN
+F 1 "HM2113ZNL" H 9400 2937 50  0000 C CNN
+F 2 "FSFootprints:HM2113ZNL" H 9250 2750 50  0001 C CNN
+F 3 "~" H 9250 2750 50  0001 C CNN
+	1    9400 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 2250 9150 2450
+	8750 2450 8750 2650
 Wire Wire Line
-	9150 2450 9350 2450
+	8750 2650 8950 2650
 Wire Wire Line
-	9150 2650 9150 2850
+	8750 2850 8750 3050
 Wire Wire Line
-	9150 2650 9350 2650
+	8750 2850 8950 2850
 Wire Wire Line
-	9250 2950 9250 2550
+	8850 3150 8850 2750
 Wire Wire Line
-	9250 2550 9350 2550
+	8850 2750 8950 2750
 Wire Wire Line
-	10750 2450 10850 2450
+	10350 2650 10450 2650
 Wire Wire Line
-	10850 2450 10850 2500
+	10550 2850 10350 2850
 Wire Wire Line
-	10850 2600 10850 2650
+	9850 2650 10050 2650
 Wire Wire Line
-	10850 2650 10750 2650
-Wire Wire Line
-	10250 2450 10450 2450
-Wire Wire Line
-	10450 2650 10250 2650
+	10050 2850 9850 2850
 Wire Wire Line
 	7100 3500 7500 3500
 Wire Wire Line
-	8850 2250 8950 2250
+	8450 2450 8550 2450
 Wire Wire Line
-	8850 2850 8950 2850
+	8450 3050 8550 3050
 Connection ~ 7500 3500
 Wire Wire Line
 	7500 3500 7600 3500
-Connection ~ 8950 2250
+Connection ~ 8550 2450
 Wire Wire Line
-	8950 2250 9150 2250
-Connection ~ 8950 2850
+	8550 2450 8750 2450
+Connection ~ 8550 3050
 Wire Wire Line
-	8950 2850 9150 2850
+	8550 3050 8750 3050
 Connection ~ 7850 2150
 $Comp
 L Device:R R41
 U 1 1 5CA1723F
-P 10600 2650
-F 0 "R41" V 10700 2600 50  0000 L CNN
-F 1 "22" V 10600 2650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10530 2650 50  0001 C CNN
-F 3 "~" H 10600 2650 50  0001 C CNN
-	1    10600 2650
+P 10200 2850
+F 0 "R41" V 10300 2800 50  0000 L CNN
+F 1 "22" V 10200 2850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10130 2850 50  0001 C CNN
+F 3 "~" H 10200 2850 50  0001 C CNN
+	1    10200 2850
 	0    1    -1   0   
 $EndComp
 $Comp
 L Device:R R40
 U 1 1 5CA16E1A
-P 10600 2450
-F 0 "R40" V 10700 2400 50  0000 L CNN
-F 1 "22" V 10600 2450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 10530 2450 50  0001 C CNN
-F 3 "~" H 10600 2450 50  0001 C CNN
-	1    10600 2450
+P 10200 2650
+F 0 "R40" V 10300 2600 50  0000 L CNN
+F 1 "22" V 10200 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10130 2650 50  0001 C CNN
+F 3 "~" H 10200 2650 50  0001 C CNN
+	1    10200 2650
 	0    1    -1   0   
 $EndComp
 Text GLabel 6500 1700 2    50   Input ~ 0
@@ -1402,72 +1348,6 @@ Wire Wire Line
 Connection ~ 8300 4550
 Wire Wire Line
 	8300 4550 8500 4550
-$Comp
-L Device:R R43
-U 1 1 5CB8F0D9
-P 6100 4600
-F 0 "R43" V 6000 4600 50  0000 C CNN
-F 1 "2.2k" V 6100 4600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 4600 50  0001 C CNN
-F 3 "~" H 6100 4600 50  0001 C CNN
-	1    6100 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R44
-U 1 1 5CB8F2CA
-P 6300 4600
-F 0 "R44" V 6200 4600 50  0000 C CNN
-F 1 "2.2k" V 6300 4600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6230 4600 50  0001 C CNN
-F 3 "~" H 6300 4600 50  0001 C CNN
-	1    6300 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R45
-U 1 1 5CB8F2D4
-P 6500 4600
-F 0 "R45" V 6400 4600 50  0000 C CNN
-F 1 "2.2k" V 6500 4600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 4600 50  0001 C CNN
-F 3 "~" H 6500 4600 50  0001 C CNN
-	1    6500 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R46
-U 1 1 5CB9B3D2
-P 6700 4600
-F 0 "R46" V 6600 4600 50  0000 C CNN
-F 1 "2.2k" V 6700 4600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6630 4600 50  0001 C CNN
-F 3 "~" H 6700 4600 50  0001 C CNN
-	1    6700 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R47
-U 1 1 5CB9B3DC
-P 6900 4600
-F 0 "R47" V 6800 4600 50  0000 C CNN
-F 1 "2.2k" V 6900 4600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6830 4600 50  0001 C CNN
-F 3 "~" H 6900 4600 50  0001 C CNN
-	1    6900 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R48
-U 1 1 5CB9B3E6
-P 7100 4600
-F 0 "R48" V 7000 4600 50  0000 C CNN
-F 1 "2.2k" V 7100 4600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7030 4600 50  0001 C CNN
-F 3 "~" H 7100 4600 50  0001 C CNN
-	1    7100 4600
-	-1   0    0    1   
-$EndComp
 Text GLabel 8000 1000 1    50   Input ~ 0
 VREG
 $Comp
@@ -1757,4 +1637,78 @@ F 3 "~" H 7100 3800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 3800 6500 3800
+Wire Wire Line
+	9600 5350 9500 5350
+Wire Wire Line
+	9500 5250 9500 5350
+Connection ~ 9500 5350
+Wire Wire Line
+	9500 5350 9300 5350
+Wire Wire Line
+	7500 4850 8500 4850
+Text Label 5100 1200 2    50   ~ 0
+V+
+Text Label 5100 1900 2    50   ~ 0
+C9-12
+Text Label 5100 2000 2    50   ~ 0
+S9
+Text Label 5100 2100 2    50   ~ 0
+C8
+Text Label 5100 2200 2    50   ~ 0
+S8
+Text Label 5100 2300 2    50   ~ 0
+C7
+Text Label 5100 2400 2    50   ~ 0
+S7
+Text Label 5100 2900 2    50   ~ 0
+C4-6
+Text Label 5100 3000 2    50   ~ 0
+S4
+Text Label 5100 3100 2    50   ~ 0
+C3
+Text Label 5100 3200 2    50   ~ 0
+S3
+Text Label 5100 3300 2    50   ~ 0
+C2
+Text Label 5100 3400 2    50   ~ 0
+S2
+Text Label 5100 3500 2    50   ~ 0
+C1
+Text Label 5100 3600 2    50   ~ 0
+S1
+Text Label 5100 3700 2    50   ~ 0
+C0
+Text Label 5100 3800 2    50   ~ 0
+V-
+Text Label 6600 1100 2    50   ~ 0
+DRV
+$Comp
+L Connector:Conn_01x02_Male J10
+U 1 1 5CFAF992
+P 10850 2900
+F 0 "J10" H 10823 2780 50  0000 R CNN
+F 1 "IsoSPI" H 10823 2871 50  0000 R CNN
+F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10850 2900 50  0001 C CNN
+F 3 "~" H 10850 2900 50  0001 C CNN
+	1    10850 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10650 2600 10450 2600
+Wire Wire Line
+	10450 2600 10450 2650
+Wire Wire Line
+	10450 2650 10450 2800
+Connection ~ 10450 2650
+Wire Wire Line
+	10450 2800 10650 2800
+Wire Wire Line
+	10550 2850 10550 2700
+Wire Wire Line
+	10550 2700 10650 2700
+Wire Wire Line
+	10550 2850 10550 2900
+Wire Wire Line
+	10550 2900 10650 2900
+Connection ~ 10550 2850
 $EndSCHEMATC
