@@ -1,3 +1,2 @@
 (sym_lib_table
-  (lib (name BMS-rescue)(type Legacy)(uri ${KIPRJMOD}/BMS-rescue.lib)(options "")(descr ""))
 )
