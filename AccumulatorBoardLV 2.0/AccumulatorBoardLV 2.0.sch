@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:AccumulatorBoardLV 2.0-cache
-EELAYER 29 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -962,7 +961,7 @@ $Comp
 L Device:R R11
 U 1 1 5CAAC8FB
 P 8500 9050
-F 0 "R11" H 8550 8900 50  0000 L CNN
+F 0 "R11" H 8300 9150 50  0000 L CNN
 F 1 "402" V 8500 9050 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" V 8430 9050 50  0001 C CNN
 F 3 "~" H 8500 9050 50  0001 C CNN
@@ -1638,4 +1637,17 @@ Text GLabel 9650 4500 0    60   Input ~ 0
 CHARGER_CONTROL
 Text GLabel 4500 9050 0    60   Output ~ 0
 CHARGER_CONTROL
+$Comp
+L Device:R_Small R14
+U 1 1 5CABE1FF
+P 8650 9200
+F 0 "R14" H 8700 9350 50  0000 L CNN
+F 1 "200" H 8700 9250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8650 9200 50  0001 C CNN
+F 3 "~" H 8650 9200 50  0001 C CNN
+	1    8650 9200
+	1    0    0    -1  
+$EndComp
+Connection ~ 8650 9100
+Connection ~ 8650 9300
 $EndSCHEMATC
