@@ -1,5 +1,37 @@
-EESchema Schematic File Version 4
-EELAYER 29 0
+EESchema Schematic File Version 2
+LIBS:FS FINAL
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino
+LIBS:DashSwitchbox-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -38,7 +70,7 @@ CAN_L
 Text Label 1000 2400 0    60   ~ 0
 GND
 $Comp
-L Connector_Generic:Conn_01x02 J2
+L Conn_01x02 J2
 U 1 1 594F5A13
 P 1900 3550
 F 0 "J2" H 1900 3700 50  0000 C CNN
@@ -53,7 +85,7 @@ Text Label 1000 2800 0    60   ~ 0
 Text Label 2100 3650 0    60   ~ 0
 AIRS_DASH_OUT
 $Comp
-L FS_FINAL:LD1117V33 U1
+L LD1117V33 U1
 U 1 1 59B3514D
 P 3200 1000
 F 0 "U1" H 3000 900 50  0000 C CNN
@@ -64,7 +96,7 @@ F 3 "" H 3200 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR3
+L GND #PWR3
 U 1 1 59B351D8
 P 3200 1250
 F 0 "#PWR3" H 3200 1000 50  0001 C CNN
@@ -75,7 +107,7 @@ F 3 "" H 3200 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C2
+L CP C2
 U 1 1 59B351F4
 P 3600 1100
 F 0 "C2" H 3625 1200 50  0000 L CNN
@@ -86,7 +118,7 @@ F 3 "" H 3600 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C1
+L CP C1
 U 1 1 59B35269
 P 2800 1100
 F 0 "C1" H 2825 1200 50  0000 L CNN
@@ -97,10 +129,10 @@ F 3 "" H 2800 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 1250 3200 1250
+	2800 1250 3600 1250
 Connection ~ 3200 1250
 $Comp
-L power:+3.3V #PWR2
+L +3.3V #PWR2
 U 1 1 59B35329
 P 3600 950
 F 0 "#PWR2" H 3600 800 50  0001 C CNN
@@ -111,7 +143,7 @@ F 3 "" H 3600 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR1
+L +12V #PWR1
 U 1 1 59B35454
 P 2800 950
 F 0 "#PWR1" H 2800 800 50  0001 C CNN
@@ -128,7 +160,7 @@ SIG_STEER
 Text Label 1000 900  0    60   ~ 0
 12V_LVMS
 $Comp
-L Device:R R1
+L R R1
 U 1 1 59B35CBD
 P 1150 5650
 F 0 "R1" V 1230 5650 50  0000 C CNN
@@ -143,7 +175,7 @@ LED_AMS
 Text Label 1050 3650 0    60   ~ 0
 12V_LVMS
 $Comp
-L power:+12V #PWR4
+L +12V #PWR4
 U 1 1 59B36254
 P 1050 3550
 F 0 "#PWR4" H 1050 3400 50  0001 C CNN
@@ -153,10 +185,21 @@ F 3 "" H 1050 3550 50  0001 C CNN
 	1    1050 3550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Conn_01x23 J1
+U 1 1 5A517529
+P 800 1900
+F 0 "J1" H 800 3100 50  0000 C CNN
+F 1 "Main Connector" V 900 1900 50  0000 C CNN
+F 2 "FSFootprints:Ampseal23" H 800 1900 50  0001 C CNN
+F 3 "" H 800 1900 50  0001 C CNN
+	1    800  1900
+	-1   0    0    -1  
+$EndComp
 Text Label 1000 1800 0    60   ~ 0
 LED_BSPD
 $Comp
-L Connector_Generic:Conn_01x03 J3
+L Conn_01x03 J3
 U 1 1 5A5187A1
 P 850 3650
 F 0 "J3" H 850 3850 50  0000 C CNN
@@ -167,7 +210,7 @@ F 3 "" H 850 3650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR5
+L GND #PWR5
 U 1 1 5A51884D
 P 1050 3750
 F 0 "#PWR5" H 1050 3500 50  0001 C CNN
@@ -184,7 +227,7 @@ FLT_INERTIA
 Text Label 2100 3550 0    60   ~ 0
 AIRS_INERTIA_OUT
 $Comp
-L Connector_Generic:Conn_01x02 J6
+L Conn_01x02 J6
 U 1 1 5A518EDC
 P 800 5650
 F 0 "J6" H 800 5750 50  0000 C CNN
@@ -195,7 +238,7 @@ F 3 "" H 800 5650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR7
+L GND #PWR7
 U 1 1 5A5190C7
 P 1000 5750
 F 0 "#PWR7" H 1000 5500 50  0001 C CNN
@@ -208,7 +251,7 @@ $EndComp
 Text Label 1300 6300 0    60   ~ 0
 LED_IMD
 $Comp
-L Connector_Generic:Conn_01x02 J8
+L Conn_01x02 J8
 U 1 1 5A519191
 P 800 6300
 F 0 "J8" H 800 6400 50  0000 C CNN
@@ -219,7 +262,7 @@ F 3 "" H 800 6300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR9
+L GND #PWR9
 U 1 1 5A519197
 P 1000 6400
 F 0 "#PWR9" H 1000 6150 50  0001 C CNN
@@ -232,7 +275,7 @@ $EndComp
 Text Label 2650 5700 0    60   ~ 0
 LED_BSPD
 $Comp
-L Connector_Generic:Conn_01x02 J7
+L Conn_01x02 J7
 U 1 1 5A5192B7
 P 2150 5700
 F 0 "J7" H 2150 5800 50  0000 C CNN
@@ -243,7 +286,7 @@ F 3 "" H 2150 5700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR8
+L GND #PWR8
 U 1 1 5A5192BD
 P 2350 5800
 F 0 "#PWR8" H 2350 5550 50  0001 C CNN
@@ -254,7 +297,7 @@ F 3 "" H 2350 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L R R4
 U 1 1 5A5192C3
 P 2500 6350
 F 0 "R4" V 2580 6350 50  0000 C CNN
@@ -267,7 +310,7 @@ $EndComp
 Text Label 2650 6350 0    60   ~ 0
 FLT_INERTIA
 $Comp
-L Connector_Generic:Conn_01x02 J9
+L Conn_01x02 J9
 U 1 1 5A5192CA
 P 2150 6350
 F 0 "J9" H 2150 6450 50  0000 C CNN
@@ -278,7 +321,7 @@ F 3 "" H 2150 6350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR10
+L GND #PWR10
 U 1 1 5A5192D0
 P 2350 6450
 F 0 "#PWR10" H 2350 6200 50  0001 C CNN
@@ -289,7 +332,7 @@ F 3 "" H 2350 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R3
+L R R3
 U 1 1 5A51969F
 P 1150 6300
 F 0 "R3" V 1230 6300 50  0000 C CNN
@@ -300,7 +343,7 @@ F 3 "" H 1150 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R2
+L R R2
 U 1 1 5A5196F6
 P 2500 5700
 F 0 "R2" V 2580 5700 50  0000 C CNN
@@ -311,7 +354,7 @@ F 3 "" H 2500 5700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J4
+L Conn_01x02 J4
 U 1 1 5A51A14F
 P 1700 4550
 F 0 "J4" H 1700 4650 50  0000 C CNN
@@ -322,7 +365,7 @@ F 3 "" H 1700 4550 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J5
+L Conn_01x03 J5
 U 1 1 5A51A1CD
 P 850 4650
 F 0 "J5" H 850 4850 50  0000 C CNN
@@ -333,7 +376,7 @@ F 3 "" H 850 4650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR6
+L GND #PWR6
 U 1 1 5A51A79F
 P 1900 4650
 F 0 "#PWR6" H 1900 4400 50  0001 C CNN
@@ -380,7 +423,7 @@ Text Label 1000 800  0    60   ~ 0
 Text Label 1050 4650 0    60   ~ 0
 GND
 $Comp
-L Connector_Generic:Conn_01x01 H1
+L Conn_01x01 H1
 U 1 1 5A9F49CC
 P 10700 5900
 F 0 "H1" H 10700 6000 50  0000 C CNN
@@ -391,7 +434,7 @@ F 3 "" H 10700 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 H2
+L Conn_01x01 H2
 U 1 1 5A9F4ACF
 P 10700 6200
 F 0 "H2" H 10700 6300 50  0000 C CNN
@@ -401,19 +444,4 @@ F 3 "" H 10700 6200 50  0001 C CNN
 	1    10700 6200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3200 1250 3600 1250
-$Comp
-L Connector_Generic:Conn_01x23 J1
-U 1 1 5A517529
-P 800 1900
-F 0 "J1" H 800 3100 50  0000 C CNN
-F 1 "Main Connector" V 900 1900 50  0000 C CNN
-F 2 "FSFootprints:Ampseal23" H 800 1900 50  0001 C CNN
-F 3 "" H 800 1900 50  0001 C CNN
-	1    800  1900
-	-1   0    0    -1  
-$EndComp
-Connection ~ 3600 950 
-Connection ~ 2800 950 
 $EndSCHEMATC
