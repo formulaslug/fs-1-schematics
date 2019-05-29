@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name FS-1-TQV)(type Legacy)(uri ${KIPRJMOD}/FS-1-TQV.lib)(options "")(descr ""))
+)
