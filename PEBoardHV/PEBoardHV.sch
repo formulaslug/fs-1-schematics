@@ -1,36 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:FS FINAL
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:PEBoardHV-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ISO1050 U2
+L FS_FINAL:ISO1050 U2
 U 1 1 5888641B
 P 5250 1450
 F 0 "U2" H 5500 1450 60  0000 C CNN
@@ -76,7 +45,7 @@ CAN_H_BOARD
 Text Label 6750 1800 0    60   ~ 0
 CAN_L_BOARD
 $Comp
-L DK1A1B-12V U4
+L FS_FINAL:DK1A1B-12V U4
 U 1 1 588D6E57
 P 5350 5800
 F 0 "U4" H 5250 5800 60  0000 C CNN
@@ -87,7 +56,7 @@ F 3 "" H 5350 5800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DK1A1B-12V U5
+L FS_FINAL:DK1A1B-12V U5
 U 1 1 588D6ED4
 P 5350 7100
 F 0 "U5" H 5250 7100 60  0000 C CNN
@@ -116,7 +85,7 @@ TS+_SWITCHED_L
 Text Label 10050 1000 2    60   ~ 0
 CAN_H_BOARD
 $Comp
-L R R11
+L Device:R R11
 U 1 1 588D76FB
 P 5600 6200
 F 0 "R11" V 5680 6200 50  0000 C CNN
@@ -127,7 +96,7 @@ F 3 "" H 5600 6200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R12
+L Device:R R12
 U 1 1 588D7799
 P 5600 7500
 F 0 "R12" V 5680 7500 50  0000 C CNN
@@ -158,7 +127,7 @@ TS+
 Text Label 10050 1900 2    60   ~ 0
 TS+_SWITCHED_R
 $Comp
-L Conn_01x02 J6
+L Connector:Conn_01x02_Male J6
 U 1 1 58916262
 P 10250 2500
 F 0 "J6" H 10250 2650 50  0000 C CNN
@@ -166,14 +135,14 @@ F 1 "HV Cable" V 10350 2500 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10250 2500 50  0001 C CNN
 F 3 "" H 10250 2500 50  0000 C CNN
 	1    10250 2500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Label 10050 2500 2    60   ~ 0
 TS+
 Text Label 10050 2600 2    60   ~ 0
 TS-
 $Comp
-L Conn_01x02 J8
+L Connector:Conn_01x02_Male J8
 U 1 1 5891667E
 P 10250 2950
 F 0 "J8" H 10250 3100 50  0000 C CNN
@@ -181,10 +150,10 @@ F 1 "TSMPs" V 10350 2950 50  0000 C CNN
 F 2 "FSFootprints:DT15-2P" H 10250 2950 50  0001 C CNN
 F 3 "" H 10250 2950 50  0000 C CNN
 	1    10250 2950
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L R R4
+L Device:R R4
 U 1 1 58916788
 P 9900 2950
 F 0 "R4" V 9980 2950 50  0000 C CNN
@@ -195,7 +164,7 @@ F 3 "" H 9900 2950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R6
+L Device:R R6
 U 1 1 58916808
 P 10050 3200
 F 0 "R6" V 10130 3200 50  0000 C CNN
@@ -210,7 +179,7 @@ TS+
 Text Label 10050 3350 3    60   ~ 0
 TS-
 $Comp
-L L78S05CV-DG U1
+L FS_FINAL:L78S05CV-DG U1
 U 1 1 5897D870
 P 8150 1200
 F 0 "U1" H 7950 1400 50  0000 C CNN
@@ -233,7 +202,7 @@ CAN_H_DEBUG
 Text Label 10050 1450 2    60   ~ 0
 CAN_L_DEBUG
 $Comp
-L D_Zener D2
+L Device:D_Zener D2
 U 1 1 58C314A3
 P 6350 2100
 F 0 "D2" H 6350 2200 50  0000 C CNN
@@ -244,7 +213,7 @@ F 3 "" H 6350 2100 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L D_Zener D3
+L Device:D_Zener D3
 U 1 1 58C31526
 P 6200 2450
 F 0 "D3" H 6200 2550 50  0000 C CNN
@@ -255,7 +224,7 @@ F 3 "" H 6200 2450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L Device:R R2
 U 1 1 58C4AF19
 P 5700 2350
 F 0 "R2" V 5780 2350 50  0000 C CNN
@@ -282,7 +251,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 2100 6200 2300
 $Comp
-L D_Zener D4
+L Device:D_Zener D4
 U 1 1 58C4B7AA
 P 6350 2950
 F 0 "D4" H 6350 3050 50  0000 C CNN
@@ -293,7 +262,7 @@ F 3 "" H 6350 2950 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L D_Zener D5
+L Device:D_Zener D5
 U 1 1 58C4B7B0
 P 6200 3300
 F 0 "D5" H 6200 3400 50  0000 C CNN
@@ -304,7 +273,7 @@ F 3 "" H 6200 3300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R5
+L Device:R R5
 U 1 1 58C4B7BC
 P 5700 3200
 F 0 "R5" V 5780 3200 50  0000 C CNN
@@ -325,7 +294,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 2950 6200 3150
 $Comp
-L D_Zener D6
+L Device:D_Zener D6
 U 1 1 58C4BA2F
 P 6350 3800
 F 0 "D6" H 6350 3900 50  0000 C CNN
@@ -336,7 +305,7 @@ F 3 "" H 6350 3800 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L D_Zener D7
+L Device:D_Zener D7
 U 1 1 58C4BA35
 P 6200 4150
 F 0 "D7" H 6200 4250 50  0000 C CNN
@@ -347,7 +316,7 @@ F 3 "" H 6200 4150 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R8
+L Device:R R8
 U 1 1 58C4BA41
 P 5700 4050
 F 0 "R8" V 5780 4050 50  0000 C CNN
@@ -368,7 +337,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 3800 6200 4000
 $Comp
-L Fuse F2
+L Device:Fuse F2
 U 1 1 58C4C02B
 P 6750 2100
 F 0 "F2" V 6830 2100 50  0000 C CNN
@@ -379,7 +348,7 @@ F 3 "" H 6750 2100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Fuse F3
+L Device:Fuse F3
 U 1 1 58C4C0C4
 P 6750 2950
 F 0 "F3" V 6830 2950 50  0000 C CNN
@@ -390,7 +359,7 @@ F 3 "" H 6750 2950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Fuse F4
+L Device:Fuse F4
 U 1 1 58C4C15E
 P 6650 3800
 F 0 "F4" V 6730 3800 50  0000 C CNN
@@ -401,7 +370,7 @@ F 3 "" H 6650 3800 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R3
+L Device:R R3
 U 1 1 58C4C8E9
 P 6350 2600
 F 0 "R3" V 6430 2600 50  0000 C CNN
@@ -412,7 +381,7 @@ F 3 "" H 6350 2600 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R7
+L Device:R R7
 U 1 1 58C4CA42
 P 6350 3450
 F 0 "R7" V 6430 3450 50  0000 C CNN
@@ -423,7 +392,7 @@ F 3 "" H 6350 3450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R9
+L Device:R R9
 U 1 1 58C4CBDA
 P 6350 4300
 F 0 "R9" V 6430 4300 50  0000 C CNN
@@ -470,7 +439,7 @@ CAN_RX
 Text Notes 7700 1800 0    60   ~ 0
 Needs (Small) Heat Sink!
 $Comp
-L +12V #PWR01
+L power:+12V #PWR01
 U 1 1 59B389E9
 P 1000 650
 F 0 "#PWR01" H 1000 500 50  0001 C CNN
@@ -481,7 +450,7 @@ F 3 "" H 1000 650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x04 J5
+L Connector:Conn_01x04_Male J5
 U 1 1 59B395E2
 P 800 2050
 F 0 "J5" H 800 2250 50  0000 C CNN
@@ -489,10 +458,10 @@ F 1 "E-Meter Internal" V 900 2050 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_2x02x2.50mm_Straight" H 800 2050 50  0001 C CNN
 F 3 "" H 800 2050 50  0001 C CNN
 	1    800  2050
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L power:GND #PWR02
 U 1 1 59B39840
 P 1250 1350
 F 0 "#PWR02" H 1250 1100 50  0001 C CNN
@@ -505,7 +474,7 @@ $EndComp
 Wire Wire Line
 	1250 1350 1000 1350
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 59B39AB1
 P 1000 2250
 F 0 "#PWR03" H 1000 2000 50  0001 C CNN
@@ -516,7 +485,7 @@ F 3 "" H 1000 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR04
+L power:+12V #PWR04
 U 1 1 59B39B0B
 P 1000 1950
 F 0 "#PWR04" H 1000 1800 50  0001 C CNN
@@ -531,7 +500,7 @@ EM_SIG+
 Text Label 1000 2150 0    60   ~ 0
 EM_SIG-
 $Comp
-L Conn_01x04 J7
+L Connector:Conn_01x04_Male J7
 U 1 1 59B39C6F
 P 800 2900
 F 0 "J7" H 800 3100 50  0000 C CNN
@@ -539,10 +508,10 @@ F 1 "E-Meter External" V 900 2900 50  0000 C CNN
 F 2 "FSFootprints:DT15-4P" H 800 2900 50  0001 C CNN
 F 3 "" H 800 2900 50  0001 C CNN
 	1    800  2900
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L power:GND #PWR05
 U 1 1 59B39C75
 P 1000 3100
 F 0 "#PWR05" H 1000 2850 50  0001 C CNN
@@ -553,7 +522,7 @@ F 3 "" H 1000 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR06
+L power:+12V #PWR06
 U 1 1 59B39C7B
 P 1000 2800
 F 0 "#PWR06" H 1000 2650 50  0001 C CNN
@@ -568,7 +537,7 @@ EM_SIG+
 Text Label 1000 3000 0    60   ~ 0
 EM_SIG-
 $Comp
-L CP C4
+L Device:CP C4
 U 1 1 59B3ABDF
 P 7750 1300
 F 0 "C4" H 7775 1400 50  0000 L CNN
@@ -579,7 +548,7 @@ F 3 "" H 7750 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C5
+L Device:CP C5
 U 1 1 59B3AC80
 P 8550 1300
 F 0 "C5" H 8575 1400 50  0000 L CNN
@@ -590,10 +559,10 @@ F 3 "" H 8550 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 1450 8550 1450
+	7750 1450 8150 1450
 Connection ~ 8150 1450
 $Comp
-L Conn_01x03 J9
+L Connector:Conn_01x03_Male J9
 U 1 1 59B3870A
 P 10250 3850
 F 0 "J9" H 10250 4050 50  0000 C CNN
@@ -601,7 +570,7 @@ F 1 "HV CAN Debug" V 10350 3850 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_1x03x2.50mm_Straight" H 10250 3850 50  0001 C CNN
 F 3 "" H 10250 3850 50  0001 C CNN
 	1    10250 3850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Label 10050 3750 2    60   ~ 0
 CAN_H_DEBUG
@@ -614,7 +583,7 @@ GLV      TS
 Text Notes 5450 600  2    60   ~ 0
 GLV      TS
 $Comp
-L Conn_01x08 J2
+L Connector:Conn_01x08_Male J2
 U 1 1 59B38655
 P 800 950
 F 0 "J2" H 800 1350 50  0000 C CNN
@@ -622,12 +591,12 @@ F 1 "To PE LV" V 900 950 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_2x04x2.50mm_Straight" H 800 950 50  0001 C CNN
 F 3 "" H 800 950 50  0001 C CNN
 	1    800  950 
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Text Label 1000 850  0    60   ~ 0
 3.3V_GLV
 $Comp
-L C C2
+L Device:C C2
 U 1 1 5A3F30B7
 P 2450 1000
 F 0 "C2" H 2475 1100 50  0000 L CNN
@@ -638,7 +607,7 @@ F 3 "" H 2450 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
+L Device:C C3
 U 1 1 5A3F31B6
 P 2950 1000
 F 0 "C3" H 2975 1100 50  0000 L CNN
@@ -649,7 +618,7 @@ F 3 "" H 2950 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 5A3F3240
 P 2450 1150
 F 0 "#PWR07" H 2450 900 50  0001 C CNN
@@ -660,7 +629,7 @@ F 3 "" H 2450 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L power:GND #PWR08
 U 1 1 5A3F32CD
 P 2950 1150
 F 0 "#PWR08" H 2950 900 50  0001 C CNN
@@ -675,7 +644,7 @@ Text Label 2450 850  0    60   ~ 0
 Text Label 2950 850  0    60   ~ 0
 3.3V_GLV
 $Comp
-L PS2501-4 U3
+L FS_FINAL:PS2501-4 U3
 U 1 1 5A5D3FBC
 P 5250 2450
 F 0 "U3" H 5050 2650 50  0000 L CNN
@@ -686,7 +655,7 @@ F 3 "" H 5250 2450 50  0000 L CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L PS2501-4 U3
+L FS_FINAL:PS2501-4 U3
 U 2 1 5A5D4061
 P 5250 3300
 F 0 "U3" H 5050 3500 50  0000 L CNN
@@ -697,7 +666,7 @@ F 3 "" H 5250 3300 50  0000 L CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L PS2501-4 U3
+L FS_FINAL:PS2501-4 U3
 U 3 1 5A5D40FC
 P 5250 4150
 F 0 "U3" H 5050 4350 50  0000 L CNN
@@ -708,7 +677,7 @@ F 3 "" H 5250 4150 50  0000 L CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02 J10
+L Connector:Conn_01x02_Male J10
 U 1 1 5A5D5996
 P 10250 4350
 F 0 "J10" H 10250 4450 50  0000 C CNN
@@ -716,7 +685,7 @@ F 1 "EMeter HV" H 10250 4150 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10250 4350 50  0001 C CNN
 F 3 "" H 10250 4350 50  0001 C CNN
 	1    10250 4350
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Label 6500 4000 0    60   ~ 0
 TS+_FUSED
@@ -729,7 +698,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 7400 5450 7500
 $Comp
-L R R1
+L Device:R R1
 U 1 1 5A837AFE
 P 7100 1450
 F 0 "R1" V 7180 1450 50  0000 C CNN
@@ -740,7 +709,7 @@ F 3 "" H 7100 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C1
+L Device:CP C1
 U 1 1 5A84D24A
 P 5500 950
 F 0 "C1" H 5525 1050 50  0000 L CNN
@@ -753,7 +722,7 @@ $EndComp
 Text Label 5650 950  0    60   ~ 0
 TS-
 $Comp
-L Conn_01x01 H1
+L Connector:Conn_01x01_Male H1
 U 1 1 5A94B007
 P 12400 5750
 F 0 "H1" H 12400 5850 50  0000 C CNN
@@ -761,10 +730,10 @@ F 1 "MtngHole" H 12400 5650 50  0000 C CNN
 F 2 "Mounting_Holes:MountingHole_4.5mm" H 12400 5750 50  0001 C CNN
 F 3 "" H 12400 5750 50  0001 C CNN
 	1    12400 5750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 H2
+L Connector:Conn_01x01_Male H2
 U 1 1 5A94B644
 P 12400 6050
 F 0 "H2" H 12400 6150 50  0000 C CNN
@@ -772,10 +741,10 @@ F 1 "MtngHole" H 12400 5950 50  0000 C CNN
 F 2 "Mounting_Holes:MountingHole_4.5mm" H 12400 6050 50  0001 C CNN
 F 3 "" H 12400 6050 50  0001 C CNN
 	1    12400 6050
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 V1
+L Connector:Conn_01x01_Male V1
 U 1 1 5AB46FBF
 P 12900 5750
 F 0 "V1" H 12900 5850 50  0000 C CNN
@@ -783,10 +752,10 @@ F 1 "ViaBlock" H 12900 5650 50  0000 C CNN
 F 2 "FSFootprints:ViaBlock-0.8mm" H 12900 5750 50  0001 C CNN
 F 3 "" H 12900 5750 50  0001 C CNN
 	1    12900 5750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 V4
+L Connector:Conn_01x01_Male V4
 U 1 1 5AB474B5
 P 12900 6050
 F 0 "V4" H 12900 6150 50  0000 C CNN
@@ -794,10 +763,10 @@ F 1 "ViaBlock" H 12900 5950 50  0000 C CNN
 F 2 "FSFootprints:ViaBlock-0.8mm" H 12900 6050 50  0001 C CNN
 F 3 "" H 12900 6050 50  0001 C CNN
 	1    12900 6050
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 V7
+L Connector:Conn_01x01_Male V7
 U 1 1 5AB4755E
 P 12900 6350
 F 0 "V7" H 12900 6450 50  0000 C CNN
@@ -805,10 +774,10 @@ F 1 "ViaBlock" H 12900 6250 50  0000 C CNN
 F 2 "FSFootprints:ViaBlock-0.8mm" H 12900 6350 50  0001 C CNN
 F 3 "" H 12900 6350 50  0001 C CNN
 	1    12900 6350
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 V2
+L Connector:Conn_01x01_Male V2
 U 1 1 5AB4779F
 P 13350 5750
 F 0 "V2" H 13350 5850 50  0000 C CNN
@@ -816,10 +785,10 @@ F 1 "ViaBlock" H 13350 5650 50  0000 C CNN
 F 2 "FSFootprints:ViaBlock-0.8mm" H 13350 5750 50  0001 C CNN
 F 3 "" H 13350 5750 50  0001 C CNN
 	1    13350 5750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 V5
+L Connector:Conn_01x01_Male V5
 U 1 1 5AB477A5
 P 13350 6050
 F 0 "V5" H 13350 6150 50  0000 C CNN
@@ -827,10 +796,10 @@ F 1 "ViaBlock" H 13350 5950 50  0000 C CNN
 F 2 "FSFootprints:ViaBlock-0.8mm" H 13350 6050 50  0001 C CNN
 F 3 "" H 13350 6050 50  0001 C CNN
 	1    13350 6050
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 V8
+L Connector:Conn_01x01_Male V8
 U 1 1 5AB477AB
 P 13350 6350
 F 0 "V8" H 13350 6450 50  0000 C CNN
@@ -838,7 +807,7 @@ F 1 "ViaBlock" H 13350 6250 50  0000 C CNN
 F 2 "FSFootprints:ViaBlock-0.8mm" H 13350 6350 50  0001 C CNN
 F 3 "" H 13350 6350 50  0001 C CNN
 	1    13350 6350
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Label 12700 5750 2    60   ~ 0
 TS-
@@ -853,7 +822,7 @@ TS-
 Text Label 13150 5750 2    60   ~ 0
 TS-
 $Comp
-L Conn_01x01 V9
+L Connector:Conn_01x01_Male V9
 U 1 1 5AB48E7B
 P 13800 6350
 F 0 "V9" H 13800 6450 50  0000 C CNN
@@ -861,12 +830,12 @@ F 1 "ViaBlock" H 13800 6250 50  0000 C CNN
 F 2 "FSFootprints:ViaBlock-0.8mm" H 13800 6350 50  0001 C CNN
 F 3 "" H 13800 6350 50  0001 C CNN
 	1    13800 6350
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Label 13600 6350 2    60   ~ 0
 TS-
 $Comp
-L Conn_01x01 V6
+L Connector:Conn_01x01_Male V6
 U 1 1 5AB4A9C2
 P 13800 6050
 F 0 "V6" H 13800 6150 50  0000 C CNN
@@ -874,10 +843,10 @@ F 1 "ViaBlock" H 13800 5950 50  0000 C CNN
 F 2 "FSFootprints:ViaBlock-0.8mm" H 13800 6050 50  0001 C CNN
 F 3 "" H 13800 6050 50  0001 C CNN
 	1    13800 6050
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 V3
+L Connector:Conn_01x01_Male V3
 U 1 1 5AB4AA7F
 P 13800 5750
 F 0 "V3" H 13800 5850 50  0000 C CNN
@@ -885,7 +854,7 @@ F 1 "ViaBlock" H 13800 5650 50  0000 C CNN
 F 2 "FSFootprints:ViaBlock-0.8mm" H 13800 5750 50  0001 C CNN
 F 3 "" H 13800 5750 50  0001 C CNN
 	1    13800 5750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Label 13600 6050 2    60   ~ 0
 TS-
@@ -900,7 +869,7 @@ DISCHARGE_L
 Text Label 6350 6500 2    60   ~ 0
 DISCHARGE_R
 $Comp
-L Conn_01x02 J11
+L Connector:Conn_01x02_Male J11
 U 1 1 5AB89F55
 P 6550 6400
 F 0 "J11" H 6550 6500 50  0000 C CNN
@@ -908,10 +877,10 @@ F 1 "Discharge Jumper" H 6550 6200 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x01_Pitch2.54mm" H 6550 6400 50  0001 C CNN
 F 3 "" H 6550 6400 50  0001 C CNN
 	1    6550 6400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Fuse F1
+L Device:Fuse F1
 U 1 1 5AB87628
 P 7600 1150
 F 0 "F1" V 7680 1150 50  0000 C CNN
@@ -924,7 +893,7 @@ $EndComp
 Wire Wire Line
 	6500 4000 6500 3800
 $Comp
-L D_TVS_x2_AAC D1
+L Device:D_TVS_x2_AAC D1
 U 1 1 5AC2D38B
 P 6750 1450
 F 0 "D1" H 6750 1625 50  0000 C CNN
@@ -939,7 +908,7 @@ CAN_H_PRE
 Text Label 5850 1650 3    60   ~ 0
 CAN_L_PRE
 $Comp
-L EMI_Choke FL1
+L FS_FINAL:EMI_Choke FL1
 U 1 1 5AC2DC18
 P 6200 1450
 F 0 "FL1" H 6200 1625 50  0000 C CNN
@@ -960,11 +929,11 @@ Wire Wire Line
 Wire Wire Line
 	6400 1350 6400 1100
 Wire Wire Line
-	6400 1100 7100 1100
+	6400 1100 6750 1100
 Wire Wire Line
 	6400 1550 6400 1800
 Wire Wire Line
-	6400 1800 7100 1800
+	6400 1800 6750 1800
 Wire Wire Line
 	7100 1100 7100 1300
 Connection ~ 6750 1100
@@ -974,7 +943,7 @@ Connection ~ 6750 1800
 Text Label 6600 1450 1    60   ~ 0
 TS-
 $Comp
-L D D8
+L Device:D D8
 U 1 1 5AD96E3E
 P 4850 5800
 F 0 "D8" H 4850 5900 50  0000 C CNN
@@ -985,7 +954,7 @@ F 3 "" H 4850 5800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D D9
+L Device:D D9
 U 1 1 5AD97483
 P 4850 7100
 F 0 "D9" H 4850 7200 50  0000 C CNN
@@ -996,7 +965,7 @@ F 3 "" H 4850 7100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Conn_02x03_Top_Bottom J1
+L Connector_Generic:Conn_02x03_Top_Bottom J1
 U 1 1 5ADAB6B1
 P 10250 900
 F 0 "J1" H 10300 1100 50  0000 C CNN
@@ -1007,7 +976,7 @@ F 3 "" H 10250 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02 J4
+L Connector:Conn_01x02_Male J4
 U 1 1 5ADAC6DA
 P 10250 1900
 F 0 "J4" H 10250 2000 50  0000 C CNN
@@ -1015,10 +984,10 @@ F 1 "Ring Terminal Connector" H 10250 1700 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_NanoFit_1x02x2.50mm_Straight" H 10250 1900 50  0001 C CNN
 F 3 "" H 10250 1900 50  0001 C CNN
 	1    10250 1900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_02x03_Top_Bottom J3
+L Connector_Generic:Conn_02x03_Top_Bottom J3
 U 1 1 5ADACFF7
 P 10250 1450
 F 0 "J3" H 10300 1650 50  0000 C CNN
@@ -1030,7 +999,7 @@ F 3 "" H 10250 1450 50  0001 C CNN
 $EndComp
 NoConn ~ 10550 1350
 $Comp
-L R R10
+L Device:R R10
 U 1 1 5ADED4A7
 P 4950 4400
 F 0 "R10" V 5030 4400 50  0000 C CNN
@@ -1041,7 +1010,7 @@ F 3 "" H 4950 4400 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR09
+L power:GND #PWR09
 U 1 1 5ADEFADF
 P 4950 4550
 F 0 "#PWR09" H 4950 4300 50  0001 C CNN
@@ -1059,4 +1028,10 @@ Wire Wire Line
 	6600 2950 6500 2950
 Text Label 6600 2950 3    60   ~ 0
 TS+_RF
+Wire Wire Line
+	8150 1450 8550 1450
+Wire Wire Line
+	6750 1100 7100 1100
+Wire Wire Line
+	6750 1800 7100 1800
 $EndSCHEMATC
