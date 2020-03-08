@@ -4,6 +4,24 @@ $CMP 2CN0002E
 D Elithion Lithiumate HD Master
 $ENDCMP
 #
+$CMP 74AHC2G00
+D Dual NAND Gate, High-speed Si-gate CMOS
+K Dual Gate NAND LVC CMOS
+F https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT2G00.pdf
+$ENDCMP
+#
+$CMP 74AHCT2G00
+D Dual NAND Gate, TTL input High-speed Si-gate CMOS
+K Dual Gate NAND LVC CMOS
+F https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT2G00.pdf
+$ENDCMP
+#
+$CMP 74AUC2G00
+D Dual NAND Gate, Low-Voltage CMOS
+K Dual Gate NAND LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP 74HC595
 D 8 bits serial in // out Shift Register 3 State Out
 K HCMOS SR 3State
@@ -20,10 +38,22 @@ D 8 bits serial in // out Shift Register Open Collect.
 K HCMOS SR OpenCol
 $ENDCMP
 #
+$CMP 74LVC2G132
+D Dual NAND Gate, Low-Voltage CMOS
+K Dual Gate NAND LVC CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
 $CMP ADG708
 D Single 8-to-1 CMOS Low Voltage 2-Wire Serially Controlled, Matrix Switches
 K analog switch selector multiplexer TWI I2C IIC 8-to-1
 F http://www.analog.com/media/en/technical-documentation/data-sheets/ADG728_729.pdf
+$ENDCMP
+#
+$CMP CD40107BE
+D quad 2-input NAND gate
+K TTL nand 2-input
+F https://www.ti.com/lit/ds/symlink/cd40107b.pdf
 $ENDCMP
 #
 $CMP EMI_Choke
