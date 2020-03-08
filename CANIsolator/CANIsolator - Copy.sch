@@ -1,0 +1,516 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FS_FINAL:ISO1050 U?
+U 1 1 5DBEF1FB
+P 4100 2000
+F 0 "U?" H 4750 2100 60  0000 L CNN
+F 1 "ISO1050" H 4750 1950 60  0000 L CNN
+F 2 "SMD_Packages:DIP-8_SMD" H 4100 1300 60  0001 C CNN
+F 3 "" H 4050 2000 60  0000 C CNN
+	1    4100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L FS_FINAL:ISO1050 U?
+U 1 1 5DBFA47F
+P 1900 2000
+F 0 "U?" H 1250 2100 60  0000 R CNN
+F 1 "ISO1050" H 1250 1950 60  0000 R CNN
+F 2 "SMD_Packages:DIP-8_SMD" H 1900 1300 60  0001 C CNN
+F 3 "" H 1850 2000 60  0000 C CNN
+	1    1900 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L FS_FINAL:CD40107BE U1
+U 1 1 5DC284C2
+P 2500 5000
+F 0 "U1" H 2500 5400 50  0000 C CNN
+F 1 "CD40107BE" H 2500 5300 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 2500 4800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd40107b.pdf" H 2500 5000 50  0001 C CNN
+	1    2500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC2BEAC
+P 2500 4850
+F 0 "#PWR?" H 2500 4700 50  0001 C CNN
+F 1 "+5V" H 2550 4900 50  0000 L CNN
+F 2 "" H 2500 4850 50  0001 C CNN
+F 3 "" H 2500 4850 50  0001 C CNN
+	1    2500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC2C58A
+P 2500 5150
+F 0 "#PWR?" H 2500 4900 50  0001 C CNN
+F 1 "GND" H 2550 5100 50  0000 L CNN
+F 2 "" H 2500 5150 50  0001 C CNN
+F 3 "" H 2500 5150 50  0001 C CNN
+	1    2500 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4900 2200 5000
+Wire Wire Line
+	2200 5000 2100 5000
+Connection ~ 2200 5000
+Wire Wire Line
+	2200 5000 2200 5100
+$Comp
+L FS_FINAL:CD40107BE U1
+U 2 1 5DC31D56
+P 3500 5000
+F 0 "U1" H 3500 5400 50  0000 C CNN
+F 1 "CD40107BE" H 3500 5300 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 3500 4800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd40107b.pdf" H 3500 5000 50  0001 C CNN
+	2    3500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC31D60
+P 3500 4850
+F 0 "#PWR?" H 3500 4700 50  0001 C CNN
+F 1 "+5V" H 3550 4900 50  0000 L CNN
+F 2 "" H 3500 4850 50  0001 C CNN
+F 3 "" H 3500 4850 50  0001 C CNN
+	1    3500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC31D6A
+P 3500 5150
+F 0 "#PWR?" H 3500 4900 50  0001 C CNN
+F 1 "GND" H 3550 5100 50  0000 L CNN
+F 2 "" H 3500 5150 50  0001 C CNN
+F 3 "" H 3500 5150 50  0001 C CNN
+	1    3500 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4900 3200 5000
+Wire Wire Line
+	2800 5000 3000 5000
+Connection ~ 3200 5000
+Wire Wire Line
+	3200 5000 3200 5100
+$Comp
+L Device:R R?
+U 1 1 5DC36227
+P 3000 4750
+F 0 "R?" H 3050 4750 50  0000 L CNN
+F 1 "1k" V 3000 4750 50  0000 C CNN
+F 2 "" V 2930 4750 50  0001 C CNN
+F 3 "~" H 3000 4750 50  0001 C CNN
+	1    3000 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4900 3000 5000
+Connection ~ 3000 5000
+Wire Wire Line
+	3000 5000 3200 5000
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC38A47
+P 3000 4600
+F 0 "#PWR?" H 3000 4450 50  0001 C CNN
+F 1 "+5V" H 3050 4650 50  0000 L CNN
+F 2 "" H 3000 4600 50  0001 C CNN
+F 3 "" H 3000 4600 50  0001 C CNN
+	1    3000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC3AB8C
+P 4000 4750
+F 0 "R?" H 4050 4750 50  0000 L CNN
+F 1 "4.7k" V 4000 4750 50  0000 C CNN
+F 2 "" V 3930 4750 50  0001 C CNN
+F 3 "~" H 4000 4750 50  0001 C CNN
+	1    4000 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4900 4000 5000
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC3AB97
+P 4000 4600
+F 0 "#PWR?" H 4000 4450 50  0001 C CNN
+F 1 "+5V" H 4050 4650 50  0000 L CNN
+F 2 "" H 4000 4600 50  0001 C CNN
+F 3 "" H 4000 4600 50  0001 C CNN
+	1    4000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 5000 4000 5000
+Connection ~ 4000 5000
+Wire Wire Line
+	4000 5000 4200 5000
+$Comp
+L Device:C C?
+U 1 1 5DC3ECBB
+P 4000 5250
+F 0 "C?" H 4100 5300 50  0000 L CNN
+F 1 "47pF" H 4100 5200 50  0000 L CNN
+F 2 "" H 4038 5100 50  0001 C CNN
+F 3 "~" H 4000 5250 50  0001 C CNN
+	1    4000 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5000 4000 5100
+$Comp
+L 4xxx:4069 U?
+U 1 1 5DC4ADAC
+P 4500 5000
+F 0 "U?" H 4500 5350 50  0000 C CNN
+F 1 "4069" H 4500 5250 50  0000 C CNN
+F 2 "" H 4500 5000 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 4500 5000 50  0001 C CNN
+	1    4500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4072 U?
+U 1 1 5DC4C69B
+P 5500 5500
+F 0 "U?" H 5500 5850 50  0000 C CNN
+F 1 "4072" H 5500 5750 50  0000 C CNN
+F 2 "" H 5500 5500 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4071bms-72bms-75bms.pdf" H 5500 5500 50  0001 C CNN
+	1    5500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC4E25A
+P 4000 5400
+F 0 "#PWR?" H 4000 5150 50  0001 C CNN
+F 1 "GND" H 4050 5350 50  0000 L CNN
+F 2 "" H 4000 5400 50  0001 C CNN
+F 3 "" H 4000 5400 50  0001 C CNN
+	1    4000 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2100 5000 0    50   Input ~ 0
+TX_1
+Text GLabel 5200 5650 0    50   Input ~ 0
+RX_1
+Wire Wire Line
+	4800 5000 5000 5000
+Wire Wire Line
+	5000 5000 5000 5550
+Wire Wire Line
+	5000 5550 5200 5550
+$Comp
+L 4xxx:4081 U?
+U 1 1 5DC58E25
+P 5500 4900
+F 0 "U?" H 5500 5250 50  0000 C CNN
+F 1 "4081" H 5500 5150 50  0000 C CNN
+F 2 "" H 5500 4900 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 5500 4900 50  0001 C CNN
+	1    5500 4900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4900 5100 4900
+Wire Wire Line
+	5100 4900 5100 5450
+Wire Wire Line
+	5100 5450 5200 5450
+$Comp
+L 4xxx:4069 U?
+U 1 1 5DC5ECFE
+P 6300 4800
+F 0 "U?" H 6300 4450 50  0000 C CNN
+F 1 "4069" H 6300 4550 50  0000 C CNN
+F 2 "" H 6300 4800 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 6300 4800 50  0001 C CNN
+	1    6300 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 4800 6000 4800
+Wire Wire Line
+	5800 5000 5900 5000
+Wire Wire Line
+	5900 5000 5900 5500
+Wire Wire Line
+	5900 5500 5800 5500
+Text GLabel 6600 4800 2    50   Input ~ 0
+RX_2
+Text GLabel 6000 5500 2    50   Input ~ 0
+TX_2
+Wire Wire Line
+	6000 5500 5900 5500
+Connection ~ 5900 5500
+$Comp
+L FS_FINAL:CD40107BE U2
+U 1 1 5DC78DD5
+P 2500 6500
+F 0 "U2" H 2500 6900 50  0000 C CNN
+F 1 "CD40107BE" H 2500 6800 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 2500 6300 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd40107b.pdf" H 2500 6500 50  0001 C CNN
+	1    2500 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC78DDF
+P 2500 6350
+F 0 "#PWR?" H 2500 6200 50  0001 C CNN
+F 1 "+5V" H 2550 6400 50  0000 L CNN
+F 2 "" H 2500 6350 50  0001 C CNN
+F 3 "" H 2500 6350 50  0001 C CNN
+	1    2500 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC78DE9
+P 2500 6650
+F 0 "#PWR?" H 2500 6400 50  0001 C CNN
+F 1 "GND" H 2550 6600 50  0000 L CNN
+F 2 "" H 2500 6650 50  0001 C CNN
+F 3 "" H 2500 6650 50  0001 C CNN
+	1    2500 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6400 2200 6500
+Wire Wire Line
+	2200 6500 2100 6500
+Connection ~ 2200 6500
+Wire Wire Line
+	2200 6500 2200 6600
+$Comp
+L FS_FINAL:CD40107BE U2
+U 2 1 5DC78DF7
+P 3500 6500
+F 0 "U2" H 3500 6900 50  0000 C CNN
+F 1 "CD40107BE" H 3500 6800 50  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 3500 6300 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd40107b.pdf" H 3500 6500 50  0001 C CNN
+	2    3500 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC78E01
+P 3500 6350
+F 0 "#PWR?" H 3500 6200 50  0001 C CNN
+F 1 "+5V" H 3550 6400 50  0000 L CNN
+F 2 "" H 3500 6350 50  0001 C CNN
+F 3 "" H 3500 6350 50  0001 C CNN
+	1    3500 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC78E0B
+P 3500 6650
+F 0 "#PWR?" H 3500 6400 50  0001 C CNN
+F 1 "GND" H 3550 6600 50  0000 L CNN
+F 2 "" H 3500 6650 50  0001 C CNN
+F 3 "" H 3500 6650 50  0001 C CNN
+	1    3500 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6400 3200 6500
+Wire Wire Line
+	2800 6500 3000 6500
+Connection ~ 3200 6500
+Wire Wire Line
+	3200 6500 3200 6600
+$Comp
+L Device:R R?
+U 1 1 5DC78E19
+P 3000 6250
+F 0 "R?" H 3050 6250 50  0000 L CNN
+F 1 "1k" V 3000 6250 50  0000 C CNN
+F 2 "" V 2930 6250 50  0001 C CNN
+F 3 "~" H 3000 6250 50  0001 C CNN
+	1    3000 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6400 3000 6500
+Connection ~ 3000 6500
+Wire Wire Line
+	3000 6500 3200 6500
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC78E26
+P 3000 6100
+F 0 "#PWR?" H 3000 5950 50  0001 C CNN
+F 1 "+5V" H 3050 6150 50  0000 L CNN
+F 2 "" H 3000 6100 50  0001 C CNN
+F 3 "" H 3000 6100 50  0001 C CNN
+	1    3000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC78E30
+P 4000 6250
+F 0 "R?" H 4050 6250 50  0000 L CNN
+F 1 "4.7k" V 4000 6250 50  0000 C CNN
+F 2 "" V 3930 6250 50  0001 C CNN
+F 3 "~" H 4000 6250 50  0001 C CNN
+	1    4000 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6400 4000 6500
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC78E3B
+P 4000 6100
+F 0 "#PWR?" H 4000 5950 50  0001 C CNN
+F 1 "+5V" H 4050 6150 50  0000 L CNN
+F 2 "" H 4000 6100 50  0001 C CNN
+F 3 "" H 4000 6100 50  0001 C CNN
+	1    4000 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6500 4000 6500
+Connection ~ 4000 6500
+Wire Wire Line
+	4000 6500 4200 6500
+$Comp
+L Device:C C?
+U 1 1 5DC78E48
+P 4000 6750
+F 0 "C?" H 4100 6800 50  0000 L CNN
+F 1 "47pF" H 4100 6700 50  0000 L CNN
+F 2 "" H 4038 6600 50  0001 C CNN
+F 3 "~" H 4000 6750 50  0001 C CNN
+	1    4000 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6500 4000 6600
+$Comp
+L 4xxx:4069 U?
+U 1 1 5DC78E53
+P 4500 6500
+F 0 "U?" H 4500 6850 50  0000 C CNN
+F 1 "4069" H 4500 6750 50  0000 C CNN
+F 2 "" H 4500 6500 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 4500 6500 50  0001 C CNN
+	1    4500 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4072 U?
+U 1 1 5DC78E5D
+P 5500 7000
+F 0 "U?" H 5500 7350 50  0000 C CNN
+F 1 "4072" H 5500 7250 50  0000 C CNN
+F 2 "" H 5500 7000 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4071bms-72bms-75bms.pdf" H 5500 7000 50  0001 C CNN
+	1    5500 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC78E67
+P 4000 6900
+F 0 "#PWR?" H 4000 6650 50  0001 C CNN
+F 1 "GND" H 4050 6850 50  0000 L CNN
+F 2 "" H 4000 6900 50  0001 C CNN
+F 3 "" H 4000 6900 50  0001 C CNN
+	1    4000 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 2100 6500 0    50   Input ~ 0
+TX_2
+Text GLabel 5200 7150 0    50   Input ~ 0
+RX_2
+Wire Wire Line
+	4800 6500 5000 6500
+Wire Wire Line
+	5000 6500 5000 7050
+Wire Wire Line
+	5000 7050 5200 7050
+$Comp
+L 4xxx:4081 U?
+U 1 1 5DC78E76
+P 5500 6400
+F 0 "U?" H 5500 6750 50  0000 C CNN
+F 1 "4081" H 5500 6650 50  0000 C CNN
+F 2 "" H 5500 6400 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4073bms-81bms-82bms.pdf" H 5500 6400 50  0001 C CNN
+	1    5500 6400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 6400 5100 6400
+Wire Wire Line
+	5100 6400 5100 6950
+Wire Wire Line
+	5100 6950 5200 6950
+$Comp
+L 4xxx:4069 U?
+U 1 1 5DC78E83
+P 6300 6300
+F 0 "U?" H 6300 5950 50  0000 C CNN
+F 1 "4069" H 6300 6050 50  0000 C CNN
+F 2 "" H 6300 6300 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 6300 6300 50  0001 C CNN
+	1    6300 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 6300 6000 6300
+Wire Wire Line
+	5800 6500 5900 6500
+Wire Wire Line
+	5900 6500 5900 7000
+Wire Wire Line
+	5900 7000 5800 7000
+Text GLabel 6600 6300 2    50   Input ~ 0
+RX_1
+Text GLabel 6000 7000 2    50   Input ~ 0
+TX_1
+Wire Wire Line
+	6000 7000 5900 7000
+Connection ~ 5900 7000
+Text GLabel 2500 2200 2    50   Input ~ 0
+TX_1
+Text GLabel 2500 1800 2    50   Input ~ 0
+RX_1
+Text GLabel 3500 2200 0    50   Input ~ 0
+TX_2
+Text GLabel 3500 1800 0    50   Input ~ 0
+RX_2
+$EndSCHEMATC
