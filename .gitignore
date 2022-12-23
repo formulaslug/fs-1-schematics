@@ -1,9 +1,7 @@
 *bak
-*cache*
 *.DS_Store
 *.bck
 *-rescue.lib
-*-cache.lib
 *.drl
 *.gbr
 *.zip

@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -249,17 +249,6 @@ F 3 "~" H 5000 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 1900 5000 1900
-$Comp
-L Timer:SE555 U1
-U 1 1 5C45E7F1
-P 4150 1700
-F 0 "U1" H 3850 2050 50  0000 C CNN
-F 1 "SE555" H 4350 2050 50  0000 C CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4150 1700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4150 1700 50  0001 C CNN
-	1    4150 1700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C2
 U 1 1 5C45BB3C
@@ -1674,4 +1663,15 @@ Wire Wire Line
 Connection ~ 2500 6550
 Text GLabel 2600 6550 2    60   Output ~ 0
 Reset
+$Comp
+L Timer:SE555 U1
+U 1 1 5C45E7F1
+P 4150 1700
+F 0 "U1" H 3850 2050 50  0000 C CNN
+F 1 "SE555" H 4350 2050 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4150 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4150 1700 50  0001 C CNN
+	1    4150 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

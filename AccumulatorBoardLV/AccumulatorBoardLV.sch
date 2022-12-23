@@ -1,37 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:adc-dac
-LIBS:FS FINAL
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:arduino
-LIBS:AccumulatorBoardLV-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -46,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L DK1A1B-12V U7
+L FS-FINAL:DK1A1B-12V U7
 U 1 1 589A7624
 P 14850 5350
 F 0 "U7" H 14750 5350 60  0000 C CNN
@@ -61,7 +29,7 @@ BMS_RESET
 Text Label 14050 4600 2    60   ~ 0
 IMD_RESET
 $Comp
-L Conn_01x02 J12
+L AccumulatorBoardLV-rescue:Conn_01x02 J12
 U 1 1 58A9F1D8
 P 900 4550
 F 0 "J12" H 900 4700 50  0000 C CNN
@@ -74,7 +42,7 @@ $EndComp
 Text Label 1100 4650 0    60   ~ 0
 AIRS_ACC_OUT
 $Comp
-L L78S05CV-DG U5
+L FS-FINAL:L78S05CV-DG U5
 U 1 1 58ABDAE7
 P 3750 3000
 F 0 "U5" H 3550 2900 50  0000 C CNN
@@ -107,7 +75,7 @@ CAN_H
 Text Label 4050 2100 1    60   ~ 0
 CAN_L
 $Comp
-L Conn_01x02 J9
+L AccumulatorBoardLV-rescue:Conn_01x02 J9
 U 1 1 58ACA694
 P 8450 3550
 F 0 "J9" H 8450 3700 50  0000 C CNN
@@ -120,7 +88,7 @@ $EndComp
 Text Label 8650 4100 0    60   ~ 0
 IMD_RESET
 $Comp
-L Conn_01x02 J11
+L AccumulatorBoardLV-rescue:Conn_01x02 J11
 U 1 1 58ACAABB
 P 8450 4100
 F 0 "J11" H 8450 4250 50  0000 C CNN
@@ -133,7 +101,7 @@ $EndComp
 Text Label 8650 3550 0    60   ~ 0
 BMS_RESET
 $Comp
-L Conn_01x02 J1
+L AccumulatorBoardLV-rescue:Conn_01x02 J1
 U 1 1 58ACF01F
 P 900 950
 F 0 "J1" H 900 1100 50  0000 C CNN
@@ -144,7 +112,7 @@ F 3 "" H 900 950 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02 J2
+L AccumulatorBoardLV-rescue:Conn_01x02 J2
 U 1 1 58ACF5F5
 P 900 1450
 F 0 "J2" H 900 1600 50  0000 C CNN
@@ -163,7 +131,7 @@ AIRS_FINAL
 Text Label 1100 1450 0    60   ~ 0
 AIRS_FINAL
 $Comp
-L Conn_01x02 J17
+L AccumulatorBoardLV-rescue:Conn_01x02 J17
 U 1 1 58AFAE78
 P 14350 6000
 F 0 "J17" H 14350 6150 50  0000 C CNN
@@ -174,7 +142,7 @@ F 3 "" H 14350 6000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR01
+L power:+5V #PWR01
 U 1 1 58B23863
 P 4150 2950
 F 0 "#PWR01" H 4150 2800 50  0001 C CNN
@@ -185,7 +153,7 @@ F 3 "" H 4150 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR02
+L power:+12V #PWR02
 U 1 1 58B2EAED
 P 3350 2950
 F 0 "#PWR02" H 3350 2800 50  0001 C CNN
@@ -198,7 +166,7 @@ $EndComp
 Text Label 14050 1700 2    60   ~ 0
 TEMP_RESET
 $Comp
-L SN754410 U3
+L FS-FINAL:SN754410 U3
 U 1 1 58B65BE0
 P 11650 2750
 F 0 "U3" H 11650 2800 60  0000 C CNN
@@ -213,7 +181,7 @@ TEMP_FLT_H
 Text Label 12250 2550 0    60   ~ 0
 IMD_FLT_H
 $Comp
-L GND #PWR03
+L power:GND #PWR03
 U 1 1 58B68437
 P 11650 3350
 F 0 "#PWR03" H 11650 3100 50  0001 C CNN
@@ -224,7 +192,7 @@ F 3 "" H 11650 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR04
+L power:+5V #PWR04
 U 1 1 58B686D5
 P 11550 2150
 F 0 "#PWR04" H 11550 2000 50  0001 C CNN
@@ -235,7 +203,7 @@ F 3 "" H 11550 2150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR05
+L power:+12V #PWR05
 U 1 1 58B687AC
 P 11750 2150
 F 0 "#PWR05" H 11750 2000 50  0001 C CNN
@@ -250,7 +218,7 @@ TEMP_FLT
 Text Label 11550 1000 2    60   ~ 0
 IMD_FLT
 $Comp
-L R R1
+L Device:R R1
 U 1 1 58B68E96
 P 11700 1000
 F 0 "R1" V 11780 1000 50  0000 C CNN
@@ -261,7 +229,7 @@ F 3 "" H 11700 1000 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L Device:R R2
 U 1 1 58B68F7E
 P 11850 1150
 F 0 "R2" V 11930 1150 50  0000 C CNN
@@ -272,7 +240,7 @@ F 3 "" H 11850 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 58B698CD
 P 11850 1300
 F 0 "#PWR06" H 11850 1050 50  0001 C CNN
@@ -283,7 +251,7 @@ F 3 "" H 11850 1300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LM555N U2
+L FS-FINAL:LM555N U2
 U 1 1 58B6F1AC
 P 9050 1700
 F 0 "U2" H 9050 1700 70  0000 C CNN
@@ -294,7 +262,7 @@ F 3 "" H 9050 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L power:GND #PWR07
 U 1 1 58B6F3EF
 P 9050 2300
 F 0 "#PWR07" H 9050 2050 50  0001 C CNN
@@ -305,7 +273,7 @@ F 3 "" H 9050 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR08
+L power:+5V #PWR08
 U 1 1 58B6F4CC
 P 9050 1100
 F 0 "#PWR08" H 9050 950 50  0001 C CNN
@@ -316,7 +284,7 @@ F 3 "" H 9050 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR09
+L power:+5V #PWR09
 U 1 1 58B6FE4C
 P 8050 1100
 F 0 "#PWR09" H 8050 950 50  0001 C CNN
@@ -327,7 +295,7 @@ F 3 "" H 8050 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C1
+L Device:CP C1
 U 1 1 58B6FF29
 P 8050 1250
 F 0 "C1" H 8075 1350 50  0000 L CNN
@@ -338,7 +306,7 @@ F 3 "" H 8050 1250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR010
+L power:+5V #PWR010
 U 1 1 58B71047
 P 8350 2000
 F 0 "#PWR010" H 8350 1850 50  0001 C CNN
@@ -349,7 +317,7 @@ F 3 "" H 8350 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L Device:R R3
 U 1 1 58B713ED
 P 8050 2150
 F 0 "R3" V 8130 2150 50  0000 C CNN
@@ -360,7 +328,7 @@ F 3 "" H 8050 2150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR011
+L power:GND #PWR011
 U 1 1 58B7193D
 P 8050 2300
 F 0 "#PWR011" H 8050 2050 50  0001 C CNN
@@ -377,7 +345,7 @@ GND
 Text Notes 3900 2050 1    60   ~ 0
 BMS CAN Termination
 $Comp
-L Conn_01x12 J5
+L AccumulatorBoardLV-rescue:Conn_01x12 J5
 U 1 1 58B7B94A
 P 3950 2300
 F 0 "J5" H 3950 2950 50  0000 C CNN
@@ -392,7 +360,7 @@ BMS_TX
 Text Label 4550 2100 1    60   ~ 0
 BMS_RX
 $Comp
-L Conn_01x02 J6
+L AccumulatorBoardLV-rescue:Conn_01x02 J6
 U 1 1 58B7C6A2
 P 4800 2300
 F 0 "J6" H 4800 2450 50  0000 C CNN
@@ -403,7 +371,7 @@ F 3 "" H 4800 2300 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Conn_01x02 J7
+L AccumulatorBoardLV-rescue:Conn_01x02 J7
 U 1 1 58B7C7A0
 P 5150 2300
 F 0 "J7" H 5150 2450 50  0000 C CNN
@@ -422,7 +390,7 @@ BMS_RX
 Text Label 5250 2100 1    60   ~ 0
 GND
 $Comp
-L Conn_01x06 J3
+L AccumulatorBoardLV-rescue:Conn_01x06 J3
 U 1 1 58B80A68
 P 900 2100
 F 0 "J3" H 900 2450 50  0000 C CNN
@@ -448,7 +416,7 @@ IMD_FLT_5
 Text Label 11050 2550 2    60   ~ 0
 IMD_FLT_5
 $Comp
-L +5V #PWR012
+L power:+5V #PWR012
 U 1 1 58B81BC5
 P 10850 3050
 F 0 "#PWR012" H 10850 2900 50  0001 C CNN
@@ -469,7 +437,7 @@ Text Label 1100 3800 0    60   ~ 0
 Text Label 1100 4000 0    60   ~ 0
 GND
 $Comp
-L Conn_01x02 J13
+L AccumulatorBoardLV-rescue:Conn_01x02 J13
 U 1 1 58BAAFD7
 P 8450 4600
 F 0 "J13" H 8450 4750 50  0000 C CNN
@@ -486,7 +454,7 @@ Fault Latching Logic
 Text Notes 14050 700  2    60   ~ 0
 Fault Latching Relays
 $Comp
-L Conn_01x08 J15
+L AccumulatorBoardLV-rescue:Conn_01x08 J15
 U 1 1 58DA5245
 P 5850 4900
 F 0 "J15" H 5850 5350 50  0000 C CNN
@@ -523,7 +491,7 @@ TIMER_H
 Text Label 14050 4200 2    60   ~ 0
 TIMER_H
 $Comp
-L GND #PWR013
+L power:GND #PWR013
 U 1 1 593471B1
 P 8650 3650
 F 0 "#PWR013" H 8650 3400 50  0001 C CNN
@@ -534,7 +502,7 @@ F 3 "" H 8650 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L power:GND #PWR014
 U 1 1 59347365
 P 8650 4200
 F 0 "#PWR014" H 8650 3950 50  0001 C CNN
@@ -545,7 +513,7 @@ F 3 "" H 8650 4200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L power:GND #PWR015
 U 1 1 5934743F
 P 8650 4700
 F 0 "#PWR015" H 8650 4450 50  0001 C CNN
@@ -558,7 +526,7 @@ $EndComp
 Text Label 1100 5350 0    60   ~ 0
 AIRS_FINAL_CHARGER
 $Comp
-L Conn_01x02 J16
+L AccumulatorBoardLV-rescue:Conn_01x02 J16
 U 1 1 594F302C
 P 900 5250
 F 0 "J16" H 900 5400 50  0000 C CNN
@@ -571,7 +539,7 @@ $EndComp
 Text Label 3900 4700 1    60   ~ 0
 12V_SRC
 $Comp
-L +12V #PWR016
+L power:+12V #PWR016
 U 1 1 594F4FD7
 P 3700 4600
 F 0 "#PWR016" H 3700 4450 50  0001 C CNN
@@ -582,7 +550,7 @@ F 3 "" H 3700 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L power:GND #PWR017
 U 1 1 594F59F0
 P 4000 4300
 F 0 "#PWR017" H 4000 4050 50  0001 C CNN
@@ -595,7 +563,7 @@ $EndComp
 Text Label 1100 4550 0    60   ~ 0
 AIRS_LID_OUT
 $Comp
-L GND #PWR018
+L power:GND #PWR018
 U 1 1 595AA8FC
 P 3350 3250
 F 0 "#PWR018" H 3350 3000 50  0001 C CNN
@@ -606,7 +574,7 @@ F 3 "" H 3350 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C5
+L Device:CP C5
 U 1 1 595AB32A
 P 4150 3100
 F 0 "C5" H 4175 3200 50  0000 L CNN
@@ -617,7 +585,7 @@ F 3 "" H 4150 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L Device:C C4
 U 1 1 595AB43E
 P 3350 3100
 F 0 "C4" H 3375 3200 50  0000 L CNN
@@ -628,7 +596,7 @@ F 3 "" H 3350 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L power:GND #PWR019
 U 1 1 595AB92B
 P 4150 3250
 F 0 "#PWR019" H 4150 3000 50  0001 C CNN
@@ -639,7 +607,7 @@ F 3 "" H 4150 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L Device:C C2
 U 1 1 595AF5DF
 P 10650 1850
 F 0 "C2" H 10675 1950 50  0000 L CNN
@@ -650,7 +618,7 @@ F 3 "" H 10650 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR020
+L power:GND #PWR020
 U 1 1 595AF5E5
 P 10650 2000
 F 0 "#PWR020" H 10650 1750 50  0001 C CNN
@@ -661,7 +629,7 @@ F 3 "" H 10650 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR021
+L power:+5V #PWR021
 U 1 1 595AF5EB
 P 10650 1700
 F 0 "#PWR021" H 10650 1550 50  0001 C CNN
@@ -672,7 +640,7 @@ F 3 "" H 10650 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR022
+L power:GND #PWR022
 U 1 1 595AF6F7
 P 12050 2150
 F 0 "#PWR022" H 12050 1900 50  0001 C CNN
@@ -683,7 +651,7 @@ F 3 "" H 12050 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR023
+L power:+12V #PWR023
 U 1 1 595AF794
 P 12050 1850
 F 0 "#PWR023" H 12050 1700 50  0001 C CNN
@@ -694,7 +662,7 @@ F 3 "" H 12050 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP C3
+L Device:CP C3
 U 1 1 595AF87A
 P 12050 2000
 F 0 "C3" H 12075 2100 50  0000 L CNN
@@ -709,7 +677,7 @@ AIRS_LID_OUT
 Text Label 14850 800  2    60   ~ 0
 AIRS_PEINTERLOCKS_OUT
 $Comp
-L Conn_01x14 J14
+L AccumulatorBoardLV-rescue:Conn_01x14 J14
 U 1 1 59A32AB1
 P 4400 4900
 F 0 "J14" H 4400 5650 50  0000 C CNN
@@ -735,10 +703,8 @@ Text Label 4800 4700 1    60   ~ 0
 5V_BMS
 Text Label 4900 4700 1    60   ~ 0
 SIG_CURRENT
-Text Label 1100 5250 0    60   ~ 0
-AIRS_LID_OUT
 $Comp
-L Conn_01x03 J8
+L AccumulatorBoardLV-rescue:Conn_01x03 J8
 U 1 1 59A3D124
 P 5700 2300
 F 0 "J8" H 5700 2500 50  0000 C CNN
@@ -763,7 +729,7 @@ Text Label 3350 2950 2    60   ~ 0
 Text Label 4150 2950 0    60   ~ 0
 5V
 $Comp
-L stm_nucleo_FK303K8 U12
+L arduino:stm_nucleo_FK303K8 U12
 U 1 1 59C0C0AD
 P 3900 7500
 F 0 "U12" H 3900 6850 70  0000 C CNN
@@ -774,7 +740,7 @@ F 3 "" H 4500 7650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ISO1050 U11
+L FS-FINAL:ISO1050 U11
 U 1 1 59C0C167
 P 1450 7300
 F 0 "U11" H 1700 7300 60  0000 C CNN
@@ -785,7 +751,7 @@ F 3 "" H 1400 7300 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR024
+L power:GND #PWR024
 U 1 1 59C0D015
 P 1450 7800
 F 0 "#PWR024" H 1450 7550 50  0001 C CNN
@@ -796,7 +762,7 @@ F 3 "" H 1450 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR025
+L power:+3.3V #PWR025
 U 1 1 59C0DB0C
 P 4700 7950
 F 0 "#PWR025" H 4700 7800 50  0001 C CNN
@@ -807,7 +773,7 @@ F 3 "" H 4700 7950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR026
+L power:+3.3V #PWR026
 U 1 1 59C0DF26
 P 1550 6800
 F 0 "#PWR026" H 1550 6650 50  0001 C CNN
@@ -818,7 +784,7 @@ F 3 "" H 1550 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR027
+L power:+5V #PWR027
 U 1 1 59C0E3B2
 P 1350 6800
 F 0 "#PWR027" H 1350 6650 50  0001 C CNN
@@ -839,7 +805,7 @@ Text Label 4550 6650 0    60   ~ 0
 Text Label 3250 6950 2    60   ~ 0
 GND
 $Comp
-L ADUM4154ARIZ U8
+L FS-FINAL:ADUM4154ARIZ U8
 U 1 1 59C12B6F
 P 5400 6750
 F 0 "U8" H 6100 6950 60  0000 C CNN
@@ -854,7 +820,7 @@ GND
 Text Label 5500 6850 2    60   ~ 0
 3.3V
 $Comp
-L +3.3V #PWR028
+L power:+3.3V #PWR028
 U 1 1 59C12E6D
 P 5050 6250
 F 0 "#PWR028" H 5050 6100 50  0001 C CNN
@@ -865,7 +831,7 @@ F 3 "" H 5050 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR029
+L power:GND #PWR029
 U 1 1 59C12ED1
 P 5050 6550
 F 0 "#PWR029" H 5050 6300 50  0001 C CNN
@@ -877,7 +843,7 @@ F 3 "" H 5050 6550 50  0001 C CNN
 $EndComp
 NoConn ~ 5500 7650
 $Comp
-L Conn_01x02 J18
+L AccumulatorBoardLV-rescue:Conn_01x02 J18
 U 1 1 59C14120
 P 7550 6850
 F 0 "J18" H 7550 6950 50  0000 C CNN
@@ -906,7 +872,7 @@ TEMP_SS_2
 Text Label 6800 7650 0    60   ~ 0
 TEMP_SS_3
 $Comp
-L MCP3008 U13
+L AccumulatorBoardLV-rescue:MCP3008 U13
 U 1 1 59C16580
 P 9300 8550
 F 0 "U13" H 9100 9075 50  0000 R CNN
@@ -917,7 +883,7 @@ F 3 "" H 9400 8650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCP3008 U10
+L AccumulatorBoardLV-rescue:MCP3008 U10
 U 1 1 59C16B1F
 P 12350 7050
 F 0 "U10" H 12150 7575 50  0000 R CNN
@@ -928,7 +894,7 @@ F 3 "" H 12450 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCP3008 U14
+L AccumulatorBoardLV-rescue:MCP3008 U14
 U 1 1 59C16BAA
 P 12350 8600
 F 0 "U14" H 12150 9125 50  0000 R CNN
@@ -939,7 +905,7 @@ F 3 "" H 12450 8700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCP3008 U9
+L AccumulatorBoardLV-rescue:MCP3008 U9
 U 1 1 59C17381
 P 9300 7050
 F 0 "U9" H 9100 7575 50  0000 R CNN
@@ -996,7 +962,7 @@ GLV    TS
 Text Notes 5950 9550 0    60   ~ 0
 GLV    TS
 $Comp
-L C C7
+L Device:C C7
 U 1 1 59C1F291
 P 7250 6400
 F 0 "C7" H 7275 6500 50  0000 L CNN
@@ -1011,7 +977,7 @@ BATT-
 Text Label 7250 6250 0    60   ~ 0
 3.3V_TS
 $Comp
-L DE1A1B-L2-12V U1
+L FS-FINAL:DE1A1B-L2-12V U1
 U 1 1 5A3F8CEA
 P 14800 1350
 F 0 "U1" H 14950 950 60  0000 C CNN
@@ -1022,7 +988,7 @@ F 3 "" H 15050 1350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR030
+L power:GND #PWR030
 U 1 1 5A3FCE7C
 P 15050 1900
 F 0 "#PWR030" H 15050 1650 50  0001 C CNN
@@ -1035,7 +1001,7 @@ $EndComp
 Text Label 15050 2250 0    60   ~ 0
 BMS_FLT_LATCHED
 $Comp
-L DE1A1B-L2-12V U4
+L FS-FINAL:DE1A1B-L2-12V U4
 U 1 1 5A3FD04B
 P 14800 2800
 F 0 "U4" H 14950 2400 60  0000 C CNN
@@ -1046,7 +1012,7 @@ F 3 "" H 15050 2800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR031
+L power:GND #PWR031
 U 1 1 5A3FD052
 P 15050 3350
 F 0 "#PWR031" H 15050 3100 50  0001 C CNN
@@ -1059,7 +1025,7 @@ $EndComp
 Text Label 15050 3700 0    60   ~ 0
 IMD_FLT_LATCHED
 $Comp
-L DE1A1B-L2-12V U6
+L FS-FINAL:DE1A1B-L2-12V U6
 U 1 1 5A3FDE96
 P 14800 4250
 F 0 "U6" H 14950 3850 60  0000 C CNN
@@ -1070,7 +1036,7 @@ F 3 "" H 15050 4250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR032
+L power:GND #PWR032
 U 1 1 5A3FDE9D
 P 15050 4800
 F 0 "#PWR032" H 15050 4550 50  0001 C CNN
@@ -1091,7 +1057,7 @@ IMD_FLT_LATCHED
 NoConn ~ 12250 2650
 NoConn ~ 11050 2650
 $Comp
-L GND #PWR033
+L power:GND #PWR033
 U 1 1 5A403847
 P 14350 5500
 F 0 "#PWR033" H 14350 5250 50  0001 C CNN
@@ -1107,7 +1073,7 @@ Text Label 14850 700  0    60   ~ 0
 AIRS_CHARGER_OUT
 NoConn ~ 4600 4700
 $Comp
-L Conn_01x06 J4
+L AccumulatorBoardLV-rescue:Conn_01x06 J4
 U 1 1 5A5D2F58
 P 2900 2300
 F 0 "J4" H 2900 2600 50  0000 C CNN
@@ -1129,7 +1095,7 @@ BATT-
 Text Label 12550 7650 0    60   ~ 0
 BATT-
 $Comp
-L Conn_01x04 J10
+L AccumulatorBoardLV-rescue:Conn_01x04 J10
 U 1 1 5A7D5C68
 P 900 3900
 F 0 "J10" H 900 4100 50  0000 C CNN
@@ -1142,7 +1108,7 @@ $EndComp
 Text Label 1100 3900 0    60   ~ 0
 12V
 $Comp
-L R R6
+L Device:R R6
 U 1 1 5A7DD64D
 P 850 7300
 F 0 "R6" V 930 7300 50  0000 C CNN
@@ -1156,7 +1122,7 @@ NoConn ~ 6150 4700
 NoConn ~ 5000 4700
 NoConn ~ 5100 4700
 $Comp
-L CP C6
+L Device:CP C6
 U 1 1 5A97AC51
 P 5050 6400
 F 0 "C6" H 5075 6500 50  0000 L CNN
@@ -1167,7 +1133,7 @@ F 3 "" H 5050 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR034
+L power:GND #PWR034
 U 1 1 5A97B832
 P 1050 6800
 F 0 "#PWR034" H 1050 6550 50  0001 C CNN
@@ -1178,7 +1144,7 @@ F 3 "" H 1050 6800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CP C8
+L Device:CP C8
 U 1 1 5A97B838
 P 1200 6800
 F 0 "C8" H 1225 6900 50  0000 L CNN
@@ -1189,7 +1155,7 @@ F 3 "" H 1200 6800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Conn_01x01 H1
+L AccumulatorBoardLV-rescue:Conn_01x01 H1
 U 1 1 5A97D013
 P 17300 8800
 F 0 "H1" H 17300 8900 50  0000 C CNN
@@ -1200,7 +1166,7 @@ F 3 "" H 17300 8800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x01 H2
+L AccumulatorBoardLV-rescue:Conn_01x01 H2
 U 1 1 5A97DEDA
 P 17300 9100
 F 0 "H2" H 17300 9200 50  0000 C CNN
@@ -1231,7 +1197,7 @@ NoConn ~ 11750 9000
 NoConn ~ 8700 8950
 NoConn ~ 8700 7450
 $Comp
-L Conn_01x10 J19
+L AccumulatorBoardLV-rescue:Conn_01x10 J19
 U 1 1 5AA89576
 P 8350 7150
 F 0 "J19" H 8350 7650 50  0000 C CNN
@@ -1245,7 +1211,7 @@ Text Label 8550 7550 0    60   ~ 0
 3.3V_TS
 NoConn ~ 8550 7450
 $Comp
-L Conn_01x10 J20
+L AccumulatorBoardLV-rescue:Conn_01x10 J20
 U 1 1 5AA89A40
 P 11450 7150
 F 0 "J20" H 11450 7650 50  0000 C CNN
@@ -1258,7 +1224,7 @@ $EndComp
 Text Label 11650 7550 0    60   ~ 0
 3.3V_TS
 $Comp
-L Conn_01x10 J21
+L AccumulatorBoardLV-rescue:Conn_01x10 J21
 U 1 1 5AA8AACD
 P 8400 8650
 F 0 "J21" H 8400 9150 50  0000 C CNN
@@ -1271,7 +1237,7 @@ $EndComp
 Text Label 8600 9050 0    60   ~ 0
 3.3V_TS
 $Comp
-L Conn_01x10 J22
+L AccumulatorBoardLV-rescue:Conn_01x10 J22
 U 1 1 5AA8B655
 P 11450 8700
 F 0 "J22" H 11450 9200 50  0000 C CNN
@@ -1284,7 +1250,7 @@ $EndComp
 Text Label 11650 9100 0    60   ~ 0
 3.3V_TS
 $Comp
-L +3.3V #PWR035
+L power:+3.3V #PWR035
 U 1 1 5AAB30E7
 P 5500 6850
 F 0 "#PWR035" H 5500 6700 50  0001 C CNN
@@ -1303,18 +1269,7 @@ CAN_TX
 Text Label 3250 7850 2    60   ~ 0
 CAN_RX
 $Comp
-L CP C9
-U 1 1 5AC9C051
-P 1700 6800
-F 0 "C9" H 1725 6900 50  0000 L CNN
-F 1 "0.1uf" H 1725 6700 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1738 6650 50  0001 C CNN
-F 3 "" H 1700 6800 50  0001 C CNN
-	1    1700 6800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR036
+L power:GND #PWR036
 U 1 1 5AC9C4B4
 P 1850 6800
 F 0 "#PWR036" H 1850 6550 50  0001 C CNN
@@ -1325,7 +1280,7 @@ F 3 "" H 1850 6800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D1
+L Device:D D1
 U 1 1 5AD8238A
 P 14050 1150
 F 0 "D1" H 14050 1250 50  0000 C CNN
@@ -1336,7 +1291,7 @@ F 3 "" H 14050 1150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D2
+L Device:D D2
 U 1 1 5AD83A0E
 P 14050 1550
 F 0 "D2" H 14050 1650 50  0000 C CNN
@@ -1347,7 +1302,7 @@ F 3 "" H 14050 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D D3
+L Device:D D3
 U 1 1 5AD841DC
 P 14050 2600
 F 0 "D3" H 14050 2700 50  0000 C CNN
@@ -1358,7 +1313,7 @@ F 3 "" H 14050 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D4
+L Device:D D4
 U 1 1 5AD8451B
 P 14050 3000
 F 0 "D4" H 14050 3100 50  0000 C CNN
@@ -1369,7 +1324,7 @@ F 3 "" H 14050 3000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D D5
+L Device:D D5
 U 1 1 5AD84B43
 P 14050 4050
 F 0 "D5" H 14050 4150 50  0000 C CNN
@@ -1380,7 +1335,7 @@ F 3 "" H 14050 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D6
+L Device:D D6
 U 1 1 5AD84FAF
 P 14050 4450
 F 0 "D6" H 14050 4550 50  0000 C CNN
@@ -1391,7 +1346,7 @@ F 3 "" H 14050 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D D7
+L Device:D D7
 U 1 1 5AD852B4
 P 14350 5350
 F 0 "D7" H 14350 5450 50  0000 C CNN
@@ -1402,7 +1357,7 @@ F 3 "" H 14350 5350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C10
+L Device:C C10
 U 1 1 5AD88F42
 P 10000 7600
 F 0 "C10" H 10025 7700 50  0000 L CNN
@@ -1417,7 +1372,7 @@ BATT-
 Text Label 10000 7450 0    60   ~ 0
 3.3V_TS
 $Comp
-L C C11
+L Device:C C11
 U 1 1 5AD898FD
 P 13050 7600
 F 0 "C11" H 13075 7700 50  0000 L CNN
@@ -1432,7 +1387,7 @@ BATT-
 Text Label 13050 7450 0    60   ~ 0
 3.3V_TS
 $Comp
-L C C12
+L Device:C C12
 U 1 1 5AD89A16
 P 10000 9100
 F 0 "C12" H 10025 9200 50  0000 L CNN
@@ -1447,7 +1402,7 @@ BATT-
 Text Label 10000 8950 0    60   ~ 0
 3.3V_TS
 $Comp
-L C C13
+L Device:C C13
 U 1 1 5AD89B75
 P 13050 9150
 F 0 "C13" H 13075 9250 50  0000 L CNN
@@ -1462,7 +1417,7 @@ BATT-
 Text Label 13050 9000 0    60   ~ 0
 3.3V_TS
 $Comp
-L R R4
+L Device:R R4
 U 1 1 5B13751B
 P 10550 7250
 F 0 "R4" V 10630 7250 50  0000 C CNN
@@ -1475,7 +1430,7 @@ $EndComp
 Text Label 10700 7250 0    60   ~ 0
 3.3V_TS
 $Comp
-L R R7
+L Device:R R7
 U 1 1 5B13878D
 P 10550 8750
 F 0 "R7" V 10630 8750 50  0000 C CNN
@@ -1488,7 +1443,7 @@ $EndComp
 Text Label 10700 8750 0    60   ~ 0
 3.3V_TS
 $Comp
-L R R5
+L Device:R R5
 U 1 1 5B139C8A
 P 13600 7250
 F 0 "R5" V 13680 7250 50  0000 C CNN
@@ -1501,7 +1456,7 @@ $EndComp
 Text Label 13750 7250 0    60   ~ 0
 3.3V_TS
 $Comp
-L R R8
+L Device:R R8
 U 1 1 5B13AB2E
 P 13600 8800
 F 0 "R8" V 13680 8800 50  0000 C CNN
@@ -1517,7 +1472,7 @@ NoConn ~ 11650 7450
 NoConn ~ 11650 9000
 NoConn ~ 8600 8950
 Wire Wire Line
-	11650 3350 11950 3350
+	11650 3350 11750 3350
 Connection ~ 11850 3350
 Connection ~ 11750 3350
 Wire Wire Line
@@ -1539,10 +1494,6 @@ Wire Wire Line
 	4000 4700 4000 4300
 Wire Wire Line
 	3800 4700 3700 4700
-Wire Notes Line
-	15950 600  11200 600 
-Wire Notes Line
-	7600 2550 7600 5700
 Wire Wire Line
 	8050 2000 8250 2000
 Wire Wire Line
@@ -1556,16 +1507,12 @@ Wire Notes Line
 Wire Notes Line
 	7600 5700 15950 5700
 Wire Wire Line
-	3350 3250 4150 3250
+	3350 3250 3750 3250
 Connection ~ 3750 3250
-Wire Notes Line
-	7600 2700 7600 600 
-Wire Notes Line
-	7600 600  11500 600 
 Wire Notes Line
 	13050 5700 13050 600 
 Wire Wire Line
-	1350 7800 1550 7800
+	1350 7800 1450 7800
 Connection ~ 1450 7800
 Wire Wire Line
 	2200 7050 3250 7050
@@ -1696,7 +1643,6 @@ Wire Wire Line
 Wire Wire Line
 	2150 7850 2150 7100
 Connection ~ 14050 1300
-Connection ~ 14050 1000
 Wire Wire Line
 	10400 8750 9900 8750
 Wire Wire Line
@@ -1723,4 +1669,29 @@ Text Label 6800 6850 0    60   ~ 0
 3.3V_TS
 Text Label 6800 6950 0    60   ~ 0
 BATT-
+Text Label 1100 5250 0    60   ~ 0
+AIRS_LID_OUT
+Wire Wire Line
+	11850 3350 11950 3350
+Wire Wire Line
+	11750 3350 11850 3350
+Wire Wire Line
+	3750 3250 4150 3250
+Wire Wire Line
+	1450 7800 1550 7800
+Wire Notes Line
+	7600 600  15950 600 
+Wire Notes Line
+	7600 600  7600 5700
+$Comp
+L Device:CP C9
+U 1 1 5AC9C051
+P 1700 6800
+F 0 "C9" H 1725 6900 50  0000 L CNN
+F 1 "0.1uf" H 1725 6700 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 1738 6650 50  0001 C CNN
+F 3 "" H 1700 6800 50  0001 C CNN
+	1    1700 6800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
