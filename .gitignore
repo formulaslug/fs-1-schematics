@@ -1,7 +1,6 @@
 *bak
 *.DS_Store
 *.bck
-*-rescue.lib
 *.drl
 *.gbr
 *.zip
@@ -9,3 +8,4 @@
 *.ses
 *.dsn
 *.net
+*/rescue-backup/*
