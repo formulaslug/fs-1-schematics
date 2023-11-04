@@ -1,36 +1,102 @@
 EESchema Schematic File Version 2
-LIBS:adc-dac
-LIBS:FS FINAL
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
+LIBS:74xgxx
 LIBS:74xx
-LIBS:cmos4000
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
 LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
 LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
 LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:linear
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
 LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:zetex
+LIBS:Zilog
+LIBS:FS FINAL
 LIBS:arduino
-LIBS:AccumulatorBoardLV-cache
+LIBS:symbols
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -838,17 +904,6 @@ Text Label 4550 6650 0    60   ~ 0
 12V
 Text Label 3250 6950 2    60   ~ 0
 GND
-$Comp
-L ADUM4154ARIZ U8
-U 1 1 59C12B6F
-P 5400 6750
-F 0 "U8" H 6100 6950 60  0000 C CNN
-F 1 "ADUM4154ARIZ" H 6150 6850 60  0000 C CNN
-F 2 "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm" H 6150 6790 60  0001 C CNN
-F 3 "" H 4750 6850 60  0000 C CNN
-	1    5400 6750
-	1    0    0    -1  
-$EndComp
 Text Label 5500 6950 2    60   ~ 0
 GND
 Text Label 5500 6850 2    60   ~ 0
@@ -1723,4 +1778,15 @@ Text Label 6800 6850 0    60   ~ 0
 3.3V_TS
 Text Label 6800 6950 0    60   ~ 0
 BATT-
+$Comp
+L ADUM4154ARIZ U8
+U 1 1 59C12B6F
+P 5400 6750
+F 0 "U8" H 6100 6950 60  0000 C CNN
+F 1 "ADUM4154ARIZ" H 6150 6850 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-20W_7.5x12.8mm_Pitch1.27mm" H 6150 6790 60  0001 C CNN
+F 3 "" H 4750 6850 60  0000 C CNN
+	1    5400 6750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
