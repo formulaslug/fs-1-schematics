@@ -9,3 +9,4 @@
 *.dsn
 *.net
 */rescue-backup/*
+*.lck
