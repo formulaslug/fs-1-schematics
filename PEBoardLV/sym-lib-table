@@ -3,5 +3,5 @@
   (lib (name "arduino")(type "Legacy")(uri "${KIPRJMOD}/../arduino.lib")(options "")(descr ""))
   (lib (name "FS_FINAL")(type "Legacy")(uri "${KIPRJMOD}/../FS FINAL.lib")(options "")(descr ""))
   (lib (name "symbols")(type "Legacy")(uri "${KIPRJMOD}/../symbols.lib")(options "")(descr ""))
-  (lib (name "BMS-rescue")(type "KiCad")(uri "${KIPRJMOD}/BMS-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "PEBoardLV-rescue")(type "KiCad")(uri "${KIPRJMOD}/PEBoardLV-rescue.kicad_sym")(options "")(descr ""))
 )

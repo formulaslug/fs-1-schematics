@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -304,17 +304,6 @@ F 2 "Resistors_SMD:R_0805_HandSoldering" V 2980 3600 50  0001 C CNN
 F 3 "~" H 3050 3600 50  0001 C CNN
 	1    3050 3600
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R21
-U 1 1 5C4601CE
-P 2400 3950
-F 0 "R21" V 2500 3900 50  0000 L CNN
-F 1 "33" V 2400 3900 50  0000 L CNN
-F 2 "Resistors_SMD:R_2512_HandSoldering" V 2330 3950 50  0001 C CNN
-F 3 "~" H 2400 3950 50  0001 C CNN
-	1    2400 3950
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R19
@@ -1483,7 +1472,6 @@ Wire Wire Line
 Connection ~ 1900 4150
 Wire Wire Line
 	1900 4150 2400 4150
-Connection ~ 2400 3800
 Wire Wire Line
 	2400 4600 2300 4600
 $Comp
@@ -1710,4 +1698,16 @@ Wire Wire Line
 Wire Wire Line
 	10550 2900 10650 2900
 Connection ~ 10550 2850
+Connection ~ 2400 3800
+$Comp
+L Device:R R21
+U 1 1 5C4601CE
+P 2400 3950
+F 0 "R21" V 2500 3900 50  0000 L CNN
+F 1 "33" V 2400 3900 50  0000 L CNN
+F 2 "Resistors_SMD:R_2512_HandSoldering" V 2330 3950 50  0001 C CNN
+F 3 "~" H 2400 3950 50  0001 C CNN
+	1    2400 3950
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

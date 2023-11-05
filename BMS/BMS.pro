@@ -1,4 +1,4 @@
-update=4/3/2019 9:30:10 PM
+update=11/4/2023 4:37:46 PM
 version=1
 last_client=kicad
 [general]
@@ -8,13 +8,6 @@ BoardNm=
 [cvpcb]
 version=1
 NetIExt=net
-[eeschema]
-version=1
-LibDir=
-[eeschema/libraries]
-LibName1=/Users/dukeloke/git/fs-1-schematics/symbols
-LibName2=/Users/dukeloke/git/fs-1-schematics/arduino
-LibName3=/Users/dukeloke/git/fs-1-schematics/FS FINAL
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -63,3 +56,6 @@ SolderMaskClearance=0.051
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
 SolderPasteRatio=-0
+[eeschema]
+version=1
+LibDir=
